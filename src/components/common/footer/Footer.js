@@ -10,11 +10,11 @@ import AuthorHub from "../../../../public/assests/Icons/AuthorHub.png";
 const Footer = () => {
     return (
         <>
-            <div className='bg-footergrey w-full p-12'>
-                <div className='flex justify-between mx-auto max-w-[1300px]'>
-                    <div className='grid grid-cols-3 w-[50%]'>
+            <div className='bg-footergrey w-full p-8'>
+                <div className='flex justify-center lg:justify-between items-center lg:items-start flex-col lg:flex-row mx-auto lg:max-w-[900px] xl:max-w-[1100px] 2xl:max-w-[1300px]'>
+                    <div className='grid grid-cols-2 md:grid-cols-3 lg:w-full 2xl:w-[80%]'>
                         {footerLinks.map((section, index) => (
-                            <div key={index} className='space-y-6'>
+                            <div key={index} className='mt-9 lg:mt-0 space-y-6'>
                                 <TitleP title={section.title} />
                                 <div className='space-y-4'>
                                     {section.links.map((link) => (
@@ -23,25 +23,32 @@ const Footer = () => {
                                 </div>
                             </div>
                         ))}
+                        <div className='mt-14 lg:hidden w-full'>
+                            <Text text="Bumblebee Books is an imprint of Olympia Publishers" />
+                            <Text text="© 2022 Ashwell Publishing Ltd | Registered in England No. 6431579" />
+                        </div>
                     </div>
-                    <div className='space-y-6'>
+                    <div className='space-y-8 xl:space-y-6 mt-6 lg:mt-0 w-full grid items-center lg:justify-end '>
                         <TitleP title='Connect' />
                         <Text text="Follow Olympia USA" />
                         <Socials />
                         <Text text="Follow Bumblebee USA" />
                         <Socials />
-                        <div className='flex space-x-9 py-9'>
-                            <Image src={Bumblebee} height={42} width={42} />
+                        <div className='flex space-x-9 py-4 xl:py-9 w-full items-center justify-center md:justify-start'>
+                            <Image src={Bumblebee} height={54} width={54} />
                             <Image src={AuthorHub} height={42} width={42} />
+                        </div>
+                        <div className='w-full flex items-center justify-center lg:hidden' >
+                            <Text text="Terms & Conditions | Privacy & Cookies Policy" />
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between mx-auto max-w-[1300px]'>
-                    <div className='grid w-[50%] space-y-3'>
+                <div className='lg:flex justify-between items-center mx-auto lg:max-w-[900px] xl:max-w-[1100px] 2xl:max-w-[1300px] hidden'>
+                    <div className='grid w-full 2xl:w-[50%] space-y-3'>
                         <Text text="Bumblebee Books is an imprint of Olympia Publishers" />
                         <Text text="© 2022 Ashwell Publishing Ltd | Registered in England No. 6431579" />
                     </div>
-                    <div>
+                    <div className='w-full flex justify-end'>
                         <Text text="Terms & Conditions | Privacy & Cookies Policy" />
                     </div>
                 </div>
