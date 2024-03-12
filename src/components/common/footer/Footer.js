@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex justify-between mx-auto max-w-[1300px]'>
-                    <div className='grid w-[50%]'>
+                    <div className='grid w-[50%] space-y-3'>
                         <Text text="Bumblebee Books is an imprint of Olympia Publishers" />
                         <Text text="© 2022 Ashwell Publishing Ltd | Registered in England No. 6431579" />
                     </div>
