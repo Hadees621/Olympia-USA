@@ -1,8 +1,11 @@
 import '../../../app/globals.css';
+import Image from 'next/image';
+import Text from './comp/Text';
 import TitleP from './comp/TitleP';
 import Socials from './comp/Socials';
 import { footerLinks } from "@/utils/footer/links";
-import Text from './comp/Text';
+import Bumblebee from "../../../../public/assests/Icons/Bumblebee.png";
+import AuthorHub from "../../../../public/assests/Icons/AuthorHub.png";
 
 const Footer = () => {
     return (
@@ -27,6 +30,10 @@ const Footer = () => {
                         <Socials />
                         <Text text="Follow Bumblebee USA" />
                         <Socials />
+                        <div className='flex space-x-9 py-9'>
+                            <Image src={Bumblebee} height={42} width={42} />
+                            <Image src={AuthorHub} height={42} width={42} />
+                        </div>
                     </div>
                 </div>
                 <div className='flex justify-between mx-auto max-w-[1300px]'>
