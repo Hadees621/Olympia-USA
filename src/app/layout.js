@@ -10,10 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <Head>
-        <link rel="icon" href="/public/assests/Icons/Olympialogomark.png" />
-      </Head> */}
-      <body className={inter.className}>{children}</body>
+      <body className="h-screen">
+        {children}
+      </body>
     </html>
   );
 }
