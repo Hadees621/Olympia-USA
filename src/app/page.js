@@ -1,7 +1,9 @@
+import NewReleases from "@/components/home/NewReleases";
+
 export default function Home() {
   return (
-    <div>
-      <h1>HOME</h1>
+    <div className="w-full flex justify-center">
+      <NewReleases />
     </div>
   )
 }
