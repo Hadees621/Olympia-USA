@@ -11,7 +11,7 @@ const Features = () => {
         <div className="p-6 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
-              src="/assests/Home/Features.png"
+              src="/assests/Home/Features.PNG"
               width={350}
               height={190}
               className="hover:shadow"
@@ -34,7 +34,7 @@ const Features = () => {
         <div className="p-6 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
-              src="/assests/Home/Features.png"
+              src="/assests/Home/Features.PNG"
               width={350}
               height={190}
               className="hover:shadow"
@@ -57,7 +57,7 @@ const Features = () => {
         <div className="p-6 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
-              src="/assests/Home/Features.png"
+              src="/assests/Home/Features.PNG"
               width={350}
               height={190}
               className="hover:shadow"
