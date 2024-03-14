@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 const Features = () => {
   return (
-    <div>
+    <div className="max-w-[1200px]">
       <p className="text-[26px] font-semibold font-droid-sans text-start">
         Features
       </p>
@@ -12,8 +12,8 @@ const Features = () => {
           <div className="">
             <Image
               src="/assests/Features.png"
-              width={300}
-              height={150}
+              width={350}
+              height={190}
               className="hover:shadow"
             />
           </div>
@@ -34,8 +34,8 @@ const Features = () => {
           <div className="">
             <Image
               src="/assests/Features.png"
-              width={300}
-              height={150}
+              width={350}
+              height={190}
               className="hover:shadow"
             />
           </div>
@@ -56,8 +56,8 @@ const Features = () => {
           <div className="">
             <Image
               src="/assests/Features.png"
-              width={300}
-              height={150}
+              width={350}
+              height={190}
               className="hover:shadow"
             />
           </div>
