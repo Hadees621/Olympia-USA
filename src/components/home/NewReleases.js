@@ -14,8 +14,9 @@ const NewReleases = () => {
       </div>
       <div className="flex items-center justify-center border border-black">
         {Books.map((book, index) => (
-          <div key={index}>
+          <div>
             <BookComponent
+              key={index}
               src={book.src}
               title={book.title}
               author={book.author}

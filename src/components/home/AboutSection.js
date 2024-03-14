@@ -19,6 +19,7 @@ const AboutSection = ({ heading, paragraph }) => {
           width={700}
           height={200}
           alt="About Section Image"
+          priority
         />
       </div>
     </div>
