@@ -8,12 +8,12 @@ const EditorsPick = () => {
         Editors Picks
       </p>
       <div className="flex py-10">
-        <div className="p-10 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
+        <div className="p-14 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
               src="/assests/Books/Asset6.png"
-              width={270}
-              height={400}
+              width={290}
+              height={410}
               className="hover:shadow"
             />
           </div>
@@ -21,12 +21,12 @@ const EditorsPick = () => {
             <Button title="READ BOOK" width="w-[48%]" color="transparent" />
           </div>
         </div>
-        <div className="p-10 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
+        <div className="p-14 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
               src="/assests/Books/Asset6.png"
-              width={270}
-              height={400}
+              width={290}
+              height={410}
               className="hover:shadow"
             />
           </div>
@@ -34,12 +34,12 @@ const EditorsPick = () => {
             <Button title="READ BOOK" width="w-[48%]" color="transparent" />
           </div>
         </div>
-        <div className="p-10 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
+        <div className="p-14 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
               src="/assests/Books/Asset6.png"
-              width={270}
-              height={400}
+              width={290}
+              height={410}
               className="hover:shadow"
             />
           </div>
