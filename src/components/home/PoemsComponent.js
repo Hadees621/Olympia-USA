@@ -11,7 +11,7 @@ const PoemsComponent = () => {
         />
         <div className="flex-1">
           <Image
-            src="/assests/poems.png"
+            src="/public/assests/poems.png"
             width={700}
             height={200}
             alt="About Section Image"
@@ -21,7 +21,7 @@ const PoemsComponent = () => {
       <div className="flex bg-[#F9F9F9]">
         <div className="flex-1">
           <Image
-            src="/assests/poems.png"
+            src="/public/assests/poems.png"
             width={700}
             height={200}
             alt="About Section Image"
