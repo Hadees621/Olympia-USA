@@ -7,7 +7,7 @@ const HashtagSection = () => {
     for (let i = 0; i < count; i++) {
       images.push(
         <div key={i} className="p-4 border border-black w-max">
-          <Image src="/Home/Asset 12.png" width={250} height={250} />
+          <Image src={`/Home/Asset 12.png`} width={250} height={250} />
         </div>
       );
     }
