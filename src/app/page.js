@@ -1,5 +1,6 @@
 import AboutSection from "@/components/home/AboutSection";
 import Bumblebee from "@/components/home/Bumblebee";
+import Categories from "@/components/home/Categories";
 import EditorsPick from "@/components/home/EditorsPick";
 import Features from "@/components/home/Features";
 import HashtagSection from "@/components/home/HashtagSection";
@@ -23,6 +24,8 @@ export default function Home() {
       <MostPopular />
 
       <Bumblebee />
+
+      <Categories />
 
       <Features />
 
