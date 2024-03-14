@@ -5,6 +5,7 @@ import Features from "@/components/home/Features";
 import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";
+import PublishingJourney from "@/components/home/PublishingJourney";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
       <Bumblebee />
 
       {/* <Features /> */}
+
+      <PublishingJourney />
 
       <EditorsPick />
     </div>
