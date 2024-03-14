@@ -2,6 +2,7 @@ import AboutSection from "@/components/home/AboutSection";
 import Bumblebee from "@/components/home/Bumblebee";
 import EditorsPick from "@/components/home/EditorsPick";
 import Features from "@/components/home/Features";
+import HashtagSection from "@/components/home/HashtagSection";
 import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";
@@ -28,6 +29,8 @@ export default function Home() {
       <PublishingJourney />
 
       <EditorsPick />
+
+      <HashtagSection />
     </div>
   );
 }
