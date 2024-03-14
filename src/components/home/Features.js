@@ -15,6 +15,7 @@ const Features = () => {
               width={350}
               height={190}
               className="hover:shadow"
+              alt="features"
             />
           </div>
           <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5">
@@ -37,6 +38,7 @@ const Features = () => {
               width={350}
               height={190}
               className="hover:shadow"
+              alt="features"
             />
           </div>
           <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5">
@@ -59,6 +61,7 @@ const Features = () => {
               width={350}
               height={190}
               className="hover:shadow"
+              alt="features"
             />
           </div>
           <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5">

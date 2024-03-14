@@ -15,6 +15,7 @@ const EditorsPick = () => {
               width={290}
               height={410}
               className="hover:shadow"
+              alt="editors"
             />
           </div>
           <div className="pt-10 flex w-full justify-center">
@@ -28,6 +29,7 @@ const EditorsPick = () => {
               width={290}
               height={410}
               className="hover:shadow"
+              alt="editors"
             />
           </div>
           <div className="pt-10 flex w-full justify-center">
@@ -41,6 +43,7 @@ const EditorsPick = () => {
               width={290}
               height={410}
               className="hover:shadow"
+              alt="editors"
             />
           </div>
           <div className="pt-10 flex w-full justify-center">
