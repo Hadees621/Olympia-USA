@@ -9,7 +9,7 @@ const MostPopular = () => {
         <div className='max-w-[1300px] py-20'>
             <div className='flex justify-between items-center py-10'>
                 <p className='text-[26px] font-semibold font-droid-sans'>Most popular</p>
-                <Button title="EXPLORE MORE" />
+                <Button title="EXPLORE MORE" width="w-[12%]" color="transparent"/>
             </div>
             <div className='flex items-center justify-center border-t border-black'>
                 <div className='flex'>
