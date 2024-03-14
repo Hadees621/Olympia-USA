@@ -1,4 +1,5 @@
 import AboutSection from "@/components/home/AboutSection";
+import Bumblebee from "@/components/home/Bumblebee";
 import EditorsPick from "@/components/home/EditorsPick";
 import Features from "@/components/home/Features";
 import MostPopular from "@/components/home/MostPopular";
@@ -8,7 +9,6 @@ import PoemsComponent from "@/components/home/PoemsComponent";
 export default function Home() {
   return (
     <div className="w-full flex flex-col justify-center items-center">
-
       <NewReleases />
 
       <AboutSection
@@ -18,12 +18,13 @@ export default function Home() {
 
       {/* <PoemsComponent /> */}
 
-      <MostPopular />
+      {/* <MostPopular /> */}
+
+      <Bumblebee />
 
       {/* <Features /> */}
 
       <EditorsPick />
-
     </div>
-  )
+  );
 }

@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="h-screen bg-white">
         {children}
-        <Navbar />
+        {/* <Navbar /> */}
       </body>
     </html>
   );

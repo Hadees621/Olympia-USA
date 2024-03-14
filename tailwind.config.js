@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        footergrey: '#F6F4F3',
-        buttonred: '#D21621'
+        footergrey: "#F6F4F3",
+        buttonred: "#D21621",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -17,8 +16,14 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'open-sans': ['Open Sans', 'sans-serif'],
-        'droid-sans': ['Droid Sans', 'sans-serif']
+        "open-sans": ["Open Sans", "sans-serif"],
+        "droid-sans": ["Droid Sans", "sans-serif"],
+        "courier-prime": [
+          "Courier Prime",
+          "Courier New",
+          "Courier",
+          "monospace",
+        ],
       },
     },
   },

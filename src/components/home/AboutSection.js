@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { aboutBanner } from '@/utils/home/About'
+import { aboutBanner } from '@/utils/home/Links'
 import Button from '../common/Button'
 const AboutSection = ({ heading, paragraph }) => {
     return (
