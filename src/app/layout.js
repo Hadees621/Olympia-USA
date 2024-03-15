@@ -13,12 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assests/Icons/Olympialogomark.png"/>
+        <link rel="icon" href="/assests/Icons/Olympialogomark.png" />
       </head>
       <body className="h-screen bg-white">
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

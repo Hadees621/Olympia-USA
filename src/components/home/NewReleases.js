@@ -5,16 +5,18 @@ import Button from "../common/Button";
 
 const NewReleases = () => {
   return (
-    <div className="max-w-[1300px]">
-      <div className="flex justify-between items-center py-10">
+    <div className="lg:max-w-[800px] xl:max-w-[1300px]">
+      <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <p className="text-[26px] font-semibold font-droid-sans">
           New Releases
         </p>
-        <Button title="EXPLORE MORE" width="w-[14%]" color="transparent" />
+        <div className="hidden lg:block">
+          <Button title="EXPLORE MORE" width="w-[150px]" color="transparent" />
+        </div>
       </div>
-      <div className="flex items-center justify-center border border-black">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-0 lg:flex items-center justify-center lg:border lg:border-black">
         {Books.map((book, index) => (
-          <div>
+          <div className="">
             <BookComponent
               key={index}
               src={book.src}

@@ -15,11 +15,11 @@ export default function Home() {
   const { heading, paragraph } = AboutUsData;
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <Slider />
+      {/* <Slider /> */}
 
       <NewReleases />
 
-      <AboutSection heading={heading} paragraph={paragraph} />
+      {/* <AboutSection heading={heading} paragraph={paragraph} />
 
       <PoemsComponent />
 
@@ -35,7 +35,7 @@ export default function Home() {
 
       <EditorsPick />
 
-      <HashtagSection />
+      <HashtagSection /> */}
     </div>
   );
 }
