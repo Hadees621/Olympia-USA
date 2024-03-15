@@ -8,17 +8,20 @@ import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";
 import PublishingJourney from "@/components/home/PublishingJourney";
+import { AboutUsData } from "@/utils/home/Home";
+import Slider from "@/components/home/Slider";
 
 export default function Home() {
+  const { heading, paragraph } = AboutUsData;
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <NewReleases />
+      <Slider />
 
-      <AboutSection
-        heading="About Us"
-        paragraph="Olympia Publishers USA is a leading independent book publisher. Publishing talented authors from across the world.We publish adult and children’s fiction and non - fiction books in various formats including paperback, hardback, ebook and audiobook.Make your dream a reality, become a published author. Start your publishing journey with us"
-      />
+      {/* <NewReleases />*/}
 
+      {/* <AboutSection heading={heading} paragraph={paragraph} /> */}
+
+      {/* 
       <PoemsComponent />
 
       <MostPopular />
@@ -33,7 +36,7 @@ export default function Home() {
 
       <EditorsPick />
 
-      <HashtagSection />
+      <HashtagSection /> */}
     </div>
   );
 }
