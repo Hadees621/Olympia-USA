@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Button from "../common/Button";
 import Arrowleft from "../../../public/imgs/Arrowleft.svg";
 import Arrowright from "../../../public/imgs/Arrowright.svg";
-import Image from "next/image";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,9 +23,9 @@ const Slider = () => {
 
   return (
     <div className="relative">
-      <div className="flex justify-end">
-        <div className="p-6 flex flex-col items-start justify-center w-[33%] pr-16">
-          <h2 className="text-5xl font-bold mb-2">
+      <div className="flex justify-end bg-[#ECF1EF]">
+        <div className="p-6 flex flex-col items-start justify-center w-[35%] pr-16 gap-8 ">
+          <h2 className="text-7xl font-semibold mb-2">
             Lorem ipsum dolor sit amet
           </h2>
           <p className="text-xs mb-4">
@@ -39,7 +39,7 @@ const Slider = () => {
             width={"w-[140px]"}
           />
         </div>
-        <div className="absolute top-[40%] left-[47%] flex flex-col gap-4 justify-between px-4">
+        <div className="absolute top-[40%] left-[48%] flex flex-col gap-4 justify-between px-4">
           <div className="bg-white rounded-full w-max">
             <Image
               src={Arrowleft}

@@ -17,11 +17,10 @@ export default function Home() {
     <div className="w-full flex flex-col justify-center items-center">
       <Slider />
 
-      {/* <NewReleases />*/}
+      <NewReleases />
 
-      {/* <AboutSection heading={heading} paragraph={paragraph} /> */}
+      <AboutSection heading={heading} paragraph={paragraph} />
 
-      {/* 
       <PoemsComponent />
 
       <MostPopular />
@@ -36,7 +35,7 @@ export default function Home() {
 
       <EditorsPick />
 
-      <HashtagSection /> */}
+      <HashtagSection />
     </div>
   );
 }
