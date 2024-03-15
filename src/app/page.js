@@ -8,25 +8,32 @@ import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";
 import PublishingJourney from "@/components/home/PublishingJourney";
-import { AboutUsData } from "@/utils/home/Home";
+import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Slider from "@/components/home/Slider";
 import SmScreenPopular from "@/components/home/SmScreenPopular";
+import SmAboutSection from "@/components/home/SmAboutSection";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
+  const { headingS, paragraphS } = SmAboutUsData;
+
   return (
     <div className="w-full flex flex-col justify-center items-center">
       {/* <Slider /> */}
 
-      {/* <NewReleases /> */}
+      <NewReleases />
 
       <div className="lg:hidden">
         <SmScreenPopular />
       </div>
 
-      {/* <AboutSection heading={heading} paragraph={paragraph} />
+      <div className="lg:hidden">
+        <SmAboutSection heading={headingS} paragraph={paragraphS} />
+      </div>
 
-      <PoemsComponent />
+      <AboutSection heading={heading} paragraph={paragraph} />
+
+      {/*    <PoemsComponent />
 
       <MostPopular />
 

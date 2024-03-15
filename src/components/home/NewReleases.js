@@ -11,7 +11,7 @@ const NewReleases = () => {
           <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
             New Releases
           </p>
-          <p className="text-[26px] font-semibold font-open-sans lg:hidden">
+          <p className="text-[23px] font-semibold font-open-sans lg:hidden">
             NEW RELEASES
           </p>
         </div>

@@ -8,7 +8,7 @@ const SmScreenPopular = () => {
     <div>
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <div>
-          <p className="text-[26px] font-semibold font-open-sans">
+          <p className="text-[23px] font-semibold font-open-sans">
             MOST POPULAR
           </p>
         </div>
