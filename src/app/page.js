@@ -14,6 +14,7 @@ import SmScreenPopular from "@/components/home/SmScreenPopular";
 import SmAboutSection from "@/components/home/SmAboutSection";
 import FeaturedAuthor from "@/components/home/FeaturedAuthor";
 import SmBumblebee from "@/components/home/SmBumblebee";
+import Button from "@/components/common/Button";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -47,17 +48,36 @@ export default function Home() {
 
       <Features />
 
-      <MostPopular />
-      
-      <Bumblebee />
+      <div
+        className="bg-cover bg-center md:hidden my-20"
+        style={{ backgroundImage: "url('/Home/Mobile/Asset 30.png')" }}
+      >
+        <div className="bg-white flex flex-col justify-start items-start my-8 mx-4 gap-4 p-5 font-droid-sans">
+          <p className="font-bold text-[18px]">MEET OUR AUTHORS</p>
+          <p>
+            {" "}
+            Chancers are you’re looking for one of our most popular writers, so
+            here they are.
+          </p>
+          <Button
+            title={"View all authors"}
+            color={"transparent"}
+            width={"w-[130px]"}
+          />
+        </div>
+      </div>
 
-      <Categories />
+      {/* <MostPopular /> */}
+
+      {/* <Bumblebee /> */}
+
+      {/* <Categories /> */}
 
       <PublishingJourney />
 
-      <EditorsPick />
+      {/* <EditorsPick /> */}
 
-      <HashtagSection />
+      {/* <HashtagSection /> */}
     </div>
   );
 }
