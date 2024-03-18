@@ -18,14 +18,19 @@ const SmAboutSection = ({ heading, paragraph }) => {
           />
         </div>
       </div>
-      <div className="flex-1 p-10 pt-3">
-        <Image
-          src="/assests/Banners/about-banner.png"
-          width={700}
-          height={200}
-          alt="About Section Image"
-          priority
-        />
+      <div className="grid grid-cols-2 gap-4 justify-center items-center px-5">
+        <div className="bg-gray-100 flex justify-center">
+          <Image src={"/Home/Mobile/Asset 9.png"} width={250} height={250} />
+        </div>
+        <div className="bg-slate-500 flex justify-center">
+          <Image src={"/Home/Mobile/Asset 11.png"} width={250} height={250} />
+        </div>
+        <div className="bg-red-500 flex justify-center">
+          <Image src={"/Home/Mobile/Asset 12.png"} width={250} height={250} />
+        </div>
+        <div className="bg-gray-100 flex justify-center">
+          <Image src={"/Home/Mobile/Asset 13.png"} width={250} height={250} />
+        </div>
       </div>
     </div>
   );

@@ -32,17 +32,18 @@ export default function Home() {
 
       <div className="lg:hidden">
         <SmAboutSection heading={headingS} paragraph={paragraphS} />
-        <SmCategories />
       </div>
 
       <div className="hidden lg:block">
         <NewReleases />
-        <AboutSection heading={heading} paragraph={paragraph} />
       </div>
+      <AboutSection heading={heading} paragraph={paragraph} />
 
       <PoemsComponent />
 
       <div className="lg:hidden">
+        <SmCategories />
+
         <NewReleases />
 
         <FeaturedAuthor />
