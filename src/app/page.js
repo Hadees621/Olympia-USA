@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      {/* <Slider /> */}
+      <Slider />
 
       <div className="lg:hidden">
         <SmScreenPopular />

@@ -10,7 +10,7 @@ const Slider = () => {
   const images = [
     "/assests/Banners/SliderBanner.png",
     "/assests/Banners/SliderBanner.png",
-    "/assests/Banners/SliderBanner.png",
+    "/assests/Banners/SlierBanner.png",
   ];
 
   const handleNext = () => {
@@ -24,27 +24,28 @@ const Slider = () => {
   return (
     <div className="relative">
       <div className="flex justify-end bg-[#ECF1EF]">
-        <div className="p-6 flex flex-col items-start justify-center w-[35%] pr-16 gap-8 ">
-          <h2 className="text-7xl font-semibold mb-2">
+        <div className="p-4 2xl:p-6 flex flex-col items-start justify-center w-[35%] pr-16 gap-3 2xl:gap-8 ">
+          <h2 className="text-2xl 2xl:text-7xl font-semibold mb-2">
             Lorem ipsum dolor sit amet
           </h2>
-          <p className="text-xs mb-4">
+          <p className="text-[10px] 2xl:text-xs mb-4">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh. Lorem ipsum dolor sit amet.Lorem ipsum, consectetuer
             adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet.
           </p>
-          <Button
-            title={"VIEW ALL FICTION"}
-            color={"transparent"}
-            width={"w-[140px]"}
-          />
+          <button
+            className={`text-[8px] 2xl:text-[12px] py-[9px]  2xl:py-[12px] font-semibold font-droid-sans rounded shadow flex items-center justify-center w-[100px] 2xl:w-[140px] border border-black hover:bg-buttonred hover:text-white`}
+          >
+            VIEW ALL FICTION
+          </button>
+          {/* <Button title={"VIEW ALL FICTION"} color={"transparent"} width={""} /> */}
         </div>
-        <div className="absolute top-[40%] left-[4%] 2xl:left-[48%] flex flex-col gap-4 justify-between px-4">
+        <div className="absolute top-[35%] 2xl:top-[40%] left-[47.5%] 2xl:left-[48%] flex flex-col gap-2 2xl:gap-4 justify-between px-4">
           <div className="bg-white rounded-full w-max">
             <Image
               src={Arrowleft}
               alt="arrowleft"
-              width={40}
+              width={20}
               onClick={handlePrev}
             />
           </div>
@@ -52,7 +53,7 @@ const Slider = () => {
             <Image
               src={Arrowright}
               alt="Arrowright"
-              width={40}
+              width={20}
               onClick={handleNext}
             />
           </div>
