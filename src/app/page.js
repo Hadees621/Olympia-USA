@@ -12,6 +12,7 @@ import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Slider from "@/components/home/Slider";
 import SmScreenPopular from "@/components/home/SmScreenPopular";
 import SmAboutSection from "@/components/home/SmAboutSection";
+import FeaturedAuthor from "@/components/home/FeaturedAuthor";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -36,6 +37,8 @@ export default function Home() {
       </div>
 
       <PoemsComponent />
+
+      <FeaturedAuthor />
 
       {/* <MostPopular />
 
