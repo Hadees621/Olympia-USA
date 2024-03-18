@@ -38,7 +38,9 @@ export default function Home() {
 
       <PoemsComponent />
 
-      <FeaturedAuthor />
+      <div className="lg:hidden">
+        <FeaturedAuthor />
+      </div>
 
       {/* <MostPopular />
 

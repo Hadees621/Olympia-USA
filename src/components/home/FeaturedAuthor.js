@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../common/Button";
+import Image from "next/image";
 
 const FeaturedAuthor = () => {
   return (
@@ -7,7 +8,8 @@ const FeaturedAuthor = () => {
       <p className="text-[26px] font-semibold font-droid-sans text-start">
         FEATURED AUTHOR
       </p>
-      <div className="p-7 space-y-3 bg-[#F9F7F6]">
+      <div className="p-7 space-y-3 bg-[#F9F7F6] md:flex md:flex-col md:items-center md:justify-center w-full">
+        <Image src={"/Home/Mobile/Asset 25.png"} width={400} height={800} />
         <p className="font-bold text-[18px] pr-12">
           LEGENDS OF ERIN: DAWN OF BOYHOOD’S FIRE
         </p>
