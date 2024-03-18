@@ -13,6 +13,7 @@ import Slider from "@/components/home/Slider";
 import SmScreenPopular from "@/components/home/SmScreenPopular";
 import SmAboutSection from "@/components/home/SmAboutSection";
 import FeaturedAuthor from "@/components/home/FeaturedAuthor";
+import SmBumblebee from "@/components/home/SmBumblebee";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -39,11 +40,14 @@ export default function Home() {
       <PoemsComponent />
 
       <div className="lg:hidden">
+
         <FeaturedAuthor />
+
+        <SmBumblebee />
+
       </div>
 
       {/* <MostPopular />
-
       <Bumblebee />
 
       <Categories />
