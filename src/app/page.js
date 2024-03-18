@@ -23,9 +23,9 @@ export default function Home() {
     <div className="w-full flex flex-col justify-center items-center">
       {/* <Slider /> */}
 
-      <NewReleases />
+      {/* <NewReleases /> */}
 
-      <div className="lg:hidden">
+      {/* <div className="lg:hidden">
         <SmScreenPopular />
       </div>
 
@@ -37,22 +37,23 @@ export default function Home() {
         <AboutSection heading={heading} paragraph={paragraph} />
       </div>
 
-      <PoemsComponent />
+      <PoemsComponent /> */}
 
-      <div className="lg:hidden">
+      {/* <div className="lg:hidden">
 
         <FeaturedAuthor />
 
         <SmBumblebee />
 
-      </div>
+      </div> */}
+
+      <Features />
 
       {/* <MostPopular />
       <Bumblebee />
 
       <Categories />
 
-      <Features />
 
       <PublishingJourney />
 
