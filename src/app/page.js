@@ -36,8 +36,8 @@ export default function Home() {
 
       <div className="hidden lg:block">
         <NewReleases />
+        <AboutSection heading={heading} paragraph={paragraph} />
       </div>
-      <AboutSection heading={heading} paragraph={paragraph} />
 
       <PoemsComponent />
 
