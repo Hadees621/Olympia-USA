@@ -16,6 +16,7 @@ import FeaturedAuthor from "@/components/home/FeaturedAuthor";
 import SmBumblebee from "@/components/home/SmBumblebee";
 import Button from "@/components/common/Button";
 import SmEditorsPick from "@/components/home/SmEditorsPick";
+import SmCategories from "@/components/home/SmCategories";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -25,23 +26,25 @@ export default function Home() {
     <div className="w-full flex flex-col justify-center items-center">
       {/* <Slider /> */}
 
-      <NewReleases />
-
       <div className="lg:hidden">
         <SmScreenPopular />
       </div>
 
       <div className="lg:hidden">
         <SmAboutSection heading={headingS} paragraph={paragraphS} />
+        <SmCategories />
       </div>
 
       <div className="hidden lg:block">
+        <NewReleases />
         <AboutSection heading={heading} paragraph={paragraph} />
       </div>
 
       <PoemsComponent />
 
       <div className="lg:hidden">
+        <NewReleases />
+
         <FeaturedAuthor />
 
         <SmBumblebee />
@@ -68,6 +71,8 @@ export default function Home() {
         </div>
       </div>
 
+      <PublishingJourney />
+
       <div className="hidden lg:flex flex-col justify-center items-center">
         <MostPopular />
 
@@ -76,8 +81,6 @@ export default function Home() {
         <Categories />
 
         <EditorsPick />
-
-        <PublishingJourney />
 
         <HashtagSection />
       </div>
