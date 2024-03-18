@@ -55,7 +55,7 @@ const MostPopular = () => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center animate-marquee">
         {Books.map((book, index) => (
           <div key={index}>
             <BookComponent
