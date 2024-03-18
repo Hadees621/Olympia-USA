@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className="h-screen bg-white">
         {/* <Navbar /> */}
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

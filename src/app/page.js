@@ -47,17 +47,17 @@ export default function Home() {
 
       <Features />
 
-      {/* <MostPopular />
+      <MostPopular />
+      
       <Bumblebee />
 
       <Categories />
-
 
       <PublishingJourney />
 
       <EditorsPick />
 
-      <HashtagSection /> */}
+      <HashtagSection />
     </div>
   );
 }
