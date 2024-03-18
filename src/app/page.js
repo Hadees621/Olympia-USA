@@ -80,7 +80,7 @@ export default function Home() {
 
       {/* <EditorsPick /> */}
 
-      {/* <HashtagSection /> */}
+      <HashtagSection />
     </div>
   );
 }
