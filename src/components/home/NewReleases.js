@@ -5,7 +5,7 @@ import Button from "../common/Button";
 
 const NewReleases = () => {
   return (
-    <div className="lg:max-w-[800px] xl:max-w-[1300px]">
+    <div className="lg:max-w-[800px] 2xl:max-w-[1300px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <div>
           <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
