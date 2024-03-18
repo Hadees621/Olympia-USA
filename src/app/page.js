@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="hidden lg:block">
+      <div className="hidden lg:flex flex-col justify-center items-center">
         <MostPopular />
 
         <Bumblebee />
@@ -85,7 +85,6 @@ export default function Home() {
       <div className="lg:hidden">
         <SmEditorsPick />
       </div>
-
     </div>
   );
 }
