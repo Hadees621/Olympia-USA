@@ -19,7 +19,7 @@ const EditorsPick = () => {
             />
           </div>
           <div className="pt-10 flex w-full justify-center">
-            <Button title="READ BOOK" width="w-[48%]" color="transparent" />
+            <Button title="READ BOOK" width="w-[120px]" color="transparent" />
           </div>
         </div>
         <div className="p-14 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
@@ -33,7 +33,7 @@ const EditorsPick = () => {
             />
           </div>
           <div className="pt-10 flex w-full justify-center">
-            <Button title="READ BOOK" width="w-[48%]" color="transparent" />
+            <Button title="READ BOOK" width="w-[120px]" color="transparent" />
           </div>
         </div>
         <div className="p-14 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]">
@@ -47,7 +47,7 @@ const EditorsPick = () => {
             />
           </div>
           <div className="pt-10 flex w-full justify-center">
-            <Button title="READ BOOK" width="w-[48%]" color="transparent" />
+            <Button title="READ BOOK" width="w-[120px]" color="transparent" />
           </div>
         </div>
       </div>
