@@ -11,7 +11,7 @@ const MostPopular = () => {
         <p className="text-[26px] font-semibold font-droid-sans">
           Most popular
         </p>
-        <Button title="EXPLORE MORE" width="w-[12%]" color="transparent" />
+        <Button title="EXPLORE MORE" width="w-[120px]" color="transparent" />
       </div>
       <div className="flex items-center justify-center border-t border-black">
         <div className="flex">
@@ -20,7 +20,7 @@ const MostPopular = () => {
             title="title"
             author="author"
           />
-          <div className="relative w-[600px]  2xl:w-[700px]">
+          <div className="relative w-[600px] 2xl:w-[700px]">
             <Image
               src="/assests/Banners/AuthorBanner.png"
               width={700}

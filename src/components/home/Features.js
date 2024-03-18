@@ -31,7 +31,7 @@ const Features = () => {
 
             <Button
               title="READ FEATURE"
-              width="w-[48%] lg:w-[50%] xl:w-[48%]"
+              width="w-[120px]"
               color="transparent"
             />
           </div>
@@ -59,7 +59,7 @@ const Features = () => {
 
             <Button
               title="READ FEATURE"
-              width="w-[48%] lg:w-[50%] xl:w-[48%]"
+              width="w-[120px]"
               color="transparent"
             />
           </div>
@@ -87,7 +87,7 @@ const Features = () => {
 
             <Button
               title="READ FEATURE"
-              width="w-[48%] lg:w-[50%] xl:w-[48%]"
+              width="w-[120px]"
               color="transparent"
             />
           </div>
