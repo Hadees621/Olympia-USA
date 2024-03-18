@@ -2,13 +2,13 @@ import React from "react";
 import BookComponent from "./BookComponent";
 import { Books } from "@/utils/home/Books";
 
-const SmScreenPopular = () => {
+const SmEditorsPick = () => {
   return (
     <div>
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <div>
           <p className="text-[23px] font-semibold font-open-sans">
-            MOST POPULAR
+            EDITIORS PICK
           </p>
         </div>
       </div>
@@ -35,4 +35,4 @@ const SmScreenPopular = () => {
   );
 };
 
-export default SmScreenPopular;
+export default SmEditorsPick;

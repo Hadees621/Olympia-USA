@@ -15,6 +15,7 @@ import SmAboutSection from "@/components/home/SmAboutSection";
 import FeaturedAuthor from "@/components/home/FeaturedAuthor";
 import SmBumblebee from "@/components/home/SmBumblebee";
 import Button from "@/components/common/Button";
+import SmEditorsPick from "@/components/home/SmEditorsPick";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -49,7 +50,7 @@ export default function Home() {
       <Features />
 
       <div
-        className="bg-cover bg-center md:hidden my-20"
+        className="bg-cover bg-center md:hidden my-4"
         style={{ backgroundImage: "url('/Home/Mobile/Asset 30.png')" }}
       >
         <div className="bg-white flex flex-col justify-start items-start my-8 mx-4 gap-4 p-5 font-droid-sans">
@@ -74,6 +75,8 @@ export default function Home() {
       {/* <Categories /> */}
 
       <PublishingJourney />
+
+      <SmEditorsPick />
 
       {/* <EditorsPick /> */}
 
