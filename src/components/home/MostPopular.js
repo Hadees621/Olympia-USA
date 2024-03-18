@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const MostPopular = () => {
   return (
-    <div className="max-w-[1300px] py-20">
+    <div className="lg:max-w-[800px] 2xl:max-w-[1200px] py-20">
       <div className="flex justify-between items-center py-10">
         <p className="text-[26px] font-semibold font-droid-sans">
           Most popular

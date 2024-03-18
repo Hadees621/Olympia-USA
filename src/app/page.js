@@ -68,19 +68,24 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <MostPopular /> */}
+      <div className="hidden lg:block">
+        <MostPopular />
 
-      {/* <Bumblebee /> */}
+        <Bumblebee />
 
-      {/* <Categories /> */}
+        <Categories />
 
-      <PublishingJourney />
+        <EditorsPick />
 
-      <SmEditorsPick />
+        <PublishingJourney />
 
-      {/* <EditorsPick /> */}
+        <HashtagSection />
+      </div>
 
-      <HashtagSection />
+      <div className="lg:hidden">
+        <SmEditorsPick />
+      </div>
+
     </div>
   );
 }

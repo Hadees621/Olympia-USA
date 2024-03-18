@@ -3,7 +3,7 @@ import React from "react";
 
 const Categories = () => {
   return (
-    <div className="">
+    <div className="lg:max-w-[800px] 2xl:max-w-[1200px]">
       <p className="text-[26px] font-semibold font-droid-sans text-start ">
         Categories
       </p>

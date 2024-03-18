@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 const EditorsPick = () => {
   return (
-    <div>
+    <div className="lg:max-w-[800px] 2xl:max-w-[1200px]">
       <p className="text-[26px] font-semibold font-droid-sans text-start">
         Editors Picks
       </p>
