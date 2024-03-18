@@ -1,12 +1,9 @@
 import Image from "next/image";
-import React from "react";
-import PoemInfo from "./PoemInfo";
-import Button from "../common/Button";
 
 const SmBumblebee = () => {
   return (
     <div>
-      <div className="flex flex-col-reverse lg:flex-row bg-[#F9F9F9] lg:hidden">
+      <div className="flex flex-col-reverse bg-[#F9F9F9] md:justify-center md:items-center">
         <div className="p-5">
           <div className="flex flex-col">
             <h2 className="text-xl font-bold">Discover Bumblebee Books</h2>
