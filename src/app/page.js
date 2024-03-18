@@ -31,11 +31,13 @@ export default function Home() {
         <SmAboutSection heading={headingS} paragraph={paragraphS} />
       </div>
 
-      <AboutSection heading={heading} paragraph={paragraph} />
+      <div className="hidden lg:block">
+        <AboutSection heading={heading} paragraph={paragraph} />
+      </div>
 
-      {/*    <PoemsComponent />
+      <PoemsComponent />
 
-      <MostPopular />
+      {/* <MostPopular />
 
       <Bumblebee />
 

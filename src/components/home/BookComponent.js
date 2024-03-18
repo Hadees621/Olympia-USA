@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BookComponent = ({ src, title, author }) => {
   return (
-    <div className="lg:p-4 xl:p-10 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
+    <div className="lg:p-4 xl:p-10 flex flex-col lg:border border-black flex-grow lg:hover:bg-[#EFF4F7]">
       <div className="bg-[#F6F6F6] lg:bg-transparent p-5 lg:p-0">
         <Image
           src={src}
