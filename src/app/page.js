@@ -51,6 +51,16 @@ export default function Home() {
         <SmBumblebee />
       </div>
 
+      <div className="hidden lg:flex flex-col justify-center items-center">
+        <MostPopular />
+
+        <Bumblebee />
+
+        <Categories />
+
+        <EditorsPick />
+      </div>
+
       <Features />
 
       <div
@@ -74,21 +84,11 @@ export default function Home() {
 
       <PublishingJourney />
 
-      <div className="hidden lg:flex flex-col justify-center items-center">
-        <MostPopular />
-
-        <Bumblebee />
-
-        <Categories />
-
-        <EditorsPick />
-
-        <HashtagSection />
-      </div>
-
       <div className="lg:hidden">
         <SmEditorsPick />
       </div>
+
+      <HashtagSection />
     </div>
   );
 }
