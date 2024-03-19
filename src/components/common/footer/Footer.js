@@ -11,10 +11,13 @@ const Footer = () => {
   return (
     <>
       <div className="bg-footergrey w-full p-8">
-        <div className="flex justify-center lg:justify-between items-center lg:items-start flex-col lg:flex-row mx-auto lg:max-w-[900px] xl:max-w-[1100px] 2xl:max-w-[1300px]">
+        <div className="flex justify-center lg:justify-between items-center lg:items-start flex-col lg:flex-row mx-auto lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px]">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:w-full 2xl:w-[80%]">
             {footerLinks.map((section, index) => (
-              <div key={index} className="mt-9 lg:mt-0 space-y-6">
+              <div
+                key={index}
+                className="mt-9 lg:mt-0 space-y-6 space-x-2 xl:space-x-0"
+              >
                 <TitleP title={section.title} />
                 <div className="space-y-4">
                   {section.links.map((link) => (
@@ -45,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="lg:flex justify-between items-center mx-auto lg:max-w-[900px] xl:max-w-[1100px] 2xl:max-w-[1300px] hidden">
+        <div className="lg:flex justify-between items-center mx-auto lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] hidden">
           <div className="grid w-full 2xl:w-[50%] space-y-3">
             <Text text="Bumblebee Books is an imprint of Olympia Publishers" />
             <Text text="© 2022 Ashwell Publishing Ltd | Registered in England No. 6431579" />
