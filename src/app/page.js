@@ -57,11 +57,15 @@ export default function Home() {
         <Bumblebee />
 
         <Categories />
-
-        <EditorsPick />
       </div>
 
       <Features />
+
+      <PublishingJourney />
+
+      <div className="hidden lg:flex flex-col justify-center items-center">
+        <EditorsPick />
+      </div>
 
       <div
         className="bg-cover bg-center md:hidden my-4"
@@ -81,8 +85,6 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <PublishingJourney />
 
       <div className="lg:hidden">
         <SmEditorsPick />
