@@ -20,13 +20,11 @@ const MostPopular = () => {
             title="title"
             author="author"
           />
-          <div className="relative w-[600px] 2xl:w-[700px]">
+          <div className="relative w-[600px] 2xl:w-[700px] h-[320px] 2xl:h-[405px]">
             <Image
               src="/assests/Banners/AuthorBanner.png"
-              width={700}
-              height={320}
               alt="About Section Image"
-              className="h-[300px] xl:h-[300px] 2xl:h-[400px]"
+              layout="fill"
             />
             <div className="absolute top-4 left-4 2xl:top-8 2xl:left-6 p-4 space-y-2 text-[#BFE0D9] text-[13px]">
               <p className="">Featured author</p>
