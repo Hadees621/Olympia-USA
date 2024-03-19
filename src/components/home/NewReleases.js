@@ -19,7 +19,7 @@ const NewReleases = () => {
           <Button title="EXPLORE MORE" width="w-[150px]" color="transparent" />
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-0 lg:flex items-center justify-center lg:border lg:border-black mx-5 lg:mx-0">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-0 lg:flex items-center justify-center lg:border lg:border-black mx-5 lg:mx-0">
         {Books.map((book, index) => (
           <div className="">
             <BookComponent
