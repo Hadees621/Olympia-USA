@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/common/footer/Footer";
 import Navbar from "@/components/common/navbar/Navbar";
+import SmNavbar from "@/components/home/SmNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +17,14 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/assests/Icons/Olympialogomark.png" />
       </head>
       <body className="h-screen bg-white">
-        {/* <Navbar /> */}
+        <div className="lg:hidden">
+          <SmNavbar />
+        </div>
+        <div className="hidden lg:block">
+          <Navbar />
+        </div>
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

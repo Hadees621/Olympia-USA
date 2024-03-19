@@ -20,12 +20,64 @@ const HashtagSection = () => {
   };
 
   return (
-    <div className="flex flex-col pt-20">
-      <p className="text-[26px] font-semibold font-droid-sans py-10 pl-80">
+    <div className="flex flex-col pt-10 lg:pt-20">
+      <p className="text-[26px] font-semibold font-droid-sans py-5 lg:py-10 lg:pl-80 text-center lg:text-start">
         #Olympiapublishersusa
       </p>
-      <div className="w-full flex">{renderImages(6)}</div>
-      <div className="w-full flex">{renderImages(6)}</div>
+
+      <div className="grid lg:hidden">
+        <div className="flex">
+          <div className="border-black">
+            <img
+              src={`/Home/Mobile/Asset 38.png`}
+              style={{ height: "250px" }}
+              alt="hashtag"
+            />
+          </div>
+          <div className="border-black">
+            <img
+              src={`/Home/Mobile/Asset 39.png`}
+              style={{ height: "250px" }}
+              alt="hashtag"
+            />
+          </div>
+          <div className="border-black">
+            <img
+              src={`/Home/Mobile/Asset 42.png`}
+              style={{ height: "250px" }}
+              alt="hashtag"
+            />
+          </div>
+        </div>
+        <div className="flex">
+          <div className="border-black">
+            <img
+              src={`/Home/Mobile/Asset 38.png`}
+              style={{ height: "250px" }}
+              alt="hashtag"
+            />
+          </div>
+          <div className="border-black">
+            <img
+              src={`/Home/Mobile/Asset 39.png`}
+              style={{ height: "250px" }}
+              alt="hashtag"
+            />
+          </div>
+          <div className="border-black">
+            <img
+              src={`/Home/Mobile/Asset 42.png`}
+              style={{ height: "250px" }}
+              alt="hashtag"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden lg:block">
+        <div className="w-full flex">{renderImages(4)}</div>
+        <div className="w-full flex">{renderImages(4)}</div>
+      </div>
     </div>
   );
 };

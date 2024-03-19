@@ -12,7 +12,7 @@ const PoemInfo = ({ title, author }) => {
         <Button
           title={"VIEW BOOK"}
           width={
-            "w-[150px] h-[50px] lg:w-[130px] lg:h-[45px] 2xl:w-[130px] 2xl:h-[45px]"
+            "w-[150px] h-[50px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px]"
           }
           color={"transparent"}
         />
