@@ -156,7 +156,7 @@ const Slider = () => {
           </div>
         </div>
 
-        <div className="absolute top-[35%] 2xl:top-[40%] left-[47.5%] xl:left-[48%] 2xl:left-[48%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 hidden">
+        <div className="absolute top-[35%] 2xl:top-[40%] left-[47.5%] xl:left-[48%] 2xl:left-[48.7%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 hidden">
           <div className="bg-white rounded-full w-max">
             <Image
               src={Arrowleft}
