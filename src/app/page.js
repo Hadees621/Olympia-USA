@@ -8,7 +8,6 @@ import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";
 import PublishingJourney from "@/components/home/PublishingJourney";
-import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Slider from "@/components/home/Slider";
 import SmScreenPopular from "@/components/home/SmScreenPopular";
 import SmAboutSection from "@/components/home/SmAboutSection";
@@ -17,6 +16,7 @@ import SmBumblebee from "@/components/home/SmBumblebee";
 import Button from "@/components/common/Button";
 import SmEditorsPick from "@/components/home/SmEditorsPick";
 import SmCategories from "@/components/home/SmCategories";
+import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
