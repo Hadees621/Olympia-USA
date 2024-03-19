@@ -26,7 +26,7 @@ export default function Home() {
     <div className="w-full flex flex-col justify-center items-center">
       <Slider />
 
-      <div className="lg:hidden">
+      {/* <div className="lg:hidden">
         <SmScreenPopular />
       </div>
 
@@ -37,9 +37,9 @@ export default function Home() {
       <div className="hidden lg:block">
         <NewReleases />
         <AboutSection heading={heading} paragraph={paragraph} />
-      </div>
+      </div> */}
 
-      <PoemsComponent />
+      {/* <PoemsComponent />
 
       <div className="lg:hidden">
         <SmCategories />
@@ -88,7 +88,7 @@ export default function Home() {
         <SmEditorsPick />
       </div>
 
-      <HashtagSection />
+      <HashtagSection /> */}
     </div>
   );
 }
