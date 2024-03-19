@@ -4,17 +4,17 @@ import Button from "../Button";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-center items-center border border-black ">
-      <div className="h-[80px] bg-white max-w-[1200px] flex justify-between items-center py-[60px]">
+    <div className="flex justify-center items-center border-b border-black ">
+      <div className="2xl:h-[80px] bg-white lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] flex justify-between items-center 2xl:py-[60px]">
         <div>
           <Image
             src="/assests/Icons/logo-usa.png"
-            width={200}
-            height={100}
+            width={150}
+            height={80}
             alt="logo"
           />
         </div>
-        <div class="w-[650px] mx-[140px] py-20">
+        <div class="w-[400px] xl:w-[500px] 2xl:w-[850px] mx-[60px] xl:mx-[100px] 2xl:mx-[240px] py-1 2xl:py-20">
           <div class="flex items-center bg-gray-50 px-5 mt-3">
             <input
               type="search"
@@ -38,7 +38,7 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <div className="h-[50px] flex font-bold gap-10 items-center justify-between text-[12px]">
+          <div className="h-[50px] flex font-bold gap-10 items-center justify-between text-[8px] xl:text-[10px] 2xl:text-[12px]">
             <p>BOOKS</p>
             <p>AUTHORS</p>
             <p>FEATURES</p>
@@ -46,7 +46,11 @@ const Navbar = () => {
             <p>PUBLISH WITH US</p>
           </div>
         </div>
-        <Button title="SUBMIT ONLINE" width="w-[15%]" color="red" />
+        <Button
+          title="SUBMIT ONLINE"
+          width="lg:w-[130px] 2xl:w-[15%]"
+          color="red"
+        />
       </div>
     </div>
   );

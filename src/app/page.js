@@ -88,7 +88,7 @@ export default function Home() {
         <SmEditorsPick />
       </div>
 
-      <HashtagSection />
+      {/* <HashtagSection /> */}
     </div>
   );
 }
