@@ -11,7 +11,7 @@ const Features = () => {
         <div className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
-              src="/assests/Home/Features.PNG"
+              src="/Home/Asset 4.png"
               width={450}
               height={190}
               className="hover:shadow"
@@ -39,7 +39,7 @@ const Features = () => {
         <div className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
-              src="/assests/Home/Features.PNG"
+              src="/Home/Asset 5.png"
               width={450}
               height={190}
               className="hover:shadow"
@@ -67,7 +67,7 @@ const Features = () => {
         <div className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
           <div className="">
             <Image
-              src="/assests/Home/Features.PNG"
+              src="/Home/Asset 6.png"
               width={450}
               height={190}
               className="hover:shadow"
