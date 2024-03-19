@@ -61,7 +61,7 @@ export default function Home() {
         <EditorsPick />
       </div>
 
-      {/* <Features /> */}
+      <Features />
 
       <div
         className="bg-cover bg-center md:hidden my-4"
