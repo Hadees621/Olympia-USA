@@ -1,8 +1,8 @@
 import React from "react";
 
-const Search = () => {
+const Search = ({ toggleSearchMenu }) => {
   return (
-    <div>
+    <div onClick={toggleSearchMenu}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="2em"
