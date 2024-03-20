@@ -1,6 +1,8 @@
+import useNavbarStore from "@/stores/useNavbarStore";
 import React from "react";
 
-const Downward = ({ toggleBooksMenu }) => {
+const Downward = () => {
+  const { toggleBooksMenu } = useNavbarStore();
   return (
     <div>
       <svg

@@ -1,6 +1,7 @@
-import React from "react";
+import useNavbarStore from "@/stores/useNavbarStore";
 
-const Cross = ({ toggleMenu }) => {
+const Cross = () => {
+  const { toggleMenu } = useNavbarStore();
   return (
     <div onClick={toggleMenu} style={{ cursor: "pointer" }}>
       <svg
