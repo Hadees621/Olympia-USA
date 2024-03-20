@@ -159,6 +159,12 @@ const SmNavbar = () => {
               <div className="bg-[#FDCF4F] w-full p-6 flex justify-center items-center ">
                 Bumblebee
               </div>
+              <div className="text-black flex flex-col justify-start items-start w-full font-arial gap-5 font-medium py-2 cursor-pointer">
+                <p>New releases</p>
+                <p>Most popular</p>
+                <p>Editors picks</p>
+              </div>
+              <hr className="w-full border-b border-gray-100 mt-1" />
             </div>
           )}
 
