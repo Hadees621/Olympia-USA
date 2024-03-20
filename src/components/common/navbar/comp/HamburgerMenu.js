@@ -5,8 +5,10 @@ import BooksSubMenu from "./BooksSubMenu";
 import Downward from "./Downward";
 import Upwards from "./Upwards";
 import { menuItems } from "@/utils/navbar/utils";
+import useNavbarStore from "@/stores/useNavbarStore";
 
-const HamburgerMenu = ({ toggleBooksMenu, booksMenuOpen }) => {
+const HamburgerMenu = () => {
+  const { booksMenuOpen, toggleBooksMenu } = useNavbarStore();
   return (
     <div className="p-7 space-y-6">
       <div
@@ -24,13 +26,7 @@ const HamburgerMenu = ({ toggleBooksMenu, booksMenuOpen }) => {
               Books
             </p>
           </div>
-          <div>
-            {booksMenuOpen ? (
-              <Upwards toggleBooksMenu={toggleBooksMenu} />
-            ) : (
-              <Downward toggleBooksMenu={toggleBooksMenu} />
-            )}
-          </div>
+          <div>{booksMenuOpen ? <Upwards /> : <Downward />}</div>
         </div>
       </div>
 

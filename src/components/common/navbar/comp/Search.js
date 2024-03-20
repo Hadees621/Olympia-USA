@@ -1,6 +1,7 @@
-import React from "react";
+import useNavbarStore from "@/stores/useNavbarStore";
 
-const Search = ({ toggleSearchMenu }) => {
+const Search = () => {
+  const { toggleSearchMenu } = useNavbarStore();
   return (
     <div onClick={toggleSearchMenu}>
       <svg
