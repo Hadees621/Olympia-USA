@@ -1,5 +1,4 @@
 export const menuItems = [
-  "Books",
   "Authors",
   "Features",
   "About us",
