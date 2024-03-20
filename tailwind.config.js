@@ -24,6 +24,7 @@ module.exports = {
           "Courier",
           "monospace",
         ],
+        arial: ["Arimo", "sans-serif"],
       },
     },
   },
