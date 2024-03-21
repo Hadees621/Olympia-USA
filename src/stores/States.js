@@ -11,11 +11,7 @@ export const useSmNavbarStore = create((set) => ({
 }));
 
 export const useNavbarStore = create((set) => ({
-  menuOpen: false,
-  booksMenuOpen: false,
-  searchOpen: false,
-  toggleMenu: () => set((state) => ({ menuOpen: !state.menuOpen })),
-  toggleBooksMenu: () =>
-    set((state) => ({ booksMenuOpen: !state.booksMenuOpen })),
-  toggleSearchMenu: () => set((state) => ({ searchOpen: !state.searchOpen })),
+  booksDropdownOpen: false,
+  toggleBooksDropdown: () =>
+    set((state) => ({ booksDropdownOpen: !state.booksDropdownOpen })),
 }));
