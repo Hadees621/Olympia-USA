@@ -60,9 +60,9 @@ const Navbar = () => {
               {booksDropdownOpen && (
                 <div className="absolute top-full -left-8 bg-white rounded-md p-8 mt-1 z-20">
                   <p className="py-3">Categories</p>
-                  <div className="flex gap-4 text-white">
+                  <div className="flex gap-2 xl:gap-4 text-white 2xl:text-[13px]">
                     <div
-                      className="p-11 text-center w-[140px]"
+                      className="text-center p-9 w-[100px] xl:p-11 xl:w-[155px] 2xl:p-14 2xl:w-[200px]"
                       style={{
                         backgroundImage:
                           "url('/assests/Genre banner/Fiction.png')",
@@ -73,7 +73,7 @@ const Navbar = () => {
                       <h1>Fiction</h1>
                     </div>
                     <div
-                      className="p-11 text-center w-[140px]"
+                      className="text-center p-9 w-[100px] xl:p-11 xl:w-[155px] 2xl:p-14 2xl:w-[200px]"
                       style={{
                         backgroundImage:
                           "url('/assests/Genre banner/Non Fiction.png')",
@@ -84,7 +84,7 @@ const Navbar = () => {
                       <h1>Non-Fiction</h1>
                     </div>
                     <div
-                      className="p-11 text-center w-[140px]"
+                      className="text-center p-9 w-[100px] xl:p-11 xl:w-[155px] 2xl:p-14 2xl:w-[200px]"
                       style={{
                         backgroundImage:
                           "url('/assests/Genre banner/Bumblebee books.png')",
@@ -94,8 +94,8 @@ const Navbar = () => {
                     >
                       <h1>Bumblebee Books</h1>
                     </div>
-                    <div className="grid">
-                      <div className="w-[100px] space-y-2 text-black">
+                    <div className="grid px-2">
+                      <div className="w-[100px] 2xl:text-[15px] 2xl:w-[170px] space-y-2 text-black">
                         <p className="">New releases</p>
                         <p className="">Most popular</p>
                         <p className="">Editors pick</p>
