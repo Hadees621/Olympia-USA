@@ -12,6 +12,9 @@ export const useSmNavbarStore = create((set) => ({
 
 export const useNavbarStore = create((set) => ({
   booksDropdownOpen: false,
+  searchDropdownOpen: false,
   toggleBooksDropdown: () =>
     set((state) => ({ booksDropdownOpen: !state.booksDropdownOpen })),
+  toggleSearchDropdown: () =>
+    set((state) => ({ searchDropdownOpen: !state.searchDropdownOpen })),
 }));

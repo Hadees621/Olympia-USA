@@ -23,6 +23,20 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E6E6E6;
+  border-radius: 4px;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
