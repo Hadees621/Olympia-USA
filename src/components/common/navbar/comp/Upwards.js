@@ -1,7 +1,7 @@
-import useNavbarStore from "@/stores/useNavbarStore";
+import { useSmNavbarStore } from "@/stores/States";
 
 const Upwards = () => {
-  const { toggleBooksMenu } = useNavbarStore();
+  const { toggleBooksMenu } = useSmNavbarStore();
 
   return (
     <div>

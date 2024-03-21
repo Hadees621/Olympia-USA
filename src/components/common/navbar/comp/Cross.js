@@ -1,7 +1,7 @@
-import useNavbarStore from "@/stores/useNavbarStore";
+import { useSmNavbarStore } from "@/stores/States";
 
 const Cross = () => {
-  const { toggleMenu } = useNavbarStore();
+  const { toggleMenu } = useSmNavbarStore();
   return (
     <div onClick={toggleMenu} style={{ cursor: "pointer" }}>
       <svg

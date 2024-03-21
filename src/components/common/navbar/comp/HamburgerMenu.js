@@ -5,10 +5,10 @@ import BooksSubMenu from "./BooksSubMenu";
 import Downward from "./Downward";
 import Upwards from "./Upwards";
 import { menuItems } from "@/utils/navbar/utils";
-import useNavbarStore from "@/stores/useNavbarStore";
+import { useSmNavbarStore } from "@/stores/States";
 
 const HamburgerMenu = () => {
-  const { booksMenuOpen, toggleBooksMenu } = useNavbarStore();
+  const { booksMenuOpen, toggleBooksMenu } = useSmNavbarStore();
   return (
     <div className="p-7 space-y-6">
       <div

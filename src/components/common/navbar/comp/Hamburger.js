@@ -1,8 +1,8 @@
-import useNavbarStore from "@/stores/useNavbarStore";
+import { useSmNavbarStore } from "@/stores/States";
 import React from "react";
 
 const Hamburger = () => {
-  const { toggleMenu } = useNavbarStore();
+  const { toggleMenu } = useSmNavbarStore();
   return (
     <div onClick={toggleMenu} style={{ cursor: "pointer" }}>
       <svg

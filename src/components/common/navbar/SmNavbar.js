@@ -7,10 +7,10 @@ import Search from "./comp/Search";
 import SearchBar from "./comp/SearchBar";
 import SearchMenu from "./comp/SearchMenu";
 import HamburgerMenu from "./comp/HamburgerMenu";
-import useNavbarStore from "@/stores/useNavbarStore";
+import { useSmNavbarStore } from "@/stores/States";
 
 const SmNavbar = () => {
-  const { menuOpen, searchOpen } = useNavbarStore();
+  const { menuOpen, searchOpen } = useSmNavbarStore();
 
   return (
     <>
