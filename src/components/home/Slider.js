@@ -80,7 +80,7 @@ const Slider = () => {
           class="relative w-full py-8 lg:hidden"
           data-carousel="slide"
         >
-          <div class="relative overflow-hidden rounded-lg">
+          <div className="relative overflow-hidden rounded-lg">
             {/* <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
                 src="/docs/images/carousel/carousel-1.svg"
