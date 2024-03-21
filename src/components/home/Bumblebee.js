@@ -4,7 +4,6 @@ import { BumblebeeBanner } from "@/utils/home/Links";
 const Bumblebee = () => {
   return (
     <div className="lg:max-w-[800px] 2xl:max-w-[1200px] py-20 relative">
-      {/* Image banner */}
       <div className="relative w-auto h-auto">
         <Image
           src={BumblebeeBanner}
