@@ -1,7 +1,7 @@
 const Button = ({ title, width, color }) => {
   return (
     <button
-      className={`text-[14px] p-3 font-semibold font-open-sans shadow border border-black flex items-center justify-center w-max ${color} ${width} my-7`}
+      className={`text-[8px] py-2 px-7 font-semibold font-open-sans shadow border border-black flex items-center justify-center ${color} ${width} my-7`}
     >
       {title}
     </button>
