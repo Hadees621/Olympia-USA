@@ -1,7 +1,16 @@
 import Image from "next/image";
 import Button from "./Button";
 
-const Article = ({ src, width, height, title, date, category, content }) => {
+const Article = ({
+  src,
+  width,
+  height,
+  title,
+  date,
+  category,
+  content,
+  flag = true,
+}) => {
   return (
     <div className="p-2 lg:p-3 xl:p-4 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7] md:border">
       <div className="">
@@ -20,8 +29,10 @@ const Article = ({ src, width, height, title, date, category, content }) => {
             {date} - {category}
           </p>
         </div>
-        <p className="text-[12px]">{content}</p>
-        <Button title="READ FEATURE" width="w-[120px]" color="transparent" />
+        {flag && <p className="text-[12px]">{content}</p>}
+        {flag && (
+          <Button title="READ FEATURE" width="w-[120px]" color="transparent" />
+        )}
       </div>
     </div>
   );
