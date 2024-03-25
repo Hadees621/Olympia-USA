@@ -69,3 +69,26 @@ export const articlesData = [
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...",
   },
 ];
+export const featuresData = [
+  {
+    imageSrc: "/Home/Asset 4.png",
+    title: "ARTICLE TITLE",
+    date: "July 01 2022 - Category",
+    content:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...",
+  },
+  {
+    imageSrc: "/Home/Asset 5.png",
+    title: "ARTICLE TITLE",
+    date: "July 01 2022 - Category",
+    content:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...",
+  },
+  {
+    imageSrc: "/Home/Asset 6.png",
+    title: "ARTICLE TITLE",
+    date: "July 01 2022 - Category",
+    content:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...",
+  },
+];

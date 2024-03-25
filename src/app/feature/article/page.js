@@ -1,35 +1,22 @@
 import Image from "next/image";
 import { Books } from "@/utils/home/Books";
-import { articlesData } from "@/utils/feature/utils";
 import BookComponent from "@/components/home/BookComponent";
 import Button from "@/components/feature/Button";
 import AuthorComponent from "@/components/search/AuthorComponent";
-import Article from "@/components/feature/Article";
 import RecentPost from "@/components/feature/RecentPost";
 import Facebook from "../../../../public/imgs/Facebook.svg";
 import Twitter from "../../../../public/imgs/Twitter.svg";
 import Instagram from "../../../../public/imgs/Instagram.svg";
+import BackButton from "@/components/feature/article/BackButton";
+import FeaturesSection from "./FeatureSection";
+import { featuresData } from "@/utils/feature/utils";
 
 const page = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">
-        <div className="flex items-center gap-5 pb-4 px-3 lg:py-6 md:px-[150px] lg:px-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
-            fill="none"
-            viewBox="0 0 24 24"
-            id="alt-arrow-left"
-          >
-            <path
-              fill="#111"
-              d="M8.16485 11.6296L14.7953 5.1999C15.2091 4.79869 16 5.04189 16 5.5703L16 18.4297C16 18.9581 15.2091 19.2013 14.7953 18.8001L8.16485 12.3704C7.94505 12.1573 7.94505 11.8427 8.16485 11.6296Z"
-            ></path>
-          </svg>
-          <h1 className="font-semibold text-xl ">Back</h1>
-        </div>
+        <BackButton />
+
         <div className="pt-10 flex flex-col w-full justify-start md:justify-center font-open-sans space-y-5 p-3 lg:p-1 px-5 ">
           <div className="flex flex-col justify-center items-center lg:hidden">
             <Image
@@ -49,10 +36,10 @@ const page = () => {
             <RecentPost flag={false} />
           </div>
 
-          <div className="flex gap-3 lg:hidden md:px-[100px]">
-            <Image src={Facebook} alt="Facebook" height={32} />
-            <Image src={Twitter} alt="Twitter" height={32} />
-            <Image src={Instagram} alt="Instagram" height={32} />
+          <div className="flex gap-3 lg:hidden md:px-6">
+            {[Facebook, Twitter, Instagram].map((icon, index) => (
+              <Image key={index} src={icon} alt={icon} height={32} />
+            ))}
           </div>
 
           {/* text */}
@@ -170,99 +157,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="grid md:justify-center gap-4 lg:gap-0 lg:flex-row py-10 mx-3">
-            <div className="lg:max-w-[800px] 2xl:max-w-[1200px]">
-              <p className="text-[26px] font-semibold font-droid-sans text-center lg:text-start">
-                Features
-              </p>
-              <div className="flex flex-col lg:flex-row py-10">
-                <div className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
-                  <div className="">
-                    <Image
-                      src="/Home/Asset 4.png"
-                      width={450}
-                      height={190}
-                      className="hover:shadow"
-                      alt="features"
-                    />
-                  </div>
-                  <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5">
-                    <div className="flex flex-col-reverse">
-                      <p className="font-bold text-[18px]">ARTICLE TITLE</p>
-                      <p className="text-[12px]">July 01 2022 - Category</p>
-                    </div>
-                    <p className="text-[12px]">
-                      Lorem ipsum dolor sit amet, consectetuer
-                      <br className="hidden xl:block" /> adipiscing elit, sed
-                      diam nonummy...
-                    </p>
-
-                    <Button
-                      title="READ FEATURE"
-                      width="w-[120px]"
-                      color="transparent"
-                    />
-                  </div>
-                </div>
-                <div className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
-                  <div className="">
-                    <Image
-                      src="/Home/Asset 5.png"
-                      width={450}
-                      height={190}
-                      className="hover:shadow"
-                      alt="features"
-                    />
-                  </div>
-                  <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5">
-                    <div className="flex flex-col-reverse">
-                      <p className="font-bold text-[18px]">ARTICLE TITLE</p>
-                      <p className="text-[12px]">July 01 2022 - Category</p>
-                    </div>
-                    <p className="text-[12px]">
-                      Lorem ipsum dolor sit amet, consectetuer
-                      <br className="hidden xl:block" /> adipiscing elit, sed
-                      diam nonummy...
-                    </p>
-
-                    <Button
-                      title="READ FEATURE"
-                      width="w-[120px]"
-                      color="transparent"
-                    />
-                  </div>
-                </div>
-                <div className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]">
-                  <div className="">
-                    <Image
-                      src="/Home/Asset 6.png"
-                      width={450}
-                      height={190}
-                      className="hover:shadow"
-                      alt="features"
-                    />
-                  </div>
-                  <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5">
-                    <div className="flex flex-col-reverse">
-                      <p className="font-bold text-[18px]">ARTICLE TITLE</p>
-                      <p className="text-[12px]">July 01 2022 - Category</p>
-                    </div>
-                    <p className="text-[12px]">
-                      Lorem ipsum dolor sit amet, consectetuer
-                      <br className="hidden xl:block" /> adipiscing elit, sed
-                      diam nonummy...
-                    </p>
-
-                    <Button
-                      title="READ FEATURE"
-                      width="w-[120px]"
-                      color="transparent"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FeaturesSection features={featuresData} />
         </div>
       </div>
     </div>
