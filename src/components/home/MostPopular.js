@@ -20,7 +20,7 @@ const MostPopular = () => {
             title="title"
             author="author"
           />
-          <div className="relative w-[600px] 2xl:w-[700px] h-[320px] 2xl:h-[405px]">
+          <div className="relative w-[505px] xl:w-[600px] 2xl:w-[830px] h-[320px] 2xl:h-[440px]">
             <Image
               src="/assests/Banners/AuthorBanner.png"
               alt="About Section Image"
