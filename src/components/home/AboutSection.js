@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "../common/Button";
 const AboutSection = ({ heading, paragraph }) => {
   return (
-    <div className="lg:max-w-[800px] 2xl:max-w-[1200px] flex lg:py-20 2xl:py-32">
+    <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] flex lg:py-20 2xl:py-32">
       <div className="flex-1">
         <div className="flex flex-col h-full justify-center font-open-sans px-5 2xl:p-10 2xl:gap-10">
           <div className="flex flex-col gap-2 2xl:gap-4">

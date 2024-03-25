@@ -12,7 +12,7 @@ const SmEditorsPick = () => {
           </p>
         </div>
       </div>
-      <div className="flex overflow-x-auto gap-5 lg:gap-0 lg:justify-center lg:border lg:border-black ml-10 mr-5 lg:mx-0">
+      <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent

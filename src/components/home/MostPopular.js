@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const MostPopular = () => {
   return (
-    <div className="lg:max-w-[800px] 2xl:max-w-[1200px] py-20">
+    <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] py-20">
       <div className="flex justify-between items-center py-10">
         <p className="text-[26px] font-semibold font-droid-sans">
           Most popular
@@ -56,7 +56,7 @@ const MostPopular = () => {
       </div>
       <div className="flex items-center justify-center">
         {Books.map((book, index) => (
-          <div key={index}>
+          <div className="flex-none" key={index}>
             <BookComponent
               src={book.src}
               title={book.title}

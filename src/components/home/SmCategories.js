@@ -3,7 +3,7 @@ import React from "react";
 
 const SmCategories = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full px-6">
+    <div className="flex flex-col justify-center items-center w-full px-6 my-12">
       <h1 className="font-bold text-lg pb-6">BROWSE BY CATEGORIES</h1>
       <div className="flex w-full px-5 gap-5 py-4">
         <Image src={"/Home/Mobile/Asset 16.png"} width={80} height={60} />

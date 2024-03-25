@@ -3,7 +3,7 @@ import PoemInfo from "./PoemInfo";
 
 const PoemsComponent = () => {
   return (
-    <div className="flex flex-col lg:max-w-[800px] 2xl:max-w-[1200px] lg:border lg:my-12S 2xl:my-20 gap-32 lg:gap-0">
+    <div className="flex flex-col lg:border lg:my-12 2xl:my-20 gap-32 lg:gap-0 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mt-12">
       <div className="flex flex-col-reverse lg:flex-row bg-[#F9F9F9]">
         <PoemInfo
           author="Victoria Leigh Bennett"

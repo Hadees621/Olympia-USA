@@ -23,7 +23,7 @@ export default function Home() {
   const { headingS, paragraphS } = SmAboutUsData;
 
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center ">
       <Slider />
 
       <div className="lg:hidden">
@@ -41,7 +41,7 @@ export default function Home() {
 
       <PoemsComponent />
 
-      <div className="lg:hidden">
+      <div className="flex flex-col justify-center items-center lg:hidden">
         <SmCategories />
 
         <NewReleases />
