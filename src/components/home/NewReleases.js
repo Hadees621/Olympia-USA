@@ -5,7 +5,7 @@ import Button from "../common/Button";
 
 const NewReleases = () => {
   return (
-    <div className="lg:max-w-[800px] 2xl:max-w-[1300px]">
+    <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <div>
           <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
@@ -19,11 +19,10 @@ const NewReleases = () => {
           <Button title="EXPLORE MORE" width="w-[150px]" color="transparent" />
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-0 lg:flex items-center justify-center lg:border lg:border-black mx-5 lg:mx-0">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:flex items-center justify-center">
         {Books.map((book, index) => (
-          <div className="">
+          <div className="flex-none" key={index}>
             <BookComponent
-              key={index}
               src={book.src}
               title={book.title}
               author={book.author}
