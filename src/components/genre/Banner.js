@@ -7,9 +7,17 @@ const Banner = ({ params }) => {
   }
   const capitalizedSlug = capitalizeFirstLetter(params.slug);
   return (
-    <div className="relative">
-      <Image src={fictionBannner} height={250} width={500} alt={params.slug} />
-      <div className="absolute top-14 left-10 flex justify-center items-center">
+    <div className="relative md:flex justify-center items-center w-full">
+      <div className="md:w-[700px] border ">
+        <Image
+          src={fictionBannner}
+          height={250}
+          width={500}
+          alt={params.slug}
+          layout="responsive"
+        />
+      </div>
+      <div className="absolute top-14 left-10 flex justify-center items-center md:px-8">
         <p className="text-white text-4xl font-bold">{capitalizedSlug}</p>
       </div>
     </div>

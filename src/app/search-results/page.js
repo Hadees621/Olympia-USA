@@ -26,7 +26,7 @@ const SearchResults = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="lg:max-w-[800px] 2xl:max-w-[1200px]">
+      <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">
         <div className="bg-[#FAFAFA] p-7 my-6 mx-5 lg:mx-0">
           <h1 className="font-semibold text-[#505050] text-[28px]">
             Search results

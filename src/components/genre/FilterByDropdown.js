@@ -32,7 +32,7 @@ const FilterByDropdown = () => {
   } = useSortByStore();
 
   return (
-    <div className="py-8 font-semibold">
+    <div className="py-8 font-semibold md:px-8">
       <div className="flex justify-between items-center w-full border-b py-4">
         <h1>Filter by</h1>
         <Cross />
