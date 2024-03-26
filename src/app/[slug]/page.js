@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "@/components/genre/Banner";
 import { useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
+import Dropdownsvg from "@/components/genre/dropdownsvg";
 
 export default function Page({ params }) {
   const { showSortOptions, setShowSortOptions } = useSortByStore();
@@ -19,15 +20,7 @@ export default function Page({ params }) {
             onClick={() => setShowSortOptions()}
           >
             <h1>Sort by</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2em"
-              height="2em"
-              viewBox="0 0 24 24"
-              style={{ cursor: "pointer" }}
-            >
-              <path fill="currentColor" d="m7 10l5 5l5-5z" />
-            </svg>
+            <Dropdownsvg />
           </div>
         </div>
       ) : (
