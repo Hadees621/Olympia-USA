@@ -3,11 +3,11 @@ import React from "react";
 import Banner from "@/components/genre/Banner";
 import { useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
-import Dropdownsvg from "@/components/genre/dropdownsvg";
 import BookComponent from "@/components/home/BookComponent";
 import { Books } from "@/utils/home/Books";
 import LgBanner from "@/components/genre/LgBanner";
 import SmPagination from "@/components/genre/SmPagination";
+import Dropdownsvg from "@/components/genre/Dropdownsvg";
 
 export default function Page({ params }) {
   const { showSortOptions, setShowSortOptions } = useSortByStore();

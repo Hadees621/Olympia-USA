@@ -3,8 +3,8 @@ import FictionDropdown from "./FictionDropdown";
 import NonfictionDropdown from "./NonfictionDropdown";
 import BumblebeeDropdown from "./BumblebeeDropdown";
 import { useSortByStore } from "@/stores/States";
-import Dropdownsvg from "./dropdownsvg";
 import Cross from "./Cross";
+import Dropdownsvg from "./Dropdownsvg";
 
 const DropdownItem = ({ title, showDropdown, toggleDropdown, children }) => (
   <div>
