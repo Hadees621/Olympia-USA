@@ -3,6 +3,8 @@ import FictionDropdown from "./FictionDropdown";
 import NonfictionDropdown from "./NonfictionDropdown";
 import BumblebeeDropdown from "./BumblebeeDropdown";
 import { useSortByStore } from "@/stores/States";
+import Dropdownsvg from "./dropdownsvg";
+import Cross from "./Cross";
 
 const FilterByDropdown = () => {
   const {
@@ -20,20 +22,7 @@ const FilterByDropdown = () => {
       <div className="flex justify-between items-center w-full border-b py-4">
         <h1>Filter by</h1>
         <div onClick={() => setShowSortOptions()} style={{ cursor: "pointer" }}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-            style={{ cursor: "pointer" }}
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              d="m6 6l12 12m0-12L6 18"
-            />
-          </svg>
+          <Cross />
         </div>
       </div>
       <div>
@@ -44,15 +33,7 @@ const FilterByDropdown = () => {
           onClick={() => toggleDropdown1()}
         >
           <h1>FICTION</h1>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-            style={{ cursor: "pointer" }}
-          >
-            <path fill="currentColor" d="m7 10l5 5l5-5z" />
-          </svg>
+          <Dropdownsvg />
         </div>
         {showDropdown1 && <FictionDropdown />}
         <div
@@ -62,15 +43,7 @@ const FilterByDropdown = () => {
           onClick={() => toggleDropdown2()}
         >
           <h1>NON-FICTION</h1>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-            style={{ cursor: "pointer" }}
-          >
-            <path fill="currentColor" d="m7 10l5 5l5-5z" />
-          </svg>
+          <Dropdownsvg />
         </div>
         {showDropdown2 && <NonfictionDropdown />}
         <div
@@ -80,15 +53,7 @@ const FilterByDropdown = () => {
           onClick={() => toggleDropdown3()}
         >
           <h1>BUMBLEBEE BOOKS</h1>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-            style={{ cursor: "pointer" }}
-          >
-            <path fill="currentColor" d="m7 10l5 5l5-5z" />
-          </svg>
+          <Dropdownsvg />
         </div>
         {showDropdown3 && <BumblebeeDropdown />}
         <div className="cursor-pointer space-y-3 mt-4">
