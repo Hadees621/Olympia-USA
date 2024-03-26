@@ -6,17 +6,21 @@ import FilterByDropdown from "@/components/genre/FilterByDropdown";
 import Dropdownsvg from "@/components/genre/dropdownsvg";
 import BookComponent from "@/components/home/BookComponent";
 import { Books } from "@/utils/home/Books";
-import Button from "@/components/feature/Button";
+import LgBanner from "@/components/genre/LgBanner";
 
 export default function Page({ params }) {
   const { showSortOptions, setShowSortOptions } = useSortByStore();
 
   return (
     <div className="px-4">
-      <Banner params={params} />
+      {window.innerWidth >= 1024 ? (
+        <LgBanner params={params} />
+      ) : (
+        <Banner params={params} />
+      )}
 
       {!showSortOptions ? (
-        <div className="flex items-center justify-between py-8 font-semibold md:px-6">
+        <div className="flex items-center justify-between py-8 font-semibold md:px-6 lg:hidden">
           <h1>Filter by</h1>
           <div
             className="flex items-center gap-2"
@@ -30,7 +34,7 @@ export default function Page({ params }) {
         <FilterByDropdown />
       )}
 
-      <div className="grid grid-cols-2  md:grid-cols-4 lg:flex items-center justify-center">
+      <div className="grid grid-cols-2  md:grid-cols-4 lg:flex items-center justify-center lg:hidden">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent
