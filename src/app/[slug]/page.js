@@ -7,7 +7,7 @@ import BookComponent from "@/components/home/BookComponent";
 import { Books } from "@/utils/home/Books";
 import LgBanner from "@/components/genre/LgBanner";
 import SmPagination from "@/components/genre/SmPagination";
-import Dropdownsvg from "@/components/genre/Dropdownsvg";
+import SvgDropdown from "@/components/genre/SvgDropdown";
 
 export default function Page({ params }) {
   const { showSortOptions, setShowSortOptions } = useSortByStore();
@@ -29,7 +29,7 @@ export default function Page({ params }) {
               onClick={() => setShowSortOptions()}
             >
               <h1>Sort by</h1>
-              <Dropdownsvg />
+              <SvgDropdown />
             </div>
           </div>
         ) : (
