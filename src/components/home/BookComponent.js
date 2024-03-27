@@ -2,7 +2,7 @@ const BookComponent = ({ src, title, author }) => {
   return (
     <div className="flex flex-col  lg:border border-black flex-grow lg:hover:bg-[#EFF4F7] p-4 xl:p-[30px] 2xl:p-[59px]">
       <div className="bg-[#F6F6F6] lg:bg-transparent overflow-x-auto w-full">
-        <div className="p-4 lg:p-0">
+        <div className="p-6 lg:p-0">
           <img
             src={src}
             alt="book"
