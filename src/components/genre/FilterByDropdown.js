@@ -4,18 +4,17 @@ import NonfictionDropdown from "./NonfictionDropdown";
 import BumblebeeDropdown from "./BumblebeeDropdown";
 import { useSortByStore } from "@/stores/States";
 import Cross from "./Cross";
-import Dropdownsvg from "./Dropdownsvg";
+import SvgDropdown from "./SvgDropdown";
 
 const DropdownItem = ({ title, showDropdown, toggleDropdown, children }) => (
   <div>
     <div
-      className={`flex items-center justify-between ${
-        showDropdown ? "py-4" : "border-b py-4"
-      }`}
+      className={`flex items-center justify-between ${showDropdown ? "py-4" : "border-b py-4"
+        }`}
       onClick={toggleDropdown}
     >
       <h1>{title}</h1>
-      <Dropdownsvg />
+      <SvgDropdown />
     </div>
     {showDropdown && children}
   </div>
@@ -43,7 +42,9 @@ const FilterByDropdown = () => {
           showDropdown={showDropdown1}
           toggleDropdown={toggleDropdown1}
         >
-          <FictionDropdown />
+          <div className="py-4 px-1">
+            <FictionDropdown />
+          </div>
         </DropdownItem>
         <DropdownItem
           title="NON-FICTION"
