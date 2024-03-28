@@ -21,7 +21,7 @@ export default function Page({ params }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const sidebarItems = ["New releases", "Most popular", "Editors picks"];
 
-  
+
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
@@ -39,7 +39,7 @@ export default function Page({ params }) {
 
       <div className="lg:hidden">
         {!showSortOptions ? (
-          <div className="flex items-center justify-between py-8 font-semibold md:px-6">
+          <div className="flex items-center justify-between py-4 font-semibold md:px-6">
             <h1>Filter by</h1>
             <div className="flex items-center gap-2" onClick={() => setShowSortOptions()}>
               <h1>Sort by</h1>
@@ -87,7 +87,7 @@ export default function Page({ params }) {
       </div>
 
       <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto">
-        <div className="flex items-center px-8 gap-12 font-semibold text-[10px] xl:text-[12px] 2xl:text-[15px]">
+        <div className="flex items- px-8 gap-12 font-semibold text-[10px] xl:text-[12px] 2xl:text-[15px]">
           <div className="w-1/5">
             <SidebarMenu items={sidebarItems} />
             <div className="grid font-semibold text-[10px] xl:text-[15px] 2xl:text-[18px]">
@@ -97,7 +97,13 @@ export default function Page({ params }) {
             </div>
           </div>
           <div className="w-4/5">
-            {/* Content area */}
+           <div className="grid grid-cols-4">
+          {Books.map((book, index) => (
+            <div className="flex-none" key={index}>
+              <BookComponent src={book.src} title={book.title} author={book.author} />
+            </div>
+          ))}
+        </div>
           </div>
         </div>
       </div>
