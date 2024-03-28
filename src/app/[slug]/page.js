@@ -15,6 +15,7 @@ import NonfictionDropdown from "@/components/genre/NonfictionDropdown";
 import BumblebeeDropdown from "@/components/genre/BumblebeeDropdown";
 import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
+import LgPagination from "@/components/feature/LgPagination";
 
 export default function Page({ params }) {
   const { showSortOptions, setShowSortOptions } = useSortByStore();
@@ -59,7 +60,7 @@ export default function Page({ params }) {
         <SmPagination />
       </div>
 
-      <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto">
+      <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto hidden lg:block">
         <div className="flex items-center p-8 gap-12 font-semibold text-[12px] xl:text-[15px] 2xl:text-[18px]">
           <div className="w-1/5">
             <h1 className="border-y border-gray-300 py-6 text-[12px] xl:text-[15px] 2xl:text-[18px]">FILTER BY</h1>
@@ -86,7 +87,7 @@ export default function Page({ params }) {
         </div>
       </div>
 
-      <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto">
+      <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto hidden lg:block">
         <div className="flex items- px-8 gap-12 font-semibold text-[10px] xl:text-[12px] 2xl:text-[15px]">
           <div className="w-1/5">
             <SidebarMenu items={sidebarItems} />
@@ -97,16 +98,18 @@ export default function Page({ params }) {
             </div>
           </div>
           <div className="w-4/5">
-           <div className="grid grid-cols-4">
-          {Books.map((book, index) => (
-            <div className="flex-none" key={index}>
-              <BookComponent src={book.src} title={book.title} author={book.author} />
+            <div className="grid grid-cols-4">
+              {Books.map((book, index) => (
+                <div className="flex-none" key={index}>
+                  <BookComponent src={book.src} title={book.title} author={book.author} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
           </div>
         </div>
+        <LgPagination />
       </div>
+
       );
     </div>
   );
