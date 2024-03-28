@@ -1,8 +1,6 @@
-import React from "react";
-
 const FictionDropdown = () => {
   return (
-    <div className="font-normal space-y-2 py-4 px-1">
+    <div className="font-normal lg:text-[10px] xl:text-[12px] 2xl:text-[15px] space-y-2 ">
       <p>Activity book</p>
       <p>Adult fiction</p>
       <p>Adventure</p>

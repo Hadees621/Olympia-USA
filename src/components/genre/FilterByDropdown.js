@@ -42,7 +42,9 @@ const FilterByDropdown = () => {
           showDropdown={showDropdown1}
           toggleDropdown={toggleDropdown1}
         >
-          <FictionDropdown />
+          <div className="py-4 px-1">
+            <FictionDropdown />
+          </div>
         </DropdownItem>
         <DropdownItem
           title="NON-FICTION"
