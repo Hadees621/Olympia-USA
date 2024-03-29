@@ -2,12 +2,7 @@ import Image from "next/image";
 import { Books } from "@/utils/home/Books";
 import BookComponent from "@/components/home/BookComponent";
 import Button from "@/components/feature/Button";
-import AuthorComponent from "@/components/search/AuthorComponent";
-import RecentPost from "@/components/feature/RecentPost";
 import BackButton from "@/components/feature/article/BackButton";
-import { buttonsData, featuresData } from "@/utils/feature/utils";
-import FeaturesSection from "@/app/feature/article/FeatureSection";
-import { data } from "autoprefixer";
 import BuyFromDropdown from "@/components/genre/book/BuyFromDropdown";
 
 const page = () => {
@@ -26,7 +21,6 @@ const page = () => {
               alt="features"
             />
           </div>
-
           <div className="hidden lg:block">
             <>
               {/* recent post */}
@@ -77,7 +71,6 @@ const page = () => {
               </div>
             </>
           </div>
-
           <div className="bg-[#EFEFEF] mx-8 p-7 space-y-7 font-open-sans">
             <div className="space-y-1">
               <h1 className="text-[18px] font-bold">THE LAST MYON </h1>
@@ -112,26 +105,52 @@ const page = () => {
             </div>
 
             <BuyFromDropdown />
-            {/* <div>
-              <div>
-                <select id="buyFrom">
-                  <option value="option1">BUY FROM:</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                  <option value="option4">Option 4</option>
-                </select>
-              </div>
-            </div> */}
-          </div>
 
+            <div class="max-w-sm rounded overflow-hidden">
+              <p class="mb-2">
+                <span class="">ISBN:</span> 9781848979345
+              </p>
+              <p class="mb-2">
+                <span class="">Published:</span> 30/11/2017
+              </p>
+              <p class="mb-2">
+                <span class="font-">Pages:</span> 147
+              </p>
+              <p class="mb-2">
+                <span class="">Size:</span> 205x140mm
+              </p>
+              <p>
+                <span class="">Imprint:</span> Olympia Publishers
+              </p>
+            </div>
+          </div>
+          <div className="px-7 space-y-5 pt-8">
+            <h1 className="text-[19px] font-semibold">RUDI JENNINGS </h1>
+            <p className="text-[13px] leading-9">
+              The Last Myon is a story of fantasy adventure, revenge and an
+              individual's total unwillingness to submit or to fail, battling
+              against overwhelming natural elements and a group of hardened,
+              sadistic creatures who will stop at nothing to succeed in his
+              capture and slavery. In an everlasting winter world, Ackrehm, the
+              last of his Myon kind, must fight for his life, sustaining
+              multiple injuries along the way and still demonstrating he truly
+              is a force to be reckoned with. Struggling with exhaustion, both
+              mentally and physically, will he manage to overcome, or will he
+              fight or flee? One thing is for certain, The Last Myon will keep
+              you hooked until the very end, bonding with characters and
+              excitedly reading on with an obsession to find out what happens
+              next, promoting an ethos to take away of never give up, never
+              surrender.
+            </p>
+          </div>
           {/* mentioned books */}
-          {/* <div className="flex justify-center items-center lg:justify-between lg:bg-white">
+          <div className="flex justify-center items-center lg:justify-between lg:bg-white pt-10">
             <div>
               <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
                 Books Mentioned
               </p>
-              <p className="text-[23px] font-semibold font-open-sans lg:hidden">
-                BOOKS MENTIONED
+              <p className="text-[20px] font-bold font-open-sans lg:hidden">
+                YOU MIGHT ALSO LIKE
               </p>
             </div>
             <div className="hidden lg:block">
@@ -153,58 +172,6 @@ const page = () => {
               </div>
             ))}
           </div>
-
-          <div className="flex flex-col items-center lg:hidden">
-            <Button
-              title={"View all books"}
-              width={"w-[150px]"}
-              color={"transparent"}
-              key={12}
-            />
-            <div className="flex flex-col justify-center lg:justify-between items-center">
-              <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
-                <div>
-                  <p className="text-[23px] font-bold font-open-sans">
-                    BOOKS MENTIONED
-                  </p>
-                </div>
-              </div>
-              <div className="flex overflow-x-auto gap-5 lg:gap-0 lg:justify-center lg:border lg:border-black mx-3 lg:mx-0">
-                <AuthorComponent
-                  author={"Author name"}
-                  title={"title"}
-                  src={"/assests/author.png"}
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center lg:justify-between items-center">
-            <div>
-              <p className="text-[23px] font-bold font-open-sans py-8">
-                Authors mentioned
-              </p>
-            </div>
-            <div className="w-[400px] xl:w-[450px] 2xl:w-[550px]">
-              <div className="py-8 px-10 border border-black font-open-sans">
-                <h1 className="font-semibold">AUTHOR NAME</h1>
-                <p className="text-[11px] py-4">
-                  {" "}
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                  aliquip ex ea commodo consequat...
-                </p>
-                <div className="flex justify-between text-[#C2C2C2] text-[11px]">
-                  <p> + MORE ABOUT RUDI JENNINGS</p>
-                  <p>1/2</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <FeaturesSection features={featuresData} /> */}
         </div>
       </div>
     </div>

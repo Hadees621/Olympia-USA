@@ -5,7 +5,7 @@ import Button from "../common/Button";
 
 const NewReleases = () => {
   return (
-    <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">
+    <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1600px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <div>
           <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
@@ -32,7 +32,7 @@ const NewReleases = () => {
       </div>
       <div className="w-full flex justify-center lg:hidden">
         <button
-          className={`text-[14px] py-[12px] font-semibold font-open-sans shadow flex items-center justify-center border border-buttonred text-buttonred px-3 w-[170px] my-7 `}
+          className={`text-[14px] py-[12px] font-semibold font-open-sans shadow flex items-center justify-center border border-buttonred text-buttonred px-3 w-[170px] my-7`}
         >
           Explore more
         </button>

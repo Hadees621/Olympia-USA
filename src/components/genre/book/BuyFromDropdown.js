@@ -1,159 +1,67 @@
 "use client";
 import React, { useState } from "react";
 
-const OptionWithIcon = ({ value, label, icon }) => {
-  const handleHover = (event) => {
-    event.target.style.backgroundColor = "bg-gray-100";
-  };
-
-  const handleMouseOut = (event) => {
-    event.target.style.backgroundColor = "bg-white";
-  };
-
-  return (
-    <option
-      value={value}
-      onMouseOver={handleHover}
-      onMouseOut={handleMouseOut}
-      className="bg-white"
-    >
-      {label}
-      {icon && (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          className="inline-block ml-1 w-4 h-4"
-        >
-          <path fill="currentColor" d={icon} />
-        </svg>
-      )}
-    </option>
-  );
-};
-
 const BuyFromDropdown = () => {
-  const [selectedOption, setSelectedOption] = useState("BUY FROM");
-  const amazonIcon =
-    "M6.5 2a.5.5 0 0 0 0 1h5A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-5a.5.5 0 0 0 0 1h5a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 11.5 2zm3.354 5.646l-3-3a.5.5 0 1 0-.708.708L8.293 7.5H1.5a.5.5 0 0 0 0 1h6.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708";
-
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
-
   return (
-    <div className="w-full inline-block">
-      <label htmlFor="buyFrom" className="mr-2">
-        BUY FROM:
-      </label>
-      <select
-        id="buyFrom"
-        className="border border-gray-300 rounded px-2 py-1 w-full"
-        onChange={handleOptionChange}
-      >
-        <option
-          value="BUY FROM"
-          className={selectedOption === "BUY FROM" ? "bg-red-500" : ""}
+    <div class="relative w-full" data-twe-dropdown-ref>
+      <div class="relative " data-twe-dropdown-ref>
+        <button
+          class="flex items-center justify-between w-full bg-[#C42222] px-6 py-3 text-sm leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold"
+          type="button"
+          id="dropdownMenuButton1ds"
+          data-twe-dropdown-toggle-ref
+          aria-expanded="false"
+          data-twe-ripple-init
+          data-twe-ripple-color="light"
         >
-          {selectedOption}
-        </option>
-        <OptionWithIcon
-          value="amazon_us"
-          label="Amazon.com"
-          icon={amazonIcon}
-        />
-        <OptionWithIcon
-          value="amazon_uk"
-          label="Amazon.co.uk"
-          icon={amazonIcon}
-        />
-        <OptionWithIcon value="amazon_in" label="Amazon.in" icon={amazonIcon} />
-        <OptionWithIcon
-          value="barnes_noble"
-          label="Barnes & Noble"
-          icon={amazonIcon}
-        />
-        <OptionWithIcon
-          value="waterstones"
-          label="Waterstones"
-          icon={amazonIcon}
-        />
-      </select>
+          BUY FROM
+          <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path fill="currentColor" d="m7 10l5 5l5-5z" />
+            </svg>
+          </span>
+        </button>
+        {/* <ul
+          class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+          aria-labelledby="dropdownMenuButton1ds"
+          data-twe-dropdown-menu-ref
+        >
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+              href="#"
+              data-twe-dropdown-item-ref
+            >
+              Action
+            </a>
+          </li>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+              href="#"
+              data-twe-dropdown-item-ref
+            >
+              Another action
+            </a>
+          </li>
+          <li>
+            <a
+              class="pointer-events-none block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-surface/40 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white/50 dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+              href="#"
+              data-twe-dropdown-item-ref
+            >
+              Something else here
+            </a>
+          </li>
+        </ul> */}
+      </div>
     </div>
   );
 };
 
 export default BuyFromDropdown;
-
-// import React from "react";
-
-// const OptionWithIcon = ({ value, label, icon }) => {
-//   const handleHover = (event) => {
-//     event.target.style.backgroundColor = "bg-gray-100";
-//   };
-
-//   const handleMouseOut = (event) => {
-//     event.target.style.backgroundColor = "bg-white";
-//   };
-
-//   return (
-//     <option
-//       value={value}
-//       onMouseOver={handleHover}
-//       onMouseOut={handleMouseOut}
-//       className="bg-white"
-//     >
-//       {label}
-//       {icon && (
-//         <svg
-//           xmlns="http://www.w3.org/2000/svg"
-//           width="1em"
-//           height="1em"
-//           viewBox="0 0 16 16"
-//           className="inline-block ml-1 w-4 h-4"
-//         >
-//           <path fill="currentColor" d={icon} />
-//         </svg>
-//       )}
-//     </option>
-//   );
-// };
-
-// const BuyFromDropdown = () => {
-//   const amazonIcon =
-//     "M6.5 2a.5.5 0 0 0 0 1h5A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-5a.5.5 0 0 0 0 1h5a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 11.5 2zm3.354 5.646l-3-3a.5.5 0 1 0-.708.708L8.293 7.5H1.5a.5.5 0 0 0 0 1h6.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708";
-
-//   return (
-//     <div className="w-full inline-block">
-//       <select
-//         id="buyFrom"
-//         className="border border-gray-300 rounded px-2 py-1 w-full"
-//       >
-//         <OptionWithIcon
-//           value="amazon_us"
-//           label="Amazon.com"
-//           icon={amazonIcon}
-//         />
-//         <OptionWithIcon
-//           value="amazon_uk"
-//           label="Amazon.co.uk"
-//           icon={amazonIcon}
-//         />
-//         <OptionWithIcon value="amazon_in" label="Amazon.in" icon={amazonIcon} />
-//         <OptionWithIcon
-//           value="barnes_noble"
-//           label="Barnes & Noble"
-//           icon={amazonIcon}
-//         />
-//         <OptionWithIcon
-//           value="waterstones"
-//           label="Waterstones"
-//           icon={amazonIcon}
-//         />
-//       </select>
-//     </div>
-//   );
-// };
-
-// export default BuyFromDropdown;
