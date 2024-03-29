@@ -31,20 +31,22 @@ const page = () => {
             )}
             <div className="lg:border border-black flex-grow mx-3 hidden lg:flex">
               <div className="flex flex-col w-1/2 h-full bg-white border-b border-black">
-                <div className=" h-full p-20 bg-[#F0F4F7] border">
+                <div className="h-full p-20 xl:p- bg-[#F0F4F7] flex justify-center">
                   <img
                     src="/assests/Books/Asset6.png"
                     style={{
-                      height: "410px",
+                      height: "",
                       objectFit: "cover",
                     }}
-                    className="hover:shadow"
+                    className="hover:shadow h-[410px] xl:h-[480px]"
                     alt="features"
                   />
                 </div>
-                <div className="p-10 space-y-4">
-                  <h1 className="text-[19px] font-semibold">RUDI JENNINGS </h1>
-                  <p className="text-[10px] leading-6 text-black">
+                <div className="p-10 xl:p-12 space-y-4">
+                  <h1 className="text-[19px] xl:text-[21px] font-semibold">
+                    RUDI JENNINGS{" "}
+                  </h1>
+                  <p className="text-[10px] xl:text-[12px] leading-6 text-black">
                     Rudi Michael Jennings spent the majority of his childhood
                     growing up in the Norfolk countryside of fields and trees,
                     really living amongst nature and possibly giving the basis
@@ -56,14 +58,16 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="pt-10 flex flex-col w-1/2 justify-center font-open-sans space-y-5 flex-1 p-8 border border-black">
+              <div className="pt-10 flex flex-col w-1/2 justify-center xl:justify-start font-open-sans space-y-5 flex-1 p-8 xl:p-14 border border-black">
                 <div className="space-y-1">
-                  <h1 className="text-[18px] font-semibold">THE LAST MYON </h1>
-                  <h1 className="text-[10px] font-semibold text-[#817977]">
+                  <h1 className="text-[18px] xl:text-[22px] font-semibold">
+                    THE LAST MYON{" "}
+                  </h1>
+                  <h1 className="text-[10px] xl:text-[14px] font-semibold text-[#817977]">
                     Rudi Jennings{" "}
                   </h1>
                 </div>
-                <p className="text-[12px] leading-7">
+                <p className="text-[12px] xl:text-[14px] leading-7 xl:leading-9">
                   The Last Myon is a story of fantasy adventure, revenge and an
                   individual's total unwillingness to submit or to fail,
                   battling against overwhelming natural elements and a group of
@@ -83,24 +87,23 @@ const page = () => {
                   <div className="space-y-5 md:w-[350px] lg:w-full">
                     <hr className="my-6" />
                     <div className="py-3">
-                      <div className="flex justify-between 2xl:justify-center 2xl:gap-14 gap-4 w-full">
-                        <button className="text-[11px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
+                      <div className="flex justify-between 2xl:justify-center 2xl:gap-14 gap-4 w-full xl:pr-40">
+                        <button className="text-[11px] xl:text-[14px]  2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
                           PAPERBACK
                         </button>
-                        <button className="text-[11px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
+                        <button className="text-[11px] xl:text-[14px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
                           HARDBACK
                         </button>
-                        <button className="text-[11px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
+                        <button className="text-[11px] xl:text-[14px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
                           EBOOK
                         </button>
                       </div>
-                      <div className="grid items-center justify-center w-full">
+                      <div className="grid items-center justify-center xl:justify-start w-full py-5">
                         <BuyFromDropdown />
                       </div>
                     </div>
                     <hr className="my-6" />
-
-                    <div class="overflow-hidden py-4">
+                    <div class="overflow-hidden py-4 xl:text-[14px]">
                       <p class="mb-2">
                         <span class="">ISBN:</span> 9781848979345
                       </p>
