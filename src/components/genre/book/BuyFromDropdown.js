@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 const BuyFromDropdown = () => {
   return (
-    <div class="relative w-full" data-twe-dropdown-ref>
-      <div class="relative " data-twe-dropdown-ref>
+    <div class="relative w-full md:w-[300px]" data-twe-dropdown-ref>
+      <div class="relative flex justify-center items-center mx-auto" data-twe-dropdown-ref>
         <button
           class="flex items-center justify-between w-full bg-[#C42222] px-6 py-3 text-sm leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold"
           type="button"
