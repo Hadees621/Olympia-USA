@@ -9,7 +9,7 @@ const BookDropdown = () => {
         style={{ paddingRight: "20px" }}
       >
         <div
-          className="text-center p-9 w-[100px] xl:p-11 xl:w-[155px] 2xl:p-14 2xl:w-[200px]"
+          className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
           style={{
             backgroundImage: "url('/assests/Genre banner/Fiction.png')",
             backgroundSize: "cover",
@@ -19,7 +19,7 @@ const BookDropdown = () => {
           <h1>Fiction</h1>
         </div>
         <div
-          className="text-center p-9 w-[100px] xl:p-11 xl:w-[155px] 2xl:p-14 2xl:w-[200px]"
+          className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
           style={{
             backgroundImage: "url('/assests/Genre banner/Non Fiction.png')",
             backgroundSize: "cover",
@@ -29,7 +29,7 @@ const BookDropdown = () => {
           <h1>Non-Fiction</h1>
         </div>
         <div
-          className="text-center p-9 w-[100px] xl:p-11 xl:w-[155px] 2xl:p-14 2xl:w-[200px]"
+          className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
           style={{
             backgroundImage: "url('/assests/Genre banner/Bumblebee books.png')",
             backgroundSize: "cover",

@@ -12,7 +12,6 @@ const Navbar = () => {
   const { booksDropdownOpen, toggleBooksDropdown } = useNavbarStore();
 
   return (
-    // border-b border-black
     <div className="flex justify-center items-center  relative">
       <div className="2xl:h-[80px] bg-white lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] flex justify-between items-center 2xl:py-[60px] relative z-10">
         <div>
