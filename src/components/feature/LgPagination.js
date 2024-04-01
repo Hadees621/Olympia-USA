@@ -27,7 +27,7 @@ const LgPagination = () => {
               <a
                 href="#"
                 aria-current="page"
-                class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white hover:text-gray-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
               >
                 3
               </a>
@@ -44,7 +44,7 @@ const LgPagination = () => {
               <a
                 href="#"
                 aria-current="page"
-                class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white hover:text-gray-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
               >
                 5
               </a>
