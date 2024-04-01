@@ -8,6 +8,7 @@ import Upwards from "./navbarComps/Upwards";
 import BookDropdown from "./navbarComps/BookDropdown";
 import SearchBar from "./navbarComps/SearchBar";
 import { navItems } from "@/utils/home/Links";
+import Link from "next/link";
 
 const Navbar = () => {
   const { booksDropdownOpen, toggleBooksDropdown } = useNavbarStore();
@@ -16,12 +17,14 @@ const Navbar = () => {
     <div className="flex justify-center items-center  relative">
       <div className="2xl:h-[80px] bg-white lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] flex justify-between items-center 2xl:py-[60px] relative z-10">
         <div>
-          <Image
-            src="/assests/Icons/logo-usa.png"
-            width={150}
-            height={80}
-            alt="logo"
-          />
+          <Link href="/">
+            <Image
+              src="/assests/Icons/logo-usa.png"
+              width={150}
+              height={80}
+              alt="logo"
+            />
+          </Link>
         </div>
         <div className="w-[400px] xl:w-[500px] 2xl:w-[850px] mx-[60px] xl:mx-[100px] 2xl:mx-[240px] py-1 2xl:py-20 relative z-10">
           <SearchBar />
