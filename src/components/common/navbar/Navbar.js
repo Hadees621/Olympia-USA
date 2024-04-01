@@ -7,6 +7,7 @@ import Downwards from "./navbarComps/Downwards";
 import Upwards from "./navbarComps/Upwards";
 import BookDropdown from "./navbarComps/BookDropdown";
 import SearchBar from "./navbarComps/SearchBar";
+import { navItems } from "@/utils/home/Links";
 
 const Navbar = () => {
   const { booksDropdownOpen, toggleBooksDropdown } = useNavbarStore();
@@ -39,10 +40,11 @@ const Navbar = () => {
               </div>
               {booksDropdownOpen && <BookDropdown />}
             </div>
-            <p>AUTHORS</p>
-            <p>FEATURES</p>
-            <p>ABOUT US</p>
-            <p>PUBLISH WITH US</p>
+            {navItems.map((item, index) => (
+              <a key={index} href={item.url}>
+                <p className="cursor-pointer">{item.label}</p>
+              </a>
+            ))}
           </div>
         </div>
         <Button

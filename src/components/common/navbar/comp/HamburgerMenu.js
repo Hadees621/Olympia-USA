@@ -6,6 +6,7 @@ import Downward from "./Downward";
 import Upwards from "./Upwards";
 import { menuItems } from "@/utils/navbar/utils";
 import { useSmNavbarStore } from "@/stores/States";
+import { navItems } from "@/utils/home/Links";
 
 const HamburgerMenu = () => {
   const { booksMenuOpen, toggleBooksMenu } = useSmNavbarStore();
@@ -37,12 +38,13 @@ const HamburgerMenu = () => {
       {booksMenuOpen && <BooksSubMenu />}
 
       <div className="font-bold grid space-y-7 w-full">
-        {menuItems.map((item, index) => (
-          <MenuItem key={index}>{item}</MenuItem>
+        {navItems.map((item, index) => (
+          <a key={index} href={item.url}>
+            <MenuItem>{item.label}</MenuItem>
+          </a>
         ))}
+        <Button title={"Submit online"} width={"w-full px-5"} color={"red"} />
       </div>
-
-      <Button title={"Submit online"} width={"w-full px-5"} color={"red"} />
     </div>
   );
 };
