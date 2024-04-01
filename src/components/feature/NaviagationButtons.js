@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import { useState } from "react";
 
-const NavigationButtons = ({ data }) => {
+const NavigationButtons = ({ data, flag }) => {
   const [selectedAlphabet, setSelectedAlphabet] = useState("");
 
   const handleClick = (alphabet) => {
@@ -23,9 +23,11 @@ const NavigationButtons = ({ data }) => {
           ))}
         </div>
       </div>
-      <h1 className="pt-4 text-buttonred text-[60px] font-semibold">
-        {selectedAlphabet}
-      </h1>
+      {flag && (
+        <h1 className="pt-4 text-buttonred text-[60px] font-semibold hidden lg:block">
+          {selectedAlphabet}
+        </h1>
+      )}
     </>
   );
 };
