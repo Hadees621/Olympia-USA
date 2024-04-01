@@ -1,11 +1,13 @@
-import React from 'react'
+import Banner from "@/components/common/Banner";
 
-const About = () => {
-    return (
-        <div>
-            <h1>ABOUT</h1>
-        </div>
-    )
-}
+const Page = () => {
+  return (
+    <div className="w-full lg:flex lg:justify-center">
+      <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">
+        <Banner title={"About us"} />
+      </div>
+    </div>
+  );
+};
 
-export default About
+export default Page;
