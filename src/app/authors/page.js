@@ -7,7 +7,7 @@ import { AuthorsData, alphabetButtons } from "@/utils/author/utils";
 const Authors = () => {
   return (
     <div className="w-full lg:flex lg:justify-center">
-      <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1600px]">
+      <div className="lg:max-w-[850px] xl:max-w-[1400px] 2xl:max-w-[1600px]">
         <Banner title={"Authors"} />
 
         <NavigationButtons data={alphabetButtons} />
