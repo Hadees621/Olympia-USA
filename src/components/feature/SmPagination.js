@@ -29,7 +29,6 @@ const SmPagination = () => {
               </svg>
             </a>
           </li>
-          {/* Pagination items might be dynamically generated in a real-world app */}
           <li>
             <a
               href="#"
@@ -50,7 +49,7 @@ const SmPagination = () => {
             <a
               href="#"
               aria-current="page"
-              className="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+              className="z-10 flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white hover:text-gray-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
             >
               3
             </a>
