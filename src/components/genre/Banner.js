@@ -1,4 +1,4 @@
-import { fictionBannner } from "@/utils/genre/utils";
+import { fictionBannner, fictionLgBannner } from "@/utils/genre/utils";
 import Image from "next/image";
 
 const Banner = ({ params }) => {
@@ -10,7 +10,7 @@ const Banner = ({ params }) => {
     <div className="relative md:flex justify-center items-center w-full">
       <div className="md:w-[700px] border ">
         <Image
-          src={fictionBannner}
+          src={fictionLgBannner}
           height={250}
           width={500}
           alt={params.slug}
