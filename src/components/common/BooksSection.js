@@ -1,15 +1,17 @@
 import BookComponent from "@/components/home/BookComponent";
 import { Books } from "@/utils/home/Books";
 
-const BooksSection = ({ title, className = "" }) => {
+const BooksSection = ({ title, lgTitle, className = "" }) => {
   return (
-    <div className={`my-20 ${className} px-5`}>
+    <div
+      className={`my-20 ${className} px-5 lg:p lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1400px]`}
+    >
       <div className="flex justify-center items-center lg:justify-between lg:bg-white pt-10">
         <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
-          {title}
+          {lgTitle}
         </p>
         <p className="text-[20px] font-bold font-open-sans lg:hidden">
-          {title.toUpperCase()}
+          {title}
         </p>
       </div>
       <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black mb-14 lg:hidden">
