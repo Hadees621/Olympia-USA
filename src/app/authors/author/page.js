@@ -3,10 +3,8 @@ import Article from "@/components/author/Article";
 import Banner from "@/components/author/Banner";
 import Experience from "@/components/author/Experience";
 import BooksSection from "@/components/common/BooksSection";
-import Button from "@/components/common/Button";
 import BackButton from "@/components/feature/article/BackButton";
 import Features from "@/components/home/Features";
-import Image from "next/image";
 
 const page = () => {
   return (
@@ -18,7 +16,12 @@ const page = () => {
           <AboutAuthor />
           <BooksSection title={"BOOKS"} lgTitle={"Books by Rudi Jennings"} />
           <div className="lg:hidden">
-            <Experience />
+            <Experience
+              Title={"EXPERIENCE"}
+              text={
+                " “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat”. - Author name"
+              }
+            />
             <Article />
           </div>
 
