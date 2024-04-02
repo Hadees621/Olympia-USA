@@ -21,7 +21,10 @@ const page = () => {
             <Experience />
             <Article />
           </div>
-          <Features />
+
+          <div className="hidden lg:block">
+            <Features />
+          </div>
         </div>
       </div>
     </div>
