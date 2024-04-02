@@ -6,6 +6,12 @@ import LgPagination from "@/components/feature/LgPagination";
 import SmPagination from "@/components/genre/SmPagination";
 import { useEffect, useState } from "react";
 
+const authorExperiences = new Array(5).fill({
+  Title: "AUTHOR NAME",
+  text: "“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat”.",
+  placing: "text-start",
+});
+
 const Authors = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -22,42 +28,11 @@ const Authors = () => {
     <div className="w-full lg:flex lg:justify-center">
       <div className="lg:max-w-[850px] xl:max-w-[1400px] 2xl:max-w-[1600px]">
         <Banner title={"Author Experience"} />
+
         <div className="grid gap-10 py-10">
-          <Experience
-            Title={"AUTHOR NAME"}
-            text={
-              "“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat”."
-            }
-            placing={"text-start"}
-          />
-          <Experience
-            Title={"AUTHOR NAME"}
-            text={
-              "“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat”."
-            }
-            placing={"text-start"}
-          />
-          <Experience
-            Title={"AUTHOR NAME"}
-            text={
-              "“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat”."
-            }
-            placing={"text-start"}
-          />
-          <Experience
-            Title={"AUTHOR NAME"}
-            text={
-              "“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat”."
-            }
-            placing={"text-start"}
-          />
-          <Experience
-            Title={"AUTHOR NAME"}
-            text={
-              "“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat”."
-            }
-            placing={"text-start"}
-          />
+          {authorExperiences.map((experience, index) => (
+            <Experience key={index} {...experience} />
+          ))}
         </div>
 
         {isSmallScreen ? <SmPagination /> : <LgPagination />}
