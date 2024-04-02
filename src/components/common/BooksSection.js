@@ -4,7 +4,7 @@ import { Books } from "@/utils/home/Books";
 const BooksSection = ({ title, lgTitle, className = "" }) => {
   return (
     <div
-      className={`my-20 ${className} px-5 lg:p lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1400px]`}
+      className={`my-20 ${className} px-5 lg:p lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1400px] pt-20`}
     >
       <div className="flex justify-center items-center lg:justify-between lg:bg-white pt-10">
         <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
