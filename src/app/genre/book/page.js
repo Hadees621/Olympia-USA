@@ -1,8 +1,8 @@
+import Banner from "@/components/common/Banner";
 import BackButton from "@/components/feature/article/BackButton";
+import LgScreenRecent from "@/components/genre/book/LgScreenRecent";
 import RecommendedBooks from "@/components/genre/book/RecommendedBooks";
 import SmScreenRecent from "@/components/genre/book/SmScreenRecent";
-import LgScreenRecent from "@/components/genre/book/LgScreenRecent";
-import Banner from "@/components/genre/book/Banner";
 
 const page = () => {
   return (

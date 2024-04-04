@@ -1,11 +1,7 @@
-import { fictionBannner, fictionLgBannner } from "@/utils/genre/utils";
+import { fictionLgBannner } from "@/utils/genre/utils";
 import Image from "next/image";
 
-const Banner = ({ params }) => {
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-  const capitalizedSlug = capitalizeFirstLetter(params.slug);
+const Banner = () => {
   return (
     <div className="relative md:flex justify-center items-center w-full">
       <div className="md:w-[700px] border ">
@@ -13,7 +9,7 @@ const Banner = ({ params }) => {
           src={fictionLgBannner}
           height={250}
           width={500}
-          alt={params.slug}
+          alt="banner"
           layout="responsive"
         />
       </div>
