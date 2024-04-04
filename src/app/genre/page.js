@@ -30,7 +30,12 @@ export default function Page() {
 
   return (
     <div className="px-4">
-      {window.innerWidth >= 1024 ? <LgBanner /> : <Banner />}
+      <div className="lg:hidden">
+        <Banner />
+      </div>
+      <div className="hidden lg:block">
+        <LgBanner />
+      </div>
       <div className="lg:hidden">
         {!showSortOptions ? (
           <div className="flex items-center justify-between py-4 font-semibold md:px-6">
