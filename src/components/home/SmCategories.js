@@ -1,30 +1,34 @@
-import Image from "next/image";
 import React from "react";
 
 const SmCategories = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full px-6 my-12">
-      <h1 className="font-bold text-lg pb-6">BROWSE BY CATEGORIES</h1>
-      <div className="flex w-full px-5 gap-5 py-4">
-        <Image src={"/Home/Mobile/Asset 16.png"} width={80} height={60} />
-        <div className="bg-green-50 p-6 font-bold w-full items-center justify-center flex">
-          <p>FANTASY</p>
-        </div>
-      </div>
-      <div className="flex w-full px-5 gap-5 py-4">
-        <Image src={"/Home/Mobile/Asset 17.png"} width={80} height={60} />
-        <div className="bg-green-50 p-6 font-bold w-full items-center justify-center flex">
-          <p>MYSTERY</p>
-        </div>
-      </div>
-      <div className="flex w-full px-5 gap-5 py-4">
-        <Image src={"/Home/Mobile/Asset 18.png"} width={80} height={60} />
-        <div className="bg-green-50 p-6 w-full items-center justify-center flex font-bold">
-          <p>LIFESTYLE</p>
-        </div>
+    <div className="flex flex-col items-center">
+      <h1 className="font-semibold text-3xl pb-6">BROWSE BY CATEGORIES</h1>
+      <div className="flex flex-col w-full px-6 my-12 space-y-10">
+        {categories.map((category, index) => (
+          <div key={index} className="flex w-full px-5 gap-8">
+            <img
+              src={category.image}
+              alt={category.name}
+              width={120}
+              height={120}
+            />
+            <div
+              className={`bg-${category.color} p-6 w-full flex items-center justify-center my-6 font-bold`}
+            >
+              <p className="text-2xl">{category.name}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
+
+const categories = [
+  { name: "FANTASY", image: "/Home/Mobile/Asset 16.png", color: "green-50" },
+  { name: "MYSTERY", image: "/Home/Mobile/Asset 17.png", color: "[#F6F3FD]" },
+  { name: "LIFESTYLE", image: "/Home/Mobile/Asset 18.png", color: "[#FFF1F0]" },
+];
 
 export default SmCategories;

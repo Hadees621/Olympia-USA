@@ -8,10 +8,10 @@ const NewReleases = () => {
     <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1600px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
         <div>
-          <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
+          <p className="text-[25px] font-bold font-droid-sans hidden lg:block">
             New Releases
           </p>
-          <p className="text-[23px] font-semibold font-open-sans lg:hidden">
+          <p className="text-[21px] font-bold font-open-sans lg:hidden">
             NEW RELEASES
           </p>
         </div>
@@ -19,7 +19,7 @@ const NewReleases = () => {
           <Button title="EXPLORE MORE" width="w-[150px]" color="transparent" />
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:flex items-center justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent
