@@ -9,7 +9,7 @@ const PublishingJourney = () => {
         <div className="flex-1">
           <div className="flex flex-col h-full md:justify-center md:items-center lg:items-start lg:justify-start font-open-sans p-5 md:px-10 lg:px-5 2xl:p-20 lg:gap-10">
             <div className="flex flex-col gap-4 mb-5 lg:mb-0">
-              <h2 className="text-[38px] capitalize lg:text-[28px] font-semibold text-buttonred md:text-center lg:text-start">
+              <h2 className="text-[36px] lg:text-[28px] font-bold text-buttonred md:text-center lg:text-start uppercase">
                 Start your publishing journey with us
               </h2>
               <p className="mt-2 font-droid text-[12px] leading-7 lg:pr-10 text-black md:text-center lg:text-start">
@@ -18,7 +18,7 @@ const PublishingJourney = () => {
                 Submit your manuscript for us to review.
               </p>
             </div>
-            <Button title="SUBMIT ONLINE" width="w-[130px]" color="red" />
+            <Button title="Submit online" width="w-[145px]" color="red" />
           </div>
         </div>
         <div className="flex gap-5 px-5 md:justify-center lg:hidden">

@@ -14,7 +14,7 @@ const SmCategories = () => {
               height={120}
             />
             <div
-              className={`bg-${category.color} p-6 w-full flex items-center justify-center my-6 font-bold`}
+              className={`${category.color} p-6 w-full flex items-center justify-center my-6 font-bold`}
             >
               <p className="text-2xl">{category.name}</p>
             </div>
@@ -26,9 +26,9 @@ const SmCategories = () => {
 };
 
 const categories = [
-  { name: "FANTASY", image: "/Home/Mobile/Asset 16.png", color: "green-50" },
-  { name: "MYSTERY", image: "/Home/Mobile/Asset 17.png", color: "[#F6F3FD]" },
-  { name: "LIFESTYLE", image: "/Home/Mobile/Asset 18.png", color: "[#FFF1F0]" },
+  { name: "FANTASY", image: "/Home/Mobile/Asset 16.png", color: "bg-green-50" },
+  { name: "MYSTERY", image: "/Home/Mobile/Asset 17.png", color: "bg-[#F6F3FD]" },
+  { name: "LIFESTYLE", image: "/Home/Mobile/Asset 18.png", color: "bg-[#FFF1F0]" },
 ];
 
 export default SmCategories;

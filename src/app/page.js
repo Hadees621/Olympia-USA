@@ -45,28 +45,27 @@ export default function Home() {
       </div>
 
       <Features />
-      <PublishingJourney />
-
-      <div className="hidden lg:flex flex-col justify-center items-center">
-        <EditorsPick />
-      </div>
-
       <div
-        className="bg-cover bg-center md:hidden my-4"
+        className="bg-cover bg-center md:hidden my-4 w-full"
         style={{ backgroundImage: "url('/Home/Mobile/Asset 30.png')" }}
       >
-        <div className="bg-white flex flex-col justify-start items-start my-8 mx-4 gap-4 p-5 font-droid-sans">
-          <p className="font-bold text-[18px]">MEET OUR AUTHORS</p>
-          <p>
-            Chances are you’re looking for one of our most popular writers, so
-            here they are.
+        <div className="bg-[#F8F6F4] flex flex-col justify-start items-start my-8 mx-6 gap-4 p-8 font-open-sans">
+          <p className="font-bold text-[16px] ">MEET OUR AUTHORS</p>
+          <p className="font-medium text-[12px]">
+            Chances are you’re looking for one of our <br /> most popular
+            writers, so here they are.
           </p>
           <Button
             title="View all authors"
             color="transparent"
-            width="w-[130px]"
+            width="w-[140px] font-bold text-[14px]"
           />
         </div>
+      </div>
+      <PublishingJourney />
+
+      <div className="hidden lg:flex flex-col justify-center items-center">
+        <EditorsPick />
       </div>
 
       <div className="lg:hidden">

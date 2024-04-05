@@ -5,14 +5,12 @@ import { Books } from "@/utils/home/Books";
 const SmEditorsPick = () => {
   return (
     <div>
-      <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white">
+      <div className="flex justify-center lg:justify-between items-center pt-10 px-5 lg:px-0 lg:bg-white">
         <div>
-          <p className="text-[23px] font-semibold font-open-sans">
-            EDITIORS PICK
-          </p>
+          <p className="text-[21px] font-bold font-open-sans">EDITIORS PICK</p>
         </div>
       </div>
-      <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black">
+      <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black ml-14">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent

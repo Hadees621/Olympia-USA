@@ -19,7 +19,7 @@ const SmAboutSection = ({ heading, paragraph }) => {
       </div>
       <div className="grid grid-cols-2 gap-4 justify-center items-center px-5">
         {imageData.map((image, index) => (
-          <div key={index} className={`bg-${image.color} flex justify-center`}>
+          <div key={index} className={`${image.color} flex justify-center`}>
             <img
               src={image.src}
               alt={`Asset ${index + 9}`}
@@ -34,10 +34,10 @@ const SmAboutSection = ({ heading, paragraph }) => {
 };
 
 const imageData = [
-  { src: "/Home/Mobile/Asset 9.png", color: "gray-100" },
-  { src: "/Home/Mobile/Asset 11.png", color: "slate-500" },
-  { src: "/Home/Mobile/Asset 12.png", color: "red-500" },
-  { src: "/Home/Mobile/Asset 13.png", color: "gray-100" },
+  { src: "/Home/Mobile/Asset 9.png", color: "bg-gray-100" },
+  { src: "/Home/Mobile/Asset 11.png", color: "bg-slate-500" },
+  { src: "/Home/Mobile/Asset 12.png", color: "bg-red-500" },
+  { src: "/Home/Mobile/Asset 13.png", color: "bg-gray-100" },
 ];
 
 export default SmAboutSection;
