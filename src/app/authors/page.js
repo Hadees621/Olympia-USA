@@ -6,6 +6,7 @@ import { AuthorsData, alphabetButtons } from "@/utils/author/utils";
 import NavigationButtons from "@/components/feature/NaviagationButtons";
 import LgPagination from "@/components/feature/LgPagination";
 import SmPagination from "@/components/genre/SmPagination";
+import Link from "next/link";
 
 const Authors = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -28,9 +29,11 @@ const Authors = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center items-center gap-5 lg:gap-0 lg:border-black mx-5 lg:mx-0 my-8">
           {AuthorsData.map((author, index) => (
-            <div key={index} className="w-full flex">
-              <AuthorComponent src={author.src} author={author.author} />
-            </div>
+            <Link href={`/authors/author`}>
+              <div key={index} className="w-full flex">
+                <AuthorComponent src={author.src} author={author.author} />
+              </div>
+            </Link>
           ))}
         </div>
 

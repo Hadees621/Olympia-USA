@@ -5,12 +5,15 @@ import Experience from "@/components/author/Experience";
 import BooksSection from "@/components/common/BooksSection";
 import BackButton from "@/components/feature/article/BackButton";
 import Features from "@/components/home/Features";
+import Link from "next/link";
 
 const page = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1400px]">
-        <BackButton />
+        <Link href={`/authors`}>
+          <BackButton />
+        </Link>
         <div className="flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3">
           <Banner />
           <AboutAuthor />
