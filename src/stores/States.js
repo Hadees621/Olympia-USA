@@ -28,8 +28,8 @@ export const useSortByStore = create((set) => ({
   showDropdown1: false,
   showDropdown2: false,
   showDropdown2: false,
-  setShowSortOptions: () =>
-    set((state) => ({ showSortOptions: !state.showSortOptions })),
+  setShowFilterOptions: () =>
+    set((state) => ({ ShowFilterOptions: !state.ShowFilterOptions })),
   toggleDropdown1: () =>
     set((state) => ({ showDropdown1: !state.showDropdown1 })),
   toggleDropdown2: () =>
