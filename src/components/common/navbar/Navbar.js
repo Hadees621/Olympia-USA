@@ -39,7 +39,7 @@ const Navbar = () => {
                 }`}
               >
                 BOOKS{" "}
-                <div>{booksDropdownOpen ? <Downwards /> : <Upwards />}</div>{" "}
+                <div>{booksDropdownOpen ? <Upwards /> : <Downwards /> }</div>{" "}
               </div>
               {booksDropdownOpen && <BookDropdown />}
             </div>
