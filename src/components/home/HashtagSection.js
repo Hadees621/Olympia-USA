@@ -9,8 +9,8 @@ const HashtagSection = () => {
         <div key={i} className="p-4 border border-black w-max">
           <Image
             src={`/Home/Asset 12.png`}
-            width={250}
-            height={250}
+            width={200}
+            height={200}
             alt="hashtag"
           />
         </div>
@@ -75,8 +75,8 @@ const HashtagSection = () => {
       </div>
 
       <div className="hidden lg:block">
-        <div className="w-full flex">{renderImages(4)}</div>
-        <div className="w-full flex">{renderImages(4)}</div>
+        <div className="w-full flex">{renderImages(6)}</div>
+        <div className="w-full flex">{renderImages(6)}</div>
       </div>
     </div>
   );
