@@ -22,7 +22,7 @@ const Slider = () => {
 
   return (
     <div className="relative">
-      <div className="flex flex-col lg:flex-row lg:justify-end bg-blue-200 lg:bg-[#ECF1EF]">
+      <div className="flex flex-col lg:flex-row md:justify-center lg:justify-end bg-blue-200 lg:bg-[#ECF1EF]">
         <div className="lg:hidden">
           <div className="flex gap-5 px-5 justify-center">
             <div className="flex flex-col gap-3 mt-12">
@@ -59,11 +59,11 @@ const Slider = () => {
             </div>
           </div>
         </div>
-        <div className="p-6 lg:p-4 2xl:p-6 flex flex-col items-start justify-center lg:w-[35%] lg:pr-16 gap-3 2xl:gap-8 px-16 2xl:px-0">
-          <h2 className="text-3xl lg:text-2xl xl:text-3xl 2xl:text-7xl font-semibold mb-2">
-            Lorem ipsum dolor sit amet
+        <div className="p-6 lg:p-4 2xl:p-6 flex flex-col items-start justify-center md:w-[50%] md:mx-auto lg:mx-0 lg:w-[35%] xl:w-[36%] 2xl:w-[30%] lg:pr-16 2xl:pr-28 gap-3 2xl:gap-8 px-16 2xl:px-0">
+          <h2 className="text-[35px] md:text-[45px] lg:text-[45px] lg:leading-[40px] xl:text-[55px] xl:leading-[60px] 2xl:text-[92px] 2xl:leading-[92px] font-semibold mb-2">
+            Lorem ipsum <br /> dolor sit amet
           </h2>
-          <p className="text-[11px] lg:text-[12px] xl:text-[14px] 2xl:text-xs mb-4">
+          <p className="text-[11px] md:text-[12px] lg:text-[10px] xl:text-[14px] 2xl:text-[20px] mb-4">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh. Lorem ipsum dolor sit amet.Lorem ipsum, consectetuer
             adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet.
@@ -156,31 +156,70 @@ const Slider = () => {
           </div>
         </div>
 
-        <div className="absolute top-[35%] 2xl:top-[40%] left-[47.5%] xl:left-[48%] 2xl:left-[48.7%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 hidden">
+        <div className="absolute top-[35%] left-[47.5%] xl:left-[48%] 2xl:top-[40%] 2xl:left-[48.5%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 z-10 hidden">
+          <div className="bg-white rounded-full w-max ">
+            <Image
+              src={Arrowright}
+              alt="Arrowright"
+              onClick={handleNext}
+              objectFit="cover"
+              className="w-[28px] xl:w-[35px] 2xl:w-[50px]"
+            />
+          </div>
           <div className="bg-white rounded-full w-max">
             <Image
               src={Arrowleft}
               alt="arrowleft"
-              width={20}
               onClick={handlePrev}
-            />
-          </div>
-          <div className="bg-white rounded-full w-max">
-            <Image
-              src={Arrowright}
-              alt="Arrowright"
-              width={20}
-              onClick={handleNext}
+              objectFit="cover"
+              className="w-[28px] xl:w-[35px] 2xl:w-[50px]"
             />
           </div>
         </div>
 
-        <div className="hidden lg:block w-1/2">
+        <div className="hidden lg:block w-1/2 relative">
           <img
             className="w-full"
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
           />
+          <div className="absolute bottom-10 2xl:bottom-28 left-0 right-44 xl:right-60 2xl:right-92">
+            <div className="flex gap-5 xl:gap-8 2xl:gap-12 px-5 justify-center">
+              <div className="flex flex-col gap-3 xl:gap-5 2xl:gap-10 mt-10 2xl:mt-16">
+                <div className="shadow rounded-full w-max">
+                  <img
+                    src={"/Home/Mobile/Asset 3.png"}
+                    alt="Asset 3"
+                    objectFit="cover"
+                    className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
+                  />
+                </div>
+                <div className="shadow">
+                  <img
+                    src={"/Home/Mobile/Asset 4.png"}
+                    alt="Asset 4"
+                    className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 xl:gap-4 2xl:gap-10">
+                <div className="shadow">
+                  <img
+                    src={"/Home/Mobile/Asset 1.png"}
+                    alt="Asset 1"
+                    className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
+                  />
+                </div>
+                <div className="shadow">
+                  <img
+                    src={"/Home/Mobile/Asset 2.png"}
+                    alt="Asset 2"
+                    className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
