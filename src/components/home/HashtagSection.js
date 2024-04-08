@@ -74,9 +74,9 @@ const HashtagSection = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block">
-        <div className="w-full flex">{renderImages(6)}</div>
-        <div className="w-full flex">{renderImages(6)}</div>
+      <div className="hidden lg:block  overflow-x-scroll">
+        <div className="w-full flex">{renderImages(8)}</div>
+        <div className="w-full flex">{renderImages(8)}</div>
       </div>
     </div>
   );
