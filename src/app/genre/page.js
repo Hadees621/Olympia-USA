@@ -17,7 +17,7 @@ import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
 import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
-
+import Link from "next/link";
 export default function Page() {
   const {
     sortByDropdown,
@@ -31,11 +31,10 @@ export default function Page() {
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
 
   useEffect(() => {
-    // Check if either showFilterOptions or sortByDropdown is true
     if (showFilterOptions || sortByDropdown) {
-      setIsAnyDropdownOpen(true); // Set isAnyDropdownOpen to true if either is true
+      setIsAnyDropdownOpen(true);
     } else {
-      setIsAnyDropdownOpen(false); // Otherwise, set it to false
+      setIsAnyDropdownOpen(false);
     }
   }, [showFilterOptions, sortByDropdown]);
 
@@ -140,11 +139,13 @@ export default function Page() {
             <div className="grid grid-cols-4">
               {Books.map((book, index) => (
                 <div className="flex-none" key={index}>
-                  <BookComponent
-                    src={book.src}
-                    title={book.title}
-                    author={book.author}
-                  />
+                  <Link href="/genre/book">
+                    <BookComponent
+                      src={book.src}
+                      title={book.title}
+                      author={book.author}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>
