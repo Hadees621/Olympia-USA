@@ -14,13 +14,17 @@ const page = () => {
           info@olympiapublishers.com
         </p>
 
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4">
+        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans lg:hidden">
           {" "}
           TERMS & CONDITIONS{" "}
         </h1>
+        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans hidden lg:block">
+          {" "}
+          Terms & Conditions{" "}
+        </h1>
         <div>
           <p className="font-semibold text-[12px]">Copyright and Trademarks:</p>
-          <div className="lg:space-y-4">
+          <div className="lg:space-y-4 text-[11px] lg:leading-7 lg:font-droid-sans">
             <p>
               This site is owned and operated by Olympia Publishers as part of
               Ashwell Publishing Limited. All information and material appearing
@@ -53,8 +57,8 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-semibold text-[12px]">OUR LIABILITY TO YOU:</p>
-          <div className="lg:space-y-4">
+          <p className="font-bold text-[11px]">OUR LIABILITY TO YOU:</p>
+          <div className="lg:space-y-4 text-[11px] lg:leading-7 lg:font-droid-sans">
             <p>
               Should we, as a result of our negligence, by any chance do
               anything which causes death or personal injury, then we cannot
@@ -77,16 +81,20 @@ const page = () => {
           </div>
         </div>
 
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4">
+        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans lg:hidden">
           {" "}
           POLICIES AND COOKIES
         </h1>
+        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans hidden lg:block">
+          {" "}
+          Policies & Cookies{" "}
+        </h1>
 
         <div>
-          <p className="font-semibold text-[12px] lg:text-[10px]">
+          <p className="font-bold text-[12px] lg:text-[10px]">
             USER INFORMATION:
           </p>
-          <p>
+          <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             Olympia collects information on what pages are accessed or visited
             by consumers, as well as information volunteered by the customer,
             such as survey information and/or site registrations. Olympia uses
@@ -97,10 +105,10 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-semibold text-[12px] lg:text-[10px]">
+          <p className="font-bold text-[12px] lg:text-[10px]">
             COOKIES – WE MAY USE COOKIES TO:
           </p>
-          <p>
+          <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             Keep note of your return visits to our site deliver specific content
             regarding publishing save your password so you will not have the
             trouble to re-enter it each time you visit our sites.
@@ -108,16 +116,20 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-semibold text-[12px] lg:text-[10px]">E-MAILS:</p>
-          <p>
+          <p className="font-bold text-[12px] lg:text-[10px] uppercase">
+            E-mails:
+          </p>
+          <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             We do not retain emails sent to us after we have replied to them as
             appropriate We do not send unsolicited emails.
           </p>
         </div>
 
         <div>
-          <p className="font-semibold text-[12px] lg:text-[10px]">OUR AIMS:</p>
-          <p>
+          <p className="font-bold text-[12px] lg:text-[10px] uppercase">
+            Our Aims:
+          </p>
+          <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             Our registration forms require submitters and customers to share
             some form of contact information – for example, a name and email
             address. We use the information provided to send updates about
@@ -125,13 +137,13 @@ const page = () => {
             wide-range of publishing activity, such as press releases, marketing
             information and the like.
           </p>
-          <p>
+          <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             We want you to have control of the personal details you provide so
             you can review, correct, change or remove your information at any
             time. If you ever have any issues with this please contact us on:
             info@olympiapublishers.com
           </p>
-          <p>
+          <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             Our Cookies do not contain any personally identifiable information
             concerning you or individuals and we will not share, disclose,
             report, transfer or disseminate information to any person other than
