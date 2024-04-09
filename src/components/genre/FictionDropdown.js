@@ -27,7 +27,7 @@ const FictionDropdown = () => {
       {genres.map((genre, index) => (
         <p
           key={index}
-          className="lg:text-[11px] xl:text-[12px] 2xl:text-[15px]"
+          className="lg:text-[11px] xl:text-[12px] 2xl:text-[20px]"
         >
           {genre}
         </p>

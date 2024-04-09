@@ -22,7 +22,7 @@ const NonfictionDropdown = () => {
       {categories.map((category, index) => (
         <p
           key={index}
-          className="text-[11px] xl:text-[12px] 2xl:text-[15px]"
+          className="text-[11px] xl:text-[12px] 2xl:text-[20px]"
         >
           {category}
         </p>

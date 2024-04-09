@@ -80,14 +80,16 @@ export default function Page() {
       <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto hidden lg:block">
         <div className="flex items-center p-8 gap-12 font-semibold text-[12px] xl:text-[15px] 2xl:text-[18px]">
           <div className="w-1/5">
-            <h1 className="border-y border-gray-300 py-4 text-[12px] xl:text-[15px] 2xl:text-[18px]">
+            <h1 className="border-y border-gray-300 py-4 text-[12px] xl:text-[13px] 2xl:text-[18px]">
               FILTER BY
             </h1>
           </div>
           <div className="w-4/5">
             <div className="flex justify-between border-y border-gray-300">
               <div className="flex items-center py-4 gap-3">
-                <h1>ADVENTURE</h1>
+                <h1 className="font-open-sans text-[12px] xl:text-[13px] 2xl:text-[18px]">
+                  ADVENTURE
+                </h1>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -105,9 +107,11 @@ export default function Page() {
               <div className="relative">
                 <button
                   onClick={setShowDropdown}
-                  className="flex items-center gap-24 xl:gap-36 focus:outline-none py-4"
+                  className="flex items-center gap-24 xl:gap-28 focus:outline-none py-4 border px-4"
                 >
-                  <h1>SORT BY</h1>
+                  <h1 className="text-[12px] xl:text-[13px] 2xl:text-[18px]">
+                    SORT BY
+                  </h1>
                   <SortBySvg />
                 </button>
                 {showDropdown && <SortByDropdown selectOption={selectOption} />}
