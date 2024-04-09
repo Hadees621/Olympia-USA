@@ -23,12 +23,21 @@ export const useNavbarStore = create((set) => ({
 
 //  sortby dropdown
 export const useSortByStore = create((set) => ({
+  menuOpened: false,
   showDropdown: false,
   sortByDropdown: false,
   showFilterOptions: false,
   showDropdown1: false,
   showDropdown2: false,
   showDropdown3: false,
+
+  setMenu: () =>
+    set((state) => {
+      if (state.sortByDropdown || state.showFilterOptions) {
+        return { menuOpened: true };
+      }
+      return { menuOpened: false };
+    }),
   setShowDropdown: () =>
     set((state) => ({ showDropdown: !state.showDropdown })),
   setSortByDropdown: () =>

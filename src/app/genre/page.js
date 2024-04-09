@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "@/components/genre/Banner";
 import { useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
@@ -27,6 +27,18 @@ export default function Page() {
     showDropdown,
     setShowDropdown,
   } = useSortByStore();
+
+  const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    // Check if either showFilterOptions or sortByDropdown is true
+    if (showFilterOptions || sortByDropdown) {
+      setIsAnyDropdownOpen(true); // Set isAnyDropdownOpen to true if either is true
+    } else {
+      setIsAnyDropdownOpen(false); // Otherwise, set it to false
+    }
+  }, [showFilterOptions, sortByDropdown]);
+
   const sidebarItems = ["New releases", "Most popular", "Editors picks"];
 
   const selectOption = (option) => {};
@@ -40,13 +52,15 @@ export default function Page() {
         <LgBanner />
       </div>
       <div className="lg:hidden">
-        <div className="flex items-center justify-between py-4 font-semibold md:px-6">
-          <h1 onClick={toggleShowFilterOptions}>Filter by</h1>
-          <div className="flex items-center gap-2">
-            <h1 onClick={setSortByDropdown}>Sort by</h1>
-            <SvgDropdown />
+        {!isAnyDropdownOpen && (
+          <div className="flex items-center justify-between py-4 font-semibold md:px-6">
+            <h1 onClick={toggleShowFilterOptions}>Filter by</h1>
+            <div className="flex items-center gap-2">
+              <h1 onClick={setSortByDropdown}>Sort by</h1>
+              <SvgDropdown />
+            </div>
           </div>
-        </div>
+        )}
 
         {showFilterOptions && <FilterByDropdown />}
         {sortByDropdown && <SmSortByDropdown />}
