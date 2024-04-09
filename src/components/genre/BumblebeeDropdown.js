@@ -10,7 +10,7 @@ const BumblebeeDropdown = () => {
       {categories.map((category, index) => (
         <p
           key={index}
-          className="lg:text-[11px] xl:text-[12px] 2xl:text-[20px]"
+          className="lg:text-[11px] xl:text-[12px] 2xl:text-[20px] text-[#A0A29D]"
         >
           {category}
         </p>
