@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Banner from "@/components/genre/Banner";
 import { useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
@@ -16,15 +16,18 @@ import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
+import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
 
 export default function Page() {
-  const { setShowFilterOptions, ShowFilterOptions } = useSortByStore();
+  const {
+    sortByDropdown,
+    showFilterOptions,
+    setSortByDropdown,
+    toggleShowFilterOptions,
+    showDropdown,
+    setShowDropdown,
+  } = useSortByStore();
   const sidebarItems = ["New releases", "Most popular", "Editors picks"];
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
 
   const selectOption = (option) => {};
 
@@ -37,17 +40,17 @@ export default function Page() {
         <LgBanner />
       </div>
       <div className="lg:hidden">
-        {!ShowFilterOptions ? (
-          <div className="flex items-center justify-between py-4 font-semibold md:px-6">
-            <h1 onClick={() => setShowFilterOptions()}>Filter by</h1>
-            <div className="flex items-center gap-2">
-              <h1>Sort by</h1>
-              <SvgDropdown />
-            </div>
+        <div className="flex items-center justify-between py-4 font-semibold md:px-6">
+          <h1 onClick={toggleShowFilterOptions}>Filter by</h1>
+          <div className="flex items-center gap-2">
+            <h1 onClick={setSortByDropdown}>Sort by</h1>
+            <SvgDropdown />
           </div>
-        ) : (
-          <FilterByDropdown />
-        )}
+        </div>
+
+        {showFilterOptions && <FilterByDropdown />}
+        {sortByDropdown && <SmSortByDropdown />}
+
         <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center">
           {Books.map((book, index) => (
             <div className="flex-none" key={index}>
@@ -88,7 +91,7 @@ export default function Page() {
               </div>
               <div className="relative">
                 <button
-                  onClick={toggleDropdown}
+                  onClick={setShowDropdown}
                   className="flex items-center gap-24 xl:gap-36 focus:outline-none py-4"
                 >
                   <h1>SORT BY</h1>
