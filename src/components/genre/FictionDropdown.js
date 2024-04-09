@@ -1,26 +1,37 @@
 const FictionDropdown = () => {
+  const genres = [
+    "Activity book",
+    "Adult fiction",
+    "Adventure",
+    "Adventure & fantasy",
+    "Animals",
+    "Colouring books",
+    "Crime",
+    "General fiction",
+    "Historical",
+    "Horror",
+    "Humour",
+    "Middle grade fiction",
+    "Mystery",
+    "Poetry",
+    "Romance",
+    "Science-fiction",
+    "Short stories",
+    "Thriller",
+    "War",
+    "Young adult fiction",
+  ];
+
   return (
-    <div className="font-normal lg:text-[10px] xl:text-[12px] 2xl:text-[15px] space-y-2 ">
-      <p>Activity book</p>
-      <p>Adult fiction</p>
-      <p>Adventure</p>
-      <p>Adventure & fantasy</p>
-      <p>Animals</p>
-      <p>Colouring books</p>
-      <p>Crime</p>
-      <p>General fiction</p>
-      <p>Historical</p>
-      <p>Horror</p>
-      <p>Humour</p>
-      <p>Middle grade fiction</p>
-      <p>Mystery</p>
-      <p>Poetry</p>
-      <p>Romance</p>
-      <p>Science-fiction</p>
-      <p>Short stories</p>
-      <p>Thriller</p>
-      <p>War</p>
-      <p>Young adult fiction</p>
+    <div className="font-normal space-y-2 font-open-sans">
+      {genres.map((genre, index) => (
+        <p
+          key={index}
+          className="lg:text-[11px] xl:text-[12px] 2xl:text-[20px] text-[#A0A29D]"
+        >
+          {genre}
+        </p>
+      ))}
     </div>
   );
 };

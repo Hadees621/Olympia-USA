@@ -10,10 +10,27 @@ const Features = () => {
         All features
       </h1>
 
-      {/* Article section */}
-      <div className="grid lg:grid-cols-3 md:justify-center gap-4 lg:gap-0 lg:flex-row py-10 mx-3">
+      <div className="grid lg:grid-cols-3 md:justify-center gap-14 lg:gap-0 lg:flex-row py-10 mx-3 lg:hidden">
         {articlesData.map((article, index) => (
-          <Article key={index} {...article} />
+          <Article
+            key={index}
+            flag={false}
+            buttonFlag={true}
+            ButtonText={"Read article"}
+            {...article}
+          />
+        ))}
+      </div>
+
+      <div className="lg:grid lg:grid-cols-3 md:justify-center gap-14 lg:gap-0 lg:flex-row py-10 mx-3 hidden">
+        {articlesData.map((article, index) => (
+          <Article
+            key={index}
+            flag={true}
+            buttonFlag={false}
+            ButtonText={"Read article"}
+            {...article}
+          />
         ))}
       </div>
     </>

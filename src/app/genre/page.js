@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "@/components/genre/Banner";
 import { useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
@@ -16,15 +16,29 @@ import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
-
+import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
+import Link from "next/link";
 export default function Page() {
-  const { showSortOptions, setShowSortOptions } = useSortByStore();
-  const [showDropdown, setShowDropdown] = useState(false);
-  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
+  const {
+    sortByDropdown,
+    showFilterOptions,
+    setSortByDropdown,
+    toggleShowFilterOptions,
+    showDropdown,
+    setShowDropdown,
+  } = useSortByStore();
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
+  const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    if (showFilterOptions || sortByDropdown) {
+      setIsAnyDropdownOpen(true);
+    } else {
+      setIsAnyDropdownOpen(false);
+    }
+  }, [showFilterOptions, sortByDropdown]);
+
+  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
 
   const selectOption = (option) => {};
 
@@ -37,20 +51,19 @@ export default function Page() {
         <LgBanner />
       </div>
       <div className="lg:hidden">
-        {!showSortOptions ? (
+        {!isAnyDropdownOpen && (
           <div className="flex items-center justify-between py-4 font-semibold md:px-6">
-            <h1>Filter by</h1>
-            <div
-              className="flex items-center gap-2"
-              onClick={() => setShowSortOptions()}
-            >
-              <h1>Sort by</h1>
+            <h1 onClick={toggleShowFilterOptions}>Filter by</h1>
+            <div className="flex items-center gap-2">
+              <h1 onClick={setSortByDropdown}>Sort by</h1>
               <SvgDropdown />
             </div>
           </div>
-        ) : (
-          <FilterByDropdown />
         )}
+
+        {showFilterOptions && <FilterByDropdown />}
+        {sortByDropdown && <SmSortByDropdown />}
+
         <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center">
           {Books.map((book, index) => (
             <div className="flex-none" key={index}>
@@ -67,14 +80,16 @@ export default function Page() {
       <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto hidden lg:block">
         <div className="flex items-center p-8 gap-12 font-semibold text-[12px] xl:text-[15px] 2xl:text-[18px]">
           <div className="w-1/5">
-            <h1 className="border-y border-gray-300 py-6 text-[12px] xl:text-[15px] 2xl:text-[18px]">
+            <h1 className="border-y border-gray-300 py-4 text-[12px] xl:text-[13px] 2xl:text-[18px]">
               FILTER BY
             </h1>
           </div>
           <div className="w-4/5">
             <div className="flex justify-between border-y border-gray-300">
               <div className="flex items-center py-4 gap-3">
-                <h1>ADVENTURE</h1>
+                <h1 className="font-open-sans text-[12px] xl:text-[13px] 2xl:text-[18px]">
+                  ADVENTURE
+                </h1>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
@@ -91,16 +106,18 @@ export default function Page() {
               </div>
               <div className="relative">
                 <button
-                  onClick={toggleDropdown}
-                  className="flex items-center gap-24 xl:gap-36 focus:outline-none py-4"
+                  onClick={setShowDropdown}
+                  className="flex items-center gap-24 xl:gap-28 focus:outline-none py-4 border px-4"
                 >
-                  <h1>SORT BY</h1>
+                  <h1 className="text-[12px] xl:text-[13px] 2xl:text-[18px]">
+                    SORT BY
+                  </h1>
                   <SortBySvg />
                 </button>
                 {showDropdown && <SortByDropdown selectOption={selectOption} />}
               </div>
-            </div>
-          </div>
+            </div>{" "}
+          </div>{" "}
         </div>
       </div>
       <div className="lg:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1600px] mx-auto hidden lg:block">
@@ -126,11 +143,13 @@ export default function Page() {
             <div className="grid grid-cols-4">
               {Books.map((book, index) => (
                 <div className="flex-none" key={index}>
-                  <BookComponent
-                    src={book.src}
-                    title={book.title}
-                    author={book.author}
-                  />
+                  <Link href="/genre/book">
+                    <BookComponent
+                      src={book.src}
+                      title={book.title}
+                      author={book.author}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>
@@ -138,7 +157,6 @@ export default function Page() {
         </div>
         <LgPagination />
       </div>
-      );
     </div>
   );
 }

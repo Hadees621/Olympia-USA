@@ -1,7 +1,4 @@
-import { useSortByStore } from "@/stores/States";
-
-const Cross = () => {
-  const { setShowSortOptions } = useSortByStore();
+const Cross = ({ onClick }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +6,7 @@ const Cross = () => {
       height="2em"
       viewBox="0 0 24 24"
       style={{ cursor: "pointer" }}
-      onClick={() => setShowSortOptions()}
+      onClick={onClick}
     >
       <path
         fill="none"

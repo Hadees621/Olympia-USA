@@ -10,6 +10,8 @@ const Article = ({
   category,
   content,
   flag = true,
+  buttonFlag = true,
+  ButtonText,
 }) => {
   return (
     <div className="p-2 lg:p-3 xl:p-4 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7] md:border">
@@ -22,16 +24,16 @@ const Article = ({
           alt="features"
         />
       </div>
-      <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5 p-3 lg:p-1">
+      <div className="pt-10 flex flex-col w-full justify-start font-open-sans space-y-5 p-3">
         <div className="flex flex-col-reverse">
-          <p className="font-bold text-[18px]">{title}</p>
-          <p className="text-[12px]">
+          <p className="font-bold text-[18px] font-open-sans ">{title}</p>
+          <p className="text-[12px] text-[#80808B]">
             {date} - {category}
           </p>
         </div>
-        {flag && <p className="text-[12px]">{content}</p>}
-        {flag && (
-          <Button title="READ FEATURE" width="w-[120px]" color="transparent" />
+        {flag && <p className="text-[12px] text-[#8B8B8B]">{content}</p>}
+        {buttonFlag && (
+          <Button title={ButtonText} width="w-[120px]" color="transparent " />
         )}
       </div>
     </div>

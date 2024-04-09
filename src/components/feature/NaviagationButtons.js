@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useState } from "react";
 
 const NavigationButtons = ({ data, flag }) => {
@@ -11,11 +11,11 @@ const NavigationButtons = ({ data, flag }) => {
   return (
     <>
       <div className="overflow-x-auto py-6 xl:py-2 ml-5 lg:border-b">
-        <div className="flex justify-between 2xl:justify-center 2xl:gap-14 gap-6 w-full">
+        <div className="flex justify-between 2xl:justify-center 2xl:gap-28 gap-9 lg:gap-6 ">
           {data.map((button, index) => (
             <button
               key={index}
-              className="text-[12px] 2xl:text-[18px] p-3 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-red-300 w-max hover:text-[#C9444F] my-7"
+              className="text-[12px] lg:text-[10px] xl:text-[12px] 2xl:text-[18px] p-3 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-red-300 lg:w-max hover:text-[#C9444F] my-7 whitespace-nowrap"
               onClick={() => handleClick(button.title)}
             >
               {button.title}

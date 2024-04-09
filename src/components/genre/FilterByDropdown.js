@@ -9,8 +9,9 @@ import SvgDropdown from "./SvgDropdown";
 const DropdownItem = ({ title, showDropdown, toggleDropdown, children }) => (
   <div>
     <div
-      className={`flex items-center justify-between ${showDropdown ? "py-4" : "border-b py-4"
-        }`}
+      className={`flex items-center justify-between ${
+        showDropdown ? "py-4" : "border-b py-4"
+      }`}
       onClick={toggleDropdown}
     >
       <h1>{title}</h1>
@@ -28,13 +29,14 @@ const FilterByDropdown = () => {
     toggleDropdown1,
     toggleDropdown2,
     toggleDropdown3,
+    toggleShowFilterOptions,
   } = useSortByStore();
 
   return (
     <div className="py-8 font-semibold md:px-8">
       <div className="flex justify-between items-center w-full border-b py-4">
         <h1>Filter by</h1>
-        <Cross />
+        <Cross onClick={toggleShowFilterOptions} />
       </div>
       <div>
         <DropdownItem
