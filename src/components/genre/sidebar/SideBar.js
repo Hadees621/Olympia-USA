@@ -11,7 +11,7 @@ export function SideBar() {
             <div className="flex items-center px-8 gap-12 font-semibold text-[10px] xl:text-[12px] 2xl:text-[15px]">
                 <div className="w-1/5">
                     <SidebarMenu items={sidebarItems} />
-                    <div className="grid font-semibold text-[10px] xl:text-[15px] 2xl:text-[18px]">
+                    <div className="grid font-semibold text-[11px] xl:text-[15px] 2xl:text-[18px]">
                         <DropdownSection title="Fiction" DropdownComponent={FictionDropdown} />
                         <DropdownSection title="Non-Fiction" DropdownComponent={NonfictionDropdown} />
                         <DropdownSection title="Bumblebee Books" DropdownComponent={BumblebeeDropdown} />

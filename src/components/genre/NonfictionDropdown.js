@@ -18,9 +18,14 @@ const NonfictionDropdown = () => {
   ];
 
   return (
-    <div className="font-normal lg:text-[10px] xl:text-[12px] 2xl:text-[15px] space-y-2">
+    <div className="font-normal space-y-2 font-open-sans">
       {categories.map((category, index) => (
-        <p key={index}>{category}</p>
+        <p
+          key={index}
+          className="text-[11px] xl:text-[12px] 2xl:text-[15px]"
+        >
+          {category}
+        </p>
       ))}
     </div>
   );

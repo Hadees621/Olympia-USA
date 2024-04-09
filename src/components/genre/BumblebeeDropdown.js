@@ -1,15 +1,20 @@
 const BumblebeeDropdown = () => {
+  const categories = [
+    "Children's bestsellers",
+    "Children's fiction",
+    "Children's non-fiction",
+  ];
+
   return (
-    <div className="font-normal lg:text-[10px] xl:text-[12px] 2xl:text-[15px] space-y-2">
-      <p>
-        Children's bestsellers
-      </p>
-      <p>
-        Children's fiction
-      </p>
-      <p>
-        Children's non-fiction
-      </p>
+    <div className="font-normal  space-y-2 font-open-sans">
+      {categories.map((category, index) => (
+        <p
+          key={index}
+          className="lg:text-[11px] xl:text-[12px] 2xl:text-[15px]"
+        >
+          {category}
+        </p>
+      ))}
     </div>
   );
 };
