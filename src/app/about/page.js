@@ -1,8 +1,9 @@
 import Banner from "@/components/common/Banner";
 import YouTubeVideo from "@/components/about/YoutubeVideo";
 import ImageSlider from "@/components/submit-online/ImageSlider";
-import { sliderData } from "@/utils/about/utils";
+import { locations, sliderData } from "@/utils/about/utils";
 import Button from "@/components/common/Button";
+import LocationCard from "@/components/about/LocationCard";
 const Page = () => {
   return (
     <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto bg-white">
@@ -87,7 +88,6 @@ const Page = () => {
 
       <div className="bg-[#F5F3F2] p-5 grid items-center justify-center space-y-4 py-10 m-5">
         <h2 className="font-bold text-[20px] text-center font-open-sans">
-          {" "}
           OLYMPIA LOCATIONS
         </h2>
         <p className="text-center text-[14px] font-open-sans">
@@ -95,21 +95,9 @@ const Page = () => {
           authors and book lovers.
         </p>
         <div className="grid items-center justify-center w-full">
-          <div className="my-10 text-center space-y-6 font-bold">
-            <img src="/assests/Icons/UK.png" alt="logo-usa" />
-            <h3> LOS ANGELES </h3>
-            <h3> USA </h3>
-          </div>
-          <div className="my-10 text-center space-y-6 font-bold">
-            <img src="/assests/Icons/USA.png" alt="logo-usa" />
-            <h3> LONDON </h3>
-            <h3> UK </h3>
-          </div>
-          <div className="my-10 text-center space-y-6 font-bold">
-            <img src="/assests/Icons/INDIA.png" alt="logo-usa" />
-            <h3> MUMBAI </h3>
-            <h3> INDIA </h3>
-          </div>
+          {locations.map((location, index) => (
+            <LocationCard key={index} {...location} />
+          ))}
         </div>
       </div>
 
@@ -132,12 +120,95 @@ const Page = () => {
           </p>
           <p>
             See some of our{" "}
-            <a className="underline"> r latest Bumblebee Books. </a>
+            <a className="underline"> latest Bumblebee Books. </a>
           </p>
         </div>
       </div>
 
       <YouTubeVideo />
+      <div className="bg-[#F8F6F4] p-5 space-y-3">
+        <h3 className="text-[20px] font-open-sans font-extrabold">
+          Discover Bumblebee Books
+        </h3>
+        <h2 className="font-courier-prime text-[20px] font-medium tracking-tighter">
+          The home of children’s literature
+        </h2>
+        <Button
+          title={"View Bumblebee books"}
+          color={"transparent"}
+          width={"w-[180px] text-[12px] font-bold"}
+        />
+      </div>
+
+      <div className="m-5 mt-28 font-open-sans p-3">
+        <img
+          src="/assests/about/Asset 1.png"
+          alt="asset"
+          className="w-full md:w-[60%] mx-auto"
+        />
+        <p className="font-bold text-[30px] mt-10">
+          SEE WHAT OUR AUTHORS ARE SAYING
+        </p>
+        <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4">
+          <p className="mt-5">
+            "Olympia Publishers provide tremendous opportunities for first time
+            writers and help them develop their writing skills. It will not be
+            surprising if Olympia Publishers becomes the most favoured
+            publishing destination of writers in a few years."
+          </p>
+          <Button
+            title={"View author experiences"}
+            color={"transparent"}
+            width={"w-[210px] text-[15px] font-semibold"}
+          />
+        </div>
+      </div>
+
+      <div className="m-5 mt-28 font-open-sans p-3">
+        <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4">
+          <img
+            src="/assests/about/Asset 2.png"
+            alt="asset"
+            className="w-full md:w-[60%] mx-auto"
+          />
+          <p className="font-bold text-[30px] mt-10 leading-[30px]">
+            CORPORATE SOCIAL RESPONSIBILITIES
+          </p>
+          <p className="mt-5">
+            We pride ourselves on being an independent publisher, working in a
+            sustainable way and spreading the joy of reading with an
+            environment-friendly approach.
+          </p>
+          <Button
+            title={"Learn more"}
+            color={"transparent"}
+            width={"w-[110px] text-[14px] font-semibold"}
+          />
+        </div>
+      </div>
+
+      <div className="m-5 mt-28 font-open-sans p-3">
+        <img
+          src="/assests/about/Asset 3.png"
+          alt="asset"
+          className="w-full md:w-[60%] mx-auto"
+        />
+        <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4">
+          <p className="font-bold text-[30px] mt-10 text-buttonred leading-[30px]">
+            START YOUR PUBLISHING JOURNEY WITH US
+          </p>
+          <p className="mt-5">
+            Olympia Publishers are now accepting submissions across various
+            genres. If you have written a story, submit your manuscript for us
+            to review.
+          </p>
+          <Button
+            title={"Submit online"}
+            color={"red"}
+            width={"w-[170px] text-[14px] font-semibold"}
+          />
+        </div>
+      </div>
     </div>
   );
 };

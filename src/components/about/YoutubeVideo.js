@@ -1,6 +1,6 @@
 const YouTubeVideo = () => {
   return (
-    <div className="relative overflow-hidden w-full my-12 pt-[56.25%]">
+    <div className="relative overflow-hidden w-full my- pt-[56.25%]">
       {" "}
       <iframe
         className="absolute top-0 left-0 w-full h-full"

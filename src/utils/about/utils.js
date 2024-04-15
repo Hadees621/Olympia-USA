@@ -50,3 +50,9 @@ export const sliderData = [
     text: "Royalties updated",
   },
 ];
+
+export const locations = [
+  { location: "LOS ANGELES", country: "USA", icon: "/assests/Icons/UK.png" },
+  { location: "LONDON", country: "UK", icon: "/assests/Icons/USA.png" },
+  { location: "MUMBAI", country: "INDIA", icon: "/assests/Icons/INDIA.png" },
+];
