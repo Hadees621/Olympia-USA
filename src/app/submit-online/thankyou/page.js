@@ -83,7 +83,7 @@ const SubmissionPage = () => {
       <NextStepsSection />
       <ProcessOverviewSection />
       <div className="flex flex-col justify-center w-full">
-        <ImageSlider images={images} />
+        <ImageSlider title={"SUBMISSIONS PROCESS"} images={images} />
       </div>
       <div className="hidden lg:block">
         <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] flex lg:py-20 2xl:py-32">
