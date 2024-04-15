@@ -209,6 +209,26 @@ const Page = () => {
           />
         </div>
       </div>
+
+      <div className="m-5 mt-28 font-open-sans p-3">
+        <img
+          src="/assests/about/Asset 4.png"
+          alt="asset"
+          className="w-full md:w-[60%] mx-auto"
+        />
+        <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4 mx-10">
+          <img src="/assests/about/Asset 5.png" alt="asset" className="m-6" />
+          <p className="mt-5">
+            Welcome to Olympia Author Hub, helping you to become a successful
+            author. Dedicated to all the authors around the world.
+          </p>
+          <Button
+            title={"Explore"}
+            color={"transparent"}
+            width={"w-[110px] text-[14px] font-semibold"}
+          />
+        </div>
+      </div>
     </div>
   );
 };
