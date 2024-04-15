@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const ImageSlider = ({ images }) => {
+const ImageSlider = ({ images, imageClass = "w-[250px]", title, flag }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -11,64 +11,71 @@ const ImageSlider = ({ images }) => {
     );
   };
 
+  const sliderBgClass = flag ? "bg-[#F5F5F5] py-10" : "bg-white";
+  const buttonBgClass = flag ? "bg-white" : "bg-[#F5F3F2]";
+
   return (
     <>
-      <>
-        <h1 className="text-[20px] uppercase lg:text-[50px] font-bold text-center px-10 lg:hidden">
-          SUBMISSIONS PROCESS
-        </h1>
-
-        <div className="slider-container relative max-w-screen-lg mx-auto overflow-hidden lg:hidden">
-          <div className="slider flex">
-            {images.map((image, index) => (
+      <h1
+        className={`text-[20px] uppercase lg:text-[50px] font-bold text-center px-0 lg:hidden ${sliderBgClass}`}
+      >
+        {title}
+      </h1>
+      <div
+        className={`slider-container relative max-w-screen-lg mx-auto overflow-hidden lg:hidden ${sliderBgClass}`}
+      >
+        <div className="slider flex w-full items-center justify-center">
+          {images.map((image, index) => (
+            <div key={index}>
               <div
-                key={index}
-                className={`slide flex ${
+                className={`slide grid ${
                   index === slideIndex ? "block" : "hidden"
                 } m-10 gap-10`}
               >
-                <img
-                  src={image.src}
-                  alt={`Image ${index + 1}`}
-                  className="w-[250px]"
-                />
-                <button
-                  className="slider-button next right-0 mr-2 "
-                  onClick={nextSlide}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2em"
-                    height="2em"
-                    viewBox="0 0 26 26"
-                    className="bg-[#F5F3F2] rounded-2xl"
+                <div className="flex gap-6 py-4 mx-auto">
+                  <img
+                    src={image.src}
+                    alt={`Image ${index + 1}`}
+                    className={imageClass}
+                  />
+                  <button
+                    className="slider-button next right-0 mr-2"
+                    onClick={nextSlide}
                   >
-                    <g fill="currentColor">
-                      <path d="M10.116 7.32a.5.5 0 1 1 .768-.64l5 6a.5.5 0 0 1-.768.64z" />
-                      <path d="M10.884 19.32a.5.5 0 0 1-.768-.64l5-6a.5.5 0 1 1 .768.64z" />
-                    </g>
-                  </svg>
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </>
-      <>
-        <h1 className="lg:text-[20px] font-bold text-start px-10 hidden lg:block lg:mt-14">
-          Submissions Process
-        </h1>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="3em"
+                      height="3em"
+                      viewBox="0 0 26 26"
+                      className={`rounded-3xl ${buttonBgClass}`}
+                    >
+                      <g fill="currentColor">
+                        <path d="M10.116 7.32a.5.5 0 1 1 .768-.64l5 6a.5.5 0 0 1-.768.64z" />
+                        <path d="M10.884 19.32a.5.5 0 0 1-.768-.64l5-6a.5.5 0 1 1 .768.64z" />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
 
-        <div className="lg:flex flex-wrap justify-center gap-3 py-10 hidden">
-          {images.map((item, index) => (
-            <img
-              src={item.src2}
-              alt={`Image ${index + 1}`}
-              className="max-w-[250px] w-full lg:max-w-[190px] lg:h-[200px] xl:max-w-[230px] xl:h-[260px] 2xl:max-w-[300px] 2xl:h-[330px] object-cover"
-            />
+                {flag && (
+                  <div className="mx-auto">
+                    <p className="uppercase font-open-sans font-bold text-[13px] text-center px-32">
+                      {image.text}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
           ))}
         </div>
-      </>
+        {flag && (
+          <button
+            className={`text-[13px] py-[10px] font-bold font-open-sans flex items-center justify-center w-[130px] mx-auto border border-buttonred text-buttonred`}
+          >
+            Learn More
+          </button>
+        )}
+      </div>
     </>
   );
 };
