@@ -64,7 +64,7 @@ export default function Page() {
         {showFilterOptions && <FilterByDropdown />}
         {sortByDropdown && <SmSortByDropdown />}
 
-        <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-center">
           {Books.map((book, index) => (
             <div className="flex-none" key={index}>
               <BookComponent
