@@ -1,35 +1,15 @@
 import Banner from "@/components/common/Banner";
 import YouTubeVideo from "@/components/about/YoutubeVideo";
 import ImageSlider from "@/components/submit-online/ImageSlider";
-import { locations, sliderData } from "@/utils/about/utils";
+import { locations, sliderData, tabsData } from "@/utils/about/utils";
 import Button from "@/components/common/Button";
 import LocationCard from "@/components/about/LocationCard";
 import Awards from "@/components/about/Awards";
+import History from "@/components/about/History";
+import Image from "next/image";
+import Link from "next/link";
 
 const Page = () => {
-  const tabsData = [
-    {
-      label: "Book Prize Finalist",
-      label2: "A SMALL PRICE TO PAY SIR - DENNIS TALBOT",
-      image: "/assests/about/Asset 1 (1).png",
-    },
-    {
-      label: "Book Design Awards 2019 Finalist and Special mention",
-      label2: "THE MAN WITH NO SHADOW - GÖKHAN YÜCEL",
-      label3: "mention",
-      image: "/assests/about/Asset 2 (1).png",
-    },
-    {
-      label: "Rotal Dragonfly Book Awards (SM) 2020 Winner",
-      label2: "SCOTTY AND THE SPACE STATION - KAELA C GREEN",
-      image: "/assests/about/Asset 3 (1).png",
-    },
-    {
-      label: "Award category",
-      label2: "TITLE OF AWARD/WINNER NAME",
-      image: "/assests/about/Asset 4 (1).png",
-    },
-  ];
   return (
     <>
       <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto bg-white">
@@ -394,7 +374,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="mx-5 font-open-sans p-5 lg:p-0 lg:w-1/2 ">
+        <div className="mx-5 font-open-sans p-5 lg:p-0 lg:w-1/2">
           <div className="max-w-[300px] xl:max-w-[450px] 2xl:max-w-[550px] grid items-center h-full">
             <div className="space-y-4">
               <p className="font-bold text-[19px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] font-open-sans">
@@ -420,6 +400,126 @@ const Page = () => {
       </div>
 
       <Awards tabsData={tabsData} />
+
+      {/* <History tabsData={tabsData} /> */}
+
+      <div className="flex flex-col my-20 lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex-1">
+            <div className="flex flex-col h-full justify-center items-start font-open-sans lg:px-5 2xl:p-20 lg:gap-10 mx-14">
+              <div className="flex flex-col gap-4 mb-5 lg:mb-0 ">
+                <h2 className="text-[36px] lg:text-[26px] font-bold text-buttonred md:text-center lg:text-start ">
+                  Start your publishing journey with us
+                </h2>
+                <p className="mt-2 font-droid text-[11px] leading-7 lg:pr-10 text-black md:text-center lg:text-start">
+                  Olympia Publishers are now accepting submissions across
+                  various genres. If you have written a story, submit your
+                  manuscript for us to review.
+                </p>
+              </div>
+              <Button
+                title="SUBMIT ONLINE"
+                width="w-[140px] text-[10px]"
+                color="red"
+              />
+            </div>
+          </div>
+          <div className="flex-1 hidden lg:flex">
+            <Image
+              src="/assests/Banners/CSRBanner.png"
+              width={700}
+              height={200}
+              alt="About Section Image"
+            />
+          </div>
+        </div>
+        <div className="hidden lg:flex">
+          <div className="flex-1">
+            <Image
+              src="/assests/Banners/CSRBanner.png"
+              width={700}
+              height={200}
+              alt="About Section Image"
+            />
+          </div>
+          <div className="flex-1">
+            <div className="flex flex-col h-full justify-center font-open-sans px-24 2xl:p-20 gap-10">
+              <div className="flex flex-col gap-4 text-black">
+                <h2 className="text-[22px] font-semibold ">
+                  See what out authors are saying
+                </h2>
+                <p className="mt-2 font-droid text-[10px] pr-10">
+                  "Olympia Publishers provide tremendous opportunities for first
+                  time writers and help them develop their writing skills. It
+                  will not be surprising if Olympia Publishers becomes the most
+                  favoured publishing destination of writers in a few years."
+                </p>
+              </div>
+              <Link href={"/author-exp"}>
+                <Button
+                  title="VIEW AUTHOR EXPERIENCES"
+                  width="w-[160px] text-[8px] font-bold"
+                  color="transparent"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex-1">
+            <div className="flex flex-col h-full justify-center items-start font-open-sans lg:px-5 2xl:p-20 lg:gap-10 mx-8">
+              <div className="flex flex-col gap-4 mb-5 lg:mb-0 ">
+                <h2 className="text-[36px] lg:text-[22px] font-bold text-buttonred md:text-center lg:text-start ">
+                  Corporate social responsiblities
+                </h2>
+                <p className="mt-2 font-droid text-[11px] leading-7 lg:pr-10 text-black md:text-center lg:text-start">
+                  We pride ourselves on being an independent publisher, working
+                  in a sustainable way and spreading the joy of reading with an
+                  environment-friendly approach
+                </p>
+              </div>
+              <Button
+                title="LEARN MORE"
+                width="w-[120px] text-[9px] py-[8px]"
+                color="transparent"
+              />
+            </div>
+          </div>
+          <div className="flex-1 hidden lg:flex">
+            <Image
+              src="/assests/Banners/Publish with us Banner.png"
+              width={700}
+              height={200}
+              alt="About Section Image"
+            />
+          </div>
+        </div>
+        <div className="relative">
+          {/* Image */}
+          <img
+            src="/assests/about/Asset 4.png"
+            alt="About Section Image"
+            className="h-[340px] w-[1000px] object-cover"
+          />
+
+          {/* Semi-transparent overlay */}
+          <div className="absolute top-0 left-0 h-full w-1/2 bg-opacity-75 bg-gray-200 flex justify-center items-center">
+            <div className="text-center mx-32 space-y-4">
+              <img src="/assests/about/Asset 5.png" alt="asset" className="" />
+              <p className="font-droid text-[11px] leading-7 lg:pr-10 text-black md:text-center lg:text-start">
+                Welcome to Olympia Author Hub, helping you to become a
+                successful author. Dedicated to all the authors around the
+                world.
+              </p>
+              <Button
+                title="EXPLORE"
+                width="w-[120px] text-[9px] py-[8px]"
+                color="transparent"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

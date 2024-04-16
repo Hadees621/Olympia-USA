@@ -56,3 +56,27 @@ export const locations = [
   { location: "LONDON", country: "UK", icon: "/assests/Icons/USA.png" },
   { location: "MUMBAI", country: "INDIA", icon: "/assests/Icons/INDIA.png" },
 ];
+
+export const tabsData = [
+  {
+    label: "Book Prize Finalist",
+    label2: "A SMALL PRICE TO PAY SIR - DENNIS TALBOT",
+    image: "/assests/about/Asset 1 (1).png",
+  },
+  {
+    label: "Book Design Awards 2019 Finalist and Special mention",
+    label2: "THE MAN WITH NO SHADOW - GÖKHAN YÜCEL",
+    label3: "mention",
+    image: "/assests/about/Asset 2 (1).png",
+  },
+  {
+    label: "Rotal Dragonfly Book Awards (SM) 2020 Winner",
+    label2: "SCOTTY AND THE SPACE STATION - KAELA C GREEN",
+    image: "/assests/about/Asset 3 (1).png",
+  },
+  {
+    label: "Award category",
+    label2: "TITLE OF AWARD/WINNER NAME",
+    image: "/assests/about/Asset 4 (1).png",
+  },
+];
