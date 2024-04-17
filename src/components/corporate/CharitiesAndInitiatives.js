@@ -6,12 +6,12 @@ const CharitiesAndInitiatives = () => {
   return (
     <div className="lg:flex flex-row-reverse w-full">
       <img
-        src="/assests/Corporate Social Responsibilities/Asset 1 (1).png"
+        src="/assets/Corporate Social Responsibilities/Asset 1 (1).png"
         className="w-full lg:hidden"
         alt="Corporate Social Responsibilities"
       />
       <img
-        src="/assests/Corporate Social Responsibilities/Charities.png"
+        src="/assets/Corporate Social Responsibilities/Charities.png"
         className="lg:w-[40%] hidden lg:block"
         alt="Corporate Social Responsibilities"
       />

@@ -13,7 +13,7 @@ const BookDropdown = () => {
           <div
             className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
             style={{
-              backgroundImage: "url('/assests/Genre banner/Fiction.png')",
+              backgroundImage: "url('/assets/Genre banner/Fiction.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -25,7 +25,7 @@ const BookDropdown = () => {
           <div
             className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
             style={{
-              backgroundImage: "url('/assests/Genre banner/Non Fiction.png')",
+              backgroundImage: "url('/assets/Genre banner/Non Fiction.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -38,7 +38,7 @@ const BookDropdown = () => {
             className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
             style={{
               backgroundImage:
-                "url('/assests/Genre banner/Bumblebee books.png')",
+                "url('/assets/Genre banner/Bumblebee books.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

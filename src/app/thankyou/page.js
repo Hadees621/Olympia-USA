@@ -5,7 +5,7 @@ const page = () => {
     <div className="p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
       <div className="flex justify-center w-full">
         <img
-          src="/assests/Icons/Thank you.png"
+          src="/assets/Icons/Thank you.png"
           alt="sa"
           className="w-[300px] md:w-[320px]"
         />

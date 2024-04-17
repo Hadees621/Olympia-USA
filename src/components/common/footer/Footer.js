@@ -4,8 +4,8 @@ import Text from "./comp/Text";
 import TitleP from "./comp/TitleP";
 import Socials from "./comp/Socials";
 import { footerLinks } from "@/utils/footer/links";
-import Bumblebee from "../../../../public/assests/Icons/Bumblebee.png";
-import AuthorHub from "../../../../public/assests/Icons/AuthorHub.png";
+import Bumblebee from "../../../../public/assets/Icons/Bumblebee.png";
+import AuthorHub from "../../../../public/assets/Icons/AuthorHub.png";
 
 const Footer = () => {
   return (

@@ -4,12 +4,12 @@ const LoveForAll = () => {
   return (
     <div className="pt-44 lg:pt-0 lg:flex bg-[#F9F7F6] lg:bg-white">
       <img
-        src="/assests/Corporate Social Responsibilities/Asset 2 (1).png"
+        src="/assets/Corporate Social Responsibilities/Asset 2 (1).png"
         className="w-full lg:hidden"
         alt="Corporate Social Responsibilities"
       />
       <img
-        src="/assests/Corporate Social Responsibilities/Love_1.png"
+        src="/assets/Corporate Social Responsibilities/Love_1.png"
         className="lg:w-[60%] hidden lg:block bg-pink-100"
         alt="Corporate Social Responsibilities"
       />

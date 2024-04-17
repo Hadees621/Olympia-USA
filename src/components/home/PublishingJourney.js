@@ -58,7 +58,7 @@ const PublishingJourney = () => {
 
         <div className="flex-1 hidden lg:flex">
           <Image
-            src="/assests/Banners/CSRBanner.png"
+            src="/assets/Banners/CSRBanner.png"
             width={700}
             height={200}
             alt="About Section Image"
@@ -68,7 +68,7 @@ const PublishingJourney = () => {
       <div className="hidden lg:flex">
         <div className="flex-1">
           <Image
-            src="/assests/Banners/CSRBanner.png"
+            src="/assets/Banners/CSRBanner.png"
             width={700}
             height={200}
             alt="About Section Image"

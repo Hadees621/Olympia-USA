@@ -1,26 +1,26 @@
 export const PoemsData = [
   {
-    src: "/assests/Books/Asset2.png",
+    src: "/assets/Books/Asset2.png",
     title: "BOOK TITLE",
     author: "Author name",
   },
   {
-    src: "/assests/Books/Asset2.png",
+    src: "/assets/Books/Asset2.png",
     title: "BOOK TITLE",
     author: "Author name",
   },
   {
-    src: "/assests/Books/Asset2.png",
+    src: "/assets/Books/Asset2.png",
     title: "BOOK TITLE",
     author: "Author name",
   },
   {
-    src: "/assests/Books/Asset2.png",
+    src: "/assets/Books/Asset2.png",
     title: "BOOK TITLE",
     author: "Author name",
   },
   {
-    src: "/assests/Books/Asset2.png",
+    src: "/assets/Books/Asset2.png",
     title: "BOOK TITLE",
     author: "Author name",
   },

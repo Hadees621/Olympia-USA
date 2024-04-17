@@ -7,9 +7,9 @@ import Arrowright from "../../../public/imgs/Arrowright.svg";
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "/assests/Banners/SliderBanner.png",
-    "/assests/Banners/SliderBanner.png",
-    "/assests/Banners/SliderBanner.png",
+    "/assets/Banners/SliderBanner.png",
+    "/assets/Banners/SliderBanner.png",
+    "/assets/Banners/SliderBanner.png",
   ];
 
   const handleNext = () => {

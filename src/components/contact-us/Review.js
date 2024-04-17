@@ -7,7 +7,7 @@ const Review = () => {
       <div className="flex flex-col lg:flex-row bg-[#F9F9F9] lg:hidden">
         <div className="flex-1">
           <Image
-            src="/assests/Home/poems.PNG"
+            src="/assets/Home/poems.PNG"
             width={700}
             height={200}
             alt="About Section Image"

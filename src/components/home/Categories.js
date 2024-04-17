@@ -15,7 +15,7 @@ const Categories = () => {
             </h2>
           </div>
           <Image
-            src="/assests/Home/cat1.png"
+            src="/assets/Home/cat1.png"
             width={300}
             height={500}
             alt="BumblebeeBanner"
@@ -28,7 +28,7 @@ const Categories = () => {
             </h2>
           </div>
           <Image
-            src="/assests/Home/cat2.png"
+            src="/assets/Home/cat2.png"
             width={300}
             height={500}
             alt="BumblebeeBanner"
@@ -41,7 +41,7 @@ const Categories = () => {
             </h2>
           </div>
           <Image
-            src="/assests/Home/cat3.png"
+            src="/assets/Home/cat3.png"
             width={300}
             height={500}
             alt="BumblebeeBanner"

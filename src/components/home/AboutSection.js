@@ -14,7 +14,7 @@ const AboutSection = ({ heading, paragraph }) => {
       </div>
       <div className="flex-1">
         <Image
-          src="/assests/Banners/about-banner.png"
+          src="/assets/Banners/about-banner.png"
           width={700}
           height={200}
           alt="About Section Image"

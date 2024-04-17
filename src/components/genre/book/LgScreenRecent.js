@@ -15,7 +15,7 @@ const LgScreenRecent = () => {
           <div className="flex flex-col w-1/2 h-full bg-white border-b border-black">
             <div className="h-full p-28 xl:p- bg-[#F0F4F7] flex justify-center">
               <img
-                src="/assests/Books/Asset5.png"
+                src="/assets/Books/Asset5.png"
                 style={{
                   height: "",
                   objectFit: "cover",

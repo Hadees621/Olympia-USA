@@ -26,7 +26,7 @@ const SmNavbar = () => {
             <div className="w-full flex justify-center items-center">
               <Link href="/">
                 <Image
-                  src="/assests/Icons/logo-usa.png"
+                  src="/assets/Icons/logo-usa.png"
                   width={100}
                   height={75}
                   alt="logo"

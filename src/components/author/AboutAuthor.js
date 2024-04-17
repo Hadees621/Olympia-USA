@@ -8,7 +8,7 @@ const AboutAuthor = () => {
             <div className="flex-col lg:w-1/2 h-full bg-white border-b border-black hidden lg:flex">
               <div className="h-full p-28 xl:p- bg border-r border-black lg:flex justify-center ">
                 <img
-                  src="/assests/author.png"
+                  src="/assets/author.png"
                   style={{
                     height: "",
                     objectFit: "cover",
