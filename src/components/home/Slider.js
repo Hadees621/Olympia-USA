@@ -77,7 +77,7 @@ const Slider = () => {
 
         <div
           id="default-carousel"
-          class="relative w-full py-8 lg:hidden"
+          className="relative w-full py-8 lg:hidden"
           data-carousel="slide"
         >
           <div className="relative overflow-hidden rounded-lg">
@@ -117,38 +117,38 @@ const Slider = () => {
               />
             </div> */}
           </div>
-          <div class="absolute  z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <div className="absolute  z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
             <button
               type="button"
-              class="w-2 h-2 rounded-full bg-white"
+              className="w-2 h-2 rounded-full bg-white"
               aria-current="true"
               aria-label="Slide 1"
               data-carousel-slide-to="0"
             ></button>
             <button
               type="button"
-              class="w-2 h-2 rounded-full bg-black"
+              className="w-2 h-2 rounded-full bg-black"
               aria-current="false"
               aria-label="Slide 2"
               data-carousel-slide-to="1"
             ></button>
             <button
               type="button"
-              class="w-2 h-2 rounded-full bg-black"
+              className="w-2 h-2 rounded-full bg-black"
               aria-current="false"
               aria-label="Slide 3"
               data-carousel-slide-to="2"
             ></button>
             <button
               type="button"
-              class="w-2 h-2 rounded-full bg-black"
+              className="w-2 h-2 rounded-full bg-black"
               aria-current="false"
               aria-label="Slide 4"
               data-carousel-slide-to="3"
             ></button>
             <button
               type="button"
-              class="w-2 h-2 rounded-full bg-black"
+              className="w-2 h-2 rounded-full bg-black"
               aria-current="false"
               aria-label="Slide 5"
               data-carousel-slide-to="4"
@@ -162,7 +162,6 @@ const Slider = () => {
               src={Arrowright}
               alt="Arrowright"
               onClick={handleNext}
-              objectFit="cover"
               className="w-[28px] xl:w-[35px] 2xl:w-[50px]"
             />
           </div>
@@ -171,7 +170,6 @@ const Slider = () => {
               src={Arrowleft}
               alt="arrowleft"
               onClick={handlePrev}
-              objectFit="cover"
               className="w-[28px] xl:w-[35px] 2xl:w-[50px]"
             />
           </div>

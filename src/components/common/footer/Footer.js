@@ -1,12 +1,9 @@
-import "../../../app/globals.css";
+import "@/app/globals.css";
 import Image from "next/image";
 import Text from "./comp/Text";
 import TitleP from "./comp/TitleP";
 import Socials from "./comp/Socials";
 import { footerLinks } from "@/utils/footer/links";
-import Bumblebee from "../../../../public/assets/Icons/Bumblebee.png";
-import AuthorHub from "../../../../public/assets/Icons/AuthorHub.png";
-
 const Footer = () => {
   return (
     <>
@@ -40,8 +37,18 @@ const Footer = () => {
             <Text text="Follow Bumblebee USA" />
             <Socials />
             <div className="flex space-x-9 py-4 xl:py-9 w-full items-center justify-center md:justify-start">
-              <Image src={Bumblebee} height={54} width={54} alt="socials" />
-              <Image src={AuthorHub} height={42} width={42} alt="socials" />
+              <Image
+                src={"/assets/Icons/Bumblebee.png"}
+                height={54}
+                width={54}
+                alt="socials"
+              />
+              <Image
+                src={"/assets/Icons/AuthorHub.png"}
+                height={42}
+                width={42}
+                alt="socials"
+              />
             </div>
             <div className="w-full flex items-center justify-center lg:hidden">
               <Text text="Terms & Conditions | Privacy & Cookies Policy" />
