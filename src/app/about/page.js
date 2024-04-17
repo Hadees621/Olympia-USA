@@ -1,18 +1,7 @@
 import Banner from "@/components/common/Banner";
 import YouTubeVideo from "@/components/about/YoutubeVideo";
-import ImageSlider from "@/components/submit-online/ImageSlider";
-import {
-  PublishingProcessImages,
-  locations,
-  sliderData,
-  tabsData,
-} from "@/utils/about/utils";
-import Button from "@/components/common/Button";
-import LocationCard from "@/components/about/LocationCard";
+import { PublishingProcessImages, tabsData } from "@/utils/about/utils";
 import Awards from "@/components/about/Awards";
-import History from "@/components/about/History";
-import Image from "next/image";
-import Link from "next/link";
 import SmSections from "@/components/about/SmSections";
 import PublishingProcess from "@/components/about/PublishingProcess";
 import WhoWeAre from "@/components/about/WhoWeAre";

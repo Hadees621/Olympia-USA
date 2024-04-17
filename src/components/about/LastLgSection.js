@@ -7,7 +7,7 @@ const { section1, section2, section3, section4 } = publishing;
 
 const PublishingJourney = () => {
   return (
-    <div className="flex flex-col my-20 lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
+    <div className="lg:flex flex-col my-20 lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto hidden">
       {/* Section 1 */}
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1">

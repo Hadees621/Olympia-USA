@@ -49,6 +49,21 @@
       "buttonTitle": "EXPLORE"
     }
   },
+  "hybrid": {
+    "title": "Hybrid publishing model",
+    "para": "We work with a hybrid model of publishing, where all initial work submitted to us is considered for a ‘traditional publishing contract’. This is where no costs are incurred by the author, and the entire cost for producing, publishing, and marketing the work is covered by Olympia Publishers.",
+    "para2": "However, please bear in mind that not all work can be accepted under these terms. As we receive hundreds of submissions each month, we cannot guarantee which titles will be selected for publication. However, we do try to offer advice to authors if there is anything about the publishing process that confuses them or they are unsure of, even if we cannot publish your work.",
+    "para3": "Should we be unable to offer a traditional contract, but we feel the work has potential, an alternative offer may be made. This offer is known as a ‘partnership contract’ and is based on a contribution, to be paid by the author, to cover the initial production and printing cost of the book. For more information on the hybrid business model, please read this informative article."
+  },
+  "location": {
+    "title": " OLYMPIA LOCATIONS",
+    "para": "2018 marked the start of our global journey. Join our global family of authors and book lovers."
+  },
+  "bumblebeeBooks": {
+    "intro": "BUMBLEBEE BOOKS",
+    "description": "Bumblebee Books is an imprint of Olympia Publishers. Children’s books are at the heart of Olympia Publishers. For over a decade we\nhave been publishing exciting children’s books that are loved by our\nyoung readers from around the world. From adventure to fantasy,\nnon-fiction to rhyme, you won’t Bee-lieve the range of books we\nhave! Our aim is to help children discover a magical world through\nstorytelling. Stories with beautiful illustrations that inspire,\neducate, and entertain young readers. From young minds to older\nchildren, there is a book for everyone.",
+    "latestBooksLink": "/bumblebee-books"
+  },
   "publications": {
     "title": "OUR PUBLICATION PROCESS",
     "images": [
@@ -56,11 +71,6 @@
       "/assets/about/image2.jpg",
       "/assets/about/image3.jpg"
     ]
-  },
-  "bumblebeeBooks": {
-    "intro": "BUMBLEBEE BOOKS",
-    "description": "Bumblebee Books is an imprint of Olympia Publishers. Children’s books are at the heart of Olympia Publishers. For over a decade we\nhave been publishing exciting children’s books that are loved by our\nyoung readers from around the world. From adventure to fantasy,\nnon-fiction to rhyme, you won’t Bee-lieve the range of books we\nhave! Our aim is to help children discover a magical world through\nstorytelling. Stories with beautiful illustrations that inspire,\neducate, and entertain young readers. From young minds to older\nchildren, there is a book for everyone.",
-    "latestBooksLink": "/bumblebee-books"
   },
   "authorSays": {
     "title": "SEE WHAT OUR AUTHORS ARE SAYING",
@@ -78,8 +88,8 @@
     "submitLink": "/submit-manuscript"
   },
   "authorHub": {
-    "title": "Welcome to Olympia Author Hub",
-    "description": "Helping you to become a successful author. Dedicated to all the authors around the world.",
+    "title": "",
+    "description": "Welcome to Olympia Author Hub, Helping you to become a successful author. Dedicated to all the authors around the world.",
     "exploreLink": "/explore-author-hub"
   }
 }
