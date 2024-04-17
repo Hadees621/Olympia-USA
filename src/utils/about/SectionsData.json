@@ -1,0 +1,85 @@
+{
+  "Who": {
+    "banner": "/assests/Banners/Who we are banner.png",
+    "title": "WHO WE ARE",
+    "smallTitle": "Who we are",
+    "para1": "We are an independent publishing house, with offices in London,\nLos Angeles and Mumbai. We pride ourselves on our wide range of\ngenres and giving ambitious authors a platform that is so rarely\navailable in the publishing industry today. All of our books and\nauthors are enormously special in their own way. We believe that a\nstory can evoke a large range of emotions; they can make you\nlaugh, cry and, most importantly, change a life.",
+    "para2": "In the last ten years we have evolved with the industry, moulding\nour marketing and production strategies to suit the ever-changing\nmarket. Not only have we grown an impressive following on our\nsocial media platforms, but we have considerably expanded our\nreach and marketing potential through various different mediums\nand techniques. This includes creating various book trailers and\nvideos, expanding our distribution networks, writing engaging\ncontent and connecting with our readers through our blog, setting\nup radio and news interviews, as well as book launches in various\nstores all around the world.",
+    "para3": "We are completely dedicated to each of our authors and work\nclosely from submission to marketing of the book. We publish in\nvarious formats including paperback, hardback, eBook and\naudiobooks. We are accepting submissions across various genres\nincluding literary fiction, non-fiction, children’s books,\nromance, thrillers, fantasy, memoirs, biography, self-help, mind,\nbody and spirit, historical, politics, health and wellness,\nchildren’s literature and young adult fiction, just to name a few."
+  },
+  "PublishWith": {
+    "banner": "/assests/Banners/Publish with us Banner.png",
+    "title": "Publish with us",
+    "para": "Please see our publish with us page for further information on how to submit your work to us.",
+    "buttonText": "Publish with us"
+  },
+  "BumblebeeBooks": {
+    "banner": "/assests/about/Asset 9.png",
+    "title": "Bumblebee Books",
+    "subTitle": "The home of children’s literature",
+    "videoUrl": "https://www.youtube.com/embed/vd7mnHBzaGU?si=pHQ3pcDQ7n3Xsync",
+    "buttonTitle": "View Bumblebee books",
+    "para1": "Bumblebee Books is an imprint of Olympia Publishers. Children’s books are at the heart of Olympia Publishers. For over a decade we have been publishing exciting children’s books that are loved by our young readers from around the world. From adventure to fantasy, non-fiction to rhyme, you won’t Bee-lieve the range of books we have!",
+    "para2": "Our aim is to help children discover a magical world through storytelling. Stories with beautiful illustrations that inspire, educate, and entertain young readers. From young minds to older children, there is a book for everyone."
+  },
+  "publishing": {
+    "section1": {
+      "title": "Start your publishing journey with us",
+      "subtitle": "Olympia Publishers are now accepting submissions across various genres. If you have written a story, submit your manuscript for us to review.",
+      "buttonTitle": "SUBMIT ONLINE",
+      "imageUrl": "/assests/Banners/CSRBanner.png"
+    },
+    "section2": {
+      "title": "See what our authors are saying",
+      "quote": "Olympia Publishers provide tremendous opportunities for first time writers and help them develop their writing skills. It will not be surprising if Olympia Publishers becomes the most favoured publishing destination of writers in a few years.",
+      "buttonTitle": "VIEW AUTHOR EXPERIENCES",
+      "buttonLink": "/author-exp",
+      "imageUrl": "/assests/Banners/CSRBanner.png"
+    },
+    "section3": {
+      "title": "Corporate social responsibilities",
+      "subtitle": "We pride ourselves on being an independent publisher, working in a sustainable way and spreading the joy of reading with an environment-friendly approach.",
+      "buttonTitle": "LEARN MORE",
+      "imageUrl": "/assests/Banners/Publish with us Banner.png"
+    },
+    "section4": {
+      "image": "/assests/about/Asset 4.png",
+      "overlayImage": "/assests/about/Asset 5.png",
+      "overlayText": "Welcome to Olympia Author Hub, helping you to become a successful author. Dedicated to all the authors around the world.",
+      "buttonTitle": "EXPLORE"
+    }
+  },
+  "publications": {
+    "title": "OUR PUBLICATION PROCESS",
+    "images": [
+      "/public/assests/about/",
+      "/assets/about/image2.jpg",
+      "/assets/about/image3.jpg"
+    ]
+  },
+  "bumblebeeBooks": {
+    "intro": "BUMBLEBEE BOOKS",
+    "description": "Bumblebee Books is an imprint of Olympia Publishers. Children’s books are at the heart of Olympia Publishers. For over a decade we\nhave been publishing exciting children’s books that are loved by our\nyoung readers from around the world. From adventure to fantasy,\nnon-fiction to rhyme, you won’t Bee-lieve the range of books we\nhave! Our aim is to help children discover a magical world through\nstorytelling. Stories with beautiful illustrations that inspire,\neducate, and entertain young readers. From young minds to older\nchildren, there is a book for everyone.",
+    "latestBooksLink": "/bumblebee-books"
+  },
+  "authorSays": {
+    "title": "SEE WHAT OUR AUTHORS ARE SAYING",
+    "quote": " \"Olympia Publishers provide tremendous opportunities for first time writers and help them develop their writing skills. It will not be surprising if Olympia Publishers becomes the most favoured publishing destination of writers in a few years.\" ",
+    "buttonText": "View author experiences"
+  },
+  "socialResponsibility": {
+    "title": "CORPORATE SOCIAL RESPONSIBILITIES",
+    "description": "We pride ourselves on being an independent publisher, working in a sustainable way and spreading the joy of reading...",
+    "learnMoreLink": "/learn-more-about-csr"
+  },
+  "publishingJourneys": {
+    "title": "START YOUR PUBLISHING JOURNEY WITH US",
+    "description": "Olympia Publishers are now accepting submissions across various genres. If you have written a story, submit your manuscript...",
+    "submitLink": "/submit-manuscript"
+  },
+  "authorHub": {
+    "title": "Welcome to Olympia Author Hub",
+    "description": "Helping you to become a successful author. Dedicated to all the authors around the world.",
+    "exploreLink": "/explore-author-hub"
+  }
+}

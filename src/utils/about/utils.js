@@ -80,3 +80,16 @@ export const tabsData = [
     image: "/assests/about/Asset 4 (1).png",
   },
 ];
+
+export const PublishingProcessImages = [
+  "/assests/about/publishing/Asset 1.png",
+  "/assests/about/publishing/Asset 2.png",
+  "/assests/about/publishing/Asset 3.png",
+  "/assests/about/publishing/Asset 4.png",
+  "/assests/about/publishing/Asset 5.png",
+  "/assests/about/publishing/Asset 6.png",
+  "/assests/about/publishing/Asset 7.png",
+  "/assests/about/publishing/Asset 8.png",
+  "/assests/about/publishing/Asset 9.png",
+  "/assests/about/publishing/Asset 10.png",
+];
