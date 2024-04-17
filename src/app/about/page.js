@@ -8,6 +8,9 @@ import WhoWeAre from "@/components/about/WhoWeAre";
 import PublishWithUs from "@/components/about/PublishWithUs";
 import BumblebeeBooksCard from "@/components/about/BumblebeeBooksCard";
 import LastLgSection from "@/components/about/LastLgSection";
+import SectionsData from "@/utils/about/SectionsData.json";
+import HybridPublishing from "@/components/about/HybridPublishing";
+const { hybrid } = SectionsData;
 
 const Page = () => {
   return (
@@ -20,6 +23,8 @@ const Page = () => {
         <PublishingProcess imagePaths={PublishingProcessImages} />
 
         <YouTubeVideo />
+
+        <HybridPublishing />
 
         <PublishWithUs />
 
