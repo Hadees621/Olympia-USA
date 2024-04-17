@@ -1,6 +1,5 @@
 import Banner from "@/components/common/Banner";
 import YouTubeVideo from "@/components/about/YoutubeVideo";
-import { PublishingProcessImages, tabsData } from "@/utils/about/utils";
 import Awards from "@/components/about/Awards";
 import SmSections from "@/components/about/SmSections";
 import PublishingProcess from "@/components/about/PublishingProcess";
@@ -8,9 +7,13 @@ import WhoWeAre from "@/components/about/WhoWeAre";
 import PublishWithUs from "@/components/about/PublishWithUs";
 import BumblebeeBooksCard from "@/components/about/BumblebeeBooksCard";
 import LastLgSection from "@/components/about/LastLgSection";
-import SectionsData from "@/utils/about/SectionsData.json";
 import HybridPublishing from "@/components/about/HybridPublishing";
-const { hybrid } = SectionsData;
+import History from "@/components/about/History";
+import {
+  HistoryTabsData,
+  PublishingProcessImages,
+  tabsData,
+} from "@/utils/about/utils";
 
 const Page = () => {
   return (
@@ -35,7 +38,7 @@ const Page = () => {
 
       <Awards tabsData={tabsData} />
 
-      {/* <History tabsData={tabsData} /> */}
+      <History tabsData={HistoryTabsData} />
 
       <LastLgSection />
     </>

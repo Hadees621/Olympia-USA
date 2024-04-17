@@ -93,3 +93,26 @@ export const PublishingProcessImages = [
   "/assets/about/publishing/Asset 9.png",
   "/assets/about/publishing/Asset 10.png",
 ];
+
+export const HistoryTabsData = [
+  {
+    label: "07 Month 2022",
+    label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
+    image: "/assets/about/logo.png",
+  },
+  {
+    label: "07 Month 2022",
+    label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
+    image: "/assets/about/Asset 2 (1).png",
+  },
+  {
+    label: "07 Month 2022",
+    label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
+    image: "/assets/about/logo.png",
+  },
+  {
+    label: "07 Month 2022 ",
+    label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
+    image: "/assets/about/Asset 4 (1).png",
+  },
+];
