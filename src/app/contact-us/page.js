@@ -7,7 +7,7 @@ import { addressInfo } from "@/utils/contact-us/utils";
 
 const page = () => {
   return (
-    <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1350px] mx-auto">
+    <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1350px] lg:mx-auto">
       <Banner title={"Contact us"} />
 
       <CountrySelector />

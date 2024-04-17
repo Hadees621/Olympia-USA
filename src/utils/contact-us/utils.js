@@ -3,12 +3,13 @@ export const addressInfo = [
     country: "USA",
     imgSrc: "/assets/Icons/USA.png",
     addressLines: [
-      "Olympia Publishers",
-      "Tallis House",
-      "2 Tallis Street",
-      "London",
-      "EC4Y 0AB",
-      "UK",
+      " Olympia Publishers USA",
+      "Oppenheimer Tower",
+      "10880 Wilshire Blvd.",
+      "Suite 1101",
+      "Los Angeles, California",
+      "90024",
+      "USA",
     ],
     emailSections: [
       {
