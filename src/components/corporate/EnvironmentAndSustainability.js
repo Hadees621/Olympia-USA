@@ -68,12 +68,12 @@ const EnvironmentAndSustainability = () => {
         </div>
       </div>
       <img
-        src="/assests/Corporate Social Responsibilities/Asset 3 (1).png"
+        src="/assets/Corporate Social Responsibilities/Asset 3 (1).png"
         className="w-full lg:hidden"
         alt="Corporate Social Responsibilities"
       />
       <img
-        src="/assests/Corporate Social Responsibilities/Environment.png"
+        src="/assets/Corporate Social Responsibilities/Environment.png"
         className="w-[40%] bg-[#FAFAFA] hidden lg:block"
         alt="Corporate Social Responsibilities"
       />

@@ -13,7 +13,7 @@ const EditorsPick = () => {
             className="p-14 flex flex-col border border-black flex-grow hover:bg-[#EFF4F7]"
           >
             <img
-              src="/assests/Books/Asset6.png"
+              src="/assets/Books/Asset6.png"
               width={290}
               height={410}
               className="hover:shadow"

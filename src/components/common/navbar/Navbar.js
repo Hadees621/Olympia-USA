@@ -19,7 +19,7 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <Image
-              src="/assests/Icons/logo-usa.png"
+              src="/assets/Icons/logo-usa.png"
               width={150}
               height={80}
               alt="logo"

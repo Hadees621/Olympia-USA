@@ -1,6 +1,6 @@
 {
   "Who": {
-    "banner": "/assests/Banners/Who we are banner.png",
+    "banner": "/assets/Banners/Who we are banner.png",
     "title": "WHO WE ARE",
     "smallTitle": "Who we are",
     "para1": "We are an independent publishing house, with offices in London,\nLos Angeles and Mumbai. We pride ourselves on our wide range of\ngenres and giving ambitious authors a platform that is so rarely\navailable in the publishing industry today. All of our books and\nauthors are enormously special in their own way. We believe that a\nstory can evoke a large range of emotions; they can make you\nlaugh, cry and, most importantly, change a life.",
@@ -8,13 +8,13 @@
     "para3": "We are completely dedicated to each of our authors and work\nclosely from submission to marketing of the book. We publish in\nvarious formats including paperback, hardback, eBook and\naudiobooks. We are accepting submissions across various genres\nincluding literary fiction, non-fiction, children’s books,\nromance, thrillers, fantasy, memoirs, biography, self-help, mind,\nbody and spirit, historical, politics, health and wellness,\nchildren’s literature and young adult fiction, just to name a few."
   },
   "PublishWith": {
-    "banner": "/assests/Banners/Publish with us Banner.png",
+    "banner": "/assets/Banners/Publish with us Banner.png",
     "title": "Publish with us",
     "para": "Please see our publish with us page for further information on how to submit your work to us.",
     "buttonText": "Publish with us"
   },
   "BumblebeeBooks": {
-    "banner": "/assests/about/Asset 9.png",
+    "banner": "/assets/about/Asset 9.png",
     "title": "DISCOVER BUMBLEBEE BOOKS",
     "subTitle": "The home of children’s literature",
     "videoUrl": "https://www.youtube.com/embed/vd7mnHBzaGU?si=pHQ3pcDQ7n3Xsync",
@@ -27,24 +27,24 @@
       "title": "Start your publishing journey with us",
       "subtitle": "Olympia Publishers are now accepting submissions across various genres. If you have written a story, submit your manuscript for us to review.",
       "buttonTitle": "SUBMIT ONLINE",
-      "imageUrl": "/assests/Banners/CSRBanner.png"
+      "imageUrl": "/assets/Banners/CSRBanner.png"
     },
     "section2": {
       "title": "See what our authors are saying",
       "quote": "Olympia Publishers provide tremendous opportunities for first time writers and help them develop their writing skills. It will not be surprising if Olympia Publishers becomes the most favoured publishing destination of writers in a few years.",
       "buttonTitle": "VIEW AUTHOR EXPERIENCES",
       "buttonLink": "/author-exp",
-      "imageUrl": "/assests/Banners/CSRBanner.png"
+      "imageUrl": "/assets/Banners/CSRBanner.png"
     },
     "section3": {
       "title": "Corporate social responsibilities",
       "subtitle": "We pride ourselves on being an independent publisher, working in a sustainable way and spreading the joy of reading with an environment-friendly approach.",
       "buttonTitle": "LEARN MORE",
-      "imageUrl": "/assests/Banners/Publish with us Banner.png"
+      "imageUrl": "/assets/Banners/Publish with us Banner.png"
     },
     "section4": {
-      "image": "/assests/about/Asset 4.png",
-      "overlayImage": "/assests/about/Asset 5.png",
+      "image": "/assets/about/Asset 4.png",
+      "overlayImage": "/assets/about/Asset 5.png",
       "overlayText": "Welcome to Olympia Author Hub, helping you to become a successful author. Dedicated to all the authors around the world.",
       "buttonTitle": "EXPLORE"
     }
@@ -67,7 +67,7 @@
   "publications": {
     "title": "OUR PUBLICATION PROCESS",
     "images": [
-      "/public/assests/about/",
+      "/public/assets/about/",
       "/assets/about/image2.jpg",
       "/assets/about/image3.jpg"
     ]

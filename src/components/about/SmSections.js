@@ -75,7 +75,7 @@ const SmSections = () => {
 
       <div className="m-5 mt-28 font-open-sans p-3 lg:hidden">
         <img
-          src="/assests/about/Asset 1.png"
+          src="/assets/about/Asset 1.png"
           alt="asset"
           className="w-full md:w-[60%] mx-auto"
         />
@@ -93,7 +93,7 @@ const SmSections = () => {
       <div className="m-5 mt-28 font-open-sans p-3 lg:hidden">
         <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4 md:mx-32">
           <img
-            src="/assests/about/Asset 2.png"
+            src="/assets/about/Asset 2.png"
             alt="asset"
             className="w-full md:w-[60%] mx-auto"
           />
@@ -112,7 +112,7 @@ const SmSections = () => {
 
       <div className="m-5 mt-28 font-open-sans p-3 lg:hidden">
         <img
-          src="/assests/about/Asset 3.png"
+          src="/assets/about/Asset 3.png"
           alt="asset"
           className="w-full md:w-[60%] mx-auto"
         />
@@ -132,13 +132,13 @@ const SmSections = () => {
 
       <div className="lg:hidden">
         <img
-          src="/assests/about/Asset 4.png"
+          src="/assets/about/Asset 4.png"
           alt="asset"
           className="w-full md:w-[60%] mx-auto mt-28"
         />
         <div className="m-5 font-open-sans p-3">
           <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4 mx-10">
-            <img src="/assests/about/Asset 5.png" alt="asset" className="m-6" />
+            <img src="/assets/about/Asset 5.png" alt="asset" className="m-6" />
             <p className="mt-5">{authorHub.description}</p>
             <Button
               title="Explore"

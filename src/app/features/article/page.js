@@ -126,7 +126,7 @@ const page = () => {
                 <AuthorComponent
                   author={"Author name"}
                   title={"title"}
-                  src={"/assests/author.png"}
+                  src={"/assets/author.png"}
                 />
               </div>
             </div>

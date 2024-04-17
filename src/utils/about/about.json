@@ -40,17 +40,17 @@
                 {
                     "location": "LOS ANGELES",
                     "country": "USA",
-                    "icon": "/assests/Icons/UK.png"
+                    "icon": "/assets/Icons/UK.png"
                 },
                 {
                     "location": "LONDON",
                     "country": "UK",
-                    "icon": "/assests/Icons/USA.png"
+                    "icon": "/assets/Icons/USA.png"
                 },
                 {
                     "location": "MUMBAI",
                     "country": "INDIA",
-                    "icon": "/assests/Icons/INDIA.png"
+                    "icon": "/assets/Icons/INDIA.png"
                 }
             ]
         }

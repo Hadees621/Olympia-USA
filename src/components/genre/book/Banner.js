@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="flex justify-center items-center lg:hidden ">
       <Image
-        src="/assests/Books/Asset3.png"
+        src="/assets/Books/Asset3.png"
         width={330}
         height={150}
         className="hover:shadow"

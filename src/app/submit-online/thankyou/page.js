@@ -8,7 +8,7 @@ const SubmissionPage = () => {
     <div>
       <div className="flex justify-center w-full">
         <img
-          src="/assests/Icons/Thank you.png"
+          src="/assets/Icons/Thank you.png"
           alt="Thank you"
           className="w-[300px] md:w-[320px]"
         />
@@ -89,7 +89,7 @@ const SubmissionPage = () => {
         <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] flex lg:py-20 2xl:py-32">
           <div className="flex-1">
             <Image
-              src="/assests/Banners/See what our authors are saying.png"
+              src="/assets/Banners/See what our authors are saying.png"
               width={700}
               height={200}
               alt="About Section Image"

@@ -16,13 +16,13 @@ const MostPopular = () => {
       <div className="flex items-center justify-center border-t border-black">
         <div className="flex">
           <BookComponent
-            src="/assests/Books/Asset3.png"
+            src="/assets/Books/Asset3.png"
             title="title"
             author="author"
           />
           <div className="relative w-[505px] xl:w-[820px] xl:h-[] 2xl:w-[1100px] h-[320px] 2xl:h-[450px]">
             <Image
-              src="/assests/Banners/AuthorBanner.png"
+              src="/assets/Banners/AuthorBanner.png"
               alt="About Section Image"
               layout="fill"
             />
@@ -48,7 +48,7 @@ const MostPopular = () => {
             </div>
           </div>
           <BookComponent
-            src="/assests/Books/Asset4.png"
+            src="/assets/Books/Asset4.png"
             title="title"
             author="author"
           />

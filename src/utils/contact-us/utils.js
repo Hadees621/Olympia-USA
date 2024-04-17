@@ -1,7 +1,7 @@
 export const addressInfo = [
   {
     country: "USA",
-    imgSrc: "/assests/Icons/USA.png",
+    imgSrc: "/assets/Icons/USA.png",
     addressLines: [
       "Olympia Publishers",
       "Tallis House",
@@ -36,7 +36,7 @@ export const addressInfo = [
   },
   {
     country: "UK",
-    imgSrc: "/assests/Icons/UK.png",
+    imgSrc: "/assets/Icons/UK.png",
     addressLines: [
       "Olympia Publishers",
       "Tallis House",
@@ -71,7 +71,7 @@ export const addressInfo = [
   },
   {
     country: "INDIA",
-    imgSrc: "/assests/Icons/INDIA.png",
+    imgSrc: "/assets/Icons/INDIA.png",
     addressLines: [
       "Olympia Publishers",
       "Tallis House",
