@@ -16,7 +16,7 @@ const Tabs = () => {
 
   return (
     <>
-      <div className="flex">
+      <div className="lg:flex hidden">
         <div
           className={`flex flex-col w-1/2 border border-black justify-center items-center px-14 pt-8 2xl:px-24 2xl:pt-20 hover:bg-[#F0F4F7] active:bg-[#F0F4F7] ${
             selectedCountry === "UK" ? "bg-[#F0F4F7]" : ""

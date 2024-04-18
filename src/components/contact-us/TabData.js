@@ -3,7 +3,7 @@ import Socials from "../common/footer/comp/Socials";
 
 const TabData = ({ data }) => {
   return (
-    <div className="border border-black">
+    <div className="border border-black hidden lg:block">
       <div className="w-full justify-center flex pt-20">
         <img src={data.imgSrc} alt={data.country} className="h-20 2xl:h-32" />
       </div>

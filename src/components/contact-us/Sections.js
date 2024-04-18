@@ -6,7 +6,7 @@ const { publishing } = SectionsData;
 const { section2, section1 } = publishing;
 const Sections = () => {
   return (
-    <div className="lg:flex flex-col my-20 lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto hidden">
+    <div className="lg:flex flex-col my-32 lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto hidden">
       <div className="hidden lg:flex">
         <div className="flex-1">
           <Image
