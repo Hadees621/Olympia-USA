@@ -1,9 +1,10 @@
 import Banner from "@/components/common/Banner";
 import SmScreenSections from "@/components/contact-us/SmScreenSections";
-import USA from "@/components/contact-us/USA";
 import ContactUsData from "@/utils/contact-us/ContactUsData";
-const page = () => {
+import Tabs from "@/components/contact-us/Tabs";
+import USA from "@/components/contact-us/USA";
 
+const page = () => {
   const usaData = ContactUsData.addressInfo.find(
     (info) => info.country === "USA"
   );
@@ -15,6 +16,7 @@ const page = () => {
 
       <USA data={usaData} />
 
+      <Tabs />
     </div>
   );
 };
