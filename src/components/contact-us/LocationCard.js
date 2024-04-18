@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../common/Button";
-import Socials from "../common/footer/comp/Socials";
+import Button from "@/components/common/Button";
+import Socials from "@/components/common/footer/comp/Socials";
 
 const LocationCard = ({
   countryName,
@@ -18,8 +18,8 @@ const LocationCard = ({
     >
       <img src={imgSrc} alt={`${countryName} flag`} />
       <h1 className="font-bold text-3xl">{countryName}</h1>
-      <h1 className="font-bold text-xl uppercase">Find us</h1>
-      <p className="leading-10 font-medium">
+      <h1 className="font-semibold text-[17px] uppercase">Find us</h1>
+      <p className="leading-10 font-semibold font-open-sans text-[13px]">
         {addressLines.map((line, index) => (
           <React.Fragment key={index}>
             {line}
@@ -42,8 +42,8 @@ const LocationCard = ({
 
       <h1 className="font-bold text-xl uppercase">Speak with us</h1>
       <p className="leading-10 font-semibold text-[12px]">{phoneNumber}</p>
-
       <h1 className="font-bold text-xl uppercase">CONNECT WITH US</h1>
+
       <Socials />
 
       <Button title="VISIT OUR WEBSITE" width={"w-[160px]"} />
