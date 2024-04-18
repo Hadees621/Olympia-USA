@@ -6,7 +6,7 @@ import CountrySelector from "./CountrySelector";
 import ContactUsData from "@/utils/contact-us/ContactUsData.json";
 
 const SmScreenSections = () => {
-  const { addressInfo, commonSectionData } = ContactUsData;
+  const { addressInfo } = ContactUsData;
 
   return (
     <div className="lg:hidden">
@@ -25,16 +25,7 @@ const SmScreenSections = () => {
 
       <Review />
 
-      {commonSectionData.map((section, index) => (
-        <CommonSection
-          key={index}
-          title={section.title}
-          content={section.content}
-          buttonTitle={section.buttonTitle}
-          buttonWidth={section.buttonWidth}
-          bgColor={section.bgColor}
-        />
-      ))}
+      <CommonSection />
     </div>
   );
 };
