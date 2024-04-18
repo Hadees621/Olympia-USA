@@ -3,6 +3,7 @@ import SmScreenSections from "@/components/contact-us/SmScreenSections";
 import ContactUsData from "@/utils/contact-us/ContactUsData";
 import Tabs from "@/components/contact-us/Tabs";
 import USA from "@/components/contact-us/USA";
+import Sections from "@/components/contact-us/Sections";
 
 const page = () => {
   const usaData = ContactUsData.addressInfo.find(
@@ -17,6 +18,8 @@ const page = () => {
       <USA data={usaData} />
 
       <Tabs />
+
+      <Sections />
     </div>
   );
 };
