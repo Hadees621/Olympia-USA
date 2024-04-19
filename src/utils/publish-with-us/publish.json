@@ -1,0 +1,108 @@
+{
+    "submissions": {
+        "title": "ABOUT <br /> SUBMISSIONS",
+        "paragraphs": [
+            "All you need to do is send across the full manuscript of your work, with a covering letter and synopsis. Your synopsis should be no longer than one page of A4. If you haven’t yet finished the work but would like to know if it would be something we are interested in before completing then you are also welcome to send samples of the manuscript to us.",
+            "Please always try to submit a digital copy of your work, preferably as one single document in Microsoft Word or PDF format. Our editorial team will undertake a comprehensive review of all work that is submitted to us. We consider submissions from a wide range of genres, both fiction and non-fiction; from memoirs and biographies to science fiction and fantasy.",
+            "We do not accept academic works, sheet music, joke books or foreign language books."
+        ]
+    },
+    "contracts": {
+        "title": "PUBLISHING <br />CONTRACTS",
+        "paragraph": "At Olympia Publishers we work with the hybrid publishing model and offer two types of publishing contracts:",
+        "title2": "TRADITIONAL CONTRACT",
+        "paragraph2": "This is where no costs are incurred by the author and the whole cost for producing, publishing and marketing the work is covered by us.",
+        "title3": "HYBRID PUBLISHING CONTRACT",
+        "paragraph3": "This offer is based on a contribution, to be paid by the author, to cover initial production and printing of the work"
+    },
+    "requirements": {
+        "title": "REQUIREMENTS",
+        "sections": [
+            {
+                "subtitle": "WRITTEN IN ENGLISH?",
+                "content": "We only accept submissions written in English language."
+            },
+            {
+                "subtitle": "INCOMPLETE MANUSCRIPT?",
+                "content": [
+                    "If you haven’t yet finished the work but would like to know if it would be something we are interested in before completing then you are also welcome to send samples of the manuscript to us.",
+                    "We are only able to consider one submission at a time during the editorial process."
+                ],
+                "tip": "Always use a font that is legible and easy to read. Garamond or Times New Roman are preferred, whereas fonts such as Comic Sans and Broadway are not encouraged."
+            },
+            {
+                "subtitle": "4 WEEKS REVIEW PROCESS",
+                "content": [
+                    "Your submitted manuscript will be reviewed by our Submissions Editor who will get in touch with you with their feedback. This process can take up to 4 weeks. This timeframe can vary depending on the time of the year.",
+                    "At Olympia we pride ourselves on our responsive nature. We confirm the receipt of all submissions and inform you of our decision regarding them."
+                ]
+            },
+            {
+                "subtitle": "SOME USEFUL TIPS",
+                "content": [
+                    "There is no need to double space your work. Always use a font that is legible and easy to read. Garamond or Times New Roman are preferred, whereas fonts such as Comic Sans and Broadway are not encouraged."
+                ]
+            }
+        ]
+    },
+    "submissionSteps": [
+        {
+            "id": 1,
+            "image": "/assets/publish/Asset 1.png",
+            "description": "YOU HAVE SUBMITTED YOUR MANUSCRIPT TO US"
+        },
+        {
+            "id": 2,
+            "image": "/assets/publish/Asset 2.png",
+            "description": "THIS WILL BE REVIEWED BY OUR SUBMISSIONS EDITOR AT OUR LONDON OFFICE"
+        },
+        {
+            "id": 3,
+            "image": "/assets/publish/Asset 3.png",
+            "description": "YOU WILL HEAR BACK FROM THEM WITH THEIR FEEDBACK"
+        },
+        {
+            "id": 4,
+            "image": "/assets/publish/Asset 4.png",
+            "description": "IF SUCCESSFUL, YOU WILL BE OFFERED A CONTRACT TO PUBLISH WITH US"
+        }
+    ],
+    "faqData": [
+        {
+            "question": "WHAT GENRES DO YOU ACCEPT?",
+            "answer": "We accept almost all genres apart from scientific or educational works."
+        },
+        {
+            "question": "DO WE ACCEPT FOREIGN LANGUAGE SUBMISSIONS?",
+            "answer": "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+        },
+        {
+            "question": "IS THERE A PARTICULAR FONT AND SIZE I SHOULD USE?",
+            "answer": "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+        },
+        {
+            "question": "WHAT GENRES DO YOU ACCEPT?",
+            "answer": "We accept almost all genres apart from scientific or educational works."
+        },
+        {
+            "question": "DO WE ACCEPT FOREIGN LANGUAGE SUBMISSIONS?",
+            "answer": "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+        },
+        {
+            "question": "IS THERE A PARTICULAR FONT AND SIZE I SHOULD USE?",
+            "answer": "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+        },
+        {
+            "question": "WHAT GENRES DO YOU ACCEPT?",
+            "answer": "We accept almost all genres apart from scientific or educational works."
+        },
+        {
+            "question": "DO WE ACCEPT FOREIGN LANGUAGE SUBMISSIONS?",
+            "answer": "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+        },
+        {
+            "question": "IS THERE A PARTICULAR FONT AND SIZE I SHOULD USE?",
+            "answer": "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+        }
+    ]
+}
