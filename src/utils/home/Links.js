@@ -8,5 +8,5 @@ export const navItems = [
   { label: "AUTHORS", url: "/authors" },
   { label: "FEATURES", url: "/features" },
   { label: "ABOUT US", url: "/about" },
-  { label: "PUBLISH WITH US", url: "/publish" },
+  { label: "PUBLISH WITH US", url: "/publish-with-us" },
 ];
