@@ -66,5 +66,43 @@
             "image": "/assets/publish/Asset 4.png",
             "description": "IF SUCCESSFUL, YOU WILL BE OFFERED A CONTRACT TO PUBLISH WITH US"
         }
+    ],
+    "faqData": [
+        {
+            "question": "WHAT GENRES DO YOU ACCEPT?",
+            "answer": "We accept almost all genres apart from scientific or educational works."
+        },
+        {
+            "question": "DO WE ACCEPT FOREIGN LANGUAGE SUBMISSIONS?",
+            "answer": "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+        },
+        {
+            "question": "IS THERE A PARTICULAR FONT AND SIZE I SHOULD USE?",
+            "answer": "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+        },
+        {
+            "question": "WHAT GENRES DO YOU ACCEPT?",
+            "answer": "We accept almost all genres apart from scientific or educational works."
+        },
+        {
+            "question": "DO WE ACCEPT FOREIGN LANGUAGE SUBMISSIONS?",
+            "answer": "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+        },
+        {
+            "question": "IS THERE A PARTICULAR FONT AND SIZE I SHOULD USE?",
+            "answer": "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+        },
+        {
+            "question": "WHAT GENRES DO YOU ACCEPT?",
+            "answer": "We accept almost all genres apart from scientific or educational works."
+        },
+        {
+            "question": "DO WE ACCEPT FOREIGN LANGUAGE SUBMISSIONS?",
+            "answer": "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file."
+        },
+        {
+            "question": "IS THERE A PARTICULAR FONT AND SIZE I SHOULD USE?",
+            "answer": "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages."
+        }
     ]
 }

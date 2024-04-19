@@ -1,7 +1,7 @@
+import TextSection from "@/components/publish/TextSection";
 import Submission from "@/components/publish/Submission";
 import Banner from "@/components/common/Banner";
 import FAQ from "@/components/publish/FAQ";
-import TextSection from "@/components/publish/TextSection";
 
 const Page = () => {
   return (

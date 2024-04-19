@@ -7,7 +7,7 @@ const Submission = () => {
       <p className="font-bold text-[20px] lg:hidden uppercase text-center">
         SUBMISSION PROCESS
       </p>
-      <div>
+      <div className="grid gap-y-20">
         {publish.submissionSteps.map((step) => (
           <SubmissionStep
             key={step.id}
