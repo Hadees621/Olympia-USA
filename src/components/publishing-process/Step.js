@@ -94,7 +94,7 @@ function Step({ step, index }) {
         >
           <h2 className="font-bold text-[12px] lg:hidden">{step.mainTitle}</h2>
           <p
-            className={`text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[13px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#E6E6E6]"
+            className={`text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#E6E6E6]"
           }`}
           >
             {step.description}
@@ -102,7 +102,7 @@ function Step({ step, index }) {
           <br />
           {step.description2 && (
             <div>
-              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[13px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
+              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
                 {step.description2}
               </p>
               <br />
@@ -110,16 +110,16 @@ function Step({ step, index }) {
           )}
           {step.description3 && (
             <div>
-              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[13px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
+              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
                 {step.description3}
               </p>
               <br />
             </div>
           )}
-          <h4 className="text-[12px] leading-8 xl:space-y-4 sm:text-[10px] xl:text-[13px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#6C686B]">
+          <h4 className="text-[12px] leading-8 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#6C686B]">
             Top tip
           </h4>
-          <p className="text-[12px] leading-8 xl:space-y-4 sm:text-[10px] xl:text-[13px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 mt-1 text-[#6C686B]">
+          <p className="text-[12px] leading-8 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 mt-1 text-[#6C686B]">
             {step.tipContent}
           </p>
         </div>

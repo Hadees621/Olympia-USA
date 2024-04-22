@@ -25,7 +25,8 @@ const page = () => {
       <ProcessSteps />
 
       <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1350px] lg:mx-auto">
-        <PublishingJourney />
+        {/* <PublishingJourney /> */}
+        
         <div className="lg:flex flex-col lg:flex-row hidden my-36">
           <div className="flex-1">
             <div className="flex flex-col h-full justify-center items-start font-open-sans lg:px-5 2xl:p-20 lg:gap-10 mx-14">
@@ -53,6 +54,7 @@ const page = () => {
             />
           </div>
         </div>
+      
       </div>
     </>
   );
