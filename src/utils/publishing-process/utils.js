@@ -3,6 +3,7 @@ export const stepsData = [
     id: 1,
     imageUrl: "/assets/Publishing process/Asset 1.png",
     mainTitle: "COMPLETING YOUR MANUSCRIPT",
+    SmTitle: "Completing your manuscript",
     description:
       "You’ve done the hard part... You’ve written a book. Your book. We understand that a manuscript represents much more than just a collection of words and tales. What is laying on your desk is the product of hundreds of head scratches and endless cups of coffee (or tea) and those noble grins when you write those lines you’re so proud of.",
     tipContent:
@@ -12,6 +13,7 @@ export const stepsData = [
     id: 2,
     imageUrl: "/assets/Publishing process/Asset 2.png",
     mainTitle: "SUBMISSION AND EDITORIAL REVIEW",
+    SmTitle: "Submission and editorial review",
     description:
       "The Submissions Editor reviews your submission to ensure that your manuscript is complete, and that we have all the information we need. The manuscript is then handed over to the editorial team for editorial review.",
     description2:
@@ -23,6 +25,7 @@ export const stepsData = [
     id: 3,
     imageUrl: "/assets/Publishing process/Asset 3.png",
     mainTitle: "OFFER OF PUBLICATION",
+    SmTitle: "Offer of publication",
     description:
       "If our editors like what they read, you will be contacted with an offer of publication. On signing the publishing contract you’ve become part of the Olympia family – Congratulations!",
     description2:
@@ -34,6 +37,7 @@ export const stepsData = [
     id: 4,
     imageUrl: "/assets/Publishing process/Asset 4.png",
     mainTitle: "COVER DESIGN",
+    SmTitle: "Cover design",
     description:
       "You shouldn’t judge a book by its cover. But let’s be honest, we do. This is why we work so closely with our graphics designers on creating dazzling covers. Yourself and the production team work on a cover idea, when the idea is finalised, the graphics designer will work to create sample covers which will be sent for your approval.",
     description2: "Once both parties are happy, the cover is finalised.",
@@ -43,6 +47,7 @@ export const stepsData = [
     id: 5,
     imageUrl: "/assets/Publishing process/Asset 5.png",
     mainTitle: "FORMATTING AND LAYOUT",
+    SmTitle: "Formatting and layout",
     description:
       "Pages are being transformed into a book. Next, your raw manuscript will be formatted transforming it into a book layout. Text type for the book will be selected based on various factors such as the genre of the book. Details such as book size will also be confirmed to prepare your book for the proofing stage.",
     tipContent:
@@ -52,6 +57,8 @@ export const stepsData = [
     id: 6,
     imageUrl: "/assets/Publishing process/Asset 6.png",
     mainTitle: "REVISE PROOFS AND FINAL CHECKS",
+    SmTitle: "Revise proofs and final checks",
+
     description:
       "Did you know that spelling mistakes are one of the most irritating errors for a reader? So, we’ll be taking extra care of that almost straight away with intense proofing. Patience is virtue during this stage of producing the book. Good things take time and care. Your manuscript is proofed and corrections, edits and changes are suggested. The first version is sent to you for approval. This process is repeated until we are both happy with the changes put forward. Following this, your book is prepared for printing and you’ll be contacted by your dedicated publicist. Soon it is time to let the world know about your book.",
     tipContent:
@@ -61,6 +68,8 @@ export const stepsData = [
     id: 7,
     imageUrl: "/assets/Publishing process/Asset 7.png",
     mainTitle: "PUBLICATION DATE IS SET",
+    SmTitle: "Publication date is set",
+
     description:
       "Your publicist will get in touch with you with a provisional publication date and will look beneath the story to find out what makes your book special and most importantly create a promotional plan before entering the ever-changing, ever-expanding book market.",
     tipContent: "Clear your diary it is time for you to host some events!",
@@ -72,6 +81,8 @@ export const stepsData = [
     id: 8,
     imageUrl: "/assets/Publishing process/Asset 8.png",
     mainTitle: "YOUR BOOK IS PUBLISHED!",
+    SmTitle: "Your book is published!",
+
     description:
       "Your book is published and publicity continues. Your publicist will work hard at spreading the word for your book by sending review copies to a trusted network of bloggers and reviewers, book awards are considered, libraries and schools are approached, if relevant and social media campaigns are in full swing.",
     description2:
@@ -85,6 +96,8 @@ export const stepsData = [
     id: 9,
     imageUrl: "/assets/Publishing process/Asset 9.png",
     mainTitle: "DIGITAL MATERIAL, EBOOK AND FURTHER PROMOTIONS",
+    SmTitle: "Book promotions & digital marketing",
+
     description:
       "By this time your book will have arrived in our warehouse and we delve into the digital elements of promotions. An eBook is also designed and created, banners and promotional videos are brought to life and the social media campaigns are kick-started! The complimentary copies will also be sent to you. This is also the time an audio book will be considered at no cost to the author, book awards and prizes will be researched and we will discuss thinking of ideas out the box to get your book out there!",
     description2:
@@ -96,6 +109,8 @@ export const stepsData = [
     id: 10,
     imageUrl: "/assets/Publishing process/Asset 10.png",
     mainTitle: "ROYALTIES UPDATED",
+    SmTitle: "Royalties updated",
+
     description:
       "You can look forward to royalties update every 6 months. Reviews from your readers are always a joy and a reward of its own. Rising opportunities that come hand-in-hand with being a published author with an independent publishing house behind them.",
     description2:

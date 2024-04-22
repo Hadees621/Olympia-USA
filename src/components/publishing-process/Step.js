@@ -72,11 +72,11 @@ function Step({ step, index }) {
                 {step.id}
               </h1>
               <h1
-                className={`font-semibold lowercase text-[15px] w-40 items-center flex ${
+                className={`font-semibold text-[14px] w-44 items-center flex ${
                   isHovered ? "text-[#3058A5]" : "text-[#E6E6E6]"
                 }`}
               >
-                {step.mainTitle}
+                {step.SmTitle}
               </h1>
             </div>
             <img
