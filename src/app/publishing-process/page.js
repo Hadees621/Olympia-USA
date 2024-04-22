@@ -1,4 +1,5 @@
 import Banner from "@/components/common/Banner";
+import PublishingJourney from "@/components/home/PublishingJourney";
 import ProcessSteps from "@/components/publishing-process/ProcessSteps";
 
 const page = () => {
@@ -13,6 +14,8 @@ const page = () => {
       </div>
 
       <ProcessSteps />
+
+      <PublishingJourney />
     </div>
   );
 };

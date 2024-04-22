@@ -30,7 +30,7 @@ const PublishingJourney = () => {
                 height={400}
               />
             </div>
-            <div className=" ">
+            <div className="">
               <Image
                 src={"/Home/Mobile/Asset 32.png"}
                 width={200}
@@ -39,11 +39,11 @@ const PublishingJourney = () => {
             </div>
           </div>
           <div className="flex flex-col justify-between">
-            <div className=" h-full">
+            <div className="h-full">
               <Image
                 src={"/Home/Mobile/Asset 33.png"}
                 width={200}
-                height={400}
+                height={1000}
               />
             </div>
             <div className="">
