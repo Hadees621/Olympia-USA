@@ -25,16 +25,18 @@ const page = () => {
       <ProcessSteps />
 
       <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1350px] lg:mx-auto">
-        {/* <PublishingJourney /> */}
-        
+        <div className="lg:hidden">
+          <PublishingJourney />
+        </div>
+
         <div className="lg:flex flex-col lg:flex-row hidden my-36">
           <div className="flex-1">
             <div className="flex flex-col h-full justify-center items-start font-open-sans lg:px-5 2xl:p-20 lg:gap-10 mx-14">
               <div className="flex flex-col gap-4 mb-5 lg:mb-0">
-                <h2 className="text-[36px] lg:text-[26px] font-bold text-buttonred md:text-center lg:text-start">
+                <h2 className="text-[36px] lg:text-[26px] 2xl:text-[30px] font-bold text-buttonred md:text-center lg:text-start">
                   {publishing.section1.title}
                 </h2>
-                <p className="mt-2 font-droid text-[11px] leading-7 lg:pr-10 text-black md:text-center lg:text-start">
+                <p className="mt-2 font-droid text-[11px] xl:text-[12px] 2xl:text-[17px] leading-7 lg:pr-10 text-black md:text-center lg:text-start">
                   {publishing.section1.subtitle}
                 </p>
               </div>
@@ -54,7 +56,6 @@ const page = () => {
             />
           </div>
         </div>
-      
       </div>
     </>
   );
