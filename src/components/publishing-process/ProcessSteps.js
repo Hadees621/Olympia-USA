@@ -6,7 +6,7 @@ function ProcessSteps() {
   return (
     <div>
       {stepsData.map((step) => (
-        <Step key={step.id} step={step} />
+        <Step key={step.id} step={step} index={step.id} />
       ))}
     </div>
   );
