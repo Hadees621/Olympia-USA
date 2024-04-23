@@ -1,9 +1,7 @@
 import Banner from "@/components/common/Banner";
-import Button from "@/components/common/Button";
 import InputField from "@/components/request-review/InputField";
 import SectionTitle from "@/components/request-review/SectionTitle";
 import Optional from "@/components/submit-online/Optional";
-import React from "react";
 
 const page = () => {
   return (
