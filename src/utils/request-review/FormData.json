@@ -1,0 +1,99 @@
+{
+    "sections": [
+        {
+            "number": "01",
+            "title": "ABOUT YOU",
+            "fields": [
+                {
+                    "label": "Title",
+                    "width": "w-[70%]"
+                },
+                {
+                    "label": "First Name"
+                },
+                {
+                    "label": "Last Name"
+                },
+                {
+                    "label": "Email address"
+                },
+                {
+                    "label": "Address line 1"
+                },
+                {
+                    "label": "Address line 2"
+                },
+                {
+                    "label": "Address line 3"
+                },
+                {
+                    "label": "City"
+                },
+                {
+                    "label": "Country/ State"
+                },
+                {
+                    "label": "Postcode/Zip code",
+                    "isRequired": true,
+                    "showRequiredText": false
+                },
+                {
+                    "label": "Country"
+                },
+                {
+                    "label": "Company/Blog/Magazine name"
+                },
+                {
+                    "label": "Job title",
+                    "isRequired": false
+                }
+            ]
+        },
+        {
+            "number": "02",
+            "title": "REVIEW",
+            "fields": [
+                {
+                    "label": "Book title"
+                },
+                {
+                    "label": "Author name"
+                },
+                {
+                    "label": "ISBN",
+                    "isRequired": true,
+                    "showRequiredText": false
+                },
+                {
+                    "label": "Format"
+                },
+                {
+                    "label": "Where will you publish this review?",
+                    "isRequired": false
+                },
+                {
+                    "label": "Web link",
+                    "isRequired": false
+                },
+                {
+                    "label": "Date of review",
+                    "isRequired": false
+                },
+                {
+                    "label": "Subscribers/ Circulation",
+                    "isRequired": false
+                }
+            ]
+        },
+        {
+            "number": "03",
+            "title": "TERMS & CONDITIONS",
+            "content": [
+                "Review copies of our books are only provided to specific people, this is at the sole discretion of Olympia Publishers.",
+                "WHEN YOU REQUEST A REVIEW COPY YOU ARE AGREEING TO:",
+                " - Send us a copy of the said review prior to publishing.",
+                " - That we can use the information provided to follow up on review copies."
+            ]
+        }
+    ]
+}
