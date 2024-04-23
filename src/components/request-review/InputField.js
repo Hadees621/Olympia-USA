@@ -23,11 +23,11 @@ function InputField({
   } text-gray-900 text-sm rounded-md p-4 ${width}`;
 
   return (
-    <div className={`flex flex-col ${width}`}>
+    <div className={`flex flex-col ${width} my-1`}>
       <div className="flex justify-between items-center mb-2">
         <label
           htmlFor="first_name"
-          className="text-[13px] font-medium text-gray-900"
+          className="text-[13px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] font-medium text-gray-900"
         >
           {label}
           {isRequired && "*"}
