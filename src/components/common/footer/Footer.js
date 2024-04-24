@@ -16,11 +16,14 @@ const Footer = () => {
                 className="mt-9 lg:mt-0 space-y-6 space-x-2 xl:space-x-0"
               >
                 <TitleP title={section.title} />
-                <div className="space-y-4">
-                  {section.links.map((link) => (
-                    <p className="font-semibold text-[#4A4949] text-[11.5px] font-open-sans">
-                      {link}
-                    </p>
+                <div className="grid space-y-4">
+                  {section.links.map((link, linkIndex) => (
+                    <a
+                      href={link.url}
+                      className="font-semibold text-[#4A4949] text-[11.5px] font-open-sans"
+                    >
+                      {link.label}
+                    </a>
                   ))}
                 </div>
               </div>
