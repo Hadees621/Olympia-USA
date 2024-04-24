@@ -17,7 +17,7 @@ const Footer = () => {
               >
                 <TitleP title={section.title} />
                 <div className="grid space-y-4">
-                  {section.links.map((link, linkIndex) => (
+                  {section.links.map((link) => (
                     <a
                       href={link.url}
                       className="font-semibold text-[#4A4949] text-[11.5px] font-open-sans"
