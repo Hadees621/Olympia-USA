@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const SmBumblebee = () => {
   return (
@@ -11,9 +12,11 @@ const SmBumblebee = () => {
               The home of children’s literature
             </p>
           </div>
-          <button className="my-3 text-[12px] px-5 py-[10px] font-bold font-droid-sans border border-black shadow hover:bg-[#FEC40D] focus:border-none">
-            View Bumblebee books
-          </button>
+          <Link href="/bumblebee-books">
+            <button className="my-3 text-[12px] px-5 py-[10px] font-bold font-droid-sans border border-black shadow hover:bg-[#FEC40D] focus:border-none">
+              View Bumblebee books
+            </button>
+          </Link>
         </div>
         <div className="flex-1">
           <Image

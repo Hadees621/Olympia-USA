@@ -2,6 +2,7 @@ import Button from "@/components/common/Button";
 import ImageSlider from "@/components/submit-online/ImageSlider";
 import { images } from "@/utils/submissions/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const SubmissionPage = () => {
   const ThankYouSection = () => (
@@ -64,7 +65,9 @@ const SubmissionPage = () => {
         surprising if Olympia Publishers becomes the most favoured publishing
         destination of writers in a few years."{" "}
       </p>
-      <Button title={"View author experiences"} width={"w-[170px]"} />
+      <Link href="/author-exp">
+        <Button title={"View author experiences"} width={"w-[170px]"} />
+      </Link>
     </div>
   );
 
@@ -109,11 +112,13 @@ const SubmissionPage = () => {
                   favoured publishing destination of writers in a few years."
                 </p>
               </div>
-              <button
-                className={`text-[10px] p-[8px] font-bold font-open-sans border border-black flex items-center justify-center w-[160px]`}
-              >
-                VIEW AUTHOR EXPERIENCES
-              </button>
+              <Link href="/author-exp">
+                <button
+                  className={`text-[10px] p-[8px] font-bold font-open-sans border border-black flex items-center justify-center w-[160px]`}
+                >
+                  VIEW AUTHOR EXPERIENCES
+                </button>
+              </Link>
             </div>
           </div>
         </div>

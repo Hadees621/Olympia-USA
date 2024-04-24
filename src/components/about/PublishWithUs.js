@@ -1,4 +1,5 @@
 import SectionsData from "@/utils/about/SectionsData.json";
+import Link from "next/link";
 
 const { PublishWith } = SectionsData;
 
@@ -14,9 +15,11 @@ const PublishWithUs = () => {
             <p className="text-[10px] xl:text-[12px] 2xl:text-[17px] pr-16 xl:pr-20 font-open-sans">
               {PublishWith.para}
             </p>
-            <button className="text-[8px] xl:text-[9px] py-[7px] font-bold font-open-sans flex items-center justify-center w-[100px] xl:w-[120px] 2xl:w-[150px] 2xl:py-[10px] 2xl:text-[13px] border border-black uppercase">
-              {PublishWith.buttonText}
-            </button>
+            <Link href="/publish-with-us">
+              <button className="text-[8px] xl:text-[9px] py-[7px] font-bold font-open-sans flex items-center justify-center w-[100px] xl:w-[120px] 2xl:w-[150px] 2xl:py-[10px] 2xl:text-[13px] border border-black uppercase">
+                {PublishWith.buttonText}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

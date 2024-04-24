@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../common/Button";
 
 const CommonSection = () => {
@@ -14,13 +15,15 @@ const CommonSection = () => {
           genres. If you have written a story, submit your manuscript for us to
           review.
         </p>
-        <Button
-          title={"Read our submissions guidelines"}
-          width={
-            "w-[240px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
-          }
-          color={"transparent"}
-        />
+        <Link href="/publish-with-us">
+          <Button
+            title={"Read our submissions guidelines"}
+            width={
+              "w-[240px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
+            }
+            color={"transparent"}
+          />
+        </Link>
       </div>
       <div
         className={`flex flex-col justify-between items-start p-8 lg:flex-col lg:justify-start font-open-sans lg:px-10 gap-8 text-white py-14 my-14 ml-9 bg-black`}
@@ -30,13 +33,15 @@ const CommonSection = () => {
           For anymore questions or queries, visit out frequently asked questions
           page. We are ready to answer all of your questions!
         </p>
-        <Button
-          title={"View FAQs"}
-          width={
-            "w-[100px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
-          }
-          color={"transparent"}
-        />
+        <Link href="/publish-with-us">
+          <Button
+            title={"View FAQs"}
+            width={
+              "w-[100px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
+            }
+            color={"transparent"}
+          />
+        </Link>
       </div>
     </>
   );

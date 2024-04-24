@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const ImageSlider = ({ images, imageClass = "w-[250px]", title, flag }) => {
@@ -69,11 +70,13 @@ const ImageSlider = ({ images, imageClass = "w-[250px]", title, flag }) => {
           ))}
         </div>
         {flag && (
-          <button
-            className={`text-[13px] py-[10px] font-bold font-open-sans flex items-center justify-center w-[130px] mx-auto border border-buttonred text-buttonred`}
-          >
-            Learn More
-          </button>
+          <Link href="/publishing-process">
+            <button
+              className={`text-[13px] py-[10px] font-bold font-open-sans flex items-center justify-center w-[130px] mx-auto border border-buttonred text-buttonred`}
+            >
+              Learn More
+            </button>
+          </Link>
         )}
       </div>
     </>

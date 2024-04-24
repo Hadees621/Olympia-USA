@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Arrowleft from "../../../public/imgs/Arrowleft.svg";
 import Arrowright from "../../../public/imgs/Arrowright.svg";
+import Link from "next/link";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -68,11 +69,13 @@ const Slider = () => {
             nonummy nibh. Lorem ipsum dolor sit amet.Lorem ipsum, consectetuer
             adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet.
           </p>
-          <button
-            className={`text-[8px] 2xl:text-[12px] py-[9px] 2xl:py-[12px] font-semibold font-droid-sans shadow flex items-center 2xl:items-start justify-center w-[100px] 2xl:w-[140px] border border-black hover:bg-buttonred hover:text-white`}
-          >
-            VIEW ALL FICTION
-          </button>
+          <Link href="/genre">
+            <button
+              className={`text-[8px] 2xl:text-[12px] py-[9px] 2xl:py-[12px] font-semibold font-droid-sans shadow flex items-center 2xl:items-start justify-center w-[100px] 2xl:w-[140px] border border-black hover:bg-buttonred hover:text-white`}
+            >
+              VIEW ALL FICTION
+            </button>
+          </Link>
         </div>
 
         <div

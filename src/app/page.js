@@ -17,6 +17,7 @@ import Button from "@/components/common/Button";
 import SmEditorsPick from "@/components/home/SmEditorsPick";
 import SmCategories from "@/components/home/SmCategories";
 import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
+import Link from "next/link";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -55,11 +56,13 @@ export default function Home() {
             Chances are you’re looking for one of our <br /> most popular
             writers, so here they are.
           </p>
-          <Button
-            title="View all authors"
-            color="transparent"
-            width="w-[140px] font-bold text-[14px]"
-          />
+          <Link href="/authors">
+            <Button
+              title="View all authors"
+              color="transparent"
+              width="w-[140px] font-bold text-[14px]"
+            />
+          </Link>
         </div>
       </div>
       <PublishingJourney />
