@@ -64,7 +64,10 @@ const Footer = () => {
             <Text text="© 2022 Ashwell Publishing Ltd | Registered in England No. 6431579" />
           </div>
           <div className="w-full flex justify-end">
-            <Text text="Terms & Conditions | Privacy & Cookies Policy" />
+            <Text
+              text="Terms & Conditions | Privacy & Cookies Policy"
+              link={"/terms-and-conditions"}
+            />
           </div>
         </div>
       </div>
