@@ -54,7 +54,10 @@ const Footer = () => {
               />
             </div>
             <div className="w-full flex items-center justify-center lg:hidden">
-              <Text text="Terms & Conditions | Privacy & Cookies Policy" />
+              <Text
+                text="Terms & Conditions | Privacy & Cookies Policy"
+                link={"/terms-and-conditions"}
+              />
             </div>
           </div>
         </div>
