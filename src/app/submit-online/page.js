@@ -2,6 +2,8 @@ import Banner from "@/components/common/Banner";
 import InputField from "@/components/request-review/InputField";
 import SectionTitle from "@/components/request-review/SectionTitle";
 import Optional from "@/components/submit-online/Optional";
+import FileUploader from "@/components/submit-online/FileUploader";
+import Button from "@/components/common/Button";
 
 const page = () => {
   return (
@@ -109,10 +111,10 @@ const page = () => {
           <InputField label="Book title" />
 
           <div className="flex w-full gap-4 my-4">
-            <div className="w-[60%]">
+            <div className="w-[50%] lg:w-[60%]">
               <InputField label="Genre" showRequiredText={false} />
             </div>
-            <div className="w-[40%]">
+            <div className="w-[50%] lg:w-[40%]">
               <InputField
                 label="Word count (numbers only)"
                 showRequiredText={false}
@@ -149,6 +151,97 @@ const page = () => {
 
           <div className="py-16 md:hidden">
             <hr />
+          </div>
+        </div>
+
+        <div className="md:border border-black md:p-8 xl:p-12 space-y-4 lg:space-y-6 lg:py-6">
+          <SectionTitle
+            number="01"
+            title="UPLOAD FILES"
+            SmallTitle="Upload files"
+          />
+
+          <p
+            className={`text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#E6E6E6]"
+          }`}
+          >
+            Upload synopsis (1 file only in PDF or Word format)*
+          </p>
+
+          <FileUploader id="uploader1" />
+
+          <p
+            className={`text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#E6E6E6]"
+          }`}
+          >
+            Upload synopsis (1 file only in PDF or Word format)*
+          </p>
+
+          <FileUploader id="uploader2" />
+
+          <div className="py-16 lg:hidden">
+            <hr />
+          </div>
+        </div>
+
+        <div className="md:border border-black md:p-8 xl:p-12 space-y-4 lg:space-y-2 xl:space-y-4 lg:py-6">
+          <SectionTitle
+            number="04"
+            title="TERMS & CONDITIONS"
+            SmallTitle="Terms & Conditions"
+          />
+
+          <div class="flex items-center py-4 lg:pt-6">
+            <input
+              id="default-checkbox"
+              type="checkbox"
+              value=""
+              class="w-14 h-14 text-blue-600 bg-gray-100 rounded-none lg:hidden"
+            />
+            <label
+              for="default-checkbox"
+              class="y-4 text-[12px] lg:text-[13px] font-semibold px-8 lg:px-4 lg:hidden"
+            >
+              {" "}
+              I HAVE READ AND AGREE TO THE{" "}
+              <a href="/terms-and-conditions" className="underline">
+                {" "}
+                TERMS & CONDITIONS
+              </a>
+            </label>
+            <input
+              id="default-radio-1"
+              type="radio"
+              value=""
+              name="default-radio"
+              class="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 hidden lg:block"
+            />
+            <label
+              for="default-checkbox"
+              class="text-[14px] lg:text-[12px] xl:text-[13px] 2xl:text-[16px] font-semibold px-8 lg:px-4 hidden lg:block"
+            >
+              {" "}
+              I have read and agree to the{" "}
+              <a href="/terms-and-conditions" className="underline">
+                {" "}
+                Terms & Conditions.{" "}
+              </a>
+            </label>
+          </div>
+
+          <div className="pt-14 pb-28 lg:py-10 lg:hidden">
+            <button
+              className={`text-[12px] py-[10px] font-semibold font-open-sans shadow flex items-center justify-center bg-[#68AA6E] w-[160px] text-white rounded-[30px] mx-auto`}
+            >
+              Submit request
+            </button>
+          </div>
+          <div className="pt-14 pb-28 lg:py-10 hidden lg:block">
+            <Button
+              title={"SUBMIT REQUEST"}
+              width={"w-[160px]"}
+              color={"red"}
+            />
           </div>
         </div>
       </div>
