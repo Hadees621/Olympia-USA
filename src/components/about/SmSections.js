@@ -5,6 +5,7 @@ import ImageSlider from "../submit-online/ImageSlider";
 import YouTubeVideo from "./YoutubeVideo";
 import SectionsData from "@/utils/about/SectionsData.json";
 import { locations, sliderData } from "@/utils/about/utils";
+import Link from "next/link";
 const SmSections = () => {
   const {
     publications,
@@ -25,8 +26,6 @@ const SmSections = () => {
         imageClass="w-[270px] max-h-[250px] px-14"
         flag={"true"}
       />
-
-     
 
       <div className="bg-[#F5F3F2] p-5 grid items-center justify-center space-y-4 py-10 m-5 lg:hidden">
         <h2 className="font-bold text-[20px] text-center font-open-sans">
@@ -66,11 +65,14 @@ const SmSections = () => {
         <h2 className="font-courier-prime text-[20px] font-medium tracking-tighter">
           The home of children’s literature
         </h2>
-        <Button
-          title={"View Bumblebee books"}
-          color={"transparent"}
-          width={"w-[180px] text-[12px] font-bold"}
-        />
+
+        <Link href="/bumblebee-books">
+          <Button
+            title={"View Bumblebee books"}
+            color={"transparent"}
+            width={"w-[180px] text-[12px] font-bold"}
+          />
+        </Link>
       </div>
 
       <div className="m-5 mt-28 font-open-sans p-3 lg:hidden">
@@ -82,11 +84,13 @@ const SmSections = () => {
         <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4 md:mx-32">
           <p className="font-bold text-[30px] mt-10">{authorSays.title}</p>
           <p className="mt-5">{authorSays.quote}</p>
-          <Button
-            title={authorSays.buttonText}
-            color={"transparent"}
-            width={"w-[210px] text-[15px] font-semibold"}
-          />
+          <Link href="/author-exp">
+            <Button
+              title={authorSays.buttonText}
+              color={"transparent"}
+              width={"w-[210px] text-[15px] font-semibold"}
+            />
+          </Link>
         </div>
       </div>
 
@@ -101,12 +105,14 @@ const SmSections = () => {
             {socialResponsibility.title}
           </p>
           <p className="mt-5">{socialResponsibility.description}</p>
-          <Button
-            title="Learn more"
-            color="transparent"
-            width="w-[110px] text-[14px] font-semibold"
-            link={socialResponsibility.learnMoreLink}
-          />
+          <Link href="/corporate-resp">
+            <Button
+              title="Learn more"
+              color="transparent"
+              width="w-[110px] text-[14px] font-semibold"
+              link={socialResponsibility.learnMoreLink}
+            />
+          </Link>
         </div>
       </div>
 
@@ -121,12 +127,14 @@ const SmSections = () => {
             {publishingJourneys.title}
           </p>
           <p className="mt-5">{publishingJourneys.description}</p>
-          <Button
-            title="Submit online"
-            color="red"
-            width="w-[170px] text-[14px] font-semibold"
-            link={publishingJourneys.submitLink}
-          />
+          <Link href="/submit-online">
+            <Button
+              title="Submit online"
+              color="red"
+              width="w-[170px] text-[14px] font-semibold"
+              link={publishingJourneys.submitLink}
+            />
+          </Link>
         </div>
       </div>
 

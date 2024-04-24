@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const Review = () => {
   return (
@@ -23,13 +24,15 @@ const Review = () => {
               newspapers, book bloggers and Vloggers who are <br /> interested
               in reviewing our books.{" "}
             </p>
-            <Button
-              title={"Fill out our form"}
-              width={
-                "w-[150px] h-[42px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px]"
-              }
-              color={"transparent"}
-            />
+            <Link href="/request-review">
+              <Button
+                title={"Fill out our form"}
+                width={
+                  "w-[150px] h-[42px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px]"
+                }
+                color={"transparent"}
+              />
+            </Link>
           </div>
         </div>
       </div>

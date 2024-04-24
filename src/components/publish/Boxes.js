@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@/components/common/Button";
+import Link from "next/link";
 
 const Boxes = () => {
   return (
@@ -12,11 +13,13 @@ const Boxes = () => {
           A quick and simple way to submit to us is by using our online
           submission form, just click below to begin.
         </p>
-        <Button
-          title="Read our submissions guidelines"
-          width="w-[240px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
-          color="transparent"
-        />
+        <Link href="/submit-online">
+          <Button
+            title="Read our submissions guidelines"
+            width="w-[240px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
+            color="transparent"
+          />
+        </Link>
       </div>
 
       <div className="email-section bg-[#F9F7F6] text-black py-14 my-14 mx-8 p-8 lg:px-10 flex flex-col lg:flex-col gap-8 items-start justify-between">

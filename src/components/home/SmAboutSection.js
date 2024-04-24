@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const SmAboutSection = ({ heading, paragraph }) => {
   return (
@@ -10,11 +11,13 @@ const SmAboutSection = ({ heading, paragraph }) => {
             <h2 className="text-4xl font-bold">{heading}</h2>
             <p className="mt-4 text-[13px] leading-[36px]">{paragraph}</p>
           </div>
-          <Button
-            title={"Read more about this"}
-            width={"w-[180px] font-semibold"}
-            color={"transparent"}
-          />
+          <Link href="/about">
+            <Button
+              title={"Read more about this"}
+              width={"w-[180px] font-semibold"}
+              color={"transparent"}
+            />
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4 justify-center items-center px-5">

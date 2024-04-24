@@ -4,6 +4,7 @@ import Button from "../common/Button";
 import FAQ from "./FAQ";
 import SubmissionProcess from "./SubmissionProcess";
 import { tabData } from "@/utils/publish-with-us/utils";
+import Link from "next/link";
 
 const LargeScreenComponents = () => {
   const [activeTab, setActiveTab] = useState("submissions");
@@ -68,11 +69,13 @@ const LargeScreenComponents = () => {
             A quick and simple way to submit to us is by using our online
             submission form, just click below to begin.
           </p>
-          <Button
-            title="SUBMIT ONLINE"
-            width="w-[240px] h-[44px] lg:w-[110px] lg:h-[35px] 2xl:w-[130px] 2xl:h-[45px] text-[9px] border border-white mt-6"
-            color="red"
-          />
+          <Link href="/submit-online">
+            <Button
+              title="SUBMIT ONLINE"
+              width="w-[240px] h-[44px] lg:w-[110px] lg:h-[35px] 2xl:w-[130px] 2xl:h-[45px] text-[9px] border border-white mt-6"
+              color="red"
+            />
+          </Link>
         </div>
         <div className="email-section bg-[#F0F4F7] border-2 border-[#3975B7] flex flex-col items-start w-1/2 gap-5 py-12 px-16 xl:p-20">
           <h2 className="text-[20px] xl:text-[24px] text-[#0E58A8] font-bold pr-10 leading-[36px]">

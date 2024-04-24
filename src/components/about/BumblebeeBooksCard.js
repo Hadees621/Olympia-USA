@@ -1,5 +1,6 @@
 import SectionsData from "@/utils/about/SectionsData.json";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const { BumblebeeBooks } = SectionsData;
 
@@ -34,13 +35,15 @@ const BumblebeeBooksCard = () => {
                     {BumblebeeBooks.subTitle}
                   </h2>
                 </div>
-                <Button
-                  title={BumblebeeBooks.buttonTitle}
-                  color={"transparent"}
-                  width={
-                    "w-[90px] text-[6px] xl:w-[120px] xl:text-[9px] py-[7px] font-bold"
-                  }
-                />
+                <Link href="/bumblebee-books">
+                  <Button
+                    title={BumblebeeBooks.buttonTitle}
+                    color={"transparent"}
+                    width={
+                      "w-[90px] text-[6px] xl:w-[120px] xl:text-[9px] py-[7px] font-bold"
+                    }
+                  />
+                </Link>
               </div>
             </div>
           </div>

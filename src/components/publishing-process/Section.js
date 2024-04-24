@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const Section = ({ title, subtitle, buttonTitle, imageUrl }) => (
   <div className="lg:flex flex-col lg:flex-row my-36">
@@ -13,7 +14,13 @@ const Section = ({ title, subtitle, buttonTitle, imageUrl }) => (
             {subtitle}
           </p>
         </div>
-        <Button title={buttonTitle} width="w-[140px] text-[10px]" color="red" />
+        <Link href="/submit-online">
+          <Button
+            title={buttonTitle}
+            width="w-[140px] text-[10px]"
+            color="red"
+          />
+        </Link>
       </div>
     </div>
     <div className="flex-1 hidden lg:flex">

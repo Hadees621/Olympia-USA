@@ -1,6 +1,7 @@
 import Button from "../common/Button";
 import Image from "next/image";
 import SectionsData from "@/utils/about/SectionsData.json";
+import Link from "next/link";
 
 const { publishing } = SectionsData;
 const { section1, section2, section3, section4 } = publishing;
@@ -20,11 +21,13 @@ const PublishingJourney = () => {
                 {publishing.section1.subtitle}
               </p>
             </div>
-            <Button
-              title={publishing.section1.buttonTitle}
-              width="w-[140px] text-[10px]"
-              color="red"
-            />
+            <Link href="/submit-online">
+              <Button
+                title={publishing.section1.buttonTitle}
+                width="w-[140px] text-[10px]"
+                color="red"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex-1 hidden lg:flex">
@@ -55,12 +58,14 @@ const PublishingJourney = () => {
                 "{section2.quote}"
               </p>
             </div>
-            <Button
-              title={section2.buttonTitle}
-              width="w-[160px] text-[8px] font-bold"
-              color="transparent"
-              href={section2.buttonLink}
-            />
+            <Link href="/author-exp">
+              <Button
+                title={section2.buttonTitle}
+                width="w-[160px] text-[8px] font-bold"
+                color="transparent"
+                href={section2.buttonLink}
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -77,11 +82,13 @@ const PublishingJourney = () => {
                 {section3.subtitle}
               </p>
             </div>
-            <Button
-              title={section3.buttonTitle}
-              width="w-[120px] text-[9px] py-[8px]"
-              color="transparent"
-            />
+            <Link href="/corporate-resp">
+              <Button
+                title={section3.buttonTitle}
+                width="w-[120px] text-[9px] py-[8px]"
+                color="transparent"
+              />
+            </Link>
           </div>
         </div>
         <div className="flex-1 hidden lg:flex">

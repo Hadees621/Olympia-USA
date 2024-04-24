@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../common/Button";
+import Link from "next/link";
 const AboutSection = ({ heading, paragraph }) => {
   return (
     <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] flex lg:py-20 2xl:py-32">
@@ -9,7 +10,9 @@ const AboutSection = ({ heading, paragraph }) => {
             <h2 className="text-xl 2xl:text-3xl font-bold">{heading}</h2>
             <p className="my-4 text-[14px] 2xl:text-[19px]">{paragraph}</p>
           </div>
-          <Button title={"MORE ABOUT US"} width={"w-[40%]"} color={"red"} />
+          <Link href="/about">
+            <Button title={"MORE ABOUT US"} width={"w-[40%]"} color={"red"} />
+          </Link>
         </div>
       </div>
       <div className="flex-1">

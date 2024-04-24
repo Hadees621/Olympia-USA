@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const PublishingJourney = () => {
   return (
@@ -18,7 +19,9 @@ const PublishingJourney = () => {
                 Submit your manuscript for us to review.
               </p>
             </div>
-            <Button title="Submit online" width="w-[145px]" color="red" />
+            <Link href="/submit-online">
+              <Button title="Submit online" width="w-[145px]" color="red" />
+            </Link>
           </div>
         </div>
         <div className="flex gap-5 px-5 md:justify-center lg:hidden">
@@ -83,11 +86,13 @@ const PublishingJourney = () => {
                 so here they are.
               </p>
             </div>
-            <Button
-              title="VIEW ALL AUTHORS"
-              width="w-[160px]"
-              color="transparent"
-            />
+            <Link href="/authors">
+              <Button
+                title="VIEW ALL AUTHORS"
+                width="w-[160px]"
+                color="transparent"
+              />
+            </Link>
           </div>
         </div>
       </div>

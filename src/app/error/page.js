@@ -1,7 +1,7 @@
 "use client";
 
 import BooksSection from "@/components/common/BooksSection";
-import Button from "@/components/common/Button";
+import Link from "next/link";
 
 const Error = () => {
   return (
@@ -14,16 +14,20 @@ const Error = () => {
           Don’t worry, there are plenty of other pages to turn to at Olympia
           publishers!
         </p>
-        <button
-          className={`text-[12px] p-[12px] font-semibold font-open-sans shadow flex items-center justify-center border border-buttonred text-buttonred  lg:hidden`}
-        >
-          Go back to the homepage
-        </button>
-        <button
-          className={`text-[12px] p-[12px] font-medium font-open-sans shadow lg:flex items-center justify-center bg-buttonred border border-buttonred text-white hidden `}
-        >
-          RETURN TO HOMEPAGE
-        </button>
+        <Link href={"/"}>
+          <button
+            className={`text-[12px] p-[12px] font-semibold font-open-sans shadow flex items-center justify-center border border-buttonred text-buttonred  lg:hidden`}
+          >
+            Go back to the homepage
+          </button>
+        </Link>
+        <Link href={"/"}>
+          <button
+            className={`text-[12px] p-[12px] font-medium font-open-sans shadow lg:flex items-center justify-center bg-buttonred border border-buttonred text-white hidden `}
+          >
+            RETURN TO HOMEPAGE
+          </button>
+        </Link>
       </div>
       <BooksSection
         title={"FIND YOUR NEXT PAGE-TURNER"}

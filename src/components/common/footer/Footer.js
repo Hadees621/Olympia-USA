@@ -16,11 +16,14 @@ const Footer = () => {
                 className="mt-9 lg:mt-0 space-y-6 space-x-2 xl:space-x-0"
               >
                 <TitleP title={section.title} />
-                <div className="space-y-4">
+                <div className="grid space-y-4">
                   {section.links.map((link) => (
-                    <p className="font-semibold text-[#4A4949] text-[11.5px] font-open-sans">
-                      {link}
-                    </p>
+                    <a
+                      href={link.url}
+                      className="font-semibold text-[#4A4949] text-[11.5px] font-open-sans"
+                    >
+                      {link.label}
+                    </a>
                   ))}
                 </div>
               </div>
@@ -51,7 +54,10 @@ const Footer = () => {
               />
             </div>
             <div className="w-full flex items-center justify-center lg:hidden">
-              <Text text="Terms & Conditions | Privacy & Cookies Policy" />
+              <Text
+                text="Terms & Conditions | Privacy & Cookies Policy"
+                link={"/terms-and-conditions"}
+              />
             </div>
           </div>
         </div>
@@ -61,7 +67,10 @@ const Footer = () => {
             <Text text="© 2022 Ashwell Publishing Ltd | Registered in England No. 6431579" />
           </div>
           <div className="w-full flex justify-end">
-            <Text text="Terms & Conditions | Privacy & Cookies Policy" />
+            <Text
+              text="Terms & Conditions | Privacy & Cookies Policy"
+              link={"/terms-and-conditions"}
+            />
           </div>
         </div>
       </div>
