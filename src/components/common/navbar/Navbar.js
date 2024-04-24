@@ -50,11 +50,13 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-        <Button
-          title="SUBMIT ONLINE"
-          width="lg:w-[130px] 2xl:w-[15%]"
-          color="red"
-        />
+        <Link href="/submit-online">
+          <Button
+            title="SUBMIT ONLINE"
+            width="lg:w-[130px] 2xl:w-[15%]"
+            color="red"
+          />
+        </Link>
       </div>
     </div>
   );
