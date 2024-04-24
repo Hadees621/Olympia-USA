@@ -53,7 +53,7 @@ const Navbar = () => {
         <Link href="/submit-online">
           <Button
             title="SUBMIT ONLINE"
-            width="lg:w-[130px] 2xl:w-[15%]"
+            width="lg:w-[130px] 2xl:w-[130px]"
             color="red"
           />
         </Link>
