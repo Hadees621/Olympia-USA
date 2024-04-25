@@ -1,3 +1,5 @@
+"use client";
+
 import AboutSection from "@/components/home/AboutSection";
 import Bumblebee from "@/components/home/Bumblebee";
 import Categories from "@/components/home/Categories";
@@ -18,10 +20,16 @@ import SmEditorsPick from "@/components/home/SmEditorsPick";
 import SmCategories from "@/components/home/SmCategories";
 import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Link from "next/link";
+import { useBumblebeeStore } from "@/stores/States";
+import { useEffect } from "react";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
   const { headingS, paragraphS } = SmAboutUsData;
+  const { setFlag } = useBumblebeeStore();
+  useEffect(() => {
+    setFlag(false);
+  }, []);
 
   return (
     <div className="w-full flex flex-col justify-center items-center">

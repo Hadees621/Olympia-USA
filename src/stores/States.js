@@ -51,3 +51,9 @@ export const useSortByStore = create((set) => ({
   toggleDropdown3: () =>
     set((state) => ({ showDropdown3: !state.showDropdown3 })),
 }));
+
+// Bumblebee
+export const useBumblebeeStore = create((set) => ({
+  flag: false,
+  setFlag: (flag) => set({ flag }),
+}));
