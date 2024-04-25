@@ -5,6 +5,7 @@ import { useBumblebeeStore } from "@/stores/States";
 import Slider from "@/components/bumblebee/Slider";
 import NewReleases from "@/components/home/NewReleases";
 import SubmitOnline from "@/components/bumblebee/SubmitOnline";
+import GreenSlider from "@/components/bumblebee/GreenSlider";
 import Characters from "@/components/bumblebee/Characters";
 
 export default function Home() {
@@ -28,6 +29,9 @@ export default function Home() {
       <Characters />
 
       <SubmitOnline />
+
+
+      <GreenSlider />
 
       {/* <Features /> */}
 

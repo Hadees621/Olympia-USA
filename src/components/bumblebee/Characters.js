@@ -12,7 +12,7 @@ const Characters = () => {
     >
       <div className="absolute lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto my-16 2xl:my-28 inset-0">
         <div className=" text-white">
-          <p className="text-[21px] font-bold font-droid-sans text-start">
+          <p className="text-[21px] font-bold font-droid-sans text-start text-black my-8">
             Meet our characters
           </p>
           {/* CARDS */}
