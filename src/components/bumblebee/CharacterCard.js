@@ -2,9 +2,7 @@ import React from "react";
 
 const CharacterCard = ({ character }) => {
   const { name, title, description, image, bgColor, rounded } = character;
-
   const roundedClass = rounded ? "rounded-3xl" : "";
-
   return (
     <div
       className={`flex text-black gap-6 xl:gap-12 p-5 xl:p-6 bg-[${bgColor}] hover:shadow ${roundedClass}`}
