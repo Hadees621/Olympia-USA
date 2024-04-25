@@ -1,9 +1,11 @@
 "use client";
+
 import { useEffect } from "react";
 import { useBumblebeeStore } from "@/stores/States";
 import Slider from "@/components/bumblebee/Slider";
 import NewReleases from "@/components/home/NewReleases";
 import SubmitOnline from "@/components/bumblebee/SubmitOnline";
+import Characters from "@/components/bumblebee/Characters";
 
 export default function Home() {
   const { setFlag } = useBumblebeeStore();
@@ -22,6 +24,8 @@ export default function Home() {
       <div className="hidden lg:flex flex-col items-center justify-center">
         <NewReleases />
       </div>
+
+      <Characters />
 
       <SubmitOnline />
 
