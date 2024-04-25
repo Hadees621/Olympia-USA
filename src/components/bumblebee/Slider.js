@@ -23,7 +23,7 @@ const Slider = () => {
 
   return (
     <div className="relative">
-      <div className="flex flex-col lg:flex-row md:justify-center lg:justify-end bg-[#FEF6DE] lg:bg-[#FEF4D8]">
+      <div className="flex flex-col lg:flex-row md:justify-center lg:justify-end bg-gradient-to-bl from-[#FFFFFE] via-[#FEF5DA] to-[#FEC413]">
         <div className="lg:hidden">
           <div className="flex gap-5 px-5 justify-center">
             <div className="flex flex-col gap-3 mt-12">
@@ -62,7 +62,7 @@ const Slider = () => {
           </div>
         </div>
         <div className="p-6 lg:p-4 2xl:p-6 flex flex-col items-start justify-center md:w-[50%] md:mx-auto lg:mx-0 lg:w-[40%] xl:w-[36%] 2xl:w-[30%] lg:pr-20 2xl:pr-28 gap-3 2xl:gap-8 px-16 2xl:px-0 pt-10">
-          <div>
+          <div className="">
             <h2 className="text-[25px] md:text-[30px] lg:text-[18px] lg:leading-[25px] xl:text-[25px] xl:leading-[30px] 2xl:text-[40px] 2xl:leading-[42px] font-bold">
               Welcome to Bumblebee Books!
             </h2>
@@ -185,20 +185,29 @@ const Slider = () => {
             />
           </div>
         </div>
-
-        {/* lg screen */}
+        {/* RIGHT */}
         <div className="hidden lg:block w-1/2 relative border border-l-black">
+          {/* Background Image */}
           <img
-            className="w-full"
+            className="w-full h-full"
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
           />
-          <div className="absolute lg:bottom-10 xl:bottom-20 2xl:bottom-28 left-0 right-44 xl:right-60 2xl:right-92 ">
+          <div className="absolute bottom-14 left-0 right-44 xl:right-60 2xl:right-92">
             <div className="flex gap-5 xl:gap-8 2xl:gap-12 px-5 justify-center">
-              <div className="flex flex-col gap-3 xl:gap-5 2xl:gap-10 mt-10 2xl:mt-16">
-                <div className="shadow rounded-full w-max">
+              {/* bee */}
+              <div className="absolute top-0 left-10 xl:-top-4 xl:left-24 2xl:-top-6 2xl:left-72">
+                <img
+                  src={"/assets/Bumblebee/Asset 1-45/Asset 1.png"}
+                  alt="Asset 3"
+                  objectFit="cover"
+                  className="w-[62px] h-[62px] xl:w-[82px] xl:h-[82px] 2xl:w-[140px] 2xl:h-[140px]"
+                />
+              </div>
+              <div className="flex flex-col gap-5 xl:gap-7 2xl:gap-10 mt-10 2xl:mt-16">
+                <div className="shadow w-max">
                   <img
-                    src={"/assets/Bumblebee/Asset 1-45/Asset 8.png"}
+                    src={"/assets/Bumblebee/Asset 1-45/Asset 11.png"}
                     alt="Asset 3"
                     objectFit="cover"
                     className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
@@ -212,7 +221,28 @@ const Slider = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-3 xl:gap-4 2xl:gap-10">
+
+              {/* bee */}
+              <div className="absolute top-24 right-0 xl:top-24 xl:right-4 2xl:top-36 2xl:right-4">
+                <img
+                  src={"/assets/Bumblebee/Asset 1-45/Asset 1.png"}
+                  alt="Asset 3"
+                  objectFit="cover"
+                  className="w-[45px] h-[45px] xl:w-[62px] xl:h-[62px] 2xl:w-[110px] 2xl:h-[110px]"
+                />
+              </div>
+
+              {/* bee */}
+              <div className="absolute bottom-48 right-14 xl:top-56 xl:right-20 2xl:top-[310px] 2xl:right-64">
+                <img
+                  src={"/assets/Bumblebee/Asset 1-45/Asset 3.png"}
+                  alt="Asset 3"
+                  objectFit="cover"
+                  className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] 2xl:w-[110px] 2xl:h-[110px]"
+                />
+              </div>
+
+              <div className="flex flex-col gap-5 xl:gap-7 2xl:gap-10">
                 <div className="shadow">
                   <img
                     src={"/assets/Bumblebee/Asset 1-45/Asset 12.png"}
@@ -227,6 +257,15 @@ const Slider = () => {
                     className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
                   />
                 </div>
+              </div>
+              {/* bee */}
+              <div className="absolute -bottom-4 right-20 xl:-bottom-6 xl:right-24  2xl:-bottom-14 2xl:right-72">
+                <img
+                  src={"/assets/Bumblebee/Asset 1-45/Asset 1.png"}
+                  alt="Asset 3"
+                  objectFit="cover"
+                  className="w-[62px] h-[62px] xl:w-[82px] xl:h-[82px] 2xl:w-[140px] 2xl:h-[140px]"
+                />
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import BookComponent from "./BookComponent";
 import { Books } from "@/utils/home/Books";
 import Button from "../common/Button";
 
-const NewReleases = () => {
+const NewReleases = ({ color }) => {
   return (
     <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1600px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white mx-5">
@@ -26,6 +26,7 @@ const NewReleases = () => {
               src={book.src}
               title={book.title}
               author={book.author}
+              color="bg-[#FFD700]"
             />
           </div>
         ))}

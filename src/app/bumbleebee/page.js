@@ -17,7 +17,7 @@ import SmEditorsPick from "@/components/home/SmEditorsPick";
 import SmCategories from "@/components/home/SmCategories";
 import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Link from "next/link";
-import Slider from "@/components/bumblebee-books/Slider";
+import Slider from "@/components/bumblebee/Slider";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
@@ -27,7 +27,7 @@ export default function Home() {
     <div className="w-full flex flex-col justify-center items-center">
       <Slider />
 
-      {/* <div className="lg:hidden">
+      <div className="lg:hidden">
         <SmScreenPopular />
         <SmAboutSection heading={headingS} paragraph={paragraphS} />
         <PoemsComponent />
@@ -45,7 +45,7 @@ export default function Home() {
         <Categories />
       </div>
 
-      <Features />
+      {/*  <Features />
       <div
         className="bg-cover bg-center md:hidden my-4 w-full"
         style={{ backgroundImage: "url('/Home/Mobile/Asset 30.png')" }}
