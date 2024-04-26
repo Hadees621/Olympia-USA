@@ -30,7 +30,9 @@ export const useSortByStore = create((set) => ({
   showDropdown1: false,
   showDropdown2: false,
   showDropdown3: false,
+  title: "SORT BY",
 
+  setTitle: (newTitle) => set({ title: newTitle }),
   setMenu: () =>
     set((state) => {
       if (state.sortByDropdown || state.showFilterOptions) {

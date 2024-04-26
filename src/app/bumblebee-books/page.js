@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Banner from "@/components/genre/Banner";
-import { useSortByStore } from "@/stores/States";
+import { useBumblebeeStore, useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
 import BookComponent from "@/components/home/BookComponent";
 import { Books } from "@/utils/home/Books";
@@ -26,9 +26,11 @@ export default function Page() {
     toggleShowFilterOptions,
     showDropdown,
     setShowDropdown,
+    title,
   } = useSortByStore();
-
+  const { setFlag } = useBumblebeeStore();
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
+  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
 
   useEffect(() => {
     if (showFilterOptions || sortByDropdown) {
@@ -38,9 +40,9 @@ export default function Page() {
     }
   }, [showFilterOptions, sortByDropdown]);
 
-  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
-
-  const selectOption = (option) => {};
+  useEffect(() => {
+    setFlag(true);
+  }, []);
 
   return (
     <div className="px-4">
@@ -116,11 +118,11 @@ export default function Page() {
                   className="flex items-center gap-24 xl:gap-28 focus:outline-none py-4 border px-4"
                 >
                   <h1 className="text-[12px] xl:text-[13px] 2xl:text-[18px]">
-                    SORT BY
+                    {title}
                   </h1>
                   <SortBySvg />
                 </button>
-                {showDropdown && <SortByDropdown selectOption={selectOption} />}
+                {showDropdown && <SortByDropdown />}
               </div>
             </div>{" "}
           </div>{" "}
@@ -132,16 +134,16 @@ export default function Page() {
             <SidebarMenu items={sidebarItems} />
             <div className="grid font-semibold text-[10px] xl:text-[15px] 2xl:text-[18px]">
               <DropdownSection
+                title="Bumblebee Books"
+                DropdownComponent={BumblebeeDropdown}
+              />
+              <DropdownSection
                 title="Fiction"
                 DropdownComponent={FictionDropdown}
               />
               <DropdownSection
                 title="Non-Fiction"
                 DropdownComponent={NonfictionDropdown}
-              />
-              <DropdownSection
-                title="Bumblebee Books"
-                DropdownComponent={BumblebeeDropdown}
               />
             </div>
           </div>
@@ -154,6 +156,7 @@ export default function Page() {
                       src={book.src}
                       title={book.title}
                       author={book.author}
+                      bumblebee={true}
                     />
                   </Link>
                 </div>
