@@ -5,7 +5,7 @@ import Bumblebee from "@/components/home/Bumblebee";
 import Categories from "@/components/home/Categories";
 import EditorsPick from "@/components/home/EditorsPick";
 import Features from "@/components/home/Features";
-import HashtagSection from "@/components/home/HashtagSection";
+import HashtagSection from "@/components/bumblebee/BubHashtagSection";
 import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";

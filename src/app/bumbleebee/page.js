@@ -7,6 +7,8 @@ import NewReleases from "@/components/home/NewReleases";
 import SubmitOnline from "@/components/bumblebee/SubmitOnline";
 import GreenSlider from "@/components/bumblebee/GreenSlider";
 import Characters from "@/components/bumblebee/Characters";
+import Features from "@/components/home/Features";
+import BubHashtagSection from "@/components/bumblebee/BubHashtagSection";
 
 export default function Home() {
   const { setFlag } = useBumblebeeStore();
@@ -32,17 +34,9 @@ export default function Home() {
 
       <GreenSlider />
 
-      {/* <Features /> */}
+      <Features />
 
-      {/*    <div className="hidden lg:flex flex-col justify-center items-center">
-        <EditorsPick />
-      </div>
-
-      <div className="lg:hidden">
-        <SmEditorsPick />
-      </div>
-
-      <HashtagSection /> */}
+      <BubHashtagSection />
     </div>
   );
 }
