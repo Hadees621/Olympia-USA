@@ -1,4 +1,5 @@
-"use client";
+// "use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import Arrowleft from "../../../public/imgs/Arrowleft.svg";
@@ -7,19 +8,42 @@ import Link from "next/link";
 
 const GreenSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [
-    "/assets/Bumblebee/Asset 1-45/Asset 45.png",
-    "/assets/Bumblebee/Asset 1-45/Asset 45.png",
-    "/assets/Bumblebee/Asset 1-45/Asset 45.png",
+
+  const carouselData = [
+    {
+      image: "/assets/Bumblebee/Asset 1-45/Asset 27.png",
+      title: "What Happened to Grandad’s Teeth?",
+      author: "Mark Harrington",
+      description:
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    },
+    {
+      image: "/assets/Bumblebee/Asset 1-45/Asset 27.png",
+      title: "The Adventures of Tom Sawyer",
+      author: "Mark Twain",
+      description:
+        "Tom Sawyer, a young boy growing up along the Mississippi River, is always up to mischief and grand adventures. An enchanting tale that captures the essence of youthful curiosity and wonder.",
+    },
+    {
+      image: "/assets/Bumblebee/Asset 1-45/Asset 27.png",
+      title: "Journey to the Center of the Earth",
+      author: "Jules Verne",
+      description:
+        "Follow Professor Lidenbrock as he journeys through volcanic tubes to the center of the Earth. A timeless adventure that explores unknown worlds beneath our feet.",
+    },
   ];
 
   const handleNext = () => {
-    setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? carouselData.length - 1 : prevIndex - 1
+    );
   };
+
+  const currentData = carouselData[currentIndex];
 
   return (
     <div className="relative">
@@ -63,12 +87,12 @@ const GreenSlider = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="flex flex-col items-start m-20">
+        <div className="flex flex-col items-start m-20 2xl:mr-32">
           <h2 className="text-[25px] md:text-[30px] lg:text-[18px] lg:leading-[25px] xl:text-[25px] xl:leading-[30px] 2xl:text-[40px] 2xl:leading-[42px] font-bold text-center my-8">
             Most popular
           </h2>
           <img
-            src="/assets/Bumblebee/Asset 1-45/Asset 27.png"
+            src={currentData.image}
             alt="pic"
             className="h-[280px] w-[360px] xl:h-[320px] xl:w-[390px] 2xl:h-[550px] 2xl:w-[620px]"
           />
@@ -178,18 +202,13 @@ const GreenSlider = () => {
         {/* LEFT */}
         <div className="w-1/2 border border-black bg-[#E5F9EF] flex items-center justify-center">
           <div className="grid items-center justify-center w-[60%]">
-            <p className="2xl:text-[16px]">Featured book</p>
+            <p className="2xl:text-[16px]">{currentData.author}</p>
             <h2 className="text-[25px] md:text-[30px] lg:text-[18px] xl:text-[25px] 2xl:text-[45px]  font-bold">
-              What Happened to Grandad’s Teeth?
+              {currentData.title}
             </h2>
             <p className="2xl:text-[16px]">Mark Harrington</p>
             <p className="text-[11px] md:text-[12px] lg:text-[9px] xl:text-[11px] 2xl:text-[18px] pt-5">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis vel eum iriure dolor in hendrerit in vulputate
-              velit esse molestie consequat, vel illum dolore eu feugiat nulla.
+              {currentData.description}
             </p>
             <Link href="/bumblebee-books">
               <button
