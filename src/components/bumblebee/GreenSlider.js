@@ -1,10 +1,15 @@
-// "use client";
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
 import Arrowleft from "../../../public/imgs/Arrowleft.svg";
 import Arrowright from "../../../public/imgs/Arrowright.svg";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const GreenSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,46 +51,8 @@ const GreenSlider = () => {
   const currentData = carouselData[currentIndex];
 
   return (
-    <div className="relative">
+    <div className="relative my-20 lg:my-0">
       <div className="flex flex-col lg:flex-row md:justify-center lg:justify-end bg-[#7EE3AF]">
-        <div className="lg:hidden">
-          <div className="flex gap-5 px-5 justify-center">
-            <div className="flex flex-col gap-3 mt-12">
-              <div className="shadow rounded-full w-max">
-                <img
-                  src={"/assets/Bumblebee/Asset 1-45/Asset 8.png"}
-                  alt="Asset 3"
-                  objectFit="cover"
-                  className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
-                />
-              </div>
-              <div className="shadow">
-                <img
-                  src={"/assets/Bumblebee/Asset 1-45/Asset 11.png"}
-                  alt="Asset 4"
-                  className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-3 mt-6">
-              <div className="shadow">
-                <img
-                  src={"/assets/Bumblebee/Asset 1-45/Asset 12.png"}
-                  alt="Asset 1"
-                  className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
-                />
-              </div>
-              <div className="shadow">
-                <img
-                  src={"/assets/Bumblebee/Asset 1-45/Asset 13.png"}
-                  alt="Asset 2"
-                  className="w-[90px] xl:w-[125px] 2xl:w-[235px]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* RIGHT */}
         <div className="flex flex-col items-start m-20 2xl:mr-32">
           <h2 className="text-[25px] md:text-[30px] lg:text-[18px] lg:leading-[25px] xl:text-[25px] xl:leading-[30px] 2xl:text-[40px] 2xl:leading-[42px] font-bold text-center my-8">
@@ -94,18 +61,44 @@ const GreenSlider = () => {
           <img
             src={currentData.image}
             alt="pic"
-            className="h-[280px] w-[360px] xl:h-[320px] xl:w-[390px] 2xl:h-[550px] 2xl:w-[620px]"
+            className="lg:h-[280px] lg:w-[360px] xl:h-[320px] xl:w-[390px] 2xl:h-[550px] 2xl:w-[620px]"
           />
         </div>
 
         {/* sm slider */}
-        <div
+        {/* <div className="lg:hidden">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            navigation={true}
+            pagination={{ clickable: true }}
+            onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex)}
+            onSwiper={(swiper) => console.log(swiper)}
+            loop={true}
+            className="mySwiper"
+          >
+            {carouselData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={item.image}
+                  alt={`Slide ${index}`}
+                  className="w-full h-auto"
+                />
+                <div className="text-center p-4">
+                  <h2>{item.title}</h2>
+                  <p>{item.description}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div> */}
+
+        {/* <div
           id="default-carousel"
           className="relative w-full py-8 lg:hidden"
           data-carousel="slide"
         >
           <div className="relative overflow-hidden rounded-lg">
-            {/* <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
                 src="/docs/images/carousel/carousel-1.svg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -139,7 +132,7 @@ const GreenSlider = () => {
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
-            </div> */}
+            </div> 
           </div>
           <div className="absolute  z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
             <button
@@ -178,10 +171,10 @@ const GreenSlider = () => {
               data-carousel-slide-to="4"
             ></button>
           </div>
-        </div>
+        </div> */}
 
         <div className="absolute top-[35%] left-[47.5%] xl:left-[48%] 2xl:top-[40%] 2xl:left-[48.5%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 z-10 hidden">
-          <div className="bg-white rounded-full w-max ">
+          <div className="bg-white rounded-full w-max cursor-pointer">
             <Image
               src={Arrowright}
               alt="Arrowright"
@@ -189,7 +182,7 @@ const GreenSlider = () => {
               className="w-[28px] xl:w-[35px] 2xl:w-[50px]"
             />
           </div>
-          <div className="bg-white rounded-full w-max">
+          <div className="bg-white rounded-full w-max cursor-pointer">
             <Image
               src={Arrowleft}
               alt="arrowleft"
@@ -200,8 +193,8 @@ const GreenSlider = () => {
         </div>
 
         {/* LEFT */}
-        <div className="w-1/2 border border-black bg-[#E5F9EF] flex items-center justify-center">
-          <div className="grid items-center justify-center w-[60%]">
+        <div className="lg:w-1/2 border border-black bg-[#E5F9EF] flex items-center justify-center">
+          <div className="grid items-center justify-center m-14 lg:w-[60%]">
             <p className="2xl:text-[16px]">{currentData.author}</p>
             <h2 className="text-[25px] md:text-[30px] lg:text-[18px] xl:text-[25px] 2xl:text-[45px]  font-bold">
               {currentData.title}

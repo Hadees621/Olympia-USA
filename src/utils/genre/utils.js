@@ -1,2 +1,2 @@
-export const fictionBannner = "/assets/Banners/fiction.png";
-export const fictionLgBannner = "/assets/Genre banner/Fiction_1.png";
+export const fictionBanner = "/assets/Banners/fiction.png";
+export const fictionLgBanner = "/assets/Genre banner/Fiction_1.png";

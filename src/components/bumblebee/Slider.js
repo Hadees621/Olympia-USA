@@ -167,8 +167,8 @@ const Slider = () => {
           </div>
         </div>
 
-        <div className="absolute top-[35%] left-[47.5%] xl:left-[48%] 2xl:top-[40%] 2xl:left-[48.5%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 z-10 hidden">
-          <div className="bg-white rounded-full w-max ">
+        <div className="absolute top-[35%] left-[47.5%] xl:left-[48%] 2xl:top-[40%] 2xl:left-[48.5%] lg:flex flex-col gap-2 2xl:gap-4 justify-between px-4 z-10 hidden cursor-pointer">
+          <div className="bg-white rounded-full w-max cursor-pointer">
             <Image
               src={Arrowright}
               alt="Arrowright"
@@ -176,7 +176,7 @@ const Slider = () => {
               className="w-[28px] xl:w-[35px] 2xl:w-[50px]"
             />
           </div>
-          <div className="bg-white rounded-full w-max">
+          <div className="bg-white rounded-full w-max cursor-pointer">
             <Image
               src={Arrowleft}
               alt="arrowleft"

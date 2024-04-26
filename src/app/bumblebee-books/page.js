@@ -1,9 +1,10 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
-import FilterByDropdown from "@/components/genre/FilterByDropdown";
 import Banner from "@/components/genre/Banner";
+import { useSortByStore } from "@/stores/States";
+import FilterByDropdown from "@/components/genre/FilterByDropdown";
 import BookComponent from "@/components/home/BookComponent";
+import { Books } from "@/utils/home/Books";
 import SmPagination from "@/components/genre/SmPagination";
 import SvgDropdown from "@/components/genre/SvgDropdown";
 import SortByDropdown from "@/components/genre/SortByDropdown";
@@ -11,16 +12,12 @@ import SortBySvg from "@/components/genre/SortBySvg";
 import FictionDropdown from "@/components/genre/FictionDropdown";
 import NonfictionDropdown from "@/components/genre/NonfictionDropdown";
 import BumblebeeDropdown from "@/components/genre/BumblebeeDropdown";
+import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
+import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
 import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
-import { useSortByStore } from "@/stores/States";
-import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
-import { Books } from "@/utils/home/Books";
-import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
-import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
 import Link from "next/link";
-
 export default function Page() {
   const {
     sortByDropdown,
@@ -48,10 +45,16 @@ export default function Page() {
   return (
     <div className="px-4">
       <div className="lg:hidden">
-        <Banner title={"Fiction"} img={fictionBanner} />
+        <Banner
+          title={"Bumblebee Books"}
+          img={"/assets/Genre banner/Bumblebee books banner.png"}
+        />
       </div>
       <div className="hidden lg:block">
-        <LgBanner title={"Fiction"} img={fictionLgBanner} />
+        <LgBanner
+          title={"Bumblebee Books"}
+          img={"/assets/Genre banner/Bumblebee books banner.png"}
+        />
       </div>
       <div className="lg:hidden">
         {!isAnyDropdownOpen && (
