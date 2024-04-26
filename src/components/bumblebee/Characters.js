@@ -5,7 +5,7 @@ import { charactersData } from "@/utils/bumblebee/utils";
 const Characters = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-screen w-screen"
+      className="relative bg-cover bg-center w-screen h-[700px] xl:h-[800px] 2xl:h-[900px]"
       style={{
         backgroundImage: "url('/assets/Bumblebee/Asset 1-45/Asset 14.png')",
       }}
