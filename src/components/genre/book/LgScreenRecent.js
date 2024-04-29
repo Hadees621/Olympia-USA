@@ -1,20 +1,27 @@
 "use client";
 import React from "react";
 import BuyFromDropdown from "./BuyFromDropdown";
+import { useBumblebeeStore } from "@/stores/States";
 
 const LgScreenRecent = ({ book }) => {
-  const flag = true;
+  const { flag } = useBumblebeeStore();
+  const flag2 = true;
+
+  const backgroundColor = flag ? "hover:bg-[#FEEDB6]" : "hover:bg-[#F0F4F7]";
+
   return (
     <div>
       <div className="hidden lg:block">
-        {flag && (
+        {flag2 && (
           <h1 className="font-semibold text-black text-[22px] py-6 hidden lg:block mx-3">
             Recent post
           </h1>
         )}
         <div className="lg:border border-black flex-grow mx-3 hidden lg:flex">
-          <div className="flex flex-col w-1/2 h-full bg-white border-b border-black">
-            <div className="h-full p-28 xl:p- bg-[#F0F4F7] flex justify-center">
+          <div className="flex flex-col w-1/2 h-full bg-white ">
+            <div
+              className={`h-full p-28 xl:p- flex justify-center ${backgroundColor}`}
+            >
               <img
                 src={book.src}
                 style={{
@@ -55,13 +62,13 @@ const LgScreenRecent = ({ book }) => {
                 <hr className="my-5" />
                 <div className="">
                   <div className="flex justify-between 2xl:justify-center 2xl:gap-14 gap-4 w-full pr-24 xl:pr-40">
-                    <button className="text-[11px] xl:text-[14px]  2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
+                    <button className="text-[11px] xl:p-5 xl:text-[12px] 2xl:text-[18px] p-3 px-5 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
                       PAPERBACK
                     </button>
-                    <button className="text-[11px] xl:text-[14px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
+                    <button className="text-[11px] xl:p-5 xl:text-[12px] 2xl:text-[18px] p-3 px-5 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
                       HARDBACK
                     </button>
-                    <button className="text-[11px] xl:text-[14px] 2xl:text-[18px] p-3 px-5 xl:p-1 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
+                    <button className="text-[11px] xl:p-5 xl:text-[12px] 2xl:text-[18px] p-3 px-5 2xl:p-3 font-semibold font-droid-sans flex items-center justify-center hover:border lg:hover:border-none hover:border-none w-max text-black hover:text-white hover:bg-blue-600">
                       EBOOK
                     </button>
                   </div>

@@ -1,12 +1,23 @@
 "use client";
-import React, { useState } from "react";
+
+import { useBumblebeeStore } from "@/stores/States";
 
 const BuyFromDropdown = () => {
+  const { flag } = useBumblebeeStore();
+  const baseColorClass = flag
+    ? "bg-[#FCC30B] text-black"
+    : "bg-[#C42222] text-white";
   return (
-    <div class="relative w-full md:w-[300px] lg:w-[320px] " data-twe-dropdown-ref>
-      <div class="relative flex justify-center items-center mx-auto" data-twe-dropdown-ref>
+    <div
+      class="relative w-full md:w-[300px] lg:w-[320px] "
+      data-twe-dropdown-ref
+    >
+      <div
+        class="relative flex justify-center items-center mx-auto"
+        data-twe-dropdown-ref
+      >
         <button
-          class="flex items-center justify-between w-full bg-[#C42222] px-6 py-3 text-sm leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold"
+          className={`flex items-center justify-between w-full ${baseColorClass} px-6 py-3 text-sm leading-normal  shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold`}
           type="button"
           id="dropdownMenuButton1ds"
           data-twe-dropdown-toggle-ref
@@ -26,39 +37,6 @@ const BuyFromDropdown = () => {
             </svg>
           </span>
         </button>
-        {/* <ul
-          class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-          aria-labelledby="dropdownMenuButton1ds"
-          data-twe-dropdown-menu-ref
-        >
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-              href="#"
-              data-twe-dropdown-item-ref
-            >
-              Action
-            </a>
-          </li>
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-              href="#"
-              data-twe-dropdown-item-ref
-            >
-              Another action
-            </a>
-          </li>
-          <li>
-            <a
-              class="pointer-events-none block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-surface/40 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white/50 dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-              href="#"
-              data-twe-dropdown-item-ref
-            >
-              Something else here
-            </a>
-          </li>
-        </ul> */}
       </div>
     </div>
   );

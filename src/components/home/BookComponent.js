@@ -6,7 +6,7 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
   const { setFlag } = useBumblebeeStore();
 
   const backgroundColor = bumblebee
-    ? "lg:hover:bg-[#FEEDB6]"
+    ? "lg:hover:bg-[#FEEDB6] hover:border-none"
     : "lg:hover:bg-[#EFF4F7]";
 
   return (

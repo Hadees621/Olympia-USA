@@ -20,6 +20,8 @@ import { Books } from "@/utils/home/Books";
 import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import booksData from "@/utils/books/utils.json";
 
 export default function Page() {
   const {
@@ -30,8 +32,15 @@ export default function Page() {
     showDropdown,
     setShowDropdown,
   } = useSortByStore();
+  const params = useParams();
+
+  const [books, setBooks] = useState([]);
 
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
+
+  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
+
+  const selectOption = (option) => {};
 
   useEffect(() => {
     if (showFilterOptions || sortByDropdown) {
@@ -41,9 +50,9 @@ export default function Page() {
     }
   }, [showFilterOptions, sortByDropdown]);
 
-  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
-
-  const selectOption = (option) => {};
+  useEffect(() => {
+    setBooks(booksData);
+  }, []);
 
   return (
     <div className="px-4">
@@ -68,7 +77,7 @@ export default function Page() {
         {sortByDropdown && <SmSortByDropdown />}
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-center">
-          {Books.map((book, index) => (
+          {books.map((book, index) => (
             <div className="flex-none" key={index}>
               <BookComponent
                 src={book.src}
@@ -145,15 +154,14 @@ export default function Page() {
           </div>
           <div className="w-4/5">
             <div className="grid grid-cols-4">
-              {Books.map((book, index) => (
+              {books.map((book, index) => (
                 <div className="flex-none" key={index}>
-                  <Link href="/genre/book">
-                    <BookComponent
-                      src={book.src}
-                      title={book.title}
-                      author={book.author}
-                    />
-                  </Link>
+                  <BookComponent
+                    src={book.src}
+                    title={book.title}
+                    author={book.author}
+                    bookId={book.id}
+                  />
                 </div>
               ))}
             </div>

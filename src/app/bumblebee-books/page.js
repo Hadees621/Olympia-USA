@@ -31,9 +31,9 @@ export default function Page() {
     title,
   } = useSortByStore();
   const { setFlag } = useBumblebeeStore();
+  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
   const [books, setBooks] = useState([]);
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
-  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
 
   useEffect(() => {
     if (showFilterOptions || sortByDropdown) {
