@@ -33,7 +33,7 @@ const LgScreenRecent = ({ book }) => {
                 {book.description}
               </p>
               <p className="text-[#817977] text-[9px] ">
-                + MORE ABOUT RUDI JENNINGS
+                + MORE ABOUT {book.author}
               </p>
             </div>
           </div>

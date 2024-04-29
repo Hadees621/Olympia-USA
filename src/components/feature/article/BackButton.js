@@ -1,8 +1,11 @@
 import React from "react";
 
-const BackButton = () => {
+const BackButton = ({ onClick }) => {
   return (
-    <div className="flex items-center gap-5 pb-4 px-3 lg:py-6 md:px-6 lg:px-3 cursor-pointer">
+    <div
+      className="flex items-center gap-5 pb-4 px-3 lg:py-6 md:px-6 lg:px-3 cursor-pointer"
+      onClick={onClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="18"
