@@ -74,6 +74,7 @@ export default function Page() {
                 src={book.src}
                 title={book.title}
                 author={book.author}
+                bookId={book.id}
               />
             </div>
           ))}

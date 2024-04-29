@@ -17,7 +17,9 @@ import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
 import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
-import Link from "next/link";
+
+import booksData from "@/utils/books/utils.json";
+
 export default function Page() {
   const {
     sortByDropdown,
@@ -42,6 +44,12 @@ export default function Page() {
 
   useEffect(() => {
     setFlag(true);
+  }, []);
+
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    setBooks(booksData);
   }, []);
 
   return (
@@ -73,12 +81,14 @@ export default function Page() {
         {sortByDropdown && <SmSortByDropdown />}
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-center">
-          {Books.map((book, index) => (
+          {books.map((book, index) => (
             <div className="flex-none" key={index}>
               <BookComponent
                 src={book.src}
                 title={book.title}
                 author={book.author}
+                bookId={book.id}
+                bumblebee={true}
               />
             </div>
           ))}
@@ -149,16 +159,15 @@ export default function Page() {
           </div>
           <div className="w-4/5">
             <div className="grid grid-cols-4">
-              {Books.map((book, index) => (
+              {books.map((book, index) => (
                 <div className="flex-none" key={index}>
-                  <Link href="/genre/book">
-                    <BookComponent
-                      src={book.src}
-                      title={book.title}
-                      author={book.author}
-                      bumblebee={true}
-                    />
-                  </Link>
+                  <BookComponent
+                    src={book.src}
+                    title={book.title}
+                    author={book.author}
+                    bookId={book.id}
+                    bumblebee={true}
+                  />
                 </div>
               ))}
             </div>

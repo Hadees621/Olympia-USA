@@ -1,7 +1,16 @@
+"use client";
+
 import BookComponent from "@/components/home/BookComponent";
-import { Books } from "@/utils/home/Books";
+import booksData from "@/utils/books/utils.json";
+import { useEffect, useState } from "react";
 
 const BooksSection = ({ title, lgTitle, className = "" }) => {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    setBooks(booksData);
+  }, []);
+
   return (
     <div
       className={`my-20 ${className} px-5 lg:p lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1400px] pt-20`}
@@ -15,7 +24,7 @@ const BooksSection = ({ title, lgTitle, className = "" }) => {
         </p>
       </div>
       <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black mb-14 lg:hidden">
-        {Books.map((book, index) => (
+        {books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent
               src={book.src}
@@ -26,7 +35,7 @@ const BooksSection = ({ title, lgTitle, className = "" }) => {
         ))}
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:flex items-center justify-center pt-6 pb-20 hidden">
-        {Books.map((book, index) => (
+        {books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent
               src={book.src}
