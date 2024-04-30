@@ -72,7 +72,7 @@ const LgScreenRecent = ({ book }) => {
                       EBOOK
                     </button>
                   </div>
-                  <div className="grid items-center justify-start xl:justify-start w-full py-5">
+                  <div className="grid items-center w-full py-5 ">
                     <BuyFromDropdown />
                   </div>
                 </div>
