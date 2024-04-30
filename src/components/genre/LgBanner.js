@@ -1,4 +1,3 @@
-import { fictionLgBannner } from "@/utils/genre/utils";
 import Image from "next/image";
 
 const LgBanner = ({ title, img }) => {
@@ -13,7 +12,7 @@ const LgBanner = ({ title, img }) => {
           layout="responsive"
         />
       </div>
-      <div className="absolute top-30 left-28 2xl:top-[200px] 2xl:left-[400px] flex justify-center items-center md:px-8">
+      <div className="absolute top-30 left-28 2xl:top-[160px] 2xl:left-[180px] flex justify-center items-center md:px-8">
         <p className="text-white  text-[45px] xl:text-[55px] 2xl:text-[85px] font-bold">
           {title}
         </p>
