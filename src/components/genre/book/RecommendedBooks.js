@@ -1,4 +1,3 @@
-import BooksSubMenu from "@/components/common/navbar/comp/BooksSubMenu";
 import BookComponent from "@/components/home/BookComponent";
 import { useBumblebeeStore } from "@/stores/States";
 import { Books } from "@/utils/home/Books";
@@ -8,7 +7,7 @@ const RecommendedBooks = () => {
   const { flag } = useBumblebeeStore();
 
   return (
-    <div className="my-20">
+    <div className="my-20 lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px] mx-auto">
       <div className="flex justify-center items-center lg:justify-between lg:bg-white pt-10">
         <p className="text-[26px] font-semibold font-droid-sans hidden lg:block">
           You may also like

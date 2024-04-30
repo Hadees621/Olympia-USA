@@ -23,41 +23,35 @@ const Page = () => {
     }
   };
 
+  const containerStyle = flag
+    ? {
+        backgroundImage: `url("/assets/Bumblebee/detail-bg.png")`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        maxHeight: "1000px",
+      }
+    : {
+        backgroundColor: "transparent",
+      };
+
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="">
-        {/* <BackButton onClick={handleNavigation} /> */}
-
-        <div className="flex flex-col w-full justify-start md:justify-center font-open-sans space-y-5 p-3 lg:p-1 px-3">
-          {flag && (
-            <div
-              className="w-full"
-              style={{
-                backgroundImage: `url(${"/assets/Bumblebee/Asset 1-45/Asset 31.png"})`,
-              }}
-            >
-              <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px]">
-                <BackButton onClick={handleNavigation} />
-
-                {book ? <LgScreenRecent book={book} /> : <p>Book not found</p>}
-              </div>
-            </div>
-          )}
-
-          {!flag && (
-            <div className="lg:border border-black flex-grow mx-3 hidden lg:flex">
-              <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px] mx-auto">
-                <BackButton onClick={handleNavigation} />
-
-                {book ? <LgScreenRecent book={book} /> : <p>Book not found</p>}
-              </div>
-            </div>
-          )}
-
-          <SmScreenRecent book={book} />
-
-          <RecommendedBooks />
+      <div className="w-full flex flex-col justify-start md:justify-center font-open-sans space-y-5 p-3 lg:p-1 px-3">
+        <div style={containerStyle}>
+          <div
+            className={`w-full lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px] mx-auto ${
+              flag ? "" : "lg:border border-black"
+            }`}
+          >
+            <BackButton onClick={handleNavigation} />
+            {book ? <LgScreenRecent book={book} /> : <p>Book not found</p>}
+          </div>
         </div>
+
+        <SmScreenRecent book={book} />
+
+        <RecommendedBooks />
       </div>
     </div>
   );
