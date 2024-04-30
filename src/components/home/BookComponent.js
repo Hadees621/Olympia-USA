@@ -11,7 +11,7 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
 
   return (
     <div
-      className={`flex flex-col lg:border lg:border-black flex-grow items-center justify-start h-[350px] lg:h-[250px] xl:h-[340px] 2xl:h-[440px] ${backgroundColor} lg:p-2 xl:p-4`}
+      className={`flex flex-col lg:border lg:border-black flex-grow items-center justify-start h-[350px] lg:h-[280px] xl:h-[340px] 2xl:h-[470px] ${backgroundColor} lg:p-2 xl:p-4`}
     >
       <Link href={`/books/${bookId}`}>
         <div
