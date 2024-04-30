@@ -1,9 +1,11 @@
+"use client";
+
 import AboutSection from "@/components/home/AboutSection";
 import Bumblebee from "@/components/home/Bumblebee";
 import Categories from "@/components/home/Categories";
 import EditorsPick from "@/components/home/EditorsPick";
 import Features from "@/components/home/Features";
-import HashtagSection from "@/components/home/HashtagSection";
+import HashtagSection from "@/components/bumblebee/BubHashtagSection";
 import MostPopular from "@/components/home/MostPopular";
 import NewReleases from "@/components/home/NewReleases";
 import PoemsComponent from "@/components/home/PoemsComponent";
@@ -18,10 +20,16 @@ import SmEditorsPick from "@/components/home/SmEditorsPick";
 import SmCategories from "@/components/home/SmCategories";
 import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Link from "next/link";
+import { useBumblebeeStore } from "@/stores/States";
+import { useEffect } from "react";
 
 export default function Home() {
   const { heading, paragraph } = AboutUsData;
   const { headingS, paragraphS } = SmAboutUsData;
+  const { setFlag } = useBumblebeeStore();
+  useEffect(() => {
+    setFlag(false);
+  }, []);
 
   return (
     <div className="w-full flex flex-col justify-center items-center">

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Books } from "@/utils/home/Books";
 import BookComponent from "@/components/home/BookComponent";
@@ -10,8 +12,16 @@ import Instagram from "../../../../public/imgs/Instagram.svg";
 import BackButton from "@/components/feature/article/BackButton";
 import FeaturesSection from "./FeatureSection";
 import { featuresData } from "@/utils/feature/utils";
+import { useEffect, useState } from "react";
+import booksData from "@/utils/books/utils.json";
 
 const page = () => {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    setBooks(booksData);
+  }, []);
+
   return (
     <div className="w-full flex justify-center items-center">
       <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">

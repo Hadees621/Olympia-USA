@@ -1,9 +1,14 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import BookComponent from "./BookComponent";
 import { Books } from "@/utils/home/Books";
 import Button from "../common/Button";
+import { useBumblebeeStore } from "@/stores/States";
 
 const NewReleases = () => {
+  const { flag } = useBumblebeeStore();
+
   return (
     <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1600px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white mx-5">
@@ -16,7 +21,11 @@ const NewReleases = () => {
           </p>
         </div>
         <div className="hidden lg:block">
-          <Button title="EXPLORE MORE" width="w-[150px]" color="transparent" />
+          <Button
+            title="EXPLORE MORE"
+            width="w-[150px]"
+            color={flag ? "yellow" : "red"}
+          />
         </div>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5">
@@ -26,6 +35,7 @@ const NewReleases = () => {
               src={book.src}
               title={book.title}
               author={book.author}
+              bumblebee={flag}
             />
           </div>
         ))}

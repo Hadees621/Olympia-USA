@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "src": "/assets/Books/Asset4.png",
+    "author": "Rudi Jennings",
+    "description": "Rudi Michael Jennings spent the majority of his childhood growing up in the Norfolk countrysideRudi Michael Jennings spent the majority of his childhood growing up in the Norfolk countrysideRudi Michael Jennings spent the majority of his childhood growing up in the Norfolk countryside...",
+    "moreInfo": "+ MORE ABOUT RUDI JENNINGS",
+    "title": "THE LAST MYON",
+    "fullDescription": "The Last Myon is a story of fantasy adventure, revenge and an individual's total unwillingness to submit or to fail, battling against overwhelming natural elements and a group of hardened sadistic creatures who will stop at nothing to succeed in his capture and slavery. In an everlasting winter world, Ackrehm, the last of his Myon kind, must fight for his life, sustaining multiple injuries along the way and still demonstrating he truly is a force to be reckoned with. Struggling with exhaustion, both mentally and physically, will he manage to overcome, or will he  fight or flee? One thing is for certain, The Last Myon will keep you hooked until the very end, bonding with characters and excitedly reading on with an obsession to find out what happens next, promoting an ethos to take away of never give up, never surrender.",
+    "isbn": "9781848979345",
+    "publishedDate": "30/11/2017",
+    "pages": 147,
+    "size": "205x140mm",
+    "imprint": "Olympia Publishers"
+  },
+  {
+    "id": "2",
+    "src": "/assets/Books/Asset5.png",
+    "author": "Jane Doe",
+    "description": "An insight into the world of fiction by Jane Doe, showcasing her brilliant narrative skills.",
+    "moreInfo": "+ MORE ABOUT JANE DOE",
+    "title": "Worlds Beyond",
+    "fullDescription": "The Last Myon is a story of fantasy adventure, revenge and an individual's total unwillingness to submit or to fail, battling against overwhelming natural elements and a group of hardened sadistic creatures who will stop at nothing to succeed in his capture and slavery. In an everlasting winter world, Ackrehm, the last of his Myon kind, must fight for his life, sustaining multiple injuries along the way and still demonstrating he truly is a force to be reckoned with. Struggling with exhaustion, both mentally and physically, will he manage to overcome, or will he  fight or flee? One thing is for certain, The Last Myon will keep you hooked until the very end, bonding with characters and excitedly reading on with an obsession to find out what happens next, promoting an ethos to take away of never give up, never surrender.",
+    "isbn": "9781234567891",
+    "publishedDate": "10/10/2020",
+    "pages": 300,
+    "size": "210x150mm",
+    "imprint": "Future Worlds Press"
+  },
+  {
+    "id": "3",
+    "src": "/assets/Books/Asset6.png",
+    "author": "John Smith",
+    "description": "John Smith's debut novel explores complex themes of identity and belonging in a rapidly changing world.",
+    "moreInfo": "+ MORE ABOUT JOHN SMITH",
+    "title": "Echoes of the Past",
+    "fullDescription": "The Last Myon is a story of fantasy adventure, revenge and an individual's total unwillingness to submit or to fail, battling against overwhelming natural elements and a group of hardened sadistic creatures who will stop at nothing to succeed in his capture and slavery. In an everlasting winter world, Ackrehm, the last of his Myon kind, must fight for his life, sustaining multiple injuries along the way and still demonstrating he truly is a force to be reckoned with. Struggling with exhaustion, both mentally and physically, will he manage to overcome, or will he  fight or flee? One thing is for certain, The Last Myon will keep you hooked until the very end, bonding with characters and excitedly reading on with an obsession to find out what happens next, promoting an ethos to take away of never give up, never surrender.",
+    "isbn": "9781122334455",
+    "publishedDate": "01/05/2019",
+    "pages": 220,
+    "size": "200x130mm",
+    "imprint": "Heritage Publishers"
+  },
+  {
+    "id": "4",
+    "src": "/assets/Books/Asset2.png",
+    "author": "Emily Zhang",
+    "description": "A mesmerizing collection of essays from Emily Zhang, reflecting on contemporary issues with depth and sensitivity.",
+    "moreInfo": "+ MORE ABOUT EMILY ZHANG",
+    "title": "Reflections in a Age",
+    "fullDescription": "The Last Myon is a story of fantasy adventure, revenge and an individual's total unwillingness to submit or to fail, battling against overwhelming natural elements and a group of hardened sadistic creatures who will stop at nothing to succeed in his capture and slavery. In an everlasting winter world, Ackrehm, the last of his Myon kind, must fight for his life, sustaining multiple injuries along the way and still demonstrating he truly is a force to be reckoned with. Struggling with exhaustion, both mentally and physically, will he manage to overcome, or will he  fight or flee? One thing is for certain, The Last Myon will keep you hooked until the very end, bonding with characters and excitedly reading on with an obsession to find out what happens next, promoting an ethos to take away of never give up, never surrender.",
+    "isbn": "9780987654321",
+    "publishedDate": "15/08/2021",
+    "pages": 180,
+    "size": "215x135mm",
+    "imprint": "Modern Times Press"
+  },
+  {
+    "id": "5",
+    "src": "/assets/Books/Asset3.png",
+    "author": "Carlos Ramirez",
+    "description": "Carlos Ramirez returns with a thrilling sequel to his bestselling novel, weaving suspense and mystery with expert precision.",
+    "moreInfo": "+ MORE ABOUT CARLOS RAMIREZ",
+    "title": "The Maze Shadows",
+    "fullDescription": "The Last Myon is a story of fantasy adventure, revenge and an individual's total unwillingness to submit or to fail, battling against overwhelming natural elements and a group of hardened sadistic creatures who will stop at nothing to succeed in his capture and slavery. In an everlasting winter world, Ackrehm, the last of his Myon kind, must fight for his life, sustaining multiple injuries along the way and still demonstrating he truly is a force to be reckoned with. Struggling with exhaustion, both mentally and physically, will he manage to overcome, or will he  fight or flee? One thing is for certain, The Last Myon will keep you hooked until the very end, bonding with characters and excitedly reading on with an obsession to find out what happens next, promoting an ethos to take away of never give up, never surrender.",
+    "isbn": "9781472583690",
+    "publishedDate": "12/12/2022",
+    "pages": 350,
+    "size": "220x145mm",
+    "imprint": "Thrill Ride Publishing"
+  }
+]

@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 const Features = () => {
   return (
-    <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px]">
+    <div className="lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] my-20">
       <p className="text-[26px] font-semibold font-droid-sans text-center lg:text-start">
         Features
       </p>

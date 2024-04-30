@@ -1,65 +1,90 @@
 "use client";
+
 import React, { useState } from "react";
+import { useBumblebeeStore } from "@/stores/States";
 
 const BuyFromDropdown = () => {
+  const { flag } = useBumblebeeStore();
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("");
+  const baseColorClass = flag
+    ? "bg-[#FCC30B] text-black"
+    : "bg-[#C42222] text-white";
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
+  const options = ["Amazon", "Watertones", "Book depository"];
+
   return (
-    <div class="relative w-full md:w-[300px] lg:w-[320px] " data-twe-dropdown-ref>
-      <div class="relative flex justify-center items-center mx-auto" data-twe-dropdown-ref>
-        <button
-          class="flex items-center justify-between w-full bg-[#C42222] px-6 py-3 text-sm leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold"
-          type="button"
-          id="dropdownMenuButton1ds"
-          data-twe-dropdown-toggle-ref
-          aria-expanded="false"
-          data-twe-ripple-init
-          data-twe-ripple-color="light"
+    <div className={`relative border border-${baseColorClass}`}>
+      <button
+        type="button"
+        aria-haspopup="listbox"
+        aria-expanded={isOpen ? "true" : "false"}
+        aria-labelledby="listbox-label"
+        onClick={toggleDropdown}
+        onBlur={() => setIsOpen(false)}
+        className={`flex items-center justify-between w-full ${baseColorClass} px-6 py-3 text-sm leading-normal shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold w-full`}
+      >
+        {selectedOption || "BUY FROM"}
+        <svg
+          className="-mr-1 ml-2 h-5 w-5"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
         >
-          BUY FROM
-          <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
-            >
-              <path fill="currentColor" d="m7 10l5 5l5-5z" />
-            </svg>
-          </span>
-        </button>
-        {/* <ul
-          class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-          aria-labelledby="dropdownMenuButton1ds"
-          data-twe-dropdown-menu-ref
+          <path fillRule="evenodd" d="M10 17l5-5H5l5 5z" clipRule="evenodd" />
+        </svg>
+      </button>
+      {isOpen && (
+        <div
+          tabIndex="-1"
+          role="listbox"
+          id="options"
+          className={`absolute z-10 mt-1 w-full rounded-md bg-white shadow-lg max-h-56 overflow-auto focus:outline-none sm:text-sm ${
+            flag ? "border border-[#FCC30B]" : "border border-[#C42222]"
+          }`}
+          aria-labelledby="listbox-label"
+          onBlur={() => setIsOpen(false)}
         >
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-              href="#"
-              data-twe-dropdown-item-ref
+          {options.map((option, index) => (
+            <div
+              key={index}
+              onMouseEnter={() => setSelectedOption(option)}
+              onMouseLeave={() => setSelectedOption("")}
+              onClick={() => handleOptionClick(option)}
+              className="option text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 flex justify-between items-center hover:bg-[#FAFAFA]"
             >
-              Action
-            </a>
-          </li>
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-              href="#"
-              data-twe-dropdown-item-ref
-            >
-              Another action
-            </a>
-          </li>
-          <li>
-            <a
-              class="pointer-events-none block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-surface/40 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white/50 dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-              href="#"
-              data-twe-dropdown-item-ref
-            >
-              Something else here
-            </a>
-          </li>
-        </ul> */}
-      </div>
+              <span className="font-normal block truncate">{option}</span>
+              <svg
+                className="h-5 w-5 stroke-current text-[#DFDFDF] hidden cursor-pointer"
+                style={{
+                  display: selectedOption === option ? "block" : "none",
+                }}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="none"
+                  stroke="#2D6DB2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M22 3h7v7m-1.5-5.5L20 12m-3-7H8a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3v-9"
+                />
+              </svg>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

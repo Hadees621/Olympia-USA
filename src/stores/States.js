@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 
 // small screen navbar
 export const useSmNavbarStore = create((set) => ({
@@ -30,7 +30,9 @@ export const useSortByStore = create((set) => ({
   showDropdown1: false,
   showDropdown2: false,
   showDropdown3: false,
+  title: "SORT BY",
 
+  setTitle: (newTitle) => set({ title: newTitle }),
   setMenu: () =>
     set((state) => {
       if (state.sortByDropdown || state.showFilterOptions) {
@@ -50,4 +52,16 @@ export const useSortByStore = create((set) => ({
     set((state) => ({ showDropdown2: !state.showDropdown2 })),
   toggleDropdown3: () =>
     set((state) => ({ showDropdown3: !state.showDropdown3 })),
+}));
+
+// Bumblebee
+export const useBumblebeeStore = create((set) => ({
+  flag: false,
+  setFlag: (flag) => set({ flag }),
+}));
+
+// books details
+export const useBookDetailsStore = create((set) => ({
+  bookDetails: null,
+  setBookDetails: (details) => set({ bookDetails: details }),
 }));

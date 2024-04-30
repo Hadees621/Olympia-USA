@@ -33,7 +33,7 @@ const BookDropdown = () => {
             <h1>Non-Fiction</h1>
           </div>
         </Link>
-        <Link href="/bumbleebee">
+        <Link href="/bumblebee-books">
           <div
             className="flex justify-center items-center p-9 w-[120px] h-[95px] xl:p-11 xl:w-[175px] xl:h-[135px] 2xl:p-14 2xl:w-[200px]"
             style={{
