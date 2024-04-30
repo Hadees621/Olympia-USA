@@ -31,7 +31,7 @@ const BuyFromDropdown = () => {
         aria-labelledby="listbox-label"
         onClick={toggleDropdown}
         onBlur={() => setIsOpen(false)}
-        className={`flex items-center justify-between w-full ${baseColorClass} px-6 py-3 text-sm leading-normal shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold w-full`}
+        className={`flex items-center justify-between  w-full ${baseColorClass} px-6 py-3 text-sm leading-normal shadow-primary-3 transition duration-150 ease-in-out focus:shadow-primary-2 focus:outline-none focus:ring-0 font-semibold w-full 2xl:text-[17px] 2xl:h-[50px]`}
       >
         {selectedOption || "BUY FROM"}
         <svg
@@ -49,7 +49,7 @@ const BuyFromDropdown = () => {
           tabIndex="-1"
           role="listbox"
           id="options"
-          className={`absolute z-10 mt-1 w-full rounded-md bg-white shadow-lg max-h-56 overflow-auto focus:outline-none sm:text-sm ${
+          className={`absolute z-10 mt-1 w-full rounded-md bg-white shadow-lg max-h-56 overflow-auto focus:outline-none sm:text-sm 2xl:text-xl ${
             flag ? "border border-[#FCC30B]" : "border border-[#C42222]"
           }`}
           aria-labelledby="listbox-label"

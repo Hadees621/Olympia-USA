@@ -46,7 +46,7 @@ const Page = () => {
             }}
           >
             <div
-              className={`w-full lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px] mx-auto`}
+              className={`w-full lg:max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto`}
             >
               <BackButton onClick={handleNavigation} />
               {book ? <LgScreenRecent book={book} /> : <p>Book not found</p>}
