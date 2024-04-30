@@ -31,7 +31,7 @@ const SubmitOnline = () => {
       </div>
 
       {/* sm  */}
-      <div className="flex gap-5 px-5 md:justify-center lg:hidden">
+      <div className="flex gap-5 px-5 sm:justify-center sm:w-full lg:hidden">
         <div className="flex flex-col lg:flex-row gap-3">
           <div className="">
             <Image src={"/Home/Mobile/Asset 31.png"} width={200} height={400} />
