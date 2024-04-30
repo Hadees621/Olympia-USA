@@ -5,6 +5,9 @@ const SmScreenRecent = ({ book }) => {
   return (
     <div>
       <div className="lg:hidden">
+        <div className="flex w-full justify-center items-center py-10 lg:hidden">
+          <img src={book.src} alt="book" className="h-[440px]" />
+        </div>
         <div className="bg-[#EFEFEF] mx-8 p-7 space-y-7 font-open-sans">
           <div className="space-y-1">
             <h1 className="text-[18px] font-bold"> {book.title}</h1>
