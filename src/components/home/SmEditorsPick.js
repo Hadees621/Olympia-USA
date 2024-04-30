@@ -10,16 +10,25 @@ const SmEditorsPick = () => {
           <p className="text-[21px] font-bold font-open-sans">EDITIORS PICK</p>
         </div>
       </div>
-      <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black ml-14 gap-4">
-        {Books.map((book, index) => (
-          <div className="flex-none" key={index}>
-            <BookComponent
-              src={book.src}
-              title={book.title}
-              author={book.author}
-            />
-          </div>
-        ))}
+
+      <div
+        className="pt-8 mx-5"
+        style={{ overflowX: "auto", overflowY: "hidden", maxWidth: "90vw" }}
+      >
+        <div
+          className="flex gap-6"
+          style={{ minWidth: `${Books.length * 150}px` }}
+        >
+          {Books.map((book, index) => (
+            <div className="flex-none" key={index}>
+              <BookComponent
+                src={book.src}
+                title={book.title}
+                author={book.author}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="w-full flex justify-center lg:hidden">
