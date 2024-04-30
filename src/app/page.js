@@ -53,7 +53,7 @@ export default function Home() {
         <Categories />
       </div>
 
-      <Features />
+      {/* <Features />
 
       <div
         className="bg-cover bg-center md:hidden my-4 w-full"
@@ -85,7 +85,7 @@ export default function Home() {
         <SmEditorsPick />
       </div>
 
-      <HashtagSection />
+      <HashtagSection /> */}
     </div>
   );
 }
