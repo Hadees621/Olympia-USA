@@ -4,12 +4,12 @@ import { Books } from "@/utils/home/Books";
 
 const SmScreenPopular = () => {
   return (
-    <div>
-      <div className="flex justify-center lg:justify-between items-center pt-10 px-5 lg:px-0 lg:bg-white">
+    <div className="w-full">
+      <div className="flex justify-center lg:justify-between items-center pt-10 px-10 lg:px-0 lg:bg-white">
         <p className="text-[21px] font-bold font-open-sans">MOST POPULAR</p>
       </div>
 
-      <div className="flex overflow-x-scroll lg:overflow-x-hidden pt-8 lg:py-0 lg:border lg:border-black mx-5">
+      <div className="flex overflow-x-scroll lg:overflow-x-hidden pt-8 lg:py-0 lg:border lg:border-black mx-5 gap-3">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent
@@ -21,7 +21,7 @@ const SmScreenPopular = () => {
         ))}
       </div>
 
-      <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black mx-5">
+      <div className="flex overflow-x-scroll lg:overflow-x-hidden pt-8 lg:py-0 lg:border lg:border-black mx-5 gap-3">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent

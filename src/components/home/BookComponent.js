@@ -10,8 +10,9 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
     : "lg:hover:bg-[#EFF4F7]";
 
   return (
+    // p-4 xl:p-[30px] 2xl:p-[59px]
     <div
-      className={`flex flex-col lg:border border-black flex-grow p-4 xl:p-[30px] 2xl:p-[59px] ${backgroundColor}`}
+      className={`flex flex-col lg:border lg:border-black flex-grow items-center justify-center ${backgroundColor}`}
     >
       <Link href={`/books/${bookId}`}>
         <div
@@ -20,16 +21,17 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
             setFlag(bumblebee);
           }}
         >
-          <div className="p-6 lg:p-[4px]">
+          {/* p-6 lg:p-[4px] */}
+          <div className="p-6 ">
             <img
               src={src}
               alt="book"
-              className="w-[140px] h-[210px] lg:w-[135px] lg:h-[180px] xl:w-[137px] 2xl:w-[159px] 2xl:h-[245px]"
+              className="h-[215px] lg:w-[135px] lg:h-[180px] xl:w-[137px] 2xl:w-[159px] 2xl:h-[245px]"
             />
           </div>
         </div>
       </Link>
-      <div className="py-4 w-full">
+      <div className="p-4 w-full">
         <p className="font-semibold font-driod-sans text-[15px]">{title}</p>
         <p className="text-[#616161] font-open-sans text-[14px]">{author}</p>
       </div>
