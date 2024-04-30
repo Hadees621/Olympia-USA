@@ -28,7 +28,7 @@ const NewReleases = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5 gap-3">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent

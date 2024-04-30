@@ -54,6 +54,7 @@ export default function Home() {
       </div>
 
       <Features />
+
       <div
         className="bg-cover bg-center md:hidden my-4 w-full"
         style={{ backgroundImage: "url('/Home/Mobile/Asset 30.png')" }}
@@ -73,6 +74,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
       <PublishingJourney />
 
       <div className="hidden lg:flex flex-col justify-center items-center">

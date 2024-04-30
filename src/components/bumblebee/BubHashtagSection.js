@@ -18,7 +18,7 @@ const BubHashtagSection = ({ character }) => {
 
   return (
     <div
-      className="relative w-full h-[650px] xl:h-[650px] 2xl:h-[750px]"
+      className="relative w-full h-[380px] lg:h-[650px] xl:h-[650px] 2xl:h-[750px]"
       style={{
         backgroundImage: "url('/assets/Bumblebee/Asset 1-45/Asset 53.png')",
         backgroundSize: "cover",
