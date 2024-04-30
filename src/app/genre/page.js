@@ -30,6 +30,7 @@ export default function Page() {
     toggleShowFilterOptions,
     showDropdown,
     setShowDropdown,
+    title,
   } = useSortByStore();
   const params = useParams();
 
@@ -122,11 +123,11 @@ export default function Page() {
                   className="flex items-center gap-24 xl:gap-28 focus:outline-none py-4 border px-4"
                 >
                   <h1 className="text-[12px] xl:text-[13px] 2xl:text-[18px]">
-                    SORT BY
+                    {title}
                   </h1>
                   <SortBySvg />
                 </button>
-                {showDropdown && <SortByDropdown selectOption={selectOption} />}
+                {showDropdown && <SortByDropdown />}
               </div>
             </div>{" "}
           </div>{" "}
