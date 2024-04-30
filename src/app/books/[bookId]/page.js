@@ -40,9 +40,7 @@ const Page = () => {
       <div className="w-full flex flex-col justify-start md:justify-center font-open-sans space-y-5 p-3 lg:p-1 px-3">
         <div style={containerStyle}>
           <div
-            className={`w-full lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px] mx-auto ${
-              flag ? "" : "lg:border border-black"
-            }`}
+            className={`w-full lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1300px] mx-auto`}
           >
             <BackButton onClick={handleNavigation} />
             {book ? <LgScreenRecent book={book} /> : <p>Book not found</p>}

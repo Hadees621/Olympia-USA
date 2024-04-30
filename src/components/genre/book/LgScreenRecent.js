@@ -10,14 +10,14 @@ const LgScreenRecent = ({ book }) => {
   const backgroundColor = flag ? "hover:bg-[#FEEDB6]" : "hover:bg-[#F0F4F7]";
 
   return (
-    <div>
+    <>
       <div className="hidden lg:block">
         {flag2 && (
           <h1 className="font-semibold text-black text-[22px] py-6 hidden lg:block mx-3">
             Recent post
           </h1>
         )}
-        <div className="lg:border border-black flex-grow mx-3 hidden lg:flex">
+        <div className="lg:border border-black flex-grow mx-3 hidden lg:flex bg-white">
           <div className="flex flex-col w-1/2 h-full bg-white ">
             <div
               className={`h-full p-28 xl:p- flex justify-center ${backgroundColor}`}
@@ -99,7 +99,7 @@ const LgScreenRecent = ({ book }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

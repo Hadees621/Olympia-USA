@@ -16,7 +16,6 @@ import LgBanner from "@/components/genre/LgBanner";
 import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
 import { useSortByStore } from "@/stores/States";
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
-import { Books } from "@/utils/home/Books";
 import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
 import Link from "next/link";
