@@ -10,7 +10,7 @@ const NewReleases = () => {
   const { flag } = useBumblebeeStore();
 
   return (
-    <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1600px]">
+    <div className="lg:max-w-[900px] xl:max-w-[1600px] 2xl:max-w-[1600px]">
       <div className="flex justify-center lg:justify-between items-center py-10 px-5 lg:px-0 lg:bg-white mx-5">
         <div>
           <p className="text-[25px] font-bold font-droid-sans hidden lg:block">
@@ -28,7 +28,7 @@ const NewReleases = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5 gap-3 lg:gap-0">
         {Books.map((book, index) => (
           <div className="flex-none" key={index}>
             <BookComponent

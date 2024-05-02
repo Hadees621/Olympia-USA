@@ -27,8 +27,8 @@ const HashtagSection = () => {
         <div className="flex justify-center">
           <div className="flex overflow-x-hidden">
             <div className="flex flex-col">
-              <div className="w-full flex">{renderImages(8)}</div>
-              <div className="w-full flex">{renderImages(8)}</div>
+              <div className="w-full flex">{renderImages(12)}</div>
+              <div className="w-full flex">{renderImages(12)}</div>
             </div>
           </div>
         </div>

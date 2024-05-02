@@ -32,6 +32,7 @@ const Error = () => {
       <BooksSection
         title={"FIND YOUR NEXT PAGE-TURNER"}
         lgTitle={"Find your next read"}
+        className="pt-20 my-20"
       />
     </div>
   );

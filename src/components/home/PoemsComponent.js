@@ -12,7 +12,7 @@ const PoemsComponent = () => {
         <div className="flex-1">
           <Image
             src="/assets/Home/poems.PNG"
-            width={1000}
+            width={800}
             height={200}
             alt="About Section Image"
           />
@@ -24,7 +24,7 @@ const PoemsComponent = () => {
         <div className="flex-1">
           <Image
             src="/assets/Home/poems.PNG"
-            width={1000}
+            width={800}
             height={200}
             alt="About Section Image"
           />

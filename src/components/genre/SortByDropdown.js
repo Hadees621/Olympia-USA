@@ -39,7 +39,6 @@ const SortByDropdown = () => {
           Best sellers
         </h1>
       </div>
-      {/* )} */}
     </div>
   );
 };

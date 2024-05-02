@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SmBumblebee = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex flex-col-reverse bg-[#F9F9F9] md:justify-center md:items-center">
         <div className="p-5">
           <div className="flex flex-col">
@@ -18,13 +18,8 @@ const SmBumblebee = () => {
             </button>
           </Link>
         </div>
-        <div className="flex-1">
-          <Image
-            src="/Home/Mobile/Asset 52.png"
-            width={500}
-            height={700}
-            alt="About Section Image"
-          />
+        <div className="w-full">
+          <img src="/Home/Mobile/Asset 52.png" alt="About Section Image" />
         </div>
       </div>
     </div>
