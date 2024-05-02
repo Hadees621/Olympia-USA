@@ -29,21 +29,21 @@ export const steps = [
   {
     text: "You have submitted your manuscript to us",
     imageSrc: `/assets/Submissions process/1.png`,
-    positionClasses: "bottom-8 xl:bottom-12  2xl:bottom-16",
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
   },
   {
     text: "This will be reviewed by our submissions editor at our London office",
     imageSrc: `/assets/Submissions process/2.png`,
-    positionClasses: "bottom-8 xl:bottom-6 2xl:bottom-9",
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
   },
   {
     text: "You will hear back from them with their feedback",
     imageSrc: `/assets/Submissions process/3.png`,
-    positionClasses: "bottom-8 xl:bottom-8 2xl:bottom-16",
+    positionClasses: "2xl:bottom-16",
   },
   {
     text: "If successful, you will be offered a contract to publish with us",
     imageSrc: `/assets/Submissions process/4.png`,
-    positionClasses: "bottom-8 xl:bottom-8 2xl:bottom-16",
+    positionClasses: "2xl:bottom-16",
   },
 ];
