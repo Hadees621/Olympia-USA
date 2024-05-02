@@ -1,4 +1,5 @@
-import React from "react";
+import { steps } from "@/utils/publish-with-us/utils";
+import Submit from "./Submit";
 
 const SubmissionProcess = () => {
   return (
@@ -6,13 +7,13 @@ const SubmissionProcess = () => {
       <p className="font-bold text-2xl lg:text-3xl 2xl:text-5xl mb-6">
         Submission Process
       </p>
-      <div className="flex gap-6 justify-center lg:justify-start">
-        {["one", "two", "three", "four"].map((number) => (
-          <img
-            key={number}
-            src={`/assets/Submissions process/${number}.png`}
-            alt={`Step ${number}`}
-            className="w-full max-w-[200px] lg:max-w-full"
+      <div className="flex justify-between xl:gap-6">
+        {steps.map((step, index) => (
+          <Submit
+            key={index}
+            text={step.text}
+            imageSrc={step.imageSrc}
+            positionClasses={step.positionClasses}
           />
         ))}
       </div>
