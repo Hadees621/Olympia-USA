@@ -34,7 +34,7 @@ export const steps = [
   {
     text: "This will be reviewed by our submissions editor at our London office",
     imageSrc: `/assets/Submissions process/2.png`,
-    positionClasses: "bottom-8 xl:bottom-8 2xl:bottom-9",
+    positionClasses: "bottom-8 xl:bottom-6 2xl:bottom-9",
   },
   {
     text: "You will hear back from them with their feedback",
