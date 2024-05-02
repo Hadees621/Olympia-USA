@@ -1,7 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import { useBumblebeeStore } from "@/stores/States";
 
 const BookDropdown = () => {
+  const { setFlag } = useBumblebeeStore();
+
+  const handleBumblebeeClick = () => {
+    setFlag(true);
+  };
+
+  const handleOtherClick = () => {
+    setFlag(false);
+  };
   return (
     <div className="absolute top-full -left-8 xl:-left-20 bg-white rounded-md p-8 mt-1">
       <p className="py-3">Categories</p>
@@ -17,6 +27,7 @@ const BookDropdown = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
+            onClick={handleOtherClick}
           >
             <h1 className="text-[10px] xl:text-[12px] 2xl:text-[14px] font-open-sans">
               Fiction
@@ -31,6 +42,7 @@ const BookDropdown = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
+            onClick={handleOtherClick}
           >
             <h1 className="text-[10px] xl:text-[12px] 2xl:text-[14px] font-open-sans">
               Non-Fiction
@@ -46,6 +58,7 @@ const BookDropdown = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
+            onClick={handleBumblebeeClick}
           >
             <h1 className="text-[10px] xl:text-[12px] 2xl:text-[14px] font-open-sans">
               Bumblebee Books

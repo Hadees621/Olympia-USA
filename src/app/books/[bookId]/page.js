@@ -42,11 +42,11 @@ const Page = () => {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              maxHeight: flag ? "1000px" : "none",
+              minHeight: flag ? "1000px" : "none",
             }}
           >
             <div
-              className={`w-full lg:max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto`}
+              className={`w-full lg:max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto `}
             >
               <BackButton onClick={handleNavigation} />
               {book ? <LgScreenRecent book={book} /> : <p>Book not found</p>}

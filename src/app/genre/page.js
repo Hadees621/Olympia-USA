@@ -18,7 +18,6 @@ import { useSortByStore } from "@/stores/States";
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import booksData from "@/utils/books/utils.json";
 
@@ -32,7 +31,6 @@ export default function Page() {
     setShowDropdown,
     title,
   } = useSortByStore();
-  const params = useParams();
 
   const [books, setBooks] = useState([]);
 
