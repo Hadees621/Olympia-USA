@@ -1,11 +1,13 @@
 import React from "react";
 
 const Submit = ({ text, imageSrc, positionClasses }) => {
+  console.log("Submit", positionClasses);
+  const classes = positionClasses;
   return (
     <div
       className={`relative flex border bg-[#F0F4F7] h-48 w-64 xl:h-52 xl:w-80 mt-24 xl:mt-52 2xl:h-[250px] 2xl:w-[320px] 2xl:mt-52 `}
     >
-      <div className={`absolute ${positionClasses}`}>
+      <div className={`absolute ${classes}`}>
         <img
           src={imageSrc}
           alt="Step"
