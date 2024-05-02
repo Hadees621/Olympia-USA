@@ -1,13 +1,16 @@
 "use client";
 import React from "react";
 import BuyFromDropdown from "./BuyFromDropdown";
-import { useBumblebeeStore } from "@/stores/States";
+import { useBumblebeeStore, useFictionStore } from "@/stores/States";
 
 const LgScreenRecent = ({ book }) => {
   const { flag } = useBumblebeeStore();
+  const { fictionFlag, setFictionFlag } = useFictionStore();
+
   const flag2 = true;
 
   const backgroundColor = flag ? "hover:bg-[#FEEDB6]" : "hover:bg-[#F0F4F7]";
+ 
 
   return (
     <>

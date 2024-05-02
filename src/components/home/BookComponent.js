@@ -37,7 +37,7 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
             setFlag(bumblebee);
           }}
         >
-          <div className="p-6 lg:p-4 xl:p-6 2xl:p-8">
+          <div className="p-6 lg:p-4 xl:p-6 2xl:p-8 flex justify-center w-full items-center">
             <img
               src={src}
               alt="book"
