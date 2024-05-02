@@ -1,7 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Banner from "@/components/genre/Banner";
-import { useBumblebeeStore, useSortByStore } from "@/stores/States";
+import {
+  useBumblebeeStore,
+  useFictionStore,
+  useSortByStore,
+} from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
 import BookComponent from "@/components/home/BookComponent";
 import { Books } from "@/utils/home/Books";
@@ -31,6 +35,8 @@ export default function Page() {
     title,
   } = useSortByStore();
   const { setFlag } = useBumblebeeStore();
+  const { setFictionFlag } = useFictionStore();
+
   const sidebarItems = ["New releases", "Most popular", "Editors picks"];
   const [books, setBooks] = useState([]);
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
@@ -45,6 +51,7 @@ export default function Page() {
 
   useEffect(() => {
     setFlag(true);
+    setFictionFlag(false);
   }, []);
 
   useEffect(() => {

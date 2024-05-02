@@ -14,7 +14,11 @@ import BumblebeeDropdown from "@/components/genre/BumblebeeDropdown";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
 import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
-import { useSortByStore } from "@/stores/States";
+import {
+  useBumblebeeStore,
+  useFictionStore,
+  useSortByStore,
+} from "@/stores/States";
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
@@ -31,6 +35,9 @@ export default function Page() {
     setShowDropdown,
     title,
   } = useSortByStore();
+
+  const { setFictionFlag } = useFictionStore();
+  const { setFlag } = useBumblebeeStore();
 
   const [books, setBooks] = useState([]);
 
@@ -50,6 +57,11 @@ export default function Page() {
 
   useEffect(() => {
     setBooks(booksData);
+  }, []);
+
+  useEffect(() => {
+    setFictionFlag(true);
+    setFlag(false);
   }, []);
 
   return (

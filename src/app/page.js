@@ -19,7 +19,7 @@ import SmEditorsPick from "@/components/home/SmEditorsPick";
 import SmCategories from "@/components/home/SmCategories";
 import { AboutUsData, SmAboutUsData } from "@/utils/home/Home";
 import Link from "next/link";
-import { useBumblebeeStore } from "@/stores/States";
+import { useBumblebeeStore, useFictionStore } from "@/stores/States";
 import { useEffect } from "react";
 import HashtagSection from "@/components/home/HashtagSection";
 
@@ -27,7 +27,10 @@ export default function Home() {
   const { heading, paragraph } = AboutUsData;
   const { headingS, paragraphS } = SmAboutUsData;
   const { setFlag } = useBumblebeeStore();
+  const { setFictionFlag } = useFictionStore();
+
   useEffect(() => {
+    setFictionFlag(true);
     setFlag(false);
   }, []);
 

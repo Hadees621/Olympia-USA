@@ -60,6 +60,12 @@ export const useBumblebeeStore = create((set) => ({
   setFlag: (flag) => set({ flag }),
 }));
 
+// Fiction
+export const useFictionStore = create((set) => ({
+  fictionFlag: false,
+  setFictionFlag: (fictionFlag) => set({ fictionFlag }),
+}));
+
 // books details
 export const useBookDetailsStore = create((set) => ({
   bookDetails: null,
