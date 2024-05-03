@@ -21,26 +21,26 @@ const Page = () => {
       <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto bg-white">
         <Banner title={"About us"} />
 
-        <WhoWeAre />
+        {/* <WhoWeAre /> */}
 
         <PublishingProcess imagePaths={PublishingProcessImages} />
 
-        <YouTubeVideo />
+        {/* <YouTubeVideo /> */}
 
-        <HybridPublishing />
+        {/* <HybridPublishing /> */}
 
-        <PublishWithUs />
+        {/* <PublishWithUs /> */}
 
-        <SmSections />
+        {/* <SmSections /> */}
       </div>
-
+{/* 
       <BumblebeeBooksCard />
 
       <Awards tabsData={tabsData} />
 
       <History tabsData={HistoryTabsData} />
 
-      <LastLgSection />
+      <LastLgSection /> */}
     </>
   );
 };

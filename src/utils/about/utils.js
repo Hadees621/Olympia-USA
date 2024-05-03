@@ -116,3 +116,64 @@ export const HistoryTabsData = [
     image: "/assets/about/Asset 4 (1).png",
   },
 ];
+
+export const PublishingSteps = [
+  {
+    text: "Completing your manuscript",
+    imageSrc: `/assets/Publishing process/1.png`,
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
+    imageClass: " h-[9px]",
+  },
+  {
+    text: "Submission and editorial review",
+    imageSrc: `/assets/Publishing process/2.png`,
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
+    imageClass: "",
+  },
+  {
+    text: "Offer of publication",
+    imageSrc: `/assets/Publishing process/3.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Cover design",
+    imageSrc: `/assets/Publishing process/4.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Formatting and layout",
+    imageSrc: `/assets/Publishing process/5.png`,
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Revise proofs and final checks",
+    imageSrc: `/assets/Publishing process/6.png`,
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
+    imageClass: "",
+  },
+  {
+    text: "Publication date is set",
+    imageSrc: `/assets/Publishing process/7.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Your book is published!",
+    imageSrc: `/assets/Publishing process/8.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "BOOK PROMOTIONS AND DIGITAL MARKETING",
+    imageSrc: `/assets/Publishing process/9.png`,
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
+  },
+  {
+    text: "Royalties updated",
+    imageSrc: `/assets/Publishing process/10.png`,
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
+  },
+];
