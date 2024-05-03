@@ -18,7 +18,7 @@ const AboutAuthor = () => {
                 />
               </div>
             </div>
-            <div className="p-8 bg-[#EFEFEF] lg:bg-white mx-6 md:mx-20 lg:mx-0 w-full lg:w-1/2 flex flex-col justify-center">
+            <div className="p-8 bg-[#EFEFEF] lg:bg-white mx-6 md:mx-20 lg:mx-0 w-full lg:w-1/2 flex flex-col justify-center font-open-sans">
               <h1 className="text-[16px] font-bold lg:hidden">
                 {" "}
                 RUDI JENNINGS{" "}
@@ -28,7 +28,7 @@ const AboutAuthor = () => {
                 Rudi Jennings{" "}
               </h1>
 
-              <p className="text-[13px] lg:text-[11px] 2xl:text-[17px] 2xl:leading-10 lg:leading-7 leading-9 py-3">
+              <p className="text-[13px] lg:text-[11px] 2xl:text-[17px] 2xl:leading-10 lg:leading-7 leading-9 py-3 font-open-sans">
                 Rudi Michael Jennings spent the majority of his childhood
                 growing up in the Norfolk countryside of fields and trees,
                 really living amongst nature and possibly giving the basis of
