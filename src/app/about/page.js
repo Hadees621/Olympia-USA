@@ -9,11 +9,7 @@ import BumblebeeBooksCard from "@/components/about/BumblebeeBooksCard";
 import LastLgSection from "@/components/about/LastLgSection";
 import HybridPublishing from "@/components/about/HybridPublishing";
 import History from "@/components/about/History";
-import {
-  HistoryTabsData,
-  PublishingProcessImages,
-  tabsData,
-} from "@/utils/about/utils";
+import { HistoryTabsData, tabsData } from "@/utils/about/utils";
 
 const Page = () => {
   return (
@@ -21,26 +17,26 @@ const Page = () => {
       <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto bg-white">
         <Banner title={"About us"} />
 
-        {/* <WhoWeAre /> */}
+        <WhoWeAre />
 
-        <PublishingProcess imagePaths={PublishingProcessImages} />
+        <PublishingProcess />
 
-        {/* <YouTubeVideo /> */}
+        <YouTubeVideo />
 
-        {/* <HybridPublishing /> */}
+        <HybridPublishing />
 
-        {/* <PublishWithUs /> */}
+        <PublishWithUs />
 
-        {/* <SmSections /> */}
+        <SmSections />
       </div>
-{/* 
+
       <BumblebeeBooksCard />
 
       <Awards tabsData={tabsData} />
 
       <History tabsData={HistoryTabsData} />
 
-      <LastLgSection /> */}
+      <LastLgSection />
     </>
   );
 };

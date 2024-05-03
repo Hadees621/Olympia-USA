@@ -81,19 +81,6 @@ export const tabsData = [
   },
 ];
 
-export const PublishingProcessImages = [
-  "/assets/about/publishing/Asset 1.png",
-  "/assets/about/publishing/Asset 2.png",
-  "/assets/about/publishing/Asset 3.png",
-  "/assets/about/publishing/Asset 4.png",
-  "/assets/about/publishing/Asset 5.png",
-  "/assets/about/publishing/Asset 6.png",
-  "/assets/about/publishing/Asset 7.png",
-  "/assets/about/publishing/Asset 8.png",
-  "/assets/about/publishing/Asset 9.png",
-  "/assets/about/publishing/Asset 10.png",
-];
-
 export const HistoryTabsData = [
   {
     label: "07 Month 2022",
