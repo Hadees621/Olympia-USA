@@ -8,7 +8,7 @@ const PublishWithUs = () => {
     <div className="lg:flex gap-4 px-3 xl:px-8 py-10">
       <div className="mx-5 font-open-sans p-5 lg:p-0 lg:w-1/2">
         <div className="text-[13px] lg:text-[10px] xl:text-[13px] 2xl:text-[17px]  lg:font-droid-sans grid items-center h-full">
-          <div className="space-y-3 xl:space-y-5">
+          <div className="space-y-3 xl:space-y-10">
             <h2 className="font-bold text-[15px] font-open-sans xl:text-[18px] 2xl:text-[25px]">
               {PublishWith.title}
             </h2>
