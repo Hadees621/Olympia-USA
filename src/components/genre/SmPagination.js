@@ -26,7 +26,6 @@ const SmPagination = () => {
                     d="M5 1 1 5l4 4"
                   />
                 </svg>
-                Previous
               </a>
             </li>
             <li>
@@ -59,7 +58,6 @@ const SmPagination = () => {
                 href="#"
                 className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
-                Next
                 <svg
                   className="w-2.5 h-2.5 rtl:rotate-180"
                   aria-hidden="true"
