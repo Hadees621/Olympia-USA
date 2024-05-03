@@ -26,6 +26,7 @@ const SmPagination = () => {
                     d="M5 1 1 5l4 4"
                   />
                 </svg>
+                <span className="sr-only">Previous</span>
               </a>
             </li>
             <li>
@@ -73,6 +74,7 @@ const SmPagination = () => {
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
+                <span className="sr-only">Next</span>
               </a>
             </li>
           </ul>
