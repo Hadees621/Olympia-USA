@@ -15,7 +15,8 @@
   },
   "BumblebeeBooks": {
     "banner": "/assets/about/Asset 9.png",
-    "title": "DISCOVER BUMBLEBEE BOOKS",
+    "title": "Bumblebee Books",
+    "title2": "DISCOVER BUMBLEBEE BOOKS",
     "subTitle": "The home of children’s literature",
     "videoUrl": "https://www.youtube.com/embed/vd7mnHBzaGU?si=pHQ3pcDQ7n3Xsync",
     "buttonTitle": "View Bumblebee books",
@@ -60,7 +61,7 @@
     "para": "2018 marked the start of our global journey. Join our global family of authors and book lovers."
   },
   "bumblebeeBooks": {
-    "intro": "DISCOVER BUMBLEBEE BOOKS",
+    "intro": "Bumblebee Books",
     "description": "Bumblebee Books is an imprint of Olympia Publishers. Children’s books are at the heart of Olympia Publishers. For over a decade we\nhave been publishing exciting children’s books that are loved by our\nyoung readers from around the world. From adventure to fantasy,\nnon-fiction to rhyme, you won’t Bee-lieve the range of books we\nhave! Our aim is to help children discover a magical world through\nstorytelling. Stories with beautiful illustrations that inspire,\neducate, and entertain young readers. From young minds to older\nchildren, there is a book for everyone.",
     "latestBooksLink": "/bumblebee-books"
   },
