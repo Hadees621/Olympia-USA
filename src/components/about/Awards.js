@@ -10,7 +10,7 @@ const TabsComponent = ({ tabsData }) => {
   };
 
   return (
-    <div className="lg:flex bg-[#E8E9E4] border-y hidden">
+    <div className="lg:flex bg-[#E8E9E4] border-black border-y hidden">
       <div className="flex space-x-12 xl:space-x-32 border-black lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
         <div className="mx-5 font-open-sans p-5 lg:p-0 lg:w-1/2 flex justify-center items-center">
           <div className="tabs border-l-black border-2 space-y-10 pl-12">

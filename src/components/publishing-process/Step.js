@@ -52,6 +52,7 @@ function Step({ step, index }) {
             </svg>
           )}
         </div>
+
         <div className="">
           {/* section image*/}
           <div className="flex justify-between lg:hidden">

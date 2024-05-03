@@ -81,38 +81,90 @@ export const tabsData = [
   },
 ];
 
-export const PublishingProcessImages = [
-  "/assets/about/publishing/Asset 1.png",
-  "/assets/about/publishing/Asset 2.png",
-  "/assets/about/publishing/Asset 3.png",
-  "/assets/about/publishing/Asset 4.png",
-  "/assets/about/publishing/Asset 5.png",
-  "/assets/about/publishing/Asset 6.png",
-  "/assets/about/publishing/Asset 7.png",
-  "/assets/about/publishing/Asset 8.png",
-  "/assets/about/publishing/Asset 9.png",
-  "/assets/about/publishing/Asset 10.png",
-];
-
 export const HistoryTabsData = [
   {
     label: "07 Month 2022",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/logo.png",
+    class: "absolute bottom-24 left-0",
   },
   {
     label: "07 Month 2022",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/Asset 2 (1).png",
+    class: "absolute bottom-20 left-0",
   },
   {
     label: "07 Month 2022",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/logo.png",
+    class: "absolute bottom-40 left-0",
   },
   {
     label: "07 Month 2022 ",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/Asset 4 (1).png",
+    class: "absolute bottom-24 left-0",
+  },
+];
+
+export const PublishingSteps = [
+  {
+    text: "Completing your manuscript",
+    imageSrc: `/assets/Publishing process/1.png`,
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
+    imageClass: " h-[9px]",
+  },
+  {
+    text: "Submission and editorial review",
+    imageSrc: `/assets/Publishing process/2.png`,
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
+    imageClass: "",
+  },
+  {
+    text: "Offer of publication",
+    imageSrc: `/assets/Publishing process/3.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Cover design",
+    imageSrc: `/assets/Publishing process/4.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Formatting and layout",
+    imageSrc: `/assets/Publishing process/5.png`,
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Revise proofs and final checks",
+    imageSrc: `/assets/Publishing process/6.png`,
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
+    imageClass: "",
+  },
+  {
+    text: "Publication date is set",
+    imageSrc: `/assets/Publishing process/7.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "Your book is published!",
+    imageSrc: `/assets/Publishing process/8.png`,
+    positionClasses: "2xl:bottom-16",
+    imageClass: "",
+  },
+  {
+    text: "BOOK PROMOTIONS AND DIGITAL MARKETING",
+    imageSrc: `/assets/Publishing process/9.png`,
+    positionClasses: "xl:bottom-12 2xl:bottom-16",
+  },
+  {
+    text: "Royalties updated",
+    imageSrc: `/assets/Publishing process/10.png`,
+    positionClasses: "xl:bottom-6 2xl:bottom-9",
   },
 ];
