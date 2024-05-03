@@ -1,7 +1,6 @@
 import React from "react";
 
 const Submit = ({ text, imageSrc, positionClasses }) => {
-  console.log("Submit", positionClasses);
   const classes = positionClasses;
   return (
     <div
