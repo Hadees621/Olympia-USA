@@ -86,21 +86,25 @@ export const HistoryTabsData = [
     label: "07 Month 2022",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/logo.png",
+    class: "absolute bottom-24 left-0",
   },
   {
     label: "07 Month 2022",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/Asset 2 (1).png",
+    class: "absolute bottom-20 left-0",
   },
   {
     label: "07 Month 2022",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/logo.png",
+    class: "absolute bottom-40 left-0",
   },
   {
     label: "07 Month 2022 ",
     label2: "LOREM IPSUM DOLOR SIT AMET - MILESTONE",
     image: "/assets/about/Asset 4 (1).png",
+    class: "absolute bottom-24 left-0",
   },
 ];
 
