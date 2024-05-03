@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import { BumblebeeBanner } from "@/utils/home/Links";
 
 const Bumblebee = () => {
@@ -22,9 +22,11 @@ const Bumblebee = () => {
             The home of children’s literature
           </p>
           <div className="py-5">
-            <button className="text-[8px] xl:text-[11px] p-3 xl:px-5 xl:py-[13px] font-bold font-droid-sans rounded shadow bg-[#FEC40D] focus:border-none  ">
-              VIEW BUMBLEBEE BOOKS
-            </button>
+            <Link href={"/bumblebee"}>
+              <button className="text-[8px] xl:text-[11px] p-3 xl:px-5 xl:py-[13px] font-bold font-droid-sans rounded shadow bg-[#FEC40D] focus:border-none  ">
+                VIEW BUMBLEBEE BOOKS
+              </button>
+            </Link>
           </div>
         </div>
       </div>
