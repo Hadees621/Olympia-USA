@@ -20,13 +20,13 @@ const MostPopular = () => {
             title="title"
             author="author"
           />
-          <div className="relative h-[350px] lg:h-[250px] xl:h-[330px] 2xl:h-[440px] w-[540px] xl:w-[595px] 2xl:w-[820px]">
+          <div className="relative h-[350px] lg:h-[280px] xl:h-[340px] 2xl:h-[468px] w-[540px] xl:w-[595px] 2xl:w-[820px]">
             <Image
               src="/assets/Banners/AuthorBanner.png"
               alt="About Section Image"
               layout="fill"
             />
-            <div className="absolute top-4 xl:top-8 left-4 2xl:top-8 2xl:left-6 p-4 space-y-2 text-[#BFE0D9] text-[13px] xl:text-[16px] 2xl:text-[20px] font-open-sans">
+            <div className="absolute top-4 xl:top-8 left-4 2xl:top-12 2xl:left-7 p-4 space-y-2 text-[#BFE0D9] text-[13px] xl:text-[16px] 2xl:text-[20px] font-open-sans">
               <p className="">Featured author</p>
               <p className="text-white text-xl 2xl:text-3xl ">
                 Legends of Erin: Dawn of <br /> Boyhood’s Fire
