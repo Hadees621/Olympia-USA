@@ -28,7 +28,7 @@ const MostPopular = () => {
             />
             <div className="absolute top-4 xl:top-8 left-4 2xl:top-12 2xl:left-7 p-4 space-y-2 text-[#BFE0D9] text-[13px] xl:text-[16px] 2xl:text-[20px] font-open-sans">
               <p className="">Featured author</p>
-              <p className="text-white text-xl 2xl:text-3xl ">
+              <p className="text-white text-xl xl:text-[14px] 2xl:text-3xl ">
                 Legends of Erin: Dawn of <br /> Boyhood’s Fire
               </p>
               <p className="">Meadow Griffin</p>
