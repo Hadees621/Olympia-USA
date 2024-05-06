@@ -5,7 +5,7 @@ const Bumblebee = () => {
   return (
     <div className=" py-20 relative">
       <div className="relative w-auto h-auto">
-        <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1450px]">
+        <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1350px] lg:mx-auto">
           <img
             src={BumblebeeBanner}
             width={1600}
