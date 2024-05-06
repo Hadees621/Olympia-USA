@@ -36,7 +36,7 @@ const RecentPost = ({ flag = true }) => {
           </p>
           {flag ? (
             <button
-              className={`text-[8px] py-2 px-6 font-semibold font-droid-sans shadow border border-black flex items-center justify-center w-max my-7`}
+              className={`text-[8px] py-3 px-8 font-bold font-open-sans shadow border border-black flex items-center justify-center w-max my-7`}
             >
               READ FEATURE
             </button>

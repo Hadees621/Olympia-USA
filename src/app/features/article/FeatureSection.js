@@ -3,16 +3,16 @@ import Button from "@/components/feature/Button";
 
 const FeaturesSection = ({ features }) => {
   return (
-    <div className="grid md:justify-center gap-4 lg:gap-0 lg:flex-row py-10 mx-3">
+    <div className="grid md:justify-center gap-4 lg:gap-0 lg:flex-row py-10 mx-3 lg:mx-0 ">
       <div className="max-w-container">
-        <p className="text-[26px] font-semibold font-droid-sans text-center lg:text-start">
-          Features
+        <p className="text-[22px] uppercase font-bold font-open-sans text-center lg:text-start">
+          What to read next
         </p>
-        <div className="flex flex-col lg:flex-row py-10">
+        <div className="flex flex-col lg:flex-row py-10 gap-10 lg:gap-0">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-2 lg:p-3 xl:p-6 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]"
+              className="p-2 lg:p-6 xl:p-8 2xl:p-12 flex flex-col lg:border border-black flex-grow hover:bg-[#EFF4F7]"
             >
               <div>
                 <Image
