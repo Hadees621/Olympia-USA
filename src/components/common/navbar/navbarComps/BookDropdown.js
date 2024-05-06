@@ -34,11 +34,11 @@ const BookDropdown = () => {
             </h1>
           </div>
         </Link>
-        <Link href="/genre">
+        {/* <Link href="/genre">
           <div
             className="flex justify-center items-center p-9 w-[175px] h-[135px] xl:p-11 xl:w-[185px] xl:h-[145px] 2xl:p-14 2xl:w-[210px] 2xl:h-[165px]"
             style={{
-              backgroundImage: "url('/assets/Genre banner/Non Fiction.png')",
+              backgroundImage: "url('/assets/Genre banner/Non fiction.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -46,6 +46,22 @@ const BookDropdown = () => {
           >
             <h1 className="text-[10px] xl:text-[12px] 2xl:text-[14px] font-open-sans">
               Non-Fiction
+            </h1>
+          </div>
+        </Link> */}
+        <Link href="/bumblebee-books">
+          <div
+            className="flex justify-center items-center p-9 w-[175px] h-[135px] xl:p-11 xl:w-[185px] xl:h-[145px] 2xl:p-14 2xl:w-[210px] 2xl:h-[165px]"
+            style={{
+              backgroundImage:
+                "url('/assets/Genre banner/Bumblebee books.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            onClick={handleBumblebeeClick}
+          >
+            <h1 className="text-[10px] xl:text-[12px] 2xl:text-[14px] font-open-sans">
+              Bumblebee Books
             </h1>
           </div>
         </Link>
