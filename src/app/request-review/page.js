@@ -45,7 +45,7 @@ const page = () => {
             </div>
             <div className="w-[60%]">
               <DropdownInput
-                label="Country*"
+                label="Country"
                 options={dropdownOptions}
                 isRequired={true}
               />

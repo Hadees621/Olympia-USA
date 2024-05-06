@@ -46,7 +46,7 @@ const page = () => {
               />
             </div>
             <div className="w-[40%]">
-              <InputField label="Country/ State" />
+              <InputField label="Country/ State" isRequired={true} showRequiredText={false} />
             </div>
           </div>
 
@@ -63,6 +63,7 @@ const page = () => {
                 label="Country*"
                 options={dropdownOptions}
                 isRequired={true}
+                showRequiredText={false}
               />
             </div>
           </div>
