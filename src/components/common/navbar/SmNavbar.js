@@ -15,7 +15,7 @@ const SmNavbar = () => {
   const { menuOpen, searchOpen } = useSmNavbarStore();
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 bg-white">
       {searchOpen ? (
         <>
           <SearchBar />
