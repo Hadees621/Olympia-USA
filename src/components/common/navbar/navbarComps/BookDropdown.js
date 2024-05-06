@@ -13,7 +13,7 @@ const BookDropdown = () => {
     setFlag(false);
   };
   return (
-    <div className="absolute top-full -left-8 xl:-left-20 bg-white rounded-md p-8 mt-1">
+    <div className="absolute top-full -left-8 xl:-left-20 bg-white rounded-md p-8 mt-1 z-100">
       <p className="py-3">Categories</p>
       <div
         className="flex gap-2 xl:gap-4 text-white 2xl:text-[13px]  overflow-x-auto"
