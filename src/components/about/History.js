@@ -18,7 +18,7 @@ const History = ({ tabsData }) => {
             <img
               src={tabsData[activeTab].image}
               alt={`Image ${activeTab + 1}`}
-              className="w-[130px] h-[120px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] "
+              className="w-[130px] h-[120px] xl:w-[170px] xl:h-[170px] 2xl:w-[400px] 2xl:h-[400px] "
             />
           </div>
         </div>
@@ -27,7 +27,7 @@ const History = ({ tabsData }) => {
 
         {/* left */}
         <div className="relative flex justify-center gap-16 xl:gap-20 px-4">
-          <vr className="border-[0.5px] border-[#4A81BC] my-36 xl:mt-44 xl:mb-48 2xl:mt-48 2xl:mb-56 " />
+          <vr className="border-[0.5px] border-[#4A81BC] my-36 xl:my-44 xl: 2xl:mt-48 2xl:mb-56 " />
           <div className="font-open-sans p-5 lg:p-0 flex justify-center items-center w-[250px] 2xl:w-[450px]">
             <div className=" tabs space-y-14 2xl:space-y-24 w-full">
               {tabsData.map((tab, index) => (

@@ -15,8 +15,8 @@ const Boxes = () => {
         </p>
         <Link href="/submit-online">
           <Button
-            title="Read our submissions guidelines"
-            width="w-[240px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
+            title="Submit online  "
+            width="w-[140px] h-[44px] lg:w-[130px] lg:h-[38px] 2xl:w-[130px] 2xl:h-[45px] text-[13px] border border-white mt-6"
             color="transparent"
           />
         </Link>

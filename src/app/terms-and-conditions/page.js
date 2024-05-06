@@ -1,7 +1,7 @@
 import Banner from "@/components/common/Banner";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="font-open-sans lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
       <Banner title={"Terms & Conditions"} />
@@ -14,16 +14,23 @@ const page = () => {
           info@olympiapublishers.com
         </p>
 
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans lg:hidden">
+        <h1 className="font-bold text-[18px] font-open-sans uppercase lg:hidden">
           {" "}
-          TERMS & CONDITIONS{" "}
+          Terms & Conditions{" "}
         </h1>
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans hidden lg:block">
+        <h1 className="font-bold text-[20px] lg:py-4 font-open-sans  hidden lg:block">
           {" "}
           Terms & Conditions{" "}
         </h1>
         <div>
-          <p className="font-semibold text-[12px]">Copyright and Trademarks:</p>
+          <p className="font-semibold text-[12px] lg:text-[11px] hidden lg:flex">
+            Copyright and Trademarks:
+          </p>
+          <p className="font-semibold text-[12px] uppercase lg:hidden">
+            Copyright and Trademarks:
+          </p>
+
+          <p className="font-semibold text-[12px]"></p>
           <div className="lg:space-y-4 text-[11px] lg:leading-7 lg:font-droid-sans">
             <p>
               This site is owned and operated by Olympia Publishers as part of
@@ -57,7 +64,12 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[11px]">OUR LIABILITY TO YOU:</p>
+          <p className="font-semibold text-[12px] lg:text-[11px] hidden lg:flex">
+            Our Liability to You:
+          </p>
+          <p className="font-semibold text-[12px] uppercase lg:hidden">
+            OUR LIABILITY TO YOU:
+          </p>
           <div className="lg:space-y-4 text-[11px] lg:leading-7 lg:font-droid-sans">
             <p>
               Should we, as a result of our negligence, by any chance do
@@ -81,19 +93,23 @@ const page = () => {
           </div>
         </div>
 
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans lg:hidden">
+        <h1 className="font-bold text-[18px] font-open-sans uppercase lg:hidden">
           {" "}
-          POLICIES AND COOKIES
+          Policies and Cookies
         </h1>
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans hidden lg:block">
+        <h1 className="font-bold text-[20px] lg:py-4 font-open-sans  hidden lg:block">
           {" "}
           Policies & Cookies{" "}
         </h1>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px]">
+          <p className="font-semibold text-[12px] lg:text-[11px] hidden lg:flex">
+            User information:
+          </p>
+          <p className="font-semibold text-[12px] uppercase lg:hidden">
             USER INFORMATION:
           </p>
+          <p className="font-semibold text-[12px] lg:text-[10px]"></p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
             Olympia collects information on what pages are accessed or visited
             by consumers, as well as information volunteered by the customer,
@@ -105,7 +121,10 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px]">
+          <p className="font-semibold text-[12px] lg:text-[11px] hidden lg:flex">
+            Cookies – we may use cookies to:
+          </p>
+          <p className="font-semibold text-[12px] uppercase lg:hidden">
             COOKIES – WE MAY USE COOKIES TO:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
@@ -116,7 +135,10 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px] uppercase">
+          <p className="font-semibold text-[12px] lg:text-[11px] hidden lg:flex">
+            E-mails:
+          </p>
+          <p className="font-semibold text-[12px] uppercase lg:hidden">
             E-mails:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
@@ -126,7 +148,10 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px] uppercase">
+          <p className="font-semibold text-[12px] lg:text-[11px] hidden lg:flex">
+            Our Aims:
+          </p>
+          <p className="font-semibold text-[12px] uppercase lg:hidden">
             Our Aims:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
@@ -156,4 +181,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

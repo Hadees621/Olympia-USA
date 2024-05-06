@@ -1,6 +1,6 @@
 const Experience = ({ Title, text, placing }) => {
   return (
-    <div className="p-8 bg-[#EFEFEF] mx-6 md:mx-20">
+    <div className="p-8 bg-[#F9F7F6] mx-6 md:mx-20">
       <h1 className={`text-[16px] font-bold text-center ${placing}`}>
         {" "}
         {Title}{" "}

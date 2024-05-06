@@ -10,7 +10,7 @@ const SmScreenSections = () => {
 
   return (
     <div className="lg:hidden">
-      <CountrySelector />
+      {/* <CountrySelector /> */}
 
       {addressInfo.map((info, index) => (
         <LocationCard

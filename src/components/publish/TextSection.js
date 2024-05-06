@@ -25,7 +25,7 @@ const TextSection = () => {
           className="font-bold text-[17px] mt-10 lg:hidden"
           dangerouslySetInnerHTML={{ __html: title }}
         />
-        <div className="text-[13px] md:text-[10px] xl:text-[13px] 2xl:text-[17px] space-y-4 md:space-y-2 xl:space-y-4 leading-9 md:leading-6 xl:leading-7 2xl:leading-9 md:font-droid-sans">
+        <div className="text-[13px] mt-6 md:text-[10px] xl:text-[13px] 2xl:text-[17px] space-y-4 md:space-y-2 xl:space-y-4 leading-9 md:leading-6 xl:leading-7 2xl:leading-9 md:font-droid-sans">
           {paragraph}
         </div>
         <p

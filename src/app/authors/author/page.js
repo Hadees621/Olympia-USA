@@ -9,28 +9,26 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1400px]">
-        <Link href={`/authors`}>
-          <BackButton />
-        </Link>
-        <div className="flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3">
-          <Banner />
-          <AboutAuthor />
-          <BooksSection title={"BOOKS"} lgTitle={"Books by Rudi Jennings"} />
-          <div className="lg:hidden">
-            <Experience
-              Title={"EXPERIENCE"}
-              text={
-                " “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat”. - Author name"
-              }
-            />
-            <Article />
-          </div>
+    <div className="lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto">
+      <Link href={`/authors`}>
+        <BackButton />
+      </Link>
+      <div className="flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3">
+        <Banner />
+        <AboutAuthor />
+        <BooksSection title={"BOOKS"} lgTitle={"Books by Rudi Jennings"} />
+        <div className="lg:hidden">
+          <Experience
+            Title={"EXPERIENCE"}
+            text={
+              " “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat”. - Author name"
+            }
+          />
+          <Article />
+        </div>
 
-          <div className="hidden lg:block">
-            <Features />
-          </div>
+        <div className="hidden lg:block">
+          <Features />
         </div>
       </div>
     </div>

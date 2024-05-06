@@ -83,7 +83,7 @@ const SmSections = () => {
         />
         <div className="text-[13px] space-y-4 leading-9 lg:leading-7 lg:font-droid-sans lg:space-y-4 md:mx-32">
           <p className="font-bold text-[30px] mt-10">{authorSays.title}</p>
-          <p className="mt-5">{authorSays.quote}</p>
+          <p className="py-5">{authorSays.quote}</p>
           <Link href="/author-exp">
             <Button
               title={authorSays.buttonText}
