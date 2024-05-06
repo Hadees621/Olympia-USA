@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
         <div className="lg:hidden fixed top-0 right-0 left-0 z-100">
           <SmNavbar />
         </div>
-        <div className="hidden lg:block fixed top-0 right-0 left-0 z-100 bg-white">
+        {/* fixed top-0 right-0 left-0 z-100 */}
+        <div className="hidden lg:block bg-white">
           <Navbar />
         </div>
         {children}
