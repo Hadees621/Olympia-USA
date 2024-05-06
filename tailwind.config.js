@@ -26,6 +26,9 @@ module.exports = {
         ],
         arial: ["Arimo", "sans-serif"],
       },
+      zIndex: {
+        100: "100",
+      },
     },
   },
   plugins: [],
