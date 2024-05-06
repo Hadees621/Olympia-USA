@@ -14,11 +14,11 @@ const page = () => {
           info@olympiapublishers.com
         </p>
 
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans lg:hidden">
+        <h1 className="font-bold text-[18px] font-open-sans lg:hidden">
           {" "}
           TERMS & CONDITIONS{" "}
         </h1>
-        <h1 className="font-bold text-[15px] lg:text-[20px] lg:py-4 font-open-sans hidden lg:block">
+        <h1 className="font-bold text-[20px] lg:py-4 font-open-sans hidden lg:block">
           {" "}
           Terms & Conditions{" "}
         </h1>
@@ -57,7 +57,7 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[11px]">OUR LIABILITY TO YOU:</p>
+          <p className="font-semibold text-[11px]">OUR LIABILITY TO YOU:</p>
           <div className="lg:space-y-4 text-[11px] lg:leading-7 lg:font-droid-sans">
             <p>
               Should we, as a result of our negligence, by any chance do
@@ -91,7 +91,7 @@ const page = () => {
         </h1>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px]">
+          <p className="font-semibold text-[12px] lg:text-[10px]">
             USER INFORMATION:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
@@ -105,7 +105,7 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px]">
+          <p className="font-semibold text-[12px] lg:text-[10px]">
             COOKIES – WE MAY USE COOKIES TO:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
@@ -116,7 +116,7 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px] uppercase">
+          <p className="font-semibold text-[12px] lg:text-[10px] uppercase">
             E-mails:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
@@ -126,7 +126,7 @@ const page = () => {
         </div>
 
         <div>
-          <p className="font-bold text-[12px] lg:text-[10px] uppercase">
+          <p className="font-semibold text-[12px] lg:text-[10px] uppercase">
             Our Aims:
           </p>
           <p className="text-[11px] lg:leading-7 lg:font-droid-sans">
