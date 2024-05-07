@@ -25,7 +25,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative  mt-24 lg:mt-0">
       <div className="flex flex-col lg:flex-row md:justify-center lg:justify-end bg-gradient-to-bl from-[#FFFFFE] via-[#FEF5DA] to-[#FEC413]">
         {/* sm slider */}
         <>
