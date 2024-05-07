@@ -7,11 +7,10 @@ import BackButton from "@/components/feature/article/BackButton";
 import SmScreenRecent from "@/components/genre/book/SmScreenRecent";
 import RecommendedBooks from "@/components/genre/book/RecommendedBooks";
 import { useBumblebeeStore } from "@/stores/States";
-import { useRouter, useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
-const Page = () => {
+const Page = ({ params }) => {
   const router = useRouter();
-  const params = useParams();
   const { flag } = useBumblebeeStore();
   const book = booksData.find((book) => book.id === params.bookId);
 
