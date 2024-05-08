@@ -6,6 +6,7 @@ import { Books } from "@/utils/home/Books";
 import { AuthorsData } from "@/utils/author/utils";
 import Link from "next/link";
 import booksData from "@/utils/books/utils.json";
+import Banner from "@/components/common/Banner";
 
 const SearchResults = () => {
   const [books, setBooks] = useState([]);
@@ -35,11 +36,7 @@ const SearchResults = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="lg:max-w-[850px] xl:max-w-[1400px] 2xl:max-w-[1600px]">
-        <div className="bg-[#FAFAFA] p-7 my-6 mx-5 lg:mx-0">
-          <h1 className="font-semibold text-[#505050] text-[28px]">
-            Search results
-          </h1>
-        </div>
+        <Banner title={"Search results"} />
         <div className="flex flex-col font-semibold py-8">
           <div className="flex justify-between px-20 md:justify-center gap-6 md:gap-32 xl:gap-14">
             <p className="hover:border-b-2 hover:border-red-500">All</p>
