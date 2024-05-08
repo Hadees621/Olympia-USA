@@ -27,7 +27,8 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative">
+    // lg:mt-36
+    <div className="relative mt-24 lg:mt-0 ">
       <div className="flex flex-col lg:flex-row md:justify-center lg:justify-end bg-blue-200 lg:bg-[#ECF1EF]">
         {/* sm slider */}
         <>

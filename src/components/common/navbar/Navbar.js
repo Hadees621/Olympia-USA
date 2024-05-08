@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
 import Button from "../Button";
@@ -9,12 +10,13 @@ import BookDropdown from "./navbarComps/BookDropdown";
 import SearchBar from "./navbarComps/SearchBar";
 import { navItems } from "@/utils/home/Links";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const { booksDropdownOpen, toggleBooksDropdown } = useNavbarStore();
-
+  const pathname = usePathname();
   return (
-    <div className="flex justify-center items-center relative z-50">
+    <div className="flex justify-center items-center relative z-100">
       <div className="2xl:h-[80px] bg-white lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] flex justify-between items-center 2xl:py-[60px] relative z-10">
         <div>
           <Link href="/">
@@ -43,11 +45,22 @@ const Navbar = () => {
               </div>
               {booksDropdownOpen && <BookDropdown />}
             </div>
-            {navItems.map((item, index) => (
-              <a key={index} href={item.url}>
-                <p className="cursor-pointer">{item.label}</p>
-              </a>
-            ))}
+            {navItems.map((item, index) => {
+              const isActive = pathname.startsWith(item.url);
+              return (
+                <Link key={index} href={item.url}>
+                  <p
+                    className={
+                      isActive
+                        ? "cursor-pointer text-extrabold text-red-500"
+                        : "cursor-pointer"
+                    }
+                  >
+                    {item.label}
+                  </p>
+                </Link>
+              );
+            })}
           </div>
         </div>
         <Link href="/submit-online">

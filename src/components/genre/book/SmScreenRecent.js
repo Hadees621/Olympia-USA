@@ -4,7 +4,7 @@ import BuyFromDropdown from "./BuyFromDropdown";
 const SmScreenRecent = ({ book }) => {
   return (
     <div>
-      <div className="lg:hidden">
+      <div className="lg:hidden mt-12">
         <div className="flex w-full justify-center items-center py-10 lg:hidden">
           <img src={book.src} alt="book" className="h-[440px]" />
         </div>

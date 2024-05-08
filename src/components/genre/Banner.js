@@ -5,7 +5,7 @@ const Banner = ({ title, img }) => {
     title === "Bumblebee Books" ? "text-3xl top-6 left-6" : "text-4xl top-14";
 
   return (
-    <div className="relative md:flex justify-center items-center w-full">
+    <div className="relative md:flex justify-center items-center w-full mt-28 lg:mt-0">
       <div className="md:w-[700px] border ">
         <Image
           src={img}

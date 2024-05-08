@@ -1,8 +1,8 @@
 import React from "react";
-import CommonSection from "./CommonSection";
-import LocationCard from "./LocationCard";
 import Review from "./Review";
-import CountrySelector from "./CountrySelector";
+import CountryLinks from "./CountryLinks";
+import LocationCard from "./LocationCard";
+import CommonSection from "./CommonSection";
 import ContactUsData from "@/utils/contact-us/ContactUsData.json";
 
 const SmScreenSections = () => {
@@ -10,7 +10,7 @@ const SmScreenSections = () => {
 
   return (
     <div className="lg:hidden">
-      {/* <CountrySelector /> */}
+      <CountryLinks />
 
       {addressInfo.map((info, index) => (
         <LocationCard

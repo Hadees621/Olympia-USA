@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import Hamburger from "./comp/Hamburger";
@@ -14,7 +15,7 @@ const SmNavbar = () => {
   const { menuOpen, searchOpen } = useSmNavbarStore();
 
   return (
-    <>
+    <div className="sticky top-0 z-50 bg-white">
       {searchOpen ? (
         <>
           <SearchBar />
@@ -42,7 +43,7 @@ const SmNavbar = () => {
       {searchOpen && <SearchMenu />}
 
       {menuOpen && <HamburgerMenu />}
-    </>
+    </div>
   );
 };
 

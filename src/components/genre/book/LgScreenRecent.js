@@ -5,7 +5,6 @@ import { useBumblebeeStore, useFictionStore } from "@/stores/States";
 
 const LgScreenRecent = ({ book }) => {
   const { flag } = useBumblebeeStore();
-  const { fictionFlag, setFictionFlag } = useFictionStore();
 
   const flag2 = true;
 
