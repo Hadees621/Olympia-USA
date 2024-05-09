@@ -66,21 +66,28 @@ const Slider = () => {
             </div>
           </div>
 
-          <div className="p-6 lg:p-4 2xl:p-6 flex flex-col items-start justify-center md:w-[50%] md:mx-auto lg:mx-0 lg:w-[35%] xl:w-[36%] 2xl:w-[30%] lg:pr-16 2xl:pr-28 gap-3 2xl:gap-8 px-16 2xl:px-0">
-            <h2 className="text-[35px] md:text-[45px] lg:text-[45px] lg:leading-[40px] xl:text-[55px] xl:leading-[60px] 2xl:text-[92px] 2xl:leading-[92px] font-semibold mb-2">
-              Lorem ipsum <br /> dolor sit amet
-            </h2>
-            <p className="text-[11px] md:text-[12px] lg:text-[10px] xl:text-[14px] 2xl:text-[20px] mb-4">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh. Lorem ipsum dolor sit amet.Lorem ipsum, consectetuer
-              adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit
-              amet.
+          <div className="p-6 lg:p-4 2xl:p-6 flex flex-col items-start justify-center md:w-[50%] md:mx-auto lg:mx-0 lg:w-[40%] xl:w-[36%] 2xl:w-[30%] lg:pr-20 2xl:pr-28 gap-3 2xl:gap-8 px-16 2xl:px-0 pt-10">
+            <div className="">
+              <h2 className="text-[25px] md:text-[30px] lg:text-[18px] lg:leading-[25px] xl:text-[25px] xl:leading-[30px] 2xl:text-[40px] 2xl:leading-[42px] font-bold">
+                Welcome to Bumblebee Books!
+              </h2>
+              <h2 className="text-[18px] md:text-[20px] lg:text-[16px] lg:tracking-tighter xl:text-[20px] 2xl:text-[40px] font-semibold font-courier-prime">
+                The home of children’s literature
+              </h2>
+            </div>
+            <p className="text-[11px] md:text-[12px] lg:text-[9px] xl:text-[11px] 2xl:text-[18px] pt-5">
+              An imprint of Olympia Publishers. Children’s books are at the
+              heart of Olympia Publishers. For over a decade we have been
+              publishing exciting children’s books that are loved by our young
+              readers from around the world. From adventure to fantasy,
+              non-fiction to rhyme, you won’t Bee-lieve the range of books we
+              have!
             </p>
-            <Link href="/genre">
+            <Link href="/bumblebee-books">
               <button
-                className={`text-[8px] 2xl:text-[12px] py-[9px] 2xl:py-[12px] font-semibold font-droid-sans shadow flex items-center 2xl:items-start justify-center w-[100px] 2xl:w-[140px] border border-black hover:bg-buttonred hover:text-white`}
+                className={`text-[8px] 2xl:text-[12px] py-[9px] 2xl:py-[12px] font-semibold font-droid-sans shadow flex items-center 2xl:items-start justify-center w-[110px] 2xl:w-[140px] hover:border-none border border-black  hover:bg-[#FCC30B] my-10`}
               >
-                VIEW ALL FICTION
+                VIEW ALL BOOKS
               </button>
             </Link>
           </div>
