@@ -13,7 +13,7 @@ const page = () => {
       <Link href={`/authors`}>
         <BackButton />
       </Link>
-      <div className="flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3 ">
+      <div className="mt-8 lg:mt-0 flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3 ">
         <Banner />
         <AboutAuthor />
         <BooksSection title={"BOOKS"} lgTitle={"Books by Rudi Jennings"} />
