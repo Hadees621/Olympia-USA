@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1400px] mx-auto border border-black">
+    <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1400px] mx-auto">
       <Link href={`/authors`}>
         <BackButton />
       </Link>
