@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Error = () => {
   return (
-    <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1400px] mx-auto">
+    <div className="lg:max-w-[850px] xl:max-w-[1200px] 2xl:max-w-[1400px] mx-auto mt-28 lg:mt-0">
       <div className="px-10 font-open-sans flex flex-col items-center justify-center py-10 ">
         <h1 className="text-[30px] lg:text-[55px] font-bold lg:font-semibold text-center">
           Error 404 - <br className="lg:hidden" /> Page not found

@@ -86,7 +86,7 @@ const SubmissionPage = () => {
   );
 
   return (
-    <div className="p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto mt-28 lg:mt-0">
+    <div className="mt-28 lg:mt-0 p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
       <ThankYouSection />
       <NextStepsSection />
       <ProcessOverviewSection />
