@@ -27,7 +27,7 @@ const page = () => {
           <Article />
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:block mx-auto">
           <Features />
         </div>
       </div>
