@@ -9,11 +9,11 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <div className="lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto">
+    <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1450px] mx-auto">
       <Link href={`/authors`}>
         <BackButton />
       </Link>
-      <div className="flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3">
+      <div className="flex flex-col w-full justify-center md:justify-center lg:justify-start font-open-sans space-y-5 p-3 lg:p-1 px-3 ">
         <Banner />
         <AboutAuthor />
         <BooksSection title={"BOOKS"} lgTitle={"Books by Rudi Jennings"} />
