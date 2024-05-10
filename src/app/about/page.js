@@ -9,11 +9,7 @@ import BumblebeeBooksCard from "@/components/about/BumblebeeBooksCard";
 import LastLgSection from "@/components/about/LastLgSection";
 import HybridPublishing from "@/components/about/HybridPublishing";
 import History from "@/components/about/History";
-import {
-  HistoryTabsData,
-  PublishingProcessImages,
-  tabsData,
-} from "@/utils/about/utils";
+import { HistoryTabsData, tabsData } from "@/utils/about/utils";
 
 const Page = () => {
   return (
@@ -23,7 +19,7 @@ const Page = () => {
 
         <WhoWeAre />
 
-        <PublishingProcess imagePaths={PublishingProcessImages} />
+        <PublishingProcess />
 
         <YouTubeVideo />
 

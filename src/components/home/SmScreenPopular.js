@@ -4,33 +4,49 @@ import { Books } from "@/utils/home/Books";
 
 const SmScreenPopular = () => {
   return (
-    <div>
-      <div className="flex justify-center lg:justify-between items-center pt-10 px-5 lg:px-0 lg:bg-white">
+    <div className="">
+      <div className="flex justify-center lg:justify-between items-center pt-10 px-0 lg:px-0 lg:bg-white">
         <p className="text-[21px] font-bold font-open-sans">MOST POPULAR</p>
       </div>
 
-      <div className="flex overflow-x-scroll lg:overflow-x-hidden pt-8 lg:py-0 lg:border lg:border-black mx-5">
-        {Books.map((book, index) => (
-          <div className="flex-none" key={index}>
-            <BookComponent
-              src={book.src}
-              title={book.title}
-              author={book.author}
-            />
-          </div>
-        ))}
+      <div
+        className="pt-8 mx-5"
+        style={{ overflowX: "auto", overflowY: "hidden", maxWidth: "90vw" }}
+      >
+        <div
+          className="flex gap-6"
+          style={{ minWidth: `${Books.length * 150}px` }}
+        >
+          {Books.map((book, index) => (
+            <div className="flex-none" key={index}>
+              <BookComponent
+                src={book.src}
+                title={book.title}
+                author={book.author}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="flex overflow-x-scroll lg:overflow-x-hidden py-8 lg:py-0 lg:border lg:border-black mx-5">
-        {Books.map((book, index) => (
-          <div className="flex-none" key={index}>
-            <BookComponent
-              src={book.src}
-              title={book.title}
-              author={book.author}
-            />
-          </div>
-        ))}
+      <div
+        className="pt-8 mx-5"
+        style={{ overflowX: "auto", overflowY: "hidden", maxWidth: "90vw" }}
+      >
+        <div
+          className="flex gap-6"
+          style={{ minWidth: `${Books.length * 150}px` }}
+        >
+          {Books.map((book, index) => (
+            <div className="flex-none" key={index}>
+              <BookComponent
+                src={book.src}
+                title={book.title}
+                author={book.author}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="w-full flex justify-center lg:hidden">

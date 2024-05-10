@@ -1,10 +1,12 @@
 import Banner from "@/components/common/Banner";
 import Button from "@/components/common/Button";
+import DropdownInput from "@/components/request-review/DropdownInput";
 import InputField from "@/components/request-review/InputField";
 import SectionTitle from "@/components/request-review/SectionTitle";
 import React from "react";
 
 const page = () => {
+  const dropdownOptions = ["Option 1", "Option 2", "Option 3"];
   return (
     <div className="lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1350px] lg:mx-auto bg-[#FFFFFF]">
       <Banner title={"Request a review copy"} key={3} />
@@ -18,7 +20,13 @@ const page = () => {
       <div className="font-open-sans mx-8 space-y-5 md:space-y-0 my-10 md:max-w-[420px] md:mx-auto lg:max-w-[440px] xl:max-w-[550px] 2xl:max-w-[750px] lg:mx-auto">
         <div className="md:border border-black md:p-8 xl:p-12 space-y-4 lg:space-y-6 lg:py-6">
           <SectionTitle number="01" title="ABOUT YOU" SmallTitle="About you" />
-          <InputField label="Title" width="w-[70%]" showRequiredText={false} />
+          <DropdownInput
+            label="Title*"
+            options={dropdownOptions}
+            width="w-[70%]"
+            isRequired={false}
+            showRequiredText={true}
+          />
           <InputField label="First Name" />
           <InputField label="Last Name" />
           <InputField label="Email address" />
@@ -36,7 +44,11 @@ const page = () => {
               />
             </div>
             <div className="w-[60%]">
-              <InputField label="Country" />
+              <DropdownInput
+                label="Country"
+                options={dropdownOptions}
+                isRequired={true}
+              />
             </div>
           </div>
           <InputField label="Company/Blog/Magazine name" />
@@ -59,7 +71,12 @@ const page = () => {
               />
             </div>
             <div className="w-[60%]">
-              <InputField label="Format" showRequiredText={false} />
+              <DropdownInput
+                label="Format*"
+                options={dropdownOptions}
+                isRequired={true}
+                showRequiredText={false}
+              />
             </div>
           </div>
           <InputField

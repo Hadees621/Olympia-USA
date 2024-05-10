@@ -58,6 +58,11 @@ const SubmissionPage = () => {
 
   const AuthorExperiencesSection = () => (
     <div className="text-[30px] lg:text-[50px] font-bold px-4">
+      <img
+        src="/assets/about/Asset 1.png"
+        alt="asset"
+        className="w-full md:w-[60%] mx-auto"
+      />
       <h1 className="py-4">SEE WHAT OUR AUTHORS ARE SAYING</h1>
       <p className="font-medium text-[13px] font-open-sans leading-8 pb-6">
         "Olympia Publishers provide tremendous opportunities for first time
@@ -81,7 +86,7 @@ const SubmissionPage = () => {
   );
 
   return (
-    <div className="p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
+    <div className="p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto mt-28 lg:mt-0">
       <ThankYouSection />
       <NextStepsSection />
       <ProcessOverviewSection />

@@ -9,14 +9,14 @@ function Step({ step, index }) {
   return (
     <div
       className={`font-open-sans lg:flex justify-center gap-16 ${
-        isOddStep ? "m-8 my-12 lg:m-0" : "p-8 py-12 lg:m-0"
+        isOddStep ? "m-4 my-12 lg:m-0" : "p-4 py-12 lg:m-0"
       } sm:${isOddStep ? "m-32 lg:p-0 lg:mr-0" : "p-32 lg:p-0 lg:pr-0"} ${
         isOddStep ? "bg-white" : "bg-[#F9F7F6]"
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className=" lg:relative lg:flex lg:max-w-[630px] xl:max-w-[800px] 2xl:max-w-[1100px] ">
+      <div className="lg:relative lg:flex lg:max-w-[630px] xl:max-w-[800px] 2xl:max-w-[1100px]">
         {/* progress bar */}
         <vr
           className={`lg:border-l-[1.9px] lg:border-[#2D6DB2] lg:pl-14 xl:pl-24 ${
@@ -24,7 +24,7 @@ function Step({ step, index }) {
           } ${step.id == 10 ? "mb-[385px]" : ""}`}
         />
 
-        <div className="lg:absolute -left-[8px] top-32 bg-white hidden lg:block">
+        <div className="lg:absolute -left-[8px] top-32 bg-white hidden lg:block gap-20">
           {isHovered ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,8 @@ function Step({ step, index }) {
             </svg>
           )}
         </div>
-        <div className="">
+
+        <div className="gap-10">
           {/* section image*/}
           <div className="flex justify-between lg:hidden">
             <img
@@ -89,12 +90,12 @@ function Step({ step, index }) {
         {/* text */}
         <div
           className={`lg:py-10 ${
-            isOddStep ? "m-8 lg:m-16" : "p-8 lg:m-16"
+            isOddStep ? "m-8 lg:m-12" : "p-8 lg:m-12"
           } sm:${isOddStep ? "m-32 lg:m-0 " : "m-32 lg:p-0"}`}
         >
           <h2 className="font-bold text-[12px] lg:hidden">{step.mainTitle}</h2>
           <p
-            className={`text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#E6E6E6]"
+            className={`text-[12px] leading-8 md:text-[12px] md:leading-8 lg:text-[9px] lg:leading-6 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#E6E6E6]"
           }`}
           >
             {step.description}
@@ -102,7 +103,7 @@ function Step({ step, index }) {
           <br />
           {step.description2 && (
             <div>
-              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
+              <p className="text-[12px] leading-8  md:text-[12px] md:leading-8 lg:text-[9px] lg:leading-6 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
                 {step.description2}
               </p>
               <br />
@@ -110,16 +111,16 @@ function Step({ step, index }) {
           )}
           {step.description3 && (
             <div>
-              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
+              <p className="text-[12px] leading-8 mt-2 xl:space-y-4 lg:text-[9px] lg:leading-6 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9">
                 {step.description3}
               </p>
               <br />
             </div>
           )}
-          <h4 className="text-[12px] leading-8 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#6C686B]">
+          <h4 className="text-[12px] leading-8  md:text-[12px] lg:text-[9px] lg:leading-6 md:leading-8 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 text-[#6C686B]">
             Top tip
           </h4>
-          <p className="text-[12px] leading-8 xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 mt-1 text-[#6C686B]">
+          <p className="text-[12px] leading-8  md:text-[12px] md:leading-8 lg:text-[9px] lg:leading-6  xl:space-y-4 sm:text-[10px] xl:text-[12px] 2xl:text-[17px] xl:leading-7 2xl:leading-9 mt-1 text-[#6C686B]">
             {step.tipContent}
           </p>
         </div>

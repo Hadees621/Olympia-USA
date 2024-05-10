@@ -9,7 +9,11 @@ import Link from "next/link";
 
 const page = () => {
   return (
+<<<<<<< HEAD
     <div className="lg:max-w-[850px] xl:max-w-[1050px] 2xl:max-w-[1400px] mx-auto">
+=======
+    <div className="lg:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1600px] mx-auto">
+>>>>>>> f77afe2c27c62e60d854b2a98a1049944a6ea7bc
       <Link href={`/authors`}>
         <BackButton />
       </Link>
@@ -27,7 +31,11 @@ const page = () => {
           <Article />
         </div>
 
+<<<<<<< HEAD
         <div className="hidden lg:block mx-auto">
+=======
+        <div className="hidden lg:block">
+>>>>>>> f77afe2c27c62e60d854b2a98a1049944a6ea7bc
           <Features />
         </div>
       </div>

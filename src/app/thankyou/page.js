@@ -2,8 +2,15 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto">
-      <div className="flex justify-center w-full">
+    <div className="p-6 font-open-sans space-y-5 lg:max-w-[850px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto mt-28 lg:mt-0">
+      <div className="flex justify-center w-full lg:hidden">
+        <img
+          src="/assets/thankyou.png"
+          alt="sa"
+          className="w-[300px] md:w-[320px]"
+        />
+      </div>
+      <div className="justify-center w-full hidden lg:flex">
         <img
           src="/assets/Icons/Thank you.png"
           alt="sa"

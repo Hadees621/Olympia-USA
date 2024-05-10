@@ -1,10 +1,9 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
-import Banner from "@/components/genre/Banner";
-import { useSortByStore } from "@/stores/States";
 import FilterByDropdown from "@/components/genre/FilterByDropdown";
+import Banner from "@/components/genre/Banner";
 import BookComponent from "@/components/home/BookComponent";
-import { Books } from "@/utils/home/Books";
 import SmPagination from "@/components/genre/SmPagination";
 import SvgDropdown from "@/components/genre/SvgDropdown";
 import SortByDropdown from "@/components/genre/SortByDropdown";
@@ -12,12 +11,20 @@ import SortBySvg from "@/components/genre/SortBySvg";
 import FictionDropdown from "@/components/genre/FictionDropdown";
 import NonfictionDropdown from "@/components/genre/NonfictionDropdown";
 import BumblebeeDropdown from "@/components/genre/BumblebeeDropdown";
-import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
-import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import LgPagination from "@/components/feature/LgPagination";
 import LgBanner from "@/components/genre/LgBanner";
 import SmSortByDropdown from "@/components/genre/SmSortByDropdown";
-import Link from "next/link";
+import {
+  useBumblebeeStore,
+  useFictionStore,
+  useSortByStore,
+} from "@/stores/States";
+import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
+import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
+import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
+import { useParams } from "next/navigation";
+import booksData from "@/utils/books/utils.json";
+
 export default function Page() {
   const {
     sortByDropdown,
@@ -26,9 +33,19 @@ export default function Page() {
     toggleShowFilterOptions,
     showDropdown,
     setShowDropdown,
+    title,
   } = useSortByStore();
 
+  const { setFictionFlag } = useFictionStore();
+  const { setFlag } = useBumblebeeStore();
+
+  const [books, setBooks] = useState([]);
+
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
+
+  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
+
+  const selectOption = (option) => {};
 
   useEffect(() => {
     if (showFilterOptions || sortByDropdown) {
@@ -38,17 +55,22 @@ export default function Page() {
     }
   }, [showFilterOptions, sortByDropdown]);
 
-  const sidebarItems = ["New releases", "Most popular", "Editors picks"];
+  useEffect(() => {
+    setBooks(booksData);
+  }, []);
 
-  const selectOption = (option) => {};
+  useEffect(() => {
+    setFictionFlag(true);
+    setFlag(false);
+  }, []);
 
   return (
     <div className="px-4">
       <div className="lg:hidden">
-        <Banner />
+        <Banner title={"Fiction"} img={fictionBanner} />
       </div>
       <div className="hidden lg:block">
-        <LgBanner />
+        <LgBanner title={"Fiction"} img={fictionLgBanner} />
       </div>
       <div className="lg:hidden">
         {!isAnyDropdownOpen && (
@@ -64,13 +86,14 @@ export default function Page() {
         {showFilterOptions && <FilterByDropdown />}
         {sortByDropdown && <SmSortByDropdown />}
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-center">
-          {Books.map((book, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center justify-center gap-3">
+          {books.map((book, index) => (
             <div className="flex-none" key={index}>
               <BookComponent
                 src={book.src}
                 title={book.title}
                 author={book.author}
+                bookId={book.id}
               />
             </div>
           ))}
@@ -110,11 +133,11 @@ export default function Page() {
                   className="flex items-center gap-24 xl:gap-28 focus:outline-none py-4 border px-4"
                 >
                   <h1 className="text-[12px] xl:text-[13px] 2xl:text-[18px]">
-                    SORT BY
+                    {title}
                   </h1>
                   <SortBySvg />
                 </button>
-                {showDropdown && <SortByDropdown selectOption={selectOption} />}
+                {showDropdown && <SortByDropdown />}
               </div>
             </div>{" "}
           </div>{" "}
@@ -141,15 +164,14 @@ export default function Page() {
           </div>
           <div className="w-4/5">
             <div className="grid grid-cols-4">
-              {Books.map((book, index) => (
+              {books.map((book, index) => (
                 <div className="flex-none" key={index}>
-                  <Link href="/genre/book">
-                    <BookComponent
-                      src={book.src}
-                      title={book.title}
-                      author={book.author}
-                    />
-                  </Link>
+                  <BookComponent
+                    src={book.src}
+                    title={book.title}
+                    author={book.author}
+                    bookId={book.id}
+                  />
                 </div>
               ))}
             </div>
