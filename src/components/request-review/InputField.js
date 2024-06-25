@@ -4,11 +4,12 @@ import React, { useState } from "react";
 
 function InputField({
   label,
+  value,
+  onChange,
   width = "w-full",
   isRequired = true,
   showRequiredText = true,
 }) {
-  const [value, setValue] = useState("");
   const [touched, setTouched] = useState(false);
 
   const handleBlur = () => {
@@ -26,7 +27,7 @@ function InputField({
     <div className={`flex flex-col ${width} my-1`}>
       <div className="flex justify-between items-center mb-2">
         <label
-          htmlFor="first_name"
+          htmlFor={label.toLowerCase().replace(" ", "_")}
           className="text-[13px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] font-medium text-gray-900"
         >
           {label}
@@ -40,11 +41,11 @@ function InputField({
       </div>
       <input
         type="text"
-        id="first_name"
+        id={label.toLowerCase().replace(" ", "_")}
         className={inputClass}
         required={isRequired}
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={onChange}
         onBlur={handleBlur}
       />
     </div>
