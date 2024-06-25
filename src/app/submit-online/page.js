@@ -1,20 +1,29 @@
 "use client";
+
 import React, { useState } from "react";
 import SectionTitle from "@/components/request-review/SectionTitle";
 import InputField from "@/components/request-review/InputField";
+import DropdownInput from "@/components/request-review/DropdownInput";
 
 const Page = () => {
   const [bookTitle, setBookTitle] = useState("");
   const [authorName, setAuthorName] = useState("");
   const [bookImage, setBookImage] = useState("");
-  const [bookGenre, setGenre] = useState("");
-  const [wordsCount, setWordCount] = useState("");
-  const [submitting, setSubmitting] = useState(false);
-  const [submissionMessage, setSubmissionMessage] = useState("");
+  const [bookGenre, setBookGenre] = useState("");
+  const [wordsCount, setWordsCount] = useState("");
+  const [description, setDescription] = useState("");
+  const [moreInfo, setMoreInfo] = useState("");
+  const [fullDescription, setFullDescription] = useState("");
+  const [isbn, setIsbn] = useState("");
+  const [publishedDate, setPublishedDate] = useState("");
+  const [pages, setPages] = useState("");
+  const [size, setSize] = useState("");
+  const [imprint, setImprint] = useState("");
+
+  const dropdownOptions = ["Fiction", "Non-Fiction", "Bumblebee"];
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setSubmitting(true);
 
     try {
       const response = await fetch("http://localhost:4000/api/v1/bookPost", {
@@ -28,24 +37,40 @@ const Page = () => {
           bookImage,
           bookGenre,
           wordsCount,
+          description,
+          moreInfo,
+          fullDescription,
+          isbn,
+          publishedDate,
+          pages,
+          size,
+          imprint,
         }),
       });
 
       if (response.ok) {
-        setSubmissionMessage("Submission successful");
+        console.log("Submission successful");
+        // Optionally, reset form fields after successful submission
         setBookTitle("");
         setAuthorName("");
         setBookImage("");
-        setGenre("");
-        setWordCount("");
+        setBookGenre("");
+        setWordsCount("");
+        setDescription("");
+        setMoreInfo("");
+        setFullDescription("");
+        setIsbn("");
+        setPublishedDate("");
+        setPages("");
+        setSize("");
+        setImprint("");
       } else {
-        setSubmissionMessage("Submission failed");
+        console.error("Submission failed");
+        // Handle error state
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      setSubmissionMessage("Error submitting form");
-    } finally {
-      setSubmitting(false);
+      // Handle error state
     }
   };
 
@@ -79,32 +104,68 @@ const Page = () => {
               <InputField
                 label="Genre"
                 value={bookGenre}
-                onChange={(e) => setGenre(e.target.value)}
+                onChange={(e) => setBookGenre(e.target.value)}
               />
             </div>
             <div className="w-[50%] lg:w-[40%]">
               <InputField
                 label="Word count (numbers only)"
                 value={wordsCount}
-                onChange={(e) => setWordCount(e.target.value)}
+                onChange={(e) => setWordsCount(e.target.value)}
                 showRequiredText={false}
               />
             </div>
           </div>
 
+          <InputField
+            label="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+          <InputField
+            label="More Info"
+            value={moreInfo}
+            onChange={(e) => setMoreInfo(e.target.value)}
+          />
+          <InputField
+            label="Full Description"
+            value={fullDescription}
+            onChange={(e) => setFullDescription(e.target.value)}
+          />
+          <InputField
+            label="ISBN"
+            value={isbn}
+            onChange={(e) => setIsbn(e.target.value)}
+          />
+          <InputField
+            label="Published Date"
+            value={publishedDate}
+            onChange={(e) => setPublishedDate(e.target.value)}
+          />
+          <InputField
+            label="Pages"
+            value={pages}
+            onChange={(e) => setPages(e.target.value)}
+          />
+          <InputField
+            label="Size"
+            value={size}
+            onChange={(e) => setSize(e.target.value)}
+          />
+          <InputField
+            label="Imprint"
+            value={imprint}
+            onChange={(e) => setImprint(e.target.value)}
+          />
+
           <div className="pt-14 pb-28 lg:py-10 hidden lg:block">
             <button
               type="submit"
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-              disabled={submitting}
+              disabled={false}
             >
-              {submitting ? "Submitting..." : "SUBMIT REQUEST"}
+              SUBMIT REQUEST
             </button>
-            {submissionMessage && (
-              <p className={`text-center mt-4 text-green-600 font-medium`}>
-                {submissionMessage}
-              </p>
-            )}
           </div>
         </div>
       </form>
