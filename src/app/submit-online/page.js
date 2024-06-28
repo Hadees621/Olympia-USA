@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import SectionTitle from "@/components/request-review/SectionTitle";
 import InputField from "@/components/request-review/InputField";
-import DropdownInput from "@/components/request-review/DropdownInput";
 
 const Page = () => {
   const [bookTitle, setBookTitle] = useState("");
@@ -19,8 +18,6 @@ const Page = () => {
   const [pages, setPages] = useState("");
   const [size, setSize] = useState("");
   const [imprint, setImprint] = useState("");
-
-  const dropdownOptions = ["Fiction", "Non-Fiction", "Bumblebee"];
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -50,7 +47,6 @@ const Page = () => {
 
       if (response.ok) {
         console.log("Submission successful");
-        // Optionally, reset form fields after successful submission
         setBookTitle("");
         setAuthorName("");
         setBookImage("");
@@ -66,11 +62,9 @@ const Page = () => {
         setImprint("");
       } else {
         console.error("Submission failed");
-        // Handle error state
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      // Handle error state
     }
   };
 
@@ -117,20 +111,10 @@ const Page = () => {
             </div>
           </div>
 
-          <InputField
+          {/* <InputField
             label="Description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-          />
-          <InputField
-            label="More Info"
-            value={moreInfo}
-            onChange={(e) => setMoreInfo(e.target.value)}
-          />
-          <InputField
-            label="Full Description"
-            value={fullDescription}
-            onChange={(e) => setFullDescription(e.target.value)}
           />
           <InputField
             label="ISBN"
@@ -156,7 +140,7 @@ const Page = () => {
             label="Imprint"
             value={imprint}
             onChange={(e) => setImprint(e.target.value)}
-          />
+          /> */}
 
           <div className="pt-14 pb-28 lg:py-10 hidden lg:block">
             <button
