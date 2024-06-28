@@ -1,9 +1,12 @@
 "use client";
 
+"use client";
+
 import React, { useState } from "react";
 
 function InputField({
   label,
+  name,
   value,
   onChange,
   width = "w-full",
@@ -27,7 +30,7 @@ function InputField({
     <div className={`flex flex-col ${width} my-1`}>
       <div className="flex justify-between items-center mb-2">
         <label
-          htmlFor={label.toLowerCase().replace(" ", "_")}
+          htmlFor={name}
           className="text-[13px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] font-medium text-gray-900"
         >
           {label}
@@ -41,7 +44,8 @@ function InputField({
       </div>
       <input
         type="text"
-        id={label.toLowerCase().replace(" ", "_")}
+        id={name}
+        name={name}
         className={inputClass}
         required={isRequired}
         value={value}

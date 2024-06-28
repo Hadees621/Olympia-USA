@@ -5,19 +5,30 @@ import SectionTitle from "@/components/request-review/SectionTitle";
 import InputField from "@/components/request-review/InputField";
 
 const Page = () => {
-  const [bookTitle, setBookTitle] = useState("");
-  const [authorName, setAuthorName] = useState("");
-  const [bookImage, setBookImage] = useState("");
-  const [bookGenre, setBookGenre] = useState("");
-  const [wordsCount, setWordsCount] = useState("");
-  const [description, setDescription] = useState("");
-  const [moreInfo, setMoreInfo] = useState("");
-  const [fullDescription, setFullDescription] = useState("");
-  const [isbn, setIsbn] = useState("");
-  const [publishedDate, setPublishedDate] = useState("");
-  const [pages, setPages] = useState("");
-  const [size, setSize] = useState("");
-  const [imprint, setImprint] = useState("");
+  const [formData, setFormData] = useState({
+    id: "",
+    bookTitle: "",
+    authorName: "",
+    bookImage: "",
+    wordsCount: "",
+    bookGenre: "",
+    description: "",
+    isbn: "",
+    publishedDate: "",
+    pages: "",
+    size: "",
+    imprint: "",
+  });
+
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -28,43 +39,42 @@ const Page = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          bookTitle,
-          authorName,
-          bookImage,
-          bookGenre,
-          wordsCount,
-          description,
-          moreInfo,
-          fullDescription,
-          isbn,
-          publishedDate,
-          pages,
-          size,
-          imprint,
-        }),
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         console.log("Submission successful");
-        setBookTitle("");
-        setAuthorName("");
-        setBookImage("");
-        setBookGenre("");
-        setWordsCount("");
-        setDescription("");
-        setMoreInfo("");
-        setFullDescription("");
-        setIsbn("");
-        setPublishedDate("");
-        setPages("");
-        setSize("");
-        setImprint("");
+        setFormData({
+          id: "",
+          bookTitle: "",
+          authorName: "",
+          bookImage: "",
+          wordsCount: "",
+          bookGenre: "",
+          description: "",
+          isbn: "",
+          publishedDate: "",
+          pages: "",
+          size: "",
+          imprint: "",
+        });
+        setSubmissionStatus({
+          success: true,
+          message: "Book added successfully!",
+        });
       } else {
         console.error("Submission failed");
+        setSubmissionStatus({
+          success: false,
+          message: "Failed to add book. Please try again.",
+        });
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      setSubmissionStatus({
+        success: false,
+        message: "An error occurred. Please try again.",
+      });
     }
   };
 
@@ -77,76 +87,34 @@ const Page = () => {
         <div className="md:border border-black md:p-8 xl:p-12 space-y-4 lg:space-y-6 lg:py-6">
           <SectionTitle number="01" title="ABOUT YOU" SmallTitle="About you" />
 
-          <InputField
-            label="Book Title"
-            value={bookTitle}
-            onChange={(e) => setBookTitle(e.target.value)}
-          />
-          <InputField
-            label="Author Name"
-            value={authorName}
-            onChange={(e) => setAuthorName(e.target.value)}
-          />
-          <InputField
-            label="Book Image"
-            value={bookImage}
-            onChange={(e) => setBookImage(e.target.value)}
-          />
+          {Object.keys(formData).map((key) => (
+            <InputField
+              key={key}
+              label={key
+                .replace(/([A-Z])/g, " $1")
+                .replace(/^./, (str) => str.toUpperCase())}
+              name={key}
+              value={formData[key]}
+              onChange={handleChange}
+            />
+          ))}
 
-          <div className="flex w-full gap-4 my-4">
-            <div className="w-[50%] lg:w-[60%]">
-              <InputField
-                label="Genre"
-                value={bookGenre}
-                onChange={(e) => setBookGenre(e.target.value)}
-              />
+          {submissionStatus && (
+            <div
+              className={`mt-4 p-4 rounded-md ${
+                submissionStatus.success
+                  ? "bg-green-100 text-green-700"
+                  : "bg-red-100 text-red-700"
+              }`}
+            >
+              {submissionStatus.message}
             </div>
-            <div className="w-[50%] lg:w-[40%]">
-              <InputField
-                label="Word count (numbers only)"
-                value={wordsCount}
-                onChange={(e) => setWordsCount(e.target.value)}
-                showRequiredText={false}
-              />
-            </div>
-          </div>
-
-          {/* <InputField
-            label="Description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-          <InputField
-            label="ISBN"
-            value={isbn}
-            onChange={(e) => setIsbn(e.target.value)}
-          />
-          <InputField
-            label="Published Date"
-            value={publishedDate}
-            onChange={(e) => setPublishedDate(e.target.value)}
-          />
-          <InputField
-            label="Pages"
-            value={pages}
-            onChange={(e) => setPages(e.target.value)}
-          />
-          <InputField
-            label="Size"
-            value={size}
-            onChange={(e) => setSize(e.target.value)}
-          />
-          <InputField
-            label="Imprint"
-            value={imprint}
-            onChange={(e) => setImprint(e.target.value)}
-          /> */}
+          )}
 
           <div className="pt-14 pb-28 lg:py-10 hidden lg:block">
             <button
               type="submit"
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-              disabled={false}
             >
               SUBMIT REQUEST
             </button>
