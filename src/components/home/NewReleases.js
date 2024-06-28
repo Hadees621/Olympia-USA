@@ -1,13 +1,28 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import BookComponent from "./BookComponent";
 import { Books } from "@/utils/home/Books";
 import Button from "../common/Button";
 import { useBumblebeeStore } from "@/stores/States";
+import { fetchBooks } from "@/utils/genre/APIcall";
 
 const NewReleases = () => {
   const { flag } = useBumblebeeStore();
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    async function getBooks() {
+      try {
+        const data = await fetchBooks();
+        const slicedData = data.slice(0, 5);
+        setBooks(slicedData);
+      } catch (error) {
+        console.error("Failed to fetch books:", error);
+      }
+    }
+    getBooks();
+  }, []);
 
   return (
     <div className="lg:max-w-[900px] xl:max-w-[1600px] 2xl:max-w-[1600px]">
@@ -29,14 +44,15 @@ const NewReleases = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center mx-5 gap-3 lg:gap-0">
-        {Books.map((book, index) => (
+        {books.map((book, index) => (
           <div className="flex-none" key={index}>
-            <BookComponent
+            <BookComponent {...book} />
+            {/* <BookComponent
               src={book.src}
               title={book.title}
               author={book.author}
               bumblebee={flag}
-            />
+            /> */}
           </div>
         ))}
       </div>
