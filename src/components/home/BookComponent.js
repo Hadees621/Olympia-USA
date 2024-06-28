@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { useBumblebeeStore } from "@/stores/States";
 
-const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
+const BookComponent = ({
+  bookId,
+  bookImage,
+  bookTitle,
+  authorName,
+  bumblebee,
+}) => {
   const { setFlag } = useBumblebeeStore();
 
   const backgroundColor = bumblebee
@@ -23,7 +29,7 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
           >
             <div className="p-6 lg:p-4 xl:p-6 2xl:p-8">
               <img
-                src={src}
+                src={bookImage}
                 alt="book"
                 className="h-[215px] lg:w-[135px] lg:h-[160px] xl:h-[210px] 2xl:w-[200px] 2xl:h-[300px]"
               />
@@ -39,7 +45,7 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
         >
           <div className="p-6 lg:p-4 xl:p-6 2xl:p-8 flex justify-center w-full items-center">
             <img
-              src={src}
+              src={bookImage}
               alt="book"
               className="h-[215px] lg:w-[135px] lg:h-[160px] xl:h-[210px] 2xl:w-[200px] 2xl:h-[300px]"
             />
@@ -48,10 +54,10 @@ const BookComponent = ({ src, title, author, bumblebee, bookId }) => {
       )}
       <div className="p-4 lg:p-3 2xl:p-7 w-full">
         <p className="font-semibold font-driod-sans lg:text-[10px] xl:text-[12px] 2xl:text-[15px] uppercase">
-          {title}
+          {bookTitle}
         </p>
         <p className="text-[#616161] font-open-sans lg:text-[10px] xl:text-[11px] 2xl:text-[14px]">
-          {author}
+          {authorName}
         </p>
       </div>
     </div>

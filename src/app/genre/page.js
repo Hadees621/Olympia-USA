@@ -22,8 +22,8 @@ import {
 import { DropdownSection } from "@/components/genre/sidebar/DropdownSection";
 import { SidebarMenu } from "@/components/genre/sidebar/SidebarMenu";
 import { fictionBanner, fictionLgBanner } from "@/utils/genre/utils";
-import { useParams } from "next/navigation";
 import booksData from "@/utils/books/utils.json";
+import { fetchBooks } from "@/utils/genre/APIcall";
 
 export default function Page() {
   const {
@@ -64,6 +64,17 @@ export default function Page() {
     setFlag(false);
   }, []);
 
+  useEffect(() => {
+    async function getBooks() {
+      try {
+        const data = await fetchBooks();
+        setBooks(data);
+      } catch (error) {
+        console.error("Failed to fetch books:", error);
+      }
+    }
+    getBooks();
+  }, []);
   return (
     <div className="px-4">
       <div className="lg:hidden">
@@ -166,12 +177,7 @@ export default function Page() {
             <div className="grid grid-cols-4">
               {books.map((book, index) => (
                 <div className="flex-none" key={index}>
-                  <BookComponent
-                    src={book.src}
-                    title={book.title}
-                    author={book.author}
-                    bookId={book.id}
-                  />
+                  <BookComponent {...book} />
                 </div>
               ))}
             </div>
